@@ -13,9 +13,7 @@ URL: http://tintin.sourceforge.net/
 Source: http://sourceforge.net/projects/tintin/files/TinTin%2B%2B%20Source%20Code/%{version}/tintin-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
-BuildRequires: readline-devel
-BuildRequires: zlib-devel
-BuildRequires: pcre-devel
+BuildRequires: readline-devel, zlib-devel, pcre-devel
 
 %description
 TinTin++ is a MUD client that runs in console mode. A MUD is a
@@ -48,7 +46,7 @@ cd src
 
 %changelog
 * Thu Apr 18 2013 Dries Verachtert <dries.verachtert@dries.eu> - 2.00.9-1
-- Updated to release 2.00.9. 
+- Updated to release 2.00.9.
 
 * Sat Aug 29 2009 Dries Verachtert <dries@ulyssis.org> - 1.99.7-1
 - Updated to release 1.99.7.
