@@ -5,13 +5,13 @@
 
 Summary: Small, portable symbolic math program
 Name: mathomatic
-Version: 14.5.4
+Version: 16.0.5
 Release: 1%{?dist}
 License: LGPL
 Group: Applications/Engineering
 URL: http://www.mathomatic.org/
 
-Source: http://www.panix.com/~gesslein/mathomatic-%{version}.tar.bz2
+Source: http://mathomatic.orgserve.de/mathomatic-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
@@ -40,9 +40,13 @@ Gesslein II and has been under development since 1986.
 %doc %{_mandir}/man1/mathomatic.1*
 %{_bindir}/mathomatic
 %{_datadir}/pixmaps/mathomatic.png
+%{_datadir}/pixmaps/mathomatic.xpm
 %{_datadir}/applications/mathomatic.desktop
 
 %changelog
+* Tue Nov  5 2013 Dries Verachtert <dries.verachtert@dries.eu> 16.0.5-1
+- Updated to release 16.0.5.
+
 * Mon Sep 14 2009 Dries Verachtert <dries@ulyssis.org> - 14.5.4-1
 - Updated to release 14.5.4.
 
