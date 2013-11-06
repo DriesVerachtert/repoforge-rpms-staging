@@ -4,16 +4,16 @@
 
 Summary: Library to provide abstract access to various archives
 Name: physfs
-Version: 1.0.0
-Release: 0%{?dist}
+Version: 2.0.3
+Release: 1%{?dist}
 License: zlib License
 Group: System Environment/Libraries
 URL: http://www.icculus.org/physfs/
 
-Source: http://www.icculus.org/physfs/downloads/physfs-%{version}.tar.gz
+Source: http://www.icculus.org/physfs/downloads/physfs-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
-BuildRequires: ncurses-devel, readline-devel, zlib-devel
+BuildRequires: ncurses-devel, readline-devel, zlib-devel, cmake, doxygen, gcc-c++
 
 %description
 A library to provide abstract access to various archives.
@@ -34,13 +34,16 @@ applications which will use physfs
 %setup
 
 %build
-%configure \
-	--program-prefix="%{?_program_prefix}" \
+cmake -DCMAKE_INSTALL_PREFIX=%{_prefix} -DPREFIX=%{_prefix} .
+%{__make}
 
 %install
 %{__rm} -rf %{buildroot}
+# fix lib path on x86_64
+%{__perl} -pi.orig -e 's|\${CMAKE_INSTALL_PREFIX}/lib|%{_libdir}|g' cmake_install.cmake
 %{__make} install \
-	DESTDIR="%{buildroot}"
+	DESTDIR="%{buildroot}" \
+	LIB_SUFFIX="%{?lib_suffix}"
 
 %clean
 %{__rm} -rf %{buildroot}
@@ -53,18 +56,20 @@ applications which will use physfs
 
 %files
 %defattr(-, root, root, 0755)
-%doc CHANGELOG CREDITS INSTALL LICENSE TODO
-%{_libdir}/libphysfs-*.so.*
+%doc CHANGELOG.txt CREDITS.txt INSTALL.txt LICENSE.txt TODO.txt
+%{_libdir}/libphysfs*.so.*
 
 %files -n %{name}-devel
 %defattr(-, root, root, 0755)
 %{_bindir}/test_physfs
 %{_includedir}/physfs.h
 %{_libdir}/libphysfs.a
-%exclude %{_libdir}/libphysfs.la
 %{_libdir}/libphysfs.so
 
 %changelog
+* Wed Nov  6 2013 Dries Verachtert <dries.verachtert@dries.eu> - 2.0.3-1
+- Updated to release 2.0.3.
+
 * Wed Dec 29 2004 Dag Wieers <dag@wieers.com> - 1.0.0-0
 - Added x86_64 fix.
 
