@@ -7,7 +7,7 @@
 
 Summary: parse XRD and host-meta files into RDF::Trine models
 Name: perl-XRD-Parser
-Version: 0.101
+Version: 0.201
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -69,5 +69,8 @@ Requires: perl >= v5.8.0
 %exclude %{perl_vendorarch}/auto/*/*/.packlist
 
 %changelog
+* Thu Aug 13 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.201-1
+- Updated to release 0.201.
+
 * Mon Feb 07 2011 Christoph Maser <cmaser.gmx.de> - 0.101-1
 - initial package
