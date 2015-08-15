@@ -9,7 +9,7 @@
 
 Summary: Set of objects and strings
 Name: perl-Set-Object
-Version: 1.27
+Version: 1.35
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -50,13 +50,18 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc Changes.pod MANIFEST META.yml README
 %doc %{_mandir}/man3/Set::Object.3pm*
 %doc %{_mandir}/man3/Set::Object::Weak.3pm*
+%doc %{_mandir}/man3/Set::Changes.3pm*
 %dir %{perl_vendorarch}/auto/Set/
 %{perl_vendorarch}/auto/Set/Object/
 %dir %{perl_vendorarch}/Set/
 %{perl_vendorarch}/Set/Object/
 %{perl_vendorarch}/Set/Object.pm
+%{perl_vendorarch}/Set/Changes.pod
 
 %changelog
+* Sat Aug 15 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.35-1
+- Updated to release 1.35.
+
 * Thu Jun 18 2009 Christoph Maser <cmr@financial.com> - 1.27-1
 - Updated to version 1.27.
 
