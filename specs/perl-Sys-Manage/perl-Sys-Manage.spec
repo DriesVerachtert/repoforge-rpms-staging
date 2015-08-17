@@ -9,13 +9,13 @@
 
 Summary: Systems management command volley
 Name: perl-Sys-Manage
-Version: 0.59
+Version: 1.01
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Sys-Manage/
 
-Source: http://www.cpan.org/modules/by-module/Sys/Sys-Manage-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/M/MA/MAKAROW/Sys-Manage-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -56,6 +56,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Sys/Manage.pod
 
 %changelog
+* Mon Aug 17 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.01-1
+- Updated to release 1.01.
+
 * Fri Mar 07 2008 Dag Wieers <dag@wieers.com> - 0.59-1
 - Updated to release 0.59.
 
