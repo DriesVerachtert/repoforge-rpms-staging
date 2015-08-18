@@ -12,7 +12,7 @@
 
 Summary: Perl module implements tools to test taintedness
 Name: perl-Test-Taint
-Version: 1.04
+Version: 1.06
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -54,5 +54,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Test/Taint/
 
 %changelog
+* Tue Aug 18 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.06-1
+- Updated to release 1.06.
+
 * Fri May 04 2007 Dag Wieers <dag@wieers.com> - 1.04-1
 - Initial package. (using DAR)
