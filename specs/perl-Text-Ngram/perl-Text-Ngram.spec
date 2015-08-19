@@ -11,7 +11,7 @@
 
 Summary: Ngram analysis of text
 Name: perl-Text-Ngram
-Version: 0.13
+Version: 0.15
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -22,6 +22,8 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 
 BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(Test::More)
+BuildRequires: perl(Unicode::CaseFold)
 
 ### remove autoreq Perl dependencies
 %filter_from_requires /^perl.*/d
@@ -58,6 +60,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Text/Ngram/
 
 %changelog
+* Wed Aug 19 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.15-1
+- Updated to release 0.15.
+
 * Tue Feb  8 2011 Christoph Maser <cmaser@gmx.de> - 0.13-1
 - Updated to version 0.13.
 
