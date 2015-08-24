@@ -9,7 +9,7 @@
 
 Summary: Perl module to find URIs in arbitrary text
 Name: perl-URI-Find
-Version: 20100505
+Version: 20140709
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -66,6 +66,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/URI/Find/
 
 %changelog
+* Mon Aug 24 2015 Dries Verachtert <dries.verachtert@dries.eu> - 20140709-1
+- Updated to release 20140709.
+
 * Tue Feb  8 2011 Christoph Maser <cmaser@gmx.de> - 20100505-1
 - Updated to version 20100505.
 
