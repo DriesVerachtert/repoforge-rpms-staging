@@ -12,7 +12,7 @@
 
 Summary: Perl module that implements a formatter for spellchecking Pod
 Name: perl-Pod-Spell
-Version: 1.01
+Version: 1.17
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -24,6 +24,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl
 BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(File::ShareDir::Install)
 
 %description
 perl-Pod-Spell is a Perl module that implements a formatter
@@ -59,5 +60,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Pod/Wordlist.pod
 
 %changelog
+* Tue Aug 25 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.17-1
+- Updated to release 1.17.
+
 * Fri May 04 2007 Dag Wieers <dag@wieers.com> - 1.01-1
 - Initial package. (using DAR)
