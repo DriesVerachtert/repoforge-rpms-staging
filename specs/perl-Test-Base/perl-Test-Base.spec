@@ -11,7 +11,7 @@
 
 Summary: Data driven testing framework for perl
 Name: perl-Test-Base
-Version: 0.59
+Version: 0.88
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -67,6 +67,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Test/Base/
 
 %changelog
+* Wed Aug 26 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.88-1
+- Updated to release 0.88.
+
 * Sat Aug 29 2009 Christoph Maser <cmr@financial.com> - 0.59-1
 - Updated to version 0.59.
 
