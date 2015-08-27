@@ -9,7 +9,7 @@
 
 Summary: Check file attributes
 Name: perl-Test-File
-Version: 1.34
+Version: 1.44
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -47,13 +47,16 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes LICENSE MANIFEST META.yml README examples/
+%doc Changes LICENSE MANIFEST META.yml examples/
 %doc %{_mandir}/man3/Test::File.3*
 %dir %{perl_vendorlib}/Test/
 #%{perl_vendorlib}/Test/File/
 %{perl_vendorlib}/Test/File.pm
 
 %changelog
+* Thu Aug 27 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.44-1
+- Updated to release 1.44.
+
 * Thu Sep 20 2012 Peter Eisentraut <peter@eisentraut.org> - 1.34-1
 - Updated to version 1.34.
 
