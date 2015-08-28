@@ -9,7 +9,7 @@
 
 Summary: Check International Standard Book Numbers
 Name: perl-Test-ISBN
-Version: 2.01
+Version: 2.04
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -48,12 +48,15 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %files
 %defattr(-, root, root, 0755)
 %doc Changes LICENSE MANIFEST META.yml README examples/
-%doc %{_mandir}/man3/ISBN.3pm*
+%doc %{_mandir}/man3/Test::ISBN.3pm*
 %dir %{perl_vendorlib}/Test/
 #%{perl_vendorlib}/Test/ISBN/
 %{perl_vendorlib}/Test/ISBN.pm
 
 %changelog
+* Fri Aug 28 2015 Dries Verachtert <dries.verachtert@dries.eu> - 2.04-1
+- Updated to release 2.04.
+
 * Sun Nov 18 2007 Dag Wieers <dag@wieers.com> - 2.01-1
 - Updated to release 2.01.
 
