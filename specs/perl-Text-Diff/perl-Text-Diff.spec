@@ -11,7 +11,7 @@
 
 Summary: Perform diffs on files and record sets
 Name: perl-Text-Diff
-Version: 1.37
+Version: 1.41
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Text/Diff.pm
 
 %changelog
+* Sun Aug 30 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.41-1
+- Updated to release 1.41.
+
 * Mon Jul 20 2009 Christoph Maser <cmr@financial.com> - 1.37-1
 - Updated to version 1.37.
 
