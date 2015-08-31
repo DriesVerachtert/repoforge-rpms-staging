@@ -12,7 +12,7 @@
 
 Summary: Match globbing patterns against text
 Name: perl-Text-Glob
-Version: 0.08
+Version: 0.09
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -48,13 +48,16 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST META.yml README
+%doc Changes MANIFEST META.yml
 %doc %{_mandir}/man3/Text::Glob.3pm*
 %dir %{perl_vendorlib}/Text/
 #%{perl_vendorlib}/Text/Glob/
 %{perl_vendorlib}/Text/Glob.pm
 
 %changelog
+* Mon Aug 31 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.09-1
+- Updated to release 0.09.
+
 * Mon Jun 18 2007 Dries Verachtert <dries@ulyssis.org> - 0.08-1
 - Updated to release 0.08.
 
