@@ -9,8 +9,8 @@
 
 Summary: LRU Cache in Memory
 Name: perl-Tie-Cache
-Version: 0.17
-Release: 1.2%{?dist}
+Version: 0.21
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Tie-Cache/
@@ -51,9 +51,12 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc CHANGES README
 %doc %{_mandir}/man3/*
 %{perl_vendorlib}/Tie/Cache.pm
-%{perl_vendorlib}/Tie/bench.pl
+%{perl_vendorlib}/Tie/tie-cache-bench.pl
 
 %changelog
+* Tue Sep 01 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.21-1
+- Updated to release 0.21.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.17-1.2
 - Rebuild for Fedora Core 5.
 
