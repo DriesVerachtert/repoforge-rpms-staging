@@ -8,7 +8,7 @@
 
 Summary: Perl module to get the titles of things on the web in a sensible way
 Name: perl-URI-Title
-Version: 1.82
+Version: 1.86
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -19,6 +19,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-URI-Title is a Perl module to get the titles of things on the web
@@ -52,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/URI/Title.pm
 
 %changelog
+* Wed Sep 02 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.86-1
+- Updated to release 1.86.
+
 * Mon Jun  8 2009 Christoph Maser <cmr@financial.com> - 1.82-1
 - Updated to version 1.82.
 
