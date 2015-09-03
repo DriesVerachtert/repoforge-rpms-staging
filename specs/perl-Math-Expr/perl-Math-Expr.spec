@@ -15,7 +15,7 @@ License: GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Math-Expr/
 
-Source: http://www.cpan.org/modules/by-module/Math/Math-Expr-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/H/HA/HAKANARDO/Math-Expr-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
