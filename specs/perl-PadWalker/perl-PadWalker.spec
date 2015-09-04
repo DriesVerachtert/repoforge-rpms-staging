@@ -12,7 +12,7 @@
 
 Summary: Perl module to play with other peoples' lexical variables
 Name: perl-PadWalker
-Version: 1.9
+Version: 2.1
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -53,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/PadWalker.pm
 
 %changelog
+* Fri Sep 04 2015 Dries Verachtert <dries.verachtert@dries.eu> - 2.1-1
+- Updated to release 2.1.
+
 * Sat Jul  4 2009 Christoph Maser <cmr@financial.com> - 1.9-1
 - Updated to version 1.9.
 
