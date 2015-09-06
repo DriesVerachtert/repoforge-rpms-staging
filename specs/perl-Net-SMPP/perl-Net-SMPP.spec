@@ -9,7 +9,7 @@
 
 Summary: Pure Perl implementation of SMPP 3.4 over TCP
 Name: perl-%{real_name}
-Version: 1.12
+Version: 1.19
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -60,5 +60,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Net/*
 
 %changelog
+* Sun Sep 06 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.19-1
+- Updated to release 1.19.
+
 * Fri Jan 29 2010 Steve Huff <shuff@vecna.org> - 1.12-1
 - Initial package.
