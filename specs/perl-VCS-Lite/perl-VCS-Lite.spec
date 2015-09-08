@@ -11,7 +11,7 @@
 
 Summary: Minimal version control system
 Name: perl-VCS-Lite
-Version: 0.09
+Version: 0.12
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -75,5 +75,8 @@ management.
 %exclude %{perl_vendorarch}/auto/*/*/.packlist
 
 %changelog
+* Tue Sep 08 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.12-1
+- Updated to release 0.12.
+
 * Wed Feb 22 2012 Steve Huff <shuff@vecna.org> - 0.09-1
 - Initial package.
