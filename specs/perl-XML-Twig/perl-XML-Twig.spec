@@ -20,7 +20,7 @@
 
 Summary: Perl module for processing huge XML documents in tree mode
 Name: perl-XML-Twig
-Version: 3.37
+Version: 3.49
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -77,6 +77,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/XML/Twig.pm
 
 %changelog
+* Thu Sep 10 2015 Dries Verachtert <dries.verachtert@dries.eu> - 3.49-1
+- Updated to release 3.49.
+
 * Mon Feb  7 2011 Christoph Maser <cmaser@gmx.de> - 3.37-1
 - Updated to version 3.37.
 
