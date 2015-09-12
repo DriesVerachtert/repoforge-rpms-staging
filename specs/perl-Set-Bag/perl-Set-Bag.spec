@@ -9,8 +9,8 @@
 
 Summary: Bag (multiset) class
 Name: perl-Set-Bag
-Version: 1.009
-Release: 1.2%{?dist}
+Version: 1.012
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Set-Bag/
@@ -44,11 +44,14 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc ChangeLog README
+%doc Changes COPYRIGHT MANIFEST README TODO
 %doc %{_mandir}/man3/*
 %{perl_vendorlib}/Set/Bag.pm
 
 %changelog
+* Sat Sep 12 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.012-1
+- Updated to release 1.012.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 1.009-1.2
 - Rebuild for Fedora Core 5.
 
