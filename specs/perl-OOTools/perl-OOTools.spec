@@ -9,7 +9,7 @@
 
 Summary: Collection of pragmas to create constructors and lvalues
 Name: perl-OOTools
-Version: 2.21
+Version: 2.3
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-OOTools is a collection of pragmas to easily create constructors methods
@@ -68,5 +69,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Package/props.pm
 
 %changelog
+* Sun Sep 13 2015 Dries Verachtert <dries.verachtert@dries.eu> - 2.3-1
+- Updated to release 2.3.
+
 * Fri Nov 23 2007 Dag Wieers <dag@wieers.com> - 2.21-1
 - Initial package. (using DAR)
