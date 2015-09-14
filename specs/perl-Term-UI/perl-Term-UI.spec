@@ -12,7 +12,7 @@
 
 Summary: Term::ReadLine UI made easy
 Name: perl-Term-UI
-Version: 0.26
+Version: 0.46
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -70,6 +70,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Term/UI.pm
 
 %changelog
+* Mon Sep 14 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.46-1
+- Updated to release 0.46.
+
 * Thu Feb 10 2011 Christoph Maser <cmaser@gmx.de> - 0.26-1
 - Updated to version 0.26.
 
