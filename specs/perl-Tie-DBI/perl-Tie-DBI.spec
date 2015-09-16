@@ -9,7 +9,7 @@
 
 Summary: Tie hashes to DBI relational databases
 Name: perl-Tie-DBI
-Version: 1.05
+Version: 1.06
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -64,6 +64,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Tie/RDBM.pm
 
 %changelog
+* Wed Sep 16 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.06-1
+- Updated to release 1.06.
+
 * Fri Apr 16 2010 Christoph Maser <cmr@financial.com> - 1.05-1
 - Updated to version 1.05.
 
