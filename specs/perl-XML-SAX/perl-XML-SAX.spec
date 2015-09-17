@@ -16,7 +16,7 @@
 
 Summary: Perl module that implements a simple API for XML
 Name: perl-XML-SAX
-Version: 0.96
+Version: 0.99
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -28,6 +28,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(XML::NamespaceSupport)
 Obsoletes: perl-XML-SAX-PurePerl <= 0.80, perl-XML-SAX-Base <= 1.04
 
@@ -78,6 +79,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/XML/SAX.pm
 
 %changelog
+* Thu Sep 17 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.99-1
+- Updated to release 0.99.
+
 * Fri May 29 2009 Christoph Maser <cmr@financial.com> - 0.96-1
 - Updated to version 0.96.
 
