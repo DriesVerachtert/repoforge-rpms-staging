@@ -9,7 +9,7 @@
 
 Summary: DBI driver for CSV files
 Name: perl-DBD-CSV
-Version: 0.26
+Version: 0.48
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -72,6 +72,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Bundle/DBD/CSV.pm
 
 %changelog
+* Sat Sep 19 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.48-1
+- Updated to release 0.48.
+
 * Wed Dec 30 2009 Christoph Maser <cmr@financial.com> - 0.26-1
 - Updated to version 0.26.
 
