@@ -9,7 +9,7 @@
 
 Summary: Perl module that calculate message digests
 Name: perl-Digest
-Version: 1.16
+Version: 1.17
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Digest is a Perl module that calculate message digests.
@@ -51,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Digest.pm
 
 %changelog
+* Sun Sep 20 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.17-1
+- Updated to release 1.17.
+
 * Mon Jul  6 2009 Christoph Maser <cmr@financial.com> - 1.16-1
 - Updated to version 1.16.
 
