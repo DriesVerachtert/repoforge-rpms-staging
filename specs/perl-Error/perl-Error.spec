@@ -12,7 +12,7 @@
 
 Summary: Error/exception handling in an OO-ish way
 Name: perl-Error
-Version: 0.17019
+Version: 0.17024
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -25,6 +25,7 @@ BuildArch: noarch
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl >= v5.6.0
 BuildRequires: perl(warnings)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(Scalar::Util)
 Requires: perl >= v5.6.0
 Requires: perl(warnings)
@@ -67,6 +68,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Error.pm
 
 %changelog
+* Mon Sep 21 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.17024-1
+- Updated to release 0.17024.
+
 * Mon Dec 17 2012 David Hrbáč <david@hrbac.cz> - 0.17019-1
 - new upstream release
 
