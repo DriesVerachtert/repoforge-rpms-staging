@@ -14,7 +14,7 @@
 
 Summary: Perl module that implements Perl source filters
 Name: perl-Filter
-Version: 1.34
+Version: 1.54
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -24,6 +24,7 @@ Source: http://www.cpan.org/modules/by-module/Filter/Filter-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Filter is a Perl module that implements Perl source filters.
@@ -53,11 +54,14 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %doc Changes MANIFEST README examples/
 %doc %{_mandir}/man3/*.3pm*
 %{perl_vendorarch}/Filter/
-%{perl_vendorarch}/filter-util.pl
-%{perl_vendorarch}/perlfilter.pod
+#%{perl_vendorarch}/filter-util.pl
+#%{perl_vendorarch}/perlfilter.pod
 %{perl_vendorarch}/auto/Filter/
 
 
 %changelog
+* Tue Sep 22 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.54-1
+- Updated to release 1.54.
+
 * Thu Oct 11 2007 Dag Wieers <dag@wieers.com> - 1.34-1
 - Initial package. (using DAR)
