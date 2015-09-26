@@ -9,7 +9,7 @@
 
 Summary: Produce many types of charts
 Name: perl-Chart
-Version: 2.4.1
+Version: 2.4.10
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -45,13 +45,16 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc README rgb.txt TODO
+%doc README TODO
 %doc %{_mandir}/man3/Chart.3pm*
 %dir %{perl_vendorlib}/Chart/
 %{perl_vendorlib}/Chart/*
 %{perl_vendorlib}/Chart.pod
 
 %changelog
+* Sat Sep 26 2015 Dries Verachtert <dries.verachtert@dries.eu> - 2.4.10-1
+- Updated to release 2.4.10.
+
 * Sun Mar 26 2006 Dries Verachtert <dries@ulyssis.org> - 2.4.1-1
 - Updated to release 2.4.1.
 
