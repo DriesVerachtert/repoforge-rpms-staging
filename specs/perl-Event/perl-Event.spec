@@ -9,7 +9,7 @@
 
 Summary: Generic Perl Event Loop
 Name: perl-Event
-Version: 1.13
+Version: 1.21
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -59,6 +59,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Event.pod
 
 %changelog
+* Sun Sep 27 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.21-1
+- Updated to release 1.21.
+
 * Wed Dec 30 2009 Christoph Maser <cmr@financial.com> - 1.13-1
 - Updated to version 1.13.
 
