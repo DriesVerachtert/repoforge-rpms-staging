@@ -17,7 +17,7 @@ License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/%{real_name}/
 
-Source: %{real_name}-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/G/GB/GBARR/rlib-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 
