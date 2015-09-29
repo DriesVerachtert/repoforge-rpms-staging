@@ -9,7 +9,7 @@
 
 Summary: Perl module to provide a simple framework for writing test scripts
 Name: perl-Test
-Version: 1.25
+Version: 1.26
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Test is a Perl module to provide a simple framework
@@ -44,10 +45,13 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc ChangeLog MANIFEST MANIFEST.SKIP META.yml README TODO
+%doc ChangeLog MANIFEST MANIFEST.SKIP META.yml README
 %doc %{_mandir}/man3/Test.3pm*
 %{perl_vendorlib}/Test.pm
 
 %changelog
+* Tue Sep 29 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.26-1
+- Updated to release 1.26.
+
 * Sun Oct 07 2007 Dag Wieers <dag@wieers.com> - 1.25-1
 - Initial package. (using DAR)
