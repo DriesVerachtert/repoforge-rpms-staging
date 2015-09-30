@@ -9,7 +9,7 @@
 
 Summary: Implement the 'want' command
 Name: perl-Want
-Version: 0.18
+Version: 0.26
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -51,6 +51,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Want.pm
 
 %changelog
+* Wed Sep 30 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.26-1
+- Updated to release 0.26.
+
 * Thu Feb 21 2008 Dag Wieers <dag@wieers.com> - 0.18-1
 - Updated to release 0.18.
 
