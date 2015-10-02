@@ -9,7 +9,7 @@
 
 Summary: Name your accessors foo() and set_foo()
 Name: perl-%{real_name}
-Version: 0.05
+Version: 0.10
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -71,5 +71,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/MooseX/*
 
 %changelog
+* Fri Oct 02 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.10-1
+- Updated to release 0.10.
+
 * Fri Dec 18 2009 Steve Huff <shuff@vecna.org> - 0.05-1
 - Initial package.
