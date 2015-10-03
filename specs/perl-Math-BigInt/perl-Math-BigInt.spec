@@ -9,19 +9,20 @@
 
 Summary: Arbitrary size integer/float math package
 Name: perl-Math-BigInt
-Version: 1.89
+Version: 1.99
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Math-BigInt/
 
-Source: http://www.cpan.org/modules/by-module/Math/Math-BigInt-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/F/FL/FLORA/Math-BigInt-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl >= 0:5.006
 #BuildRequires: perl(Test::More) >= 0.62
 BuildRequires: perl(Test::More)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl >= 0:5.006
 
 %description
@@ -59,5 +60,8 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Math/BigInt.pm
 
 %changelog
+* Sat Oct 03 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.99-1
+- Updated to release 1.99.
+
 * Mon Jun 23 2008 Dag Wieers <dag@wieers.com> - 1.89-1
 - Initial package. (using DAR)
