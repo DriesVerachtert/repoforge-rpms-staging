@@ -8,7 +8,7 @@
 
 Summary: Perl module named Guard
 Name: perl-Guard
-Version: 1.021
+Version: 1.023
 Release: 1%{?dist}
 License: GPL
 Group: Applications/CPAN
@@ -18,6 +18,7 @@ Source: http://www.cpan.org/authors/id/M/ML/MLEHMANN/Guard-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Guard is a Perl module.
@@ -47,6 +48,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Guard.pm
 
 %changelog
+* Mon Oct 05 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.023-1
+- Updated to release 1.023.
+
 * Sat Aug 22 2009 Christoph Maser <cmr@financial.com> - 1.021-1
 - Updated to version 1.021.
 
