@@ -12,7 +12,7 @@
 
 Summary: HTML-Tree module for perl
 Name: perl-HTML-Tree
-Version: 3.23
+Version: 5.03
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -24,6 +24,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl >= 2:5.8.0
 BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(Module::Build)
 Requires: perl >= 2:5.8.0
 
 %description
@@ -37,12 +38,12 @@ This package contains the following Perl module:
 %setup -n %{real_name}-%{version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
-%{__make} %{?_smp_mflags}
+%{__perl} Build.PL --installdirs vendor --destdir %{buildroot}
+./Build
 
 %install
 %{__rm} -rf %{buildroot}
-%{__make} pure_install
+./Build pure_install
 
 ### Clean up buildroot
 find %{buildroot} -name .packlist -exec %{__rm} {} \;
@@ -55,8 +56,12 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc Changes MANIFEST META.yml README TODO
 %doc %{_mandir}/man3/*.3pm*
 %{perl_vendorlib}/HTML/
+%{_bindir}/htmltree
 
 %changelog
+* Thu Oct 08 2015 Dries Verachtert <dries.verachtert@dries.eu> - 5.03-1
+- Updated to release 5.03.
+
 * Tue Nov 14 2006 Dries Verachtert <dries@ulyssis.org> - 3.23-1
 - Updated to release 3.23.
 
