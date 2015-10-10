@@ -9,7 +9,7 @@
 
 Summary: pseudo-hashes as arrays tied to a "type" (list of fields)
 Name: perl-Hash-Type
-Version: 1.08
+Version: 1.09
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Hash-Type is a Perl module that implements pseudo-hashes as arrays
@@ -50,6 +51,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Hash/Type.pm
 
 %changelog
+* Sat Oct 10 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.09-1
+- Updated to release 1.09.
+
 * Fri Mar 14 2008 Dag Wieers <dag@wieers.com> - 1.08-1
 - Updated to release 1.08.
 
