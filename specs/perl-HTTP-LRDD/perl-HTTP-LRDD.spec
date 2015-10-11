@@ -7,7 +7,7 @@
 
 Summary: link-based resource descriptor discovery
 Name: perl-HTTP-LRDD
-Version: 0.103
+Version: 0.106
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -81,5 +81,8 @@ Requires: perl >= v5.8.0
 %exclude %{perl_vendorarch}/auto/HTTP/LRDD/.packlist
 
 %changelog
+* Sun Oct 11 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.106-1
+- Updated to release 0.106.
+
 * Mon Feb 07 2011 Christoph Maser <cmaser.gmx.de> - 0.103-1
 - initial package
