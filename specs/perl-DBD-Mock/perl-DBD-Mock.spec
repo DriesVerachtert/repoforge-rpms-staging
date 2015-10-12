@@ -11,7 +11,7 @@
 
 Summary: Mock database driver for testing
 Name: perl-DBD-Mock
-Version: 1.39
+Version: 1.45
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -23,6 +23,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl >= 0:5.6.0
 BuildRequires: perl(Test::More) >= 0.47
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl >= 0:5.6.0
 
 %description
@@ -52,8 +53,19 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %dir %{perl_vendorlib}/DBD/
 #%{perl_vendorlib}/DBD/Mock/
 %{perl_vendorlib}/DBD/Mock.pm
+%{perl_vendorlib}/DBD/Mock/Pool.pm
+%{perl_vendorlib}/DBD/Mock/Pool/db.pm
+%{perl_vendorlib}/DBD/Mock/Session.pm
+%{perl_vendorlib}/DBD/Mock/StatementTrack.pm
+%{perl_vendorlib}/DBD/Mock/StatementTrack/Iterator.pm
+%{perl_vendorlib}/DBD/Mock/db.pm
+%{perl_vendorlib}/DBD/Mock/dr.pm
+%{perl_vendorlib}/DBD/Mock/st.pm
 
 %changelog
+* Mon Oct 12 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.45-1
+- Updated to release 1.45.
+
 * Tue Jul  7 2009 Christoph Maser <cmr@financial.com> - 1.39-1
 - Updated to version 1.39.
 
