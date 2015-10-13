@@ -11,7 +11,7 @@
 %define perl_vendorarch %(eval "`%{__perl} -V:installvendorarch`"; echo $installvendorarch)
 
 %define real_name AnyEvent
-%define real_version 5.34
+%define real_version 7.11
 
 Summary: Framework for multiple event loops
 Name: perl-AnyEvent
@@ -207,6 +207,9 @@ find eg/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorarch}/AnyEvent/Impl/Tk.pm
 
 %changelog
+* Tue Oct 13 2015 Dries Verachtert <dries.verachtert@dries.eu> - 7.110-1
+- Updated to release 7.110.
+
 * Tue Jun 14 2011 Steve Huff <shuff@vecna.org> - 5.340-1
 - Updated to version 5.34.
 
