@@ -9,7 +9,7 @@
 
 Summary: Extension for access to cdb databases
 Name: perl-CDB_File
-Version: 0.96
+Version: 0.98
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -51,6 +51,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/CDB_File.pm
 
 %changelog
+* Tue Oct 13 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.98-1
+- Updated to release 0.98.
+
 * Sat May 03 2008 Dag Wieers <dag@wieers.com> - 0.96-1
 - Updated to release 0.96.
 
