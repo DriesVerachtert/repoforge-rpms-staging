@@ -10,7 +10,7 @@
 
 Summary: Perl module with bindings for the DBus message system
 Name: perl-Net-DBus
-Version: 0.33.6
+Version: 1.1.0
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -25,6 +25,7 @@ BuildRequires: perl(Test::More)
 BuildRequires: perl(Test::Pod)
 BuildRequires: perl(Test::Pod::Coverage)
 BuildRequires: pkgconfig
+BuildRequires: dbus-devel
 
 %description
 perl-Net-DBus is a Perl module with bindings for the DBus message system.
@@ -51,7 +52,7 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc AUTHORS CHANGES LICENSE MANIFEST MANIFEST.SKIP META.yml README examples/
+%doc AUTHORS Changes LICENSE MANIFEST META.yml README examples/
 %doc %{_mandir}/man3/Net::DBus.3pm*
 %doc %{_mandir}/man3/Net::DBus::*.3pm*
 %dir %{perl_vendorarch}/auto/Net/
@@ -61,6 +62,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorarch}/Net/DBus.pm
 
 %changelog
+* Wed Oct 14 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.1.0-1
+- Updated to release 1.1.0.
+
 * Mon Feb 25 2008 Dag Wieers <dag@wieers.com> - 0.33.6-1
 - Updated to release 0.33.6.
 
