@@ -9,13 +9,13 @@
 
 Summary: Tools for working with paths and file specs across platforms
 Name: perl-PathTools
-Version: 3.30
+Version: 3.60
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/PathTools/
 
-Source: http://www.cpan.org/authors/id/S/SM/SMUELLER/PathTools-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/PathTools-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl >= 0:5.005
@@ -49,7 +49,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes INSTALL MANIFEST META.yml README SIGNATURE
+%doc Changes INSTALL MANIFEST META.yml README
 %{perl_vendorarch}/Cwd.pm
 %{perl_vendorarch}/File/Spec.pm
 %{perl_vendorarch}/File/Spec/Cygwin.pm
@@ -62,6 +62,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/File/Spec/Win32.pm
 %{perl_vendorarch}/auto/Cwd/Cwd.bs
 %{perl_vendorarch}/auto/Cwd/Cwd.so
+%{perl_vendorarch}/File/Spec/AmigaOS.pm
 %doc %{_mandir}/man3/Cwd.3pm*
 %doc %{_mandir}/man3/File::Spec.3pm*
 %doc %{_mandir}/man3/File::Spec::Cygwin.3pm*
@@ -72,9 +73,13 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc %{_mandir}/man3/File::Spec::Unix.3pm*
 %doc %{_mandir}/man3/File::Spec::VMS.3pm*
 %doc %{_mandir}/man3/File::Spec::Win32.3pm*
+%doc %{_mandir}/man3/File::Spec::AmigaOS.3pm*
 
 
 %changelog
+* Thu Oct 15 2015 Dries Verachtert <dries.verachtert@dries.eu> - 3.60-1
+- Updated to release 3.60.
+
 * Thu Jul 09 2009 Christoph Maser <cmr@financial.com> - 3.30-1
 - Updated to release 3.30
 
