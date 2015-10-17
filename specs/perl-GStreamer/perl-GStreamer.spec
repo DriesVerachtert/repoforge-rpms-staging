@@ -9,7 +9,7 @@
 
 Summary: Perl module with bindings to the GStreamer library
 Name: perl-GStreamer
-Version: 0.15
+Version: 0.20
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -58,6 +58,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorarch}/GStreamer.pm
 
 %changelog
+* Sat Oct 17 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.20-1
+- Updated to release 0.20.
+
 * Sun Jul  5 2009 Christoph Maser <cmr@financial.com> - 0.15-1
 - Updated to version 0.15.
 
