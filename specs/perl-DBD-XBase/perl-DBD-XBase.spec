@@ -9,8 +9,8 @@
 
 Summary: DBI driver for XBase compatible database files
 Name: perl-DBD-XBase
-Version: 0.241
-Release: 1.2%{?dist}
+Version: 1.05
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/DBD-XBase/
@@ -61,6 +61,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/XBase.pm
 
 %changelog
+* Sun Oct 18 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.05-1
+- Updated to release 1.05.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.241-1.2
 - Rebuild for Fedora Core 5.
 
