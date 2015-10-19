@@ -9,17 +9,17 @@
 %define perl_vendorarch %(eval "`%{__perl} -V:installvendorarch`"; echo $installvendorarch)
 
 %define real_name Class-Std
-%define real_version 0.000009
+%define real_version 0.013
 
 Summary: Implementation of a "Std" class
 Name: perl-Class-Std
-Version: 0.0.9
+Version: 0.0.13
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Class-Std/
 
-Source: http://www.cpan.org/modules/by-module/Class/Class-Std-%{version}.tar.gz
+Source: http://www.cpan.org/modules/by-module/Class/Class-Std-%{real_version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -35,7 +35,7 @@ Portions of the following code and documentation from
 and reprinted with permission.
 
 %prep
-%setup -n %{real_name}-%{version}
+%setup -n %{real_name}-%{real_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
@@ -60,6 +60,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Class/Std.pm
 
 %changelog
+* Mon Oct 19 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.0.13-1
+- Updated to release 0.0.13.
+
 * Sat May 03 2008 Dag Wieers <dag@wieers.com> - 0.0.9-1
 - Updated to release 0.0.9.
 
