@@ -9,7 +9,7 @@
 
 Summary: Object-oriented Perl interface to RADIUS
 Name: perl-Net-Radius
-Version: 1.56
+Version: 2.103
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -47,13 +47,16 @@ find contrib/ docs/ examples/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST MANIFEST.SKIP META.yml README README.3COM README.VSA README.broken README.packets README.server version.pl contrib/ docs/ examples/
+%doc Changes MANIFEST MANIFEST.SKIP META.yml README README.3COM README.VSA README.broken README.packets README.server contrib/ docs/ examples/
 %doc %{_mandir}/man3/Net::Radius::Dictionary.3pm*
 %doc %{_mandir}/man3/Net::Radius::Packet.3pm*
 %dir %{perl_vendorlib}/Net/
 %{perl_vendorlib}/Net/Radius/
 
 %changelog
+* Thu Oct 22 2015 Dries Verachtert <dries.verachtert@dries.eu> - 2.103-1
+- Updated to release 2.103.
+
 * Thu Nov 15 2007 Dag Wieers <dag@wieers.com> - 1.56-1
 - Updated to release 1.56.
 
