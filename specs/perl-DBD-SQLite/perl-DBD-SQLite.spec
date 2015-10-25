@@ -14,19 +14,20 @@
 
 Summary: Small fast embedded SQL database engine
 Name: perl-DBD-SQLite
-Version: 1.29
-Release: 2%{?dist}
+Version: 1.48
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/DBD-SQLite/
 
-Source: http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/DBD-SQLite-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/I/IS/ISHIGAKI/DBD-SQLite-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl(DBI) >= 1.57
 BuildRequires: perl(File::Spec) >= 0.82
 BuildRequires: perl(Test::More) >= 0.42
 BuildRequires: perl(Tie::Hash)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(DBI) >= 1.57
 Requires: perl(Tie::Hash)
 
@@ -63,13 +64,30 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc Changes MANIFEST META.yml README
 %doc %{_mandir}/man3/DBD::SQLite.3pm*
 %doc %{_mandir}/man3/DBD::SQLite::Cookbook.3pm*
+%doc %{_mandir}/man3/DBD::SQLite::Constants.3pm*
+%doc %{_mandir}/man3/DBD::SQLite::Fulltext_search.3pm*
+%doc %{_mandir}/man3/DBD::SQLite::VirtualTable.3pm*
+%doc %{_mandir}/man3/DBD::SQLite::VirtualTable::FileContent.3pm*
+%doc %{_mandir}/man3/DBD::SQLite::VirtualTable::PerlData.3pm*
 %dir %{perl_vendorarch}/DBD/
 %{perl_vendorarch}/DBD/SQLite.pm
 %{perl_vendorarch}/DBD/SQLite/Cookbook.pod
 %dir %{perl_vendorarch}/auto/DBD/
 %{perl_vendorarch}/auto/DBD/SQLite/
+%{perl_vendorarch}/DBD/SQLite/Constants.pm
+%{perl_vendorarch}/DBD/SQLite/Fulltext_search.pod
+%{perl_vendorarch}/DBD/SQLite/VirtualTable.pm
+%{perl_vendorarch}/DBD/SQLite/VirtualTable/FileContent.pm
+%{perl_vendorarch}/DBD/SQLite/VirtualTable/PerlData.pm
+%{perl_vendorarch}/auto/share/dist/DBD-SQLite/sqlite3.c
+%{perl_vendorarch}/auto/share/dist/DBD-SQLite/sqlite3.h
+%{perl_vendorarch}/auto/share/dist/DBD-SQLite/sqlite3ext.h
+
 
 %changelog
+* Sun Oct 25 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.48-1
+- Updated to release 1.48.
+
 * Fri Aug 05 2011 Steve Huff <shuff@vecna.org> - 1.29-2
 - RFX for el5 as well as el6, due to perl-DBI version requirement.
 
