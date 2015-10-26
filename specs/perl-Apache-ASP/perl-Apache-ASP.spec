@@ -9,7 +9,7 @@
 
 Summary: Active Server Pages for Apache with mod_perl
 Name: perl-Apache-ASP
-Version: 2.61
+Version: 2.62
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -69,6 +69,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{_bindir}/asp-perl
 
 %changelog
+* Mon Oct 26 2015 Dries Verachtert <dries.verachtert@dries.eu> - 2.62-1
+- Updated to release 2.62.
+
 * Sun Jun 22 2008 Dag Wieers <dag@wieers.com> - 2.61-1
 - Updated to release 2.61.
 
