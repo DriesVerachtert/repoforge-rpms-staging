@@ -9,8 +9,8 @@
 
 Summary: Easy MIME message parsing
 Name: perl-Email-MIME
-Version: 1.903
-Release: 2%{?dist}
+Version: 1.936
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Email-MIME/
@@ -87,6 +87,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Email/MIME.pm
 
 %changelog
+* Tue Oct 27 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.936-1
+- Updated to release 1.936.
+
 * Tue Jan 05 2010 Steve Huff <shuff@vecna.org> - 1.903-2
 - This package obsoletes our perl-Email-MIME-Creator and 
   perl-Email-MIME-Modifier packages.
