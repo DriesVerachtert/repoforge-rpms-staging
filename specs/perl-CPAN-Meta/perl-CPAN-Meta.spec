@@ -7,7 +7,7 @@
 
 Summary: the distribution metadata for a CPAN dist
 Name: perl-CPAN-Meta
-Version: 2.101670
+Version: 2.150005
 Release: 1%{?dist}
 License: ARRAY(0x90fb408)
 Group: Applications/CPAN
@@ -75,6 +75,12 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc %{_mandir}/man3/CPAN::Meta::Prereqs.3pm*
 %doc %{_mandir}/man3/CPAN::Meta::Spec.3pm*
 %doc %{_mandir}/man3/CPAN::Meta::Validator.3pm*
+%doc %{_mandir}/man3/CPAN::Meta::History::Meta_1_0.3pm*
+%doc %{_mandir}/man3/CPAN::Meta::History::Meta_1_1.3pm*
+%doc %{_mandir}/man3/CPAN::Meta::History::Meta_1_2.3pm*
+%doc %{_mandir}/man3/CPAN::Meta::History::Meta_1_3.3pm*
+%doc %{_mandir}/man3/CPAN::Meta::History::Meta_1_4.3pm*
+%doc %{_mandir}/man3/CPAN::Meta::Merge.3pm*
 %dir %{perl_vendorlib}/
 %{perl_vendorlib}/CPAN/Meta.pm
 %{perl_vendorlib}/CPAN/Meta/Converter.pm
@@ -83,7 +89,16 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/CPAN/Meta/Prereqs.pm
 %{perl_vendorlib}/CPAN/Meta/Spec.pm
 %{perl_vendorlib}/CPAN/Meta/Validator.pm
+%{perl_vendorlib}/CPAN/Meta/History/Meta_1_0.pod
+%{perl_vendorlib}/CPAN/Meta/History/Meta_1_1.pod
+%{perl_vendorlib}/CPAN/Meta/History/Meta_1_2.pod
+%{perl_vendorlib}/CPAN/Meta/History/Meta_1_3.pod
+%{perl_vendorlib}/CPAN/Meta/History/Meta_1_4.pod
+%{perl_vendorlib}/CPAN/Meta/Merge.pm
 
 %changelog
+* Wed Oct 28 2015 Dries Verachtert <dries.verachtert@dries.eu> - 2.150005-1
+- Updated to release 2.150005.
+
 * Fri Jul 09 2010 Christoph Maser <cmaser.gmx.de> - 2.101670-1
 - initial package
