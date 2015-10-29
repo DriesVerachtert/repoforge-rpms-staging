@@ -9,8 +9,8 @@
 
 Summary: Easy interface to IO::Pty
 Name: perl-%{real_name}
-Version: 0.08
-Release: 1%{?dist}
+Version: 0.09
+Release: 0%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/IO-Pty-Easy/
