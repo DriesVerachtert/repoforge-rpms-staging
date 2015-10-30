@@ -16,7 +16,7 @@
 
 Summary: Extended processing of command line options
 Name: perl-Getopt-Long
-Version: 2.38
+Version: 2.48
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -55,7 +55,7 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Announce CHANGES INSTALL MANIFEST META.yml README examples/
+%doc CHANGES INSTALL MANIFEST README examples/
 %doc %{_mandir}/man3/Getopt::Long.3pm*
 %dir %{perl_vendorlib}/Getopt/
 #%{perl_vendorlib}/Getopt/Long/
@@ -63,6 +63,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/newgetopt.pl
 
 %changelog
+* Fri Oct 30 2015 Dries Verachtert <dries.verachtert@dries.eu> - 2.48-1
+- Updated to release 2.48.
+
 * Sun Jul  5 2009 Christoph Maser <cmr@financial.com> - 2.38-1
 - Updated to version 2.38.
 
