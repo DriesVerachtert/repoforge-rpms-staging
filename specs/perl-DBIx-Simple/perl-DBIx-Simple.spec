@@ -12,7 +12,7 @@
 
 Summary: Perl module named DBIx-Simple
 Name: perl-DBIx-Simple
-Version: 1.32
+Version: 1.35
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -23,6 +23,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-DBIx-Simple is a Perl module.
@@ -50,11 +51,16 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc %{_mandir}/man3/DBIx::Simple.3pm*
 %doc %{_mandir}/man3/DBIx::Simple::Comparison.3pm.gz
 %doc %{_mandir}/man3/DBIx::Simple::Examples.3pm.gz
+%doc %{_mandir}/man3/DBIx::Simple::Result::RowObject.3pm.gz
 %dir %{perl_vendorlib}/DBIx/
 %{perl_vendorlib}/DBIx/Simple/Comparison.pod
 %{perl_vendorlib}/DBIx/Simple/Examples.pod
 %{perl_vendorlib}/DBIx/Simple.pm
+%{perl_vendorlib}/DBIx/Simple/Result/RowObject.pm
 
 %changelog
+* Sat Oct 31 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.35-1
+- Updated to release 1.35.
+
 * Fri Jul 10 2009 Christoph Maser <cmr@financial.com> - 1.32-1
 - Initial package. (using DAR)
