@@ -9,7 +9,7 @@
 
 Summary: Maketext from already interpolated strings
 Name: perl-Locale-Maketext-Fuzzy
-Version: 0.10
+Version: 0.11
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Locale/Maketext/Fuzzy.pm
 
 %changelog
+* Mon Nov 02 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.11-1
+- Updated to release 0.11.
+
 * Tue Nov 13 2007 Dag Wieers <dag@wieers.com> - 0.10-1
 - Updated to release 0.10.
 
