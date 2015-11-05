@@ -9,7 +9,7 @@
 
 Summary: DateTime Extension for Calculating Important Chinese Dates
 Name: perl-DateTime-Event-Chinese
-Version: 0.05
+Version: 1.00
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -56,6 +56,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/DateTime/Event/Chinese.pm
 
 %changelog
+* Thu Nov 05 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.00-1
+- Updated to release 1.00.
+
 * Thu Nov 08 2007 Dag Wieers <dag@wieers.com> - 0.05-1
 - Updated to release 0.05.
 
