@@ -9,7 +9,7 @@
 
 Summary: Catalyst Apache Engines
 Name: perl-Catalyst-Engine-Apache
-Version: 1.12
+Version: 1.16
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -57,6 +57,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Catalyst/Engine/Apache2.pm
 
 %changelog
+* Fri Nov 06 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.16-1
+- Updated to release 1.16.
+
 * Sun Feb 24 2008 Dag Wieers <dag@wieers.com> - 1.12-1
 - Updated to release 1.12.
 
