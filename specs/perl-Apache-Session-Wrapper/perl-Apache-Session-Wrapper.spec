@@ -9,7 +9,7 @@
 
 Summary: Wrapper around Apache::Session
 Name: perl-Apache-Session-Wrapper
-Version: 0.33
+Version: 0.34
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Apache/Session/Wrapper.pm
 
 %changelog
+* Sat Nov 07 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.34-1
+- Updated to release 0.34.
+
 * Tue Sep 26 2006 Dries Verachtert <dries@ulyssis.org> - 0.33-1
 - Updated to release 0.33.
 
