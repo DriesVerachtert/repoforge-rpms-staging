@@ -10,7 +10,7 @@
 
 Summary: Perl extension for performing paradigm-free evolutionary algorithms
 Name: perl-Algorithm-Evolutionary
-Version: 0.72
+Version: 0.80
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -116,6 +116,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 
 
 %changelog
+* Sun Nov 08 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.80-1
+- Updated to release 0.80.
+
 * Sat Feb  6 2010 Christoph Maser <cmr@financial.com> - 0.72-1
 - Updated to version 0.72.
 
