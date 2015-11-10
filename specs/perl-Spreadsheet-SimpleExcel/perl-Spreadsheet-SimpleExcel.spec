@@ -9,7 +9,7 @@
 
 Summary: Show excel-files on the web
 Name: perl-Spreadsheet-SimpleExcel
-Version: 1.9
+Version: 1.92
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -53,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Spreadsheet/SimpleExcel.pm
 
 %changelog
+* Tue Nov 10 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.92-1
+- Updated to release 1.92.
+
 * Sun Nov 18 2007 Dag Wieers <dag@wieers.com> - 1.9-1
 - Updated to release 1.9.
 
