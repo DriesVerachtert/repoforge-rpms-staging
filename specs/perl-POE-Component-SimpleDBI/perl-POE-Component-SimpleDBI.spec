@@ -9,7 +9,7 @@
 
 Summary: Asynchronous non-blocking DBI calls in POE made simple
 Name: perl-POE-Component-SimpleDBI
-Version: 1.27
+Version: 1.31
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -56,6 +56,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/POE/Component/SimpleDBI.pm
 
 %changelog
+* Wed Nov 11 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.31-1
+- Updated to release 1.31.
+
 * Fri Jul  3 2009 Christoph Maser <cmr@financial.com> - 1.27-1
 - Updated to version 1.27.
 
