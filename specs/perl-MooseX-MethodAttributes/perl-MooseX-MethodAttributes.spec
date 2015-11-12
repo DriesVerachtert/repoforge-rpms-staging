@@ -12,13 +12,13 @@
 
 Summary: code attribute introspection
 Name: perl-MooseX-MethodAttributes
-Version: 0.19
+Version: 0.31
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/MooseX-MethodAttributes/
 
-Source: http://search.cpan.org/CPAN/authors/id/B/BO/BOBTFISH/MooseX-MethodAttributes-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/MooseX-MethodAttributes-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -94,6 +94,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 
 %changelog
+* Thu Nov 12 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.31-1
+- Updated to release 0.31.
+
 * Mon Jan 11 2010 Christoph Maser <cmr@financial.com> - 0.19-1
 - Updated to version 0.19.
 
