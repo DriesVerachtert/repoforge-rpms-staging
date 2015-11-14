@@ -8,7 +8,7 @@
 
 Summary: Expose PL_dirty, the flag which marks global destruction
 Name: perl-Devel-GlobalDestruction
-Version: 0.02
+Version: 0.13
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -18,6 +18,7 @@ Source: http://www.cpan.org/modules/by-module/Devel/Devel-GlobalDestruction-%{ve
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Expose PL_dirty, the flag which marks global destruction.
@@ -41,13 +42,16 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc MANIFEST MANIFEST.SKIP META.yml SIGNATURE
+%doc Changes MANIFEST META.yml
 %doc %{_mandir}/man3/Devel::GlobalDestruction.3pm*
 %dir %{perl_vendorarch}/auto/Devel/
 %{perl_vendorarch}/auto/Devel/GlobalDestruction/
-%dir %{perl_vendorarch}/Devel/
-%{perl_vendorarch}/Devel/GlobalDestruction.pm
+%dir %{perl_vendorlib}/Devel/
+%{perl_vendorlib}/Devel/GlobalDestruction.pm
 
 %changelog
+* Sat Nov 14 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.13-1
+- Updated to release 0.13.
+
 * Sat Nov 29 2008 Dag Wieers <dag@wieers.com> - 0.02-1
 - Initial package. (using DAR)
