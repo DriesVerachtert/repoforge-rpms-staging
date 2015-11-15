@@ -9,7 +9,7 @@
 
 Summary: Create machine readable date/time with natural parsing logic
 Name: perl-%{real_name}
-Version: 0.83
+Version: 1.03
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -77,6 +77,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{_bindir}/*
 
 %changelog
+* Sun Nov 15 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.03-1
+- Updated to release 1.03.
+
 * Thu Jan 14 2010 Christoph Maser <cmr@financial.com> - 0.83-1
 - Updated to version 0.83.
 
