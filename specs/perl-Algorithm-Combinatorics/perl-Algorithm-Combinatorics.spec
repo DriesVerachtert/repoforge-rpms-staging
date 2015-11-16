@@ -9,7 +9,7 @@
 
 Summary: Efficient generation of combinatorial sequences
 Name: perl-Algorithm-Combinatorics
-Version: 0.25
+Version: 0.27
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -19,6 +19,7 @@ Source: http://www.cpan.org/modules/by-module/Algorithm/Algorithm-Combinatorics-
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Efficient generation of combinatorial sequences.
@@ -50,6 +51,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Algorithm/Combinatorics.pm
 
 %changelog
+* Mon Nov 16 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.27-1
+- Updated to release 0.27.
+
 * Tue Dec 04 2007 Dag Wieers <dag@wieers.com> - 0.25-1
 - Updated to release 0.25.
 
