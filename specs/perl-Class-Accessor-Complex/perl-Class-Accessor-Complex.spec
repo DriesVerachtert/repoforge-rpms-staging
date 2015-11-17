@@ -7,7 +7,7 @@
 
 Summary: Arrays, hashes, booleans, integers, sets and more
 Name: perl-Class-Accessor-Complex
-Version: 1.100820
+Version: 1.100880
 Release: 1%{?dist}
 License: perl
 Group: Applications/CPAN
@@ -78,6 +78,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Class/Accessor/Complex.pm
 
 %changelog
+* Tue Nov 17 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.100880-1
+- Updated to release 1.100880.
+
 * Fri Mar 26 2010 Christoph Maser <cmr@financial.com> - 1.100820-1
 - initial package
 
