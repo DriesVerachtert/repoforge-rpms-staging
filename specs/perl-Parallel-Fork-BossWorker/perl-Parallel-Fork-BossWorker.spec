@@ -9,7 +9,7 @@
 
 Summary: Extension for easily creating forking queue processing application
 Name: perl-Parallel-Fork-BossWorker
-Version: 0.03
+Version: 0.05
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,7 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
-BuildRequires: perl(ExtUtils::MakeMaker) >= 4:5.8.8
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Perl extension for easily creating forking queue processing application.
@@ -50,6 +50,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %dir %{perl_vendorlib}/Parallel/Fork/
 
 %changelog
+* Wed Nov 18 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.05-1
+- Updated to release 0.05.
+
 * Wed Jun 13 2007 Dries Verachtert <dries@ulyssis.org> - 0.03-1
 - Updated to release 0.03.
 
