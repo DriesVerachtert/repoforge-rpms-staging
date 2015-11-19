@@ -9,7 +9,7 @@
 
 Summary: Virtual browser that retries errors
 Name: perl-LWP-UserAgent-Determined
-Version: 1.04
+Version: 1.07
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -59,6 +59,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/LWP/UserAgent/Determined.pm
 
 %changelog
+* Thu Nov 19 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.07-1
+- Updated to release 1.07.
+
 * Sat Jul  4 2009 Christoph Maser <cmr@financial.com> - 1.04-1
 - Updated to version 1.04.
 
