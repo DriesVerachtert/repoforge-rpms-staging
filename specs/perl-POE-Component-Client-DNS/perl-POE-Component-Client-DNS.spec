@@ -9,7 +9,7 @@
 
 Summary: Event driven wrapper for Net::DNS::Resolver
 Name: perl-POE-Component-Client-DNS
-Version: 1.051
+Version: 1.054
 Release: 1
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -65,6 +65,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/POE/Component/Client/DNS.pm
 
 %changelog
+* Fri Nov 20 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.054-1
+- Updated to release 1.054.
+
 * Thu Dec 10 2009 Christoph Maser <cmr@financial.com> - 1.051-1
 - Updated to version 1.051.
 
