@@ -12,7 +12,7 @@
 
 Summary: Parses Date::Parse compatible formats
 Name: perl-DateTime-Format-DateParse
-Version: 0.04
+Version: 0.05
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -53,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/DateTime/Format/DateParse.p*
 
 %changelog
+* Sun Nov 22 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.05-1
+- Updated to release 0.05.
+
 * Tue Sep 26 2006 Dries Verachtert <dries@ulyssis.org> - 0.04-1
 - Updated to release 0.04.
 
