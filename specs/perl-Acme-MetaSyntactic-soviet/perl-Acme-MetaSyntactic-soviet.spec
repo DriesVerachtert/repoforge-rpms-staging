@@ -9,7 +9,7 @@
 
 Summary: NATO codenames for Soviet-designed equipment
 Name: perl-%{real_name}
-Version: 0.01
+Version: 0.03
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -71,5 +71,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Acme/MetaSyntactic/*
 
 %changelog
+* Mon Nov 23 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.03-1
+- Updated to release 0.03.
+
 * Mon Nov 16 2009 Steve Huff <shuff@vecna.org> - 0.01-1
 - Initial package.
