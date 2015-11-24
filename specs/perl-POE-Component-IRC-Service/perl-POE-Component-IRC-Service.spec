@@ -9,7 +9,7 @@
 
 Summary: Event driven IRC Services module for POE
 Name: perl-POE-Component-IRC-Service
-Version: 0.994
+Version: 0.996
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -61,6 +61,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/POE/Filter/IRC/
 
 %changelog
+* Tue Nov 24 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.996-1
+- Updated to release 0.996.
+
 * Sat Jul  4 2009 Christoph Maser <cmr@financial.com> - 0.994-1
 - Updated to version 0.994.
 
