@@ -11,7 +11,7 @@
 
 Summary: Make your object constructors blow up on unknown attributes
 Name: perl-%{real_name}
-Version: 0.16
+Version: 0.19
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -66,6 +66,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/MooseX/*
 
 %changelog
+* Thu Nov 26 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.19-1
+- Updated to release 0.19.
+
 * Tue Aug 23 2011 Steve Huff <shuff@vecna.org> - 0.16-1
 - Updated to version 0.16 (el6-only).
 - Split out perl-MooseX-StrictConstructor-0.08 as its own spec.
