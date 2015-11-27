@@ -10,7 +10,7 @@
 
 Summary: Perl extension for Berkeley DB version 2, 3 or 4
 Name: perl-BerkeleyDB
-Version: 0.43
+Version: 0.55
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -22,7 +22,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: perl >= 0:5.00503
 BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl >= 0:5.00503
-%{!?dtag:BuildRequires: db4-devel}
+%{!?dtag:BuildRequires: libdb-devel}
 %{?el5:BuildRequires: db4-devel}
 %{?fc6:BuildRequires: db4-devel}
 %{?fc5:BuildRequires: db4-devel}
@@ -60,8 +60,13 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/BerkeleyDB/
 %{perl_vendorarch}/BerkeleyDB.pm
 %{perl_vendorarch}/BerkeleyDB.pod
+%{perl_vendorarch}/mkconsts.pl
+%{perl_vendorarch}/scan.pl
 
 %changelog
+* Fri Nov 27 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.55-1
+- Updated to release 0.55.
+
 * Fri Sep 10 2010 David Hrbáč <david@hrbac.cz> - 0.43-1
 - new upstream version
 
