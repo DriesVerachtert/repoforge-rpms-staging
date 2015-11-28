@@ -9,7 +9,7 @@
 
 Summary: One shot non-blocking RFC 812 WHOIS query
 Name: perl-POE-Component-Client-Whois
-Version: 1.28
+Version: 1.36
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -77,6 +77,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/POE/Component/Client/Whois.pm
 
 %changelog
+* Sat Nov 28 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.36-1
+- Updated to release 1.36.
+
 * Thu Dec 10 2009 Christoph Maser <cmr@financial.com> - 1.28-1
 - Updated to version 1.28.
 
