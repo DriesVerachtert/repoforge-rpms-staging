@@ -9,7 +9,7 @@
 
 Summary: Absract your phrases with XML
 Name: perl-Data-Phrasebook-Loader-XML
-Version: 0.12
+Version: 0.16
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -51,5 +51,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %dir %{perl_vendorlib}/Data/Phrasebook/
 
 %changelog
+* Sun Nov 29 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.16-1
+- Updated to release 0.16.
+
 * Sun Apr 29 2007 Dries Verachtert <dries@ulyssis.org> - 0.12-1
 - Initial package.
