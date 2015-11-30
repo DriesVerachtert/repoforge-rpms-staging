@@ -9,7 +9,7 @@
 
 Summary: Absract your phrases with ini files
 Name: perl-Data-Phrasebook-Loader-Ini
-Version: 0.10
+Version: 0.14
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -49,5 +49,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Data/Phrasebook/Loader/Ini.pm
 
 %changelog
+* Mon Nov 30 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.14-1
+- Updated to release 0.14.
+
 * Sun Apr 29 2007 Dries Verachtert <dries@ulyssis.org> - 0.10-1
 - Initial package.
