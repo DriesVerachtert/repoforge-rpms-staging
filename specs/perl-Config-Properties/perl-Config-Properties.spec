@@ -9,7 +9,7 @@
 
 Summary: Read and write property files
 Name: perl-Config-Properties
-Version: 1.70
+Version: 1.80
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -55,6 +55,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Config/Properties.pm
 
 %changelog
+* Wed Dec 02 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.80-1
+- Updated to release 1.80.
+
 * Wed Jul 15 2009 Christoph Maser <cmr@financial.com> - 1.70-1
 - Updated to version 1.70.
 
