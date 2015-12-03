@@ -8,17 +8,18 @@
 
 Summary: Simple reading and writing from an INI file
 Name: perl-Config-INI-Simple
-Version: 0.02
+Version: 1.00
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Config-INI-Simple/
 
-Source: http://www.cpan.org/modules/by-module/Config/Config-INI-Simple-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/T/TO/TORG/Config-INI-Simple-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl >= 4:5.8.7
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Simple reading and writing from an INI file, with preserved comments too!
@@ -42,7 +43,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes Changes~ MANIFEST README
+%doc Changes MANIFEST README
 %doc %{_mandir}/man3/Config::INI::Simple.3pm*
 %dir %{perl_vendorlib}/Config/
 %dir %{perl_vendorlib}/Config/INI/
@@ -50,5 +51,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Config/INI/Simple.pm
 
 %changelog
+* Thu Dec 03 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.00-1
+- Updated to release 1.00.
+
 * Sun Jun 22 2008 Dag Wieers <dag@wieers.com> - 0.02-1
 - Initial package. (using DAR)
