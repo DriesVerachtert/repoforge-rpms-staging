@@ -9,7 +9,7 @@
 
 Summary: General-purpose wrapper for cleartool
 Name: perl-ClearCase-Wrapper
-Version: 1.15
+Version: 1.19
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 General-purpose wrapper for cleartool.
@@ -49,6 +50,7 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %doc Changes MANIFEST README README.GUI examples/
 %doc %{_mandir}/man3/ClearCase::Wrapper.3pm*
 %{_bindir}/cleartool.plx
+%{_bindir}/cleartool.dbg
 %dir %{perl_vendorlib}/auto/ClearCase/
 %{perl_vendorlib}/auto/ClearCase/Wrapper/
 %dir %{perl_vendorlib}/ClearCase/
@@ -56,6 +58,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/ClearCase/Wrapper.pm
 
 %changelog
+* Fri Dec 04 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.19-1
+- Updated to release 1.19.
+
 * Wed Jul 15 2009 Christoph Maser <cmr@financial.com> - 1.15-1
 - Updated to version 1.15.
 
