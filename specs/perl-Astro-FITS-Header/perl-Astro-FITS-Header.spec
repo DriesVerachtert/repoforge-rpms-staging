@@ -9,7 +9,7 @@
 
 Summary: Object Orientated interface to FITS HDUs
 Name: perl-Astro-FITS-Header
-Version: 3.01
+Version: 3.07
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(Module::Build)
 AutoReq: no
 
 %description
@@ -29,12 +30,12 @@ Object Orientated interface to FITS HDUs.
 %setup -n %{real_name}-%{version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
-%{__make} %{?_smp_mflags}
+%{__perl} Build.PL installdirs=vendor --destdir %{buildroot}
+./Build
 
 %install
 %{__rm} -rf %{buildroot}
-%{__make} pure_install
+./Build pure_install
 
 ### Clean up buildroot
 find %{buildroot} -name .packlist -exec %{__rm} {} \;
@@ -44,7 +45,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc ChangeLog MANIFEST META.yml README TODO
+%doc MANIFEST META.yml README TODO
 %doc %{_mandir}/man3/Astro::FITS::Header*.3pm*
 %dir %{perl_vendorlib}/Astro/
 %dir %{perl_vendorlib}/Astro/FITS/
@@ -52,5 +53,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Astro/FITS/Header.pm
 
 %changelog
+* Mon Dec 07 2015 Dries Verachtert <dries.verachtert@dries.eu> - 3.07-1
+- Updated to release 3.07.
+
 * Wed Jul 22 2009 Christoph Maser <cmr@financial.com> - 3.01-1
 - Initial package. (using DAR)
