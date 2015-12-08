@@ -9,7 +9,7 @@
 
 Summary: Apache log utility for merging, sorting, and processing web logs
 Name: perl-Apache-Logmonster
-Version: 3.05
+Version: 5.36
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -45,17 +45,17 @@ Apache log utility for merging, sorting, and processing web logs.
 find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 ### Clean up docs
-find doc/ examples/ -type f -exec %{__chmod} a-x {} \;
+find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %clean
 %{__rm} -rf %{buildroot}
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes FAQ INSTALL MANIFEST MANIFEST.SKIP META.yml README TODO doc/ examples/
+%doc Changes FAQ INSTALL MANIFEST MANIFEST.SKIP META.yml README TODO examples/
 %doc %{_mandir}/man1/logmonster.pl.1*
 %doc %{_mandir}/man3/Apache::Logmonster.3pm*
-%doc %{_mandir}/man3/Apache::Logmonster::Perl.3pm*
+#%doc %{_mandir}/man3/Apache::Logmonster::Perl.3pm*
 %doc %{_mandir}/man3/Apache::Logmonster::Utility.3pm*
 %doc %{_mandir}/man3/Regexp::Log::Monster.3pm*
 %dir %{perl_vendorlib}/Apache/
@@ -65,8 +65,12 @@ find doc/ examples/ -type f -exec %{__chmod} a-x {} \;
 %dir %{perl_vendorlib}/Regexp/Log/
 %{perl_vendorlib}/Regexp/Log/Monster.pm
 #%{perl_vendorlib}/Regexp/Log.pm
+%{_bindir}/logmonster.pl
 
 %changelog
+* Tue Dec 08 2015 Dries Verachtert <dries.verachtert@dries.eu> - 5.36-1
+- Updated to release 5.36.
+
 * Mon Oct 06 2008 Dag Wieers <dag@wieers.com> - 3.05-1
 - Updated to release 3.05.
 
