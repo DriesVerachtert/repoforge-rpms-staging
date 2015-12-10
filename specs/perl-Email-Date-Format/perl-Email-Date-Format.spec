@@ -12,7 +12,7 @@
 
 Summary: Produce RFC 8822 date strings
 Name: perl-Email-Date-Format
-Version: 1.002
+Version: 1.005
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -23,6 +23,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Produce RFC 8822 date strings.
@@ -54,5 +55,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Email/Date/Format.pm
 
 %changelog
+* Thu Dec 10 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.005-1
+- Updated to release 1.005.
+
 * Thu Dec 27 2007 Dag Wieers <dag@wieers.com> - 1.002-1
 - Initial package. (using DAR)
