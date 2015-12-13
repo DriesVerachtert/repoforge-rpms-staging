@@ -11,7 +11,7 @@
 
 Summary: Standardized logging facilities using Log::Message perl module
 Name: perl-Log-Message-Simple
-Version: 0.06
+Version: 0.10
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -59,6 +59,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Log/Message/Simple.pm
 
 %changelog
+* Sun Dec 13 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.10-1
+- Updated to release 0.10.
+
 * Mon Sep 14 2009 Christoph Maser <cmr@financial.com> - 0.06-1
 - Updated to version 0.06.
 
