@@ -9,7 +9,7 @@
 
 Summary: Compares and sorts strings encoded in UTF-8
 Name: perl-Lingua-JA-Sort-JIS
-Version: 0.05
+Version: 0.10
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -52,5 +52,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %dir %{perl_vendorlib}/Lingua/
 
 %changelog
+* Mon Dec 14 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.10-1
+- Updated to release 0.10.
+
 * Sun Apr 29 2007 Dries Verachtert <dries@ulyssis.org> - 0.05-1
 - Initial package.
