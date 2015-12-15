@@ -9,7 +9,7 @@
 
 Summary: Perl module to get stock quotes from Yahoo! Finance
 Name: perl-Finance-YahooQuote
-Version: 0.22
+Version: 0.25
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -45,7 +45,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc CHANGES ChangeLog GNU-LICENSE MANIFEST META.yml README
+%doc CHANGES* GNU-LICENSE MANIFEST META.yml README
 %doc %{_mandir}/man1/yahooquote.1*
 %doc %{_mandir}/man3/Finance::YahooQuote.3pm*
 %{_bindir}/yahooquote
@@ -53,5 +53,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Finance/YahooQuote.pm
 
 %changelog
+* Tue Dec 15 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.25-1
+- Updated to release 0.25.
+
 * Tue May 01 2007 Dag Wieers <dag@wieers.com> - 0.22-1
 - Initial package. (using DAR)
