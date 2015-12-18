@@ -9,7 +9,7 @@
 
 Summary: Perl module to add support for PPI queries to File::Find::Rule
 Name: perl-File-Find-Rule-PPI
-Version: 0.05
+Version: 1.06
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -54,5 +54,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/File/Find/Rule/PPI.pm
 
 %changelog
+* Fri Dec 18 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.06-1
+- Updated to release 1.06.
+
 * Tue May 01 2007 Dag Wieers <dag@wieers.com> - 0.05-1
 - Initial package. (using DAR)
