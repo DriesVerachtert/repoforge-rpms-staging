@@ -9,7 +9,7 @@
 
 Summary: Functions you can use with File::Find
 Name: perl-File-Find-Closures
-Version: 1.09
+Version: 1.11
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -55,6 +55,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/File/Find/Closures.pm
 
 %changelog
+* Sat Dec 19 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.11-1
+- Updated to release 1.11.
+
 * Tue Oct 07 2008 Dag Wieers <dag@wieers.com> - 1.09-1
 - Updated to release 1.09.
 
