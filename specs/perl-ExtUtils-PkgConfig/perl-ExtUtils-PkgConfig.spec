@@ -9,7 +9,7 @@
 
 Summary: Perl module that implements a simplistic interface to pkg-config
 Name: perl-ExtUtils-PkgConfig
-Version: 1.12
+Version: 1.15
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -55,6 +55,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/ExtUtils/PkgConfig.pm
 
 %changelog
+* Sun Dec 20 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.15-1
+- Updated to release 1.15.
+
 * Mon Jul  6 2009 Christoph Maser <cmr@financial.com> - 1.12-1
 - Updated to version 1.12.
 
