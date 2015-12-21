@@ -9,7 +9,7 @@
 
 Summary: Perl extension querying sawampersand variable
 Name: perl-Devel-SawAmpersand
-Version: 0.31
+Version: 0.33
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -46,7 +46,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc ChangeLog
+%doc Changes MANIFEST META.yml SIGNATURE
 %doc %{_mandir}/man3/*.3pm*
 %dir %{perl_vendorarch}/B/
 %{perl_vendorarch}/B/FindAmpersand.pm
@@ -57,6 +57,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Devel/SawAmpersand/
 
 %changelog
+* Mon Dec 21 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.33-1
+- Updated to release 0.33.
+
 * Wed Jan 03 2007 Dries Verachtert <dries@ulyssis.org> - 0.31-1
 - Updated to release 0.31.
 
