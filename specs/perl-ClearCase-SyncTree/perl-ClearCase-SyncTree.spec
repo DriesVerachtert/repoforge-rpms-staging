@@ -9,7 +9,7 @@
 
 Summary: Synchronize a tree of files with a tree of elements
 Name: perl-ClearCase-SyncTree
-Version: 0.47
+Version: 0.60
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Synchronize a tree of files with a tree of elements.
@@ -52,5 +53,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/ClearCase/SyncTree.pm
 
 %changelog
+* Tue Dec 22 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.60-1
+- Updated to release 0.60.
+
 * Mon Nov 26 2007 Dag Wieers <dag@wieers.com> - 0.47-1
 - Initial package. (using DAR)
