@@ -9,7 +9,7 @@
 
 Summary: Persistent session using hidden fields
 Name: perl-CGI-Session-Hidden
-Version: 0.02
+Version: 0.03
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -51,5 +51,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/CGI/Session/Driver/
 
 %changelog
+* Wed Dec 23 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.03-1
+- Updated to release 0.03.
+
 * Sun Nov 19 2006 Dries Verachtert <dries@ulyssis.org> - 0.02-1
 - Initial package.
