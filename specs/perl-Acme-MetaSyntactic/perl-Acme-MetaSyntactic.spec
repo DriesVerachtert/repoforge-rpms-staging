@@ -9,7 +9,7 @@
 
 Summary: Themed metasyntactic variables names
 Name: perl-Acme-MetaSyntactic
-Version: 0.99
+Version: 1.012
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Themed metasyntactic variables names.
@@ -45,13 +46,22 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %defattr(-, root, root, 0755)
 %doc Changes MANIFEST META.yml README
 %doc %{_mandir}/man1/meta.1*
+%doc %{_mandir}/man1/metafy.1*
 %doc %{_mandir}/man3/Acme::MetaSyntactic.3pm*
 %doc %{_mandir}/man3/Acme::MetaSyntactic::*.3pm*
+%doc %{_mandir}/man3/Test::MetaSyntactic.3pm*
+%doc %{_mandir}/man3/eta.3pm*
 %{_bindir}/meta
+%{_bindir}/metafy
 %dir %{perl_vendorlib}/Acme/
 %{perl_vendorlib}/Acme/MetaSyntactic/
 %{perl_vendorlib}/Acme/MetaSyntactic.pm
+%{perl_vendorlib}/Test/MetaSyntactic.pm
+%{perl_vendorlib}/eta.pm
 
 %changelog
+* Thu Dec 24 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.012-1
+- Updated to release 1.012.
+
 * Fri Nov 23 2007 Dag Wieers <dag@wieers.com> - 0.99-1
 - Initial package. (using DAR)
