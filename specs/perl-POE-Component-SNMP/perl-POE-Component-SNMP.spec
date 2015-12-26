@@ -5,11 +5,11 @@
 %define perl_vendorarch %(eval "`%{__perl} -V:installvendorarch`"; echo $installvendorarch)
 
 %define real_name POE-Component-SNMP
-%define real_version 1.1001
+%define real_version 1.1006
 
 Summary: Perl module that implements a POE interface to Net::SNMP
 Name: perl-POE-Component-SNMP
-Version: 1.10.01
+Version: 1.10.06
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -56,6 +56,9 @@ find eg/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/POE/Component/SNMP.pm
 
 %changelog
+* Sat Dec 26 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.10.06-1
+- Updated to release 1.10.06.
+
 * Fri Jul  3 2009 Christoph Maser <cmr@financial.com> - 1.10.01-1
 - Updated to version 1.10.01.
 
