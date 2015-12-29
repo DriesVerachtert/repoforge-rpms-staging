@@ -9,7 +9,7 @@
 
 Summary: Mostly RFC822-compliant parser of Received headers
 Name: perl-Mail-Field-Received
-Version: 0.24
+Version: 0.26
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Mostly RFC822-compliant parser of Received headers.
@@ -51,5 +52,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Mail/Field/Received.pm
 
 %changelog
+* Tue Dec 29 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.26-1
+- Updated to release 0.26.
+
 * Fri Nov 23 2007 Dag Wieers <dag@wieers.com> - 0.24-1
 - Initial package. (using DAR)
