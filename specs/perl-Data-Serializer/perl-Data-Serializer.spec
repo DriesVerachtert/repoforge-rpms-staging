@@ -9,7 +9,7 @@
 
 Summary: Modules that serialize data structures
 Name: perl-Data-Serializer
-Version: 0.49
+Version: 0.60
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -59,6 +59,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Data/Serializer.pm
 
 %changelog
+* Fri Jan 01 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.60-1
+- Updated to release 0.60.
+
 * Thu Jul  9 2009 Christoph Maser <cmr@financial.com> - 0.49-1
 - Updated to version 0.49.
 
