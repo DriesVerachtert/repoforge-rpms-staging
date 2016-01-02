@@ -9,7 +9,7 @@
 
 Summary: Base class for Phrasebook Models
 Name: perl-Data-Phrasebook
-Version: 0.29
+Version: 0.35
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -45,7 +45,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Artistic COPYING ChangeLog Changes INSTALL LICENSE MANIFEST MANIFEST.SKIP META.yml README
+%doc ChangeLog Changes INSTALL LICENSE MANIFEST MANIFEST.SKIP META.yml README
 %doc %{_mandir}/man3/Data::Phrasebook.3pm*
 %doc %{_mandir}/man3/Data::Phrasebook::*.3pm*
 %dir %{perl_vendorlib}/Data/
@@ -53,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Data/Phrasebook.pm
 
 %changelog
+* Sat Jan 02 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.35-1
+- Updated to release 0.35.
+
 * Thu Nov 08 2007 Dag Wieers <dag@wieers.com> - 0.29-1
 - Updated to release 0.29.
 
