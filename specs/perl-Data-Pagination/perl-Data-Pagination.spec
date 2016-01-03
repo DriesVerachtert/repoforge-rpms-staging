@@ -9,7 +9,7 @@
 
 Summary: Paginal navigation on some data
 Name: perl-Data-Pagination
-Version: 0.37
+Version: 0.44
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -49,5 +49,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Data/Pagination.pm
 
 %changelog
+* Sun Jan 03 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.44-1
+- Updated to release 0.44.
+
 * Sun Nov 19 2006 Dries Verachtert <dries@ulyssis.org> - 0.37-1
 - Initial package.
