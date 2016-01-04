@@ -9,8 +9,8 @@
 
 Summary: RIPEMD-160 HASH and MAC function
 Name: perl-Crypt-RIPEMD160
-Version: 0.04
-Release: 1.2%{?dist}
+Version: 0.06
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Crypt-RIPEMD160/
@@ -53,5 +53,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Crypt/RIPEMD160/
 
 %changelog
+* Mon Jan 04 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.06-1
+- Updated to release 0.06.
+
 * Sat Apr  9 2005 Dries Verachtert <dries@ulyssis.org> - 0.04-1
 - Initial package.
