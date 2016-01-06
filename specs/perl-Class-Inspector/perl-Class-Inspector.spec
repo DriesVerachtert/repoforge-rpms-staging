@@ -12,7 +12,7 @@
 
 Summary: Get information about a class and its structure
 Name: perl-Class-Inspector
-Version: 1.24
+Version: 1.28
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -25,6 +25,7 @@ BuildArch: noarch
 BuildRequires: perl >= 0:5.005
 BuildRequires: perl(File::Spec) >= 0.80
 BuildRequires: perl(Test::More) >= 0.47
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl >= 0:5.005
 
 %description
@@ -62,6 +63,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Class/Inspector.pm
 
 %changelog
+* Wed Jan 06 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.28-1
+- Updated to release 1.28.
+
 * Mon Jul  6 2009 Christoph Maser <cmr@financial.com> - 1.24-1
 - Updated to version 1.24.
 
