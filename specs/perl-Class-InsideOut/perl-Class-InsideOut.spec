@@ -9,7 +9,7 @@
 
 Summary: Perl module that implements a safe, simple inside-out object construction kit
 Name: perl-Class-InsideOut
-Version: 1.10
+Version: 1.13
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -26,6 +26,7 @@ BuildRequires: perl(Scalar::Util) >= 1.09
 BuildRequires: perl(Test::More) >= 0.45
 BuildRequires: perl(base)
 BuildRequires: perl >= 5.005
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(Class::ISA)
 Requires: perl(Config)
 Requires: perl(Exporter)
@@ -63,15 +64,18 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes INSTALL LICENSE MANIFEST MANIFEST.SKIP META.yml README Todo examples/
+%doc Changes LICENSE MANIFEST META.yml README Todo examples/
 %doc %{_mandir}/man3/Class::InsideOut.3pm*
 %doc %{_mandir}/man3/Class::InsideOut::*.3pm*
 %dir %{perl_vendorlib}/Class/
 %{perl_vendorlib}/Class/InsideOut/
 %{perl_vendorlib}/Class/InsideOut.pm
-%{perl_vendorlib}/Class/InsideOut.pod
+#%{perl_vendorlib}/Class/InsideOut.pod
 
 %changelog
+* Thu Jan 07 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.13-1
+- Updated to release 1.13.
+
 * Thu Dec 31 2009 Christoph Maser <cmr@financial.com> - 1.10-1
 - Updated to version 1.10.
 
