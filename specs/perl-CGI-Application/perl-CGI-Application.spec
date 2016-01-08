@@ -10,7 +10,7 @@
 
 Summary: Framework for building reusable web-applications
 Name: perl-CGI-Application
-Version: 4.31
+Version: 4.50
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -63,6 +63,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/CGI/Application.pm
 
 %changelog
+* Fri Jan 08 2016 Dries Verachtert <dries.verachtert@dries.eu> - 4.50-1
+- Updated to release 4.50.
+
 * Sat Aug 22 2009 Christoph Maser <cmr@financial.com> - 4.31-1
 - Updated to version 4.31.
 
