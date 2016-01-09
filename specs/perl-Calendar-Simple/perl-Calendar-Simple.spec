@@ -9,7 +9,7 @@
 
 Summary: Perl extension to create simple calendars
 Name: perl-Calendar-Simple
-Version: 1.20
+Version: 1.21
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -46,7 +46,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST META.yml README SIGNATURE
+%doc Changes MANIFEST META.yml README
 %doc %{_mandir}/man3/Calendar::Simple.3pm*
 %{_bindir}/pcal
 %dir %{perl_vendorlib}/Calendar/
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Calendar/Simple.pm
 
 %changelog
+* Sat Jan 09 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.21-1
+- Updated to release 1.21.
+
 * Sat May 03 2008 Dag Wieers <dag@wieers.com> - 1.20-1
 - Updated to release 1.20.
 
