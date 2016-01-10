@@ -9,7 +9,7 @@
 
 Summary: Allow C/XS libraries to interrupt Perl asynchronously
 Name: perl-Async-Interrupt
-Version: 1.05
+Version: 1.21
 Release: 1%{?dist}
 License: GPL
 Group: Applications/CPAN
@@ -71,6 +71,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Async/Interrupt.pm
 
 %changelog
+* Sun Jan 10 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.21-1
+- Updated to release 1.21.
+
 * Tue Jun 14 2011 Steve Huff <shuff@vecna.org> - 1.05-1
 - Initial package.
 
