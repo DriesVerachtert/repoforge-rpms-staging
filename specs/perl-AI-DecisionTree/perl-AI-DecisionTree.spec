@@ -9,7 +9,7 @@
 
 Summary: Automatically Learns Decision Trees
 Name: perl-AI-DecisionTree
-Version: 0.09
+Version: 0.11
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -59,6 +59,9 @@ find eg/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorarch}/AI/DecisionTree.pm
 
 %changelog
+* Sun Jan 10 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.11-1
+- Updated to release 0.11.
+
 * Mon Oct 06 2008 Dag Wieers <dag@wieers.com> - 0.09-1
 - Updated to release 0.09.
 
