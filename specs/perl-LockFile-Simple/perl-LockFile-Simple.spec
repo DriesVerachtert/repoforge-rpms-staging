@@ -9,7 +9,7 @@
 
 Summary: Simple file locking
 Name: perl-LockFile-Simple
-Version: 0.207
+Version: 0.208
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -55,6 +55,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/LockFile/Simple.pm
 
 %changelog
+* Mon Jan 11 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.208-1
+- Updated to release 0.208.
+
 * Mon Oct 13 2008 Dag Wieers <dag@wieers.com> - 0.207-1
 - Updated to release 0.207.
 
