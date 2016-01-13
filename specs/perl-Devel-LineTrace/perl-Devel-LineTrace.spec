@@ -9,13 +9,13 @@
 
 Summary: Apply traces to individual lines
 Name: perl-Devel-LineTrace
-Version: 0.1.6
+Version: 0.1.9
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Devel-LineTrace/
 
-Source: http://www.cpan.org/modules/by-module/Devel/Devel-LineTrace-%{version}.tar.gz
+Source: http://www.cpan.org/modules/by-module/Devel/Devel-LineTrace-v%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -26,7 +26,7 @@ BuildRequires: perl(ExtUtils::MakeMaker)
 Apply traces to individual lines.
 
 %prep
-%setup -n %{real_name}-%{version}
+%setup -n %{real_name}-v%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
@@ -49,5 +49,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Devel/LineTrace.pm
 
 %changelog
+* Wed Jan 13 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.1.9-1
+- Updated to release 0.1.9.
+
 * Sun Apr 29 2007 Dries Verachtert <dries@ulyssis.org> - 0.1.6-1
 - Initial package.
