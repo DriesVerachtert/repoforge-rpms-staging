@@ -9,7 +9,7 @@
 
 Summary: Perl extension for simple IMAP account handling
 Name: perl-Net-IMAP-Simple
-Version: 1.1910
+Version: 1.2206
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -37,7 +37,7 @@ This module is a simple way to access IMAP accounts.
 %setup -n %{real_name}-%{version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
+echo y | %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
 %{__make} %{?_smp_mflags}
 
 %install
@@ -54,10 +54,17 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %defattr(-, root, root, 0755)
 %doc Changes README
 %doc %{_mandir}/man3/*
+%dir %{perl_vendorlib}/Net/IMAP/
 %{perl_vendorlib}/Net/IMAP/Simple.pm
 %{perl_vendorlib}/Net/IMAP/Simple.pod
+%{perl_vendorlib}/Net/IMAP/Simple/PipeSocket.pm
+%{perl_vendorlib}/Net/IMAP/SimpleX.pm
+%{perl_vendorlib}/Net/IMAP/SimpleX.pod
 
 %changelog
+* Thu Jan 14 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.2206-1
+- Updated to release 1.2206.
+
 * Thu Dec 10 2009 Christoph Maser <cmr@financial.com> - 1.1910-1
 - Updated to version 1.1910.
 
