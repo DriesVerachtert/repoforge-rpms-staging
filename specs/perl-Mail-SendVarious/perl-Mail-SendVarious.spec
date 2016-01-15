@@ -9,7 +9,7 @@
 
 Summary: Send mail via STMP and sendmail
 Name: perl-Mail-SendVarious
-Version: 0.3
+Version: 0.4
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Send mail via STMP and sendmail.
@@ -51,5 +52,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Mail/SendVarious.pod
 
 %changelog
+* Fri Jan 15 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.4-1
+- Updated to release 0.4.
+
 * Fri Nov 23 2007 Dag Wieers <dag@wieers.com> - 0.3-1
 - Initial package. (using DAR)
