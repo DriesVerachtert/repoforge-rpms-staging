@@ -9,8 +9,8 @@
 
 Summary: Manipulation of multibyte character strings
 Name: perl-String-Multibyte
-Version: 1.05
-Release: 1.2%{?dist}
+Version: 1.12
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/String-Multibyte/
@@ -51,5 +51,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/String/Multibyte
 
 %changelog
+* Sat Jan 16 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.12-1
+- Updated to release 1.12.
+
 * Sat Apr  2 2005 Dries Verachtert <dries@ulyssis.org> - 1.05-1
 - Initial package.
