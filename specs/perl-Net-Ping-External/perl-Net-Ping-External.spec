@@ -9,17 +9,18 @@
 
 Summary: Cross-platform interface to ICMP "ping" utilities
 Name: perl-Net-Ping-External
-Version: 0.13
+Version: 0.15
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Net-Ping-External/
 
-Source: http://www.cpan.org/modules/by-module/Net/Net-Ping-External-%{version}.zip
+Source: http://www.cpan.org/modules/by-module/Net/Net-Ping-External-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Net::Ping::External is a module which interfaces with the "ping" command
@@ -55,5 +56,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Net/Ping/External.pm
 
 %changelog
+* Mon Jan 18 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.15-1
+- Updated to release 0.15.
+
 * Fri Sep 18 2009 Steve Huff <shuff@vecna.org> - 0.13-1
 - Initial package.
