@@ -9,7 +9,7 @@
 
 Summary: The utility tools of Chinese character(HanZi)
 Name: perl-Lingua-Han-Utils
-Version: 0.10
+Version: 0.13
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Lingua/Han/Utils.pm
 
 %changelog
+* Tue Jan 19 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.13-1
+- Updated to release 0.13.
+
 * Sat May 10 2008 Dag Wieers <dag@wieers.com> - 0.10-1
 - Updated to release 0.10.
 
