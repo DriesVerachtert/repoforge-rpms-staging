@@ -9,7 +9,7 @@
 
 Summary: Utilities to replace common UNIX commands in Makefiles
 Name: perl-ExtUtils-Command
-Version: 1.16
+Version: 1.20
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Utilities to replace common UNIX commands in Makefiles.
@@ -45,14 +46,17 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %defattr(-, root, root, 0755)
 %doc Changes MANIFEST META.yml README
 %doc %{_mandir}/man3/ExtUtils::Command.3pm*
-%doc %{_mandir}/man3/Shell::Command.3pm*
+#%doc %{_mandir}/man3/Shell::Command.3pm*
 %dir %{perl_vendorlib}/ExtUtils/
 #%{perl_vendorlib}/ExtUtils/Command/
 %{perl_vendorlib}/ExtUtils/Command.pm
-%dir %{perl_vendorlib}/Shell/
-%{perl_vendorlib}/Shell/Command.pm
+#%dir %{perl_vendorlib}/Shell/
+#%{perl_vendorlib}/Shell/Command.pm
 
 %changelog
+* Thu Jan 21 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.20-1
+- Updated to release 1.20.
+
 * Mon Jul  6 2009 Christoph Maser <cmr@financial.com> - 1.16-1
 - Updated to version 1.16.
 
