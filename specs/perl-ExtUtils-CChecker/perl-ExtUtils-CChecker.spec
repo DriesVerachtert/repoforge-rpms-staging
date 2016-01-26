@@ -7,7 +7,7 @@
 
 Summary: configure-time utilities for using C headers, libraries, or OS features
 Name: perl-ExtUtils-CChecker
-Version: 0.02
+Version: 0.10
 Release: 1%{?dist}
 License: perl
 Group: Applications/CPAN
@@ -20,6 +20,8 @@ BuildRequires: perl(ExtUtils::CBuilder)
 BuildRequires: perl(Module::Build)
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Test::More)
+BuildRequires: perl(Test::Fatal)
+BuildRequires: perl(Test::Pod)
 Requires: perl(ExtUtils::CBuilder)
 
 %filter_from_requires /^perl*/d
@@ -56,6 +58,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/ExtUtils/CChecker.pm
 
 %changelog
+* Tue Jan 26 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.10-1
+- Updated to release 0.10.
+
 * Wed Feb 03 2010 Christoph Maser <cmr@financial.com> - 0.02
 - initial package
 
