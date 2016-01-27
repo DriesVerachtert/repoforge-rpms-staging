@@ -7,7 +7,7 @@
 
 Summary: See where you code warns and dies using stack traces
 Name: perl-Devel-SimpleTrace
-Version: 0.07
+Version: 0.08
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildArch: noarch
 BuildRequires: perl(Data::Dumper)
 BuildRequires: perl(Test)
 BuildRequires: perl(Test::More)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(Data::Dumper)
 
 ### remove autoreq Perl dependencies
@@ -54,5 +55,8 @@ Requires: perl(Data::Dumper)
 %exclude %{perl_vendorarch}/auto/*/*/.packlist
 
 %changelog
+* Wed Jan 27 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.08-1
+- Updated to release 0.08.
+
 * Mon Feb 07 2011 Christoph Maser <cmaser.gmx.de> - 0.07-1
 - initial package
