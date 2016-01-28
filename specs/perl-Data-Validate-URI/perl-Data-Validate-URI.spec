@@ -9,7 +9,7 @@
 
 Summary: Common URL validation methods
 Name: perl-Data-Validate-URI
-Version: 0.05
+Version: 0.07
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -60,5 +60,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/auto/Data/Validate/URI/*
 
 %changelog
+* Thu Jan 28 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.07-1
+- Updated to release 0.07.
+
 * Wed Aug 26 2009 Steve Huff <shuff@vecna.org> - 0.05-1
 - Initial package. (using DAR)
