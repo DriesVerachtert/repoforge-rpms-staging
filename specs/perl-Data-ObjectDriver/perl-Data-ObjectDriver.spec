@@ -9,8 +9,8 @@
 
 Summary: Simple, transparent data interface, with caching
 Name: perl-Data-ObjectDriver
-Version: 0.06
-Release: 2%{?dist}
+Version: 0.14
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Data-ObjectDriver/
@@ -65,6 +65,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Data/ObjectDriver.pm
 
 %changelog
+* Fri Jan 29 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.14-1
+- Updated to release 0.14.
+
 * Sun Jul 28 2009 Christoph Maser <cmr@financial.com> - 0.06-2
 - Turn off AutoReq to get rid of DBD::Oracle dep
 
