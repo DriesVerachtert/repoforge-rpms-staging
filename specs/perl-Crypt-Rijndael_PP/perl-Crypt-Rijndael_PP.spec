@@ -9,8 +9,8 @@
 
 Summary: Perl implementation of Rijndael
 Name: perl-Crypt-Rijndael_PP
-Version: 0.04
-Release: 1.2%{?dist}
+Version: 0.05
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Crypt-Rijndael_PP/
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Crypt/comp.pl
 
 %changelog
+* Sat Jan 30 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.05-1
+- Updated to release 0.05.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.04-1.2
 - Rebuild for Fedora Core 5.
 
