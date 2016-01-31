@@ -9,8 +9,8 @@
 
 Summary: DSA encryption
 Name: perl-Crypt-OpenSSL-DSA
-Version: 0.13
-Release: 1.2%{?dist}
+Version: 0.15
+Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Crypt-OpenSSL-DSA/
@@ -60,6 +60,9 @@ CFLAGS="%{optflags}" %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildr
 %{perl_vendorarch}/auto/Crypt/OpenSSL/DSA/
 
 %changelog
+* Sun Jan 31 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.15-1
+- Updated to release 0.15.
+
 * Sat Nov  5 2005 Dries Verachtert <dries@ulyssis.org> - 0.13-1
 - Updated to release 0.13.
 
