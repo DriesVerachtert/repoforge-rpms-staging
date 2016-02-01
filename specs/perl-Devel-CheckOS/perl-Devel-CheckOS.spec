@@ -9,7 +9,7 @@
 
 Summary: Check what OS we are running on
 Name: perl-Devel-CheckOS
-Version: 1.61
+Version: 1.76
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -44,7 +44,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc CHANGES MANIFEST META.yml README TODO
+%doc ARTISTIC.txt CHANGELOG GPL2.txt MANIFEST META.yml README TODO
 %doc %{_mandir}/man1/use-devel-assertos.1*
 %doc %{_mandir}/man3/Devel::AssertOS.3pm*
 %doc %{_mandir}/man3/Devel::AssertOS::*.3pm*
@@ -59,6 +59,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Devel/CheckOS/Families.pod
 
 %changelog
+* Mon Feb 01 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.76-1
+- Updated to release 1.76.
+
 * Mon Jul  6 2009 Christoph Maser <cmr@financial.com> - 1.61-1
 - Updated to version 1.61.
 
