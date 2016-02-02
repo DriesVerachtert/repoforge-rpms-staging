@@ -8,7 +8,7 @@
 
 Summary: Perl module for assesing password quality. 
 Name: perl-Data-Password
-Version: 1.07
+Version: 1.12
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -19,6 +19,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Data-Password is a Perl module for assesing password quality.
@@ -48,5 +49,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Data/Password.pm
 
 %changelog
+* Tue Feb 02 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.12-1
+- Updated to release 1.12.
+
 * Sat Aug 04 2007 Dag Wieers <dag@wieers.com> - 1.07-1
 - Initial package. (using DAR)
