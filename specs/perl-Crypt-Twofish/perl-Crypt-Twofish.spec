@@ -9,7 +9,7 @@
 
 Summary: Twofish Encryption Algorithm
 Name: perl-Crypt-Twofish
-Version: 2.13
+Version: 2.17
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Crypt/Twofish/
 
 %changelog
+* Wed Feb 03 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.17-1
+- Updated to release 2.17.
+
 * Thu Jul  9 2009 Christoph Maser <cmr@financial.com> - 2.13-1
 - Updated to version 2.13.
 
