@@ -10,7 +10,7 @@
 
 Summary: Generate a random password that looks like a real word
 Name: perl-Crypt-PassGen
-Version: 0.05
+Version: 0.06
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -63,6 +63,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_sitelib}/Crypt/PassGenWordFreq.dat
 
 %changelog
+* Thu Feb 04 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.06-1
+- Updated to release 0.06.
+
 * Sat May 03 2008 Dag Wieers <dag@wieers.com> - 0.05-1
 - Updated to release 0.05.
 
