@@ -9,7 +9,7 @@
 
 Summary: Run-time class loading on first method call
 Name: perl-Class-Autouse
-Version: 1.29
+Version: 2.01
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -24,6 +24,7 @@ BuildRequires: perl(Carp) >= 1.01
 BuildRequires: perl(File::Spec) >= 0.80
 BuildRequires: perl(List::Util) >= 1.18
 BuildRequires: perl(Test::More) >= 0.47
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl >= 0:5.005 
 
 #Test-Simple and Scalar-List-Utils is already included in the perl package on fedora core
@@ -61,6 +62,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 #%{perl_vendorlib}/Class/prefork.pm
 
 %changelog
+* Sat Feb 06 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.01-1
+- Updated to release 2.01.
+
 * Sun Nov 18 2007 Dag Wieers <dag@wieers.com> - 1.29-1
 - Updated to release 1.29.
 
