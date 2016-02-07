@@ -12,8 +12,8 @@
 
 Summary: Simple but non-blocking HTTP/HTTPS client
 Name: perl-%{real_name}
-Version: 2.13
-Release: 2%{?dist}
+Version: 2.22
+Release: 1%{?dist}
 License: GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/AnyEvent-HTTP/
@@ -73,6 +73,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/AnyEvent/HTTP.pm
 
 %changelog
+* Sun Feb 07 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.22-1
+- Updated to release 2.22.
+
 * Mon Aug 01 2011 Steve Huff <shuff@vecna.org> - 2.13-2
 - RFX on el5, since it needs AnyEvent.
 
