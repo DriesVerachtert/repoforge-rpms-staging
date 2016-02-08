@@ -6,11 +6,11 @@
 %define perl_vendorarch %(eval "`%{__perl} -V:installvendorarch`"; echo $installvendorarch)
 
 %define real_name Return-Value
-%define real_version 1.666001
+%define real_version 1.666005
 
 Summary: Polymorphic return values
 Name: perl-Return-Value
-Version: 1.666.001
+Version: 1.666.005
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Return/Value.pm
 
 %changelog
+* Mon Feb 08 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.666.005-1
+- Updated to release 1.666.005.
+
 * Wed Jul 22 2009 Christoph Maser <cmr@finanial.com> - 1.666.001-1
 - Updated to version 1.666.001.
 
