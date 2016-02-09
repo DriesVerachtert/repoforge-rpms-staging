@@ -9,7 +9,7 @@
 
 Summary: Interface to the Google AJAX Search API and suggestion API
 Name: perl-Google-Search
-Version: 0.027
+Version: 0.028
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -81,5 +81,8 @@ here: http://code.google.com/apis/ajaxsearch/signup.html
 %exclude %{perl_vendorarch}/auto/*/*/.packlist
 
 %changelog
+* Tue Feb 09 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.028-1
+- Updated to release 0.028.
+
 * Wed Mar 30 2011 Steve Huff <shuff@vecna.org> - 0.027-1
 - Initial package.
