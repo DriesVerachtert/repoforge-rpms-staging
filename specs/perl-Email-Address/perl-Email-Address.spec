@@ -9,7 +9,7 @@
 
 Summary: RFC 2822 Address Parsing and Creation
 Name: perl-Email-Address
-Version: 1.889
+Version: 1.908
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Email/Address.pm
 
 %changelog
+* Wed Feb 10 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.908-1
+- Updated to release 1.908.
+
 * Thu Dec 27 2007 Dag Wieers <dag@wieers.com> - 1.889-1
 - Updated to release 1.889.
 
