@@ -9,7 +9,7 @@
 
 Summary: Perl module named Data-Section
 Name: perl-Data-Section
-Version: 0.100270
+Version: 0.200006
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -64,6 +64,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Data/Section.pm
 
 %changelog
+* Thu Feb 11 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.200006-1
+- Updated to release 0.200006.
+
 * Sat Feb  6 2010 Christoph Maser <cmr@financial.com> - 0.100270-1
 - Updated to version 0.100270.
 
