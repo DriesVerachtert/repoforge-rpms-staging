@@ -9,7 +9,7 @@
 
 Summary: Combinatorial counting operations
 Name: perl-Math-Counting
-Version: 0.0801
+Version: 0.1305
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -45,13 +45,16 @@ find %{buildroot} -name .svn -type d -exec %{__rm} -rf {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc CHANGES MANIFEST MANIFEST.SKIP META.yml
+%doc Changes LICENSE MANIFEST META.yml README README.md
 %doc %{_mandir}/man3/Math::Counting.3pm*
 %dir %{perl_vendorlib}/Math/
 #%{perl_vendorlib}/Math/Counting/
 %{perl_vendorlib}/Math/Counting.pm
 
 %changelog
+* Fri Feb 12 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.1305-1
+- Updated to release 0.1305.
+
 * Mon Oct 13 2008 Dag Wieers <dag@wieers.com> - 0.0801-1
 - Updated to release 0.0801.
 
