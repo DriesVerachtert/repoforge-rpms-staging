@@ -9,7 +9,7 @@
 
 Summary: Perl interface to Alec Muffett's Cracklib
 Name: perl-Crypt-Cracklib
-Version: 1.4
+Version: 1.7
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -22,6 +22,9 @@ BuildRequires: perl >= 0:5.004
 BuildRequires: perl(Pod::Coverage) >= 0.19
 BuildRequires: perl(Test::More) >= 0.47
 BuildRequires: perl(Test::Pod::Coverage) >= 1.08
+BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(CPAN)
+BuildRequires: cracklib-devel
 Requires: perl >= 0:5.004
 
 %description
@@ -54,6 +57,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Crypt/Cracklib.pm
 
 %changelog
+* Sat Feb 13 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.7-1
+- Updated to release 1.7.
+
 * Sun Jun 22 2008 Dag Wieers <dag@wieers.com> - 1.4-1
 - Updated to release 1.4.
 
