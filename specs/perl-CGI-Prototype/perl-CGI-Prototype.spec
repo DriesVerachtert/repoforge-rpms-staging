@@ -9,7 +9,7 @@
 
 Summary: Perl module to create a CGI application by subclassing
 Name: perl-CGI-Prototype
-Version: 0.9053
+Version: 0.9054
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-CGI-Prototype is a Perl module to create a CGI application by subclassing.
@@ -51,5 +52,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/CGI/Prototype.pm
 
 %changelog
+* Sun Feb 14 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.9054-1
+- Updated to release 0.9054.
+
 * Fri Aug 03 2007 Dag Wieers <dag@wieers.com> - 0.9053-1
 - Initial package. (using DAR)
