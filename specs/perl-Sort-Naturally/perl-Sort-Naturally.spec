@@ -9,8 +9,8 @@
 
 Summary: Sort lexically, but sort numeral parts numerically
 Name: perl-Sort-Naturally
-Version: 1.02
-Release: 1.2%{?dist}
+Version: 1.03
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Sort-Naturally/
@@ -53,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Sort/Naturally.pm
 
 %changelog
+* Mon Feb 15 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.03-1
+- Updated to release 1.03.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 1.02-1.2
 - Rebuild for Fedora Core 5.
 
