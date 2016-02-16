@@ -9,7 +9,7 @@
 
 Summary: Simple template system
 Name: perl-OODoc-Template
-Version: 0.14
+Version: 0.16
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Simple template system.
@@ -51,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/OODoc/Template.pod
 
 %changelog
+* Tue Feb 16 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.16-1
+- Updated to release 0.16.
+
 * Sat Jul  4 2009 Christoph Maser <cmr@financial.com> - 0.14-1
 - Updated to version 0.14.
 
