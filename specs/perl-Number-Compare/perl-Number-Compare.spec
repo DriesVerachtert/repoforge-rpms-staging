@@ -12,8 +12,8 @@
 
 Summary: Numeric comparisons
 Name: perl-Number-Compare
-Version: 0.01
-Release: 1.2%{?dist}
+Version: 0.03
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Number-Compare/
@@ -54,5 +54,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Number/Compare.pm
 
 %changelog
+* Wed Feb 17 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.03-1
+- Updated to release 0.03.
+
 * Fri Dec 10 2004 Dries Verachtert <dries@ulyssis.org> - 0.01-1
 - Initial package.
