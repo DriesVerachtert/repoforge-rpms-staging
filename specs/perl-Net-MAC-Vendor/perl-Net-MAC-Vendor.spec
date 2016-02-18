@@ -9,7 +9,7 @@
 
 Summary: Lookup the vendor for a MAC address
 Name: perl-Net-MAC-Vendor
-Version: 1.18
+Version: 1.26
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -47,7 +47,7 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes LICENSE MANIFEST META.yml README examples/
+%doc Changes LICENSE MANIFEST META.yml examples/
 %doc %{_mandir}/man3/Net::MAC::Vendor.3*
 %dir %{perl_vendorlib}/Net/
 %dir %{perl_vendorlib}/Net/MAC/
@@ -55,6 +55,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Net/MAC/Vendor.pm
 
 %changelog
+* Thu Feb 18 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.26-1
+- Updated to release 1.26.
+
 * Thu Nov 15 2007 Dag Wieers <dag@wieers.com> - 1.18-1
 - Updated to release 1.18.
 
