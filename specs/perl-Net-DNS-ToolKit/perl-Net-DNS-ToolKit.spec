@@ -9,7 +9,7 @@
 
 Summary: Routines to pick apart, examine and put together DNS packets
 Name: perl-Net-DNS-ToolKit
-Version: 0.42
+Version: 0.48
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -58,6 +58,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Net/DNS/ToolKit/
 
 %changelog
+* Fri Feb 19 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.48-1
+- Updated to release 0.48.
+
 * Sat Jul  4 2009 Christoph Maser <cmr@financial.com> - 0.42-1
 - Updated to version 0.42.
 
