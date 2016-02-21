@@ -9,7 +9,7 @@
 
 Summary: Algorithms for numerical integration
 Name: perl-Math-RungeKutta
-Version: 1.05
+Version: 1.07
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -47,13 +47,16 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes Install MANIFEST README
+%doc Changes MANIFEST README
 %doc %{_mandir}/man3/Math::RungeKutta.3pm*
 %dir %{perl_vendorlib}/Math/
 #%{perl_vendorlib}/Math/RungeKutta/
 %{perl_vendorlib}/Math/RungeKutta.pm
 
 %changelog
+* Sun Feb 21 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.07-1
+- Updated to release 1.07.
+
 * Mon Oct 13 2008 Dag Wieers <dag@wieers.com> - 1.05-1
 - Updated to release 1.05.
 
