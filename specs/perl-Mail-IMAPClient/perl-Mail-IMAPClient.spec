@@ -9,7 +9,7 @@
 
 Summary: IMAP4 client library
 Name: perl-Mail-IMAPClient
-Version: 3.23
+Version: 3.38
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -31,6 +31,7 @@ BuildRequires: perl(List::Util)
 BuildRequires: perl(MIME::Base64)
 BuildRequires: perl(Parse::RecDescent) >= 1.94
 BuildRequires: perl(Test::More)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(Carp)
 Requires: perl(Errno)
 Requires: perl(Fcntl)
@@ -75,7 +76,7 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc COPYRIGHT Changes INSTALL MANIFEST META.yml README TODO test_template.txt examples/
+%doc Changes MANIFEST META.yml README test_template.txt examples/
 %doc %{_mandir}/man3/Mail::IMAPClient.3pm*
 %doc %{_mandir}/man3/Mail::IMAPClient::*.3pm*
 %dir %{perl_vendorlib}/Mail/
@@ -84,6 +85,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Mail/IMAPClient.pod
 
 %changelog
+* Tue Feb 23 2016 Dries Verachtert <dries.verachtert@dries.eu> - 3.38-1
+- Updated to release 3.38.
+
 * Sat Feb  6 2010 Christoph Maser <cmr@financial.com> - 3.23-1
 - Updated to version 3.23.
 
