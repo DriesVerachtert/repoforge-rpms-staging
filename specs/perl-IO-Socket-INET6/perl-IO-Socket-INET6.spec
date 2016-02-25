@@ -14,19 +14,20 @@
 
 Summary: Object interface for AF_INET|AF_INET6 domain sockets
 Name: perl-IO-Socket-INET6
-Version: 2.57
-Release: 2%{?dist}
+Version: 2.72
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/IO-Socket-INET6/
 
-Source: http://search.cpan.org/CPAN/authors/id/S/SH/SHLOMIF/IO-Socket-INET6-2.57.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/S/SH/SHLOMIF/IO-Socket-INET6-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl(IO::Socket)
 BuildRequires: perl(Socket6) >= 0.12
 BuildRequires: perl(Test::More)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(IO::Socket)
 Requires: perl(Socket6) >= 0.12
 
@@ -64,6 +65,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/IO/Socket/INET6.pm
 
 %changelog
+* Thu Feb 25 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.72-1
+- Updated to release 2.72.
+
 * Wed Oct 06 2010 David Hrbáč <david@hrbac.cz> - 2.57-2
 - RFXed for el5
 
