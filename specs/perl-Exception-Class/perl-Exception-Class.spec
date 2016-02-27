@@ -12,7 +12,7 @@
 
 Summary: Perl module that allows you to declare real exception classes
 Name: perl-Exception-Class
-Version: 1.29
+Version: 1.40
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -37,7 +37,7 @@ default base class for all other exceptions.
 %setup -n %{real_name}-%{version}
 
 %build
-%{__perl} Build.PL
+#%{__perl} Build.PL
 %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
 %{__make} %{?_smp_mflags}
 
@@ -53,13 +53,16 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes LICENSE MANIFEST META.yml SIGNATURE
+%doc Changes LICENSE MANIFEST META.yml
 %doc %{_mandir}/man3/Exception::Class*.3pm*
 %dir %{perl_vendorlib}/Exception/
 %{perl_vendorlib}/Exception/Class/
 %{perl_vendorlib}/Exception/Class.pm
 
 %changelog
+* Sat Feb 27 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.40-1
+- Updated to release 1.40.
+
 * Mon Jul  6 2009 Christoph Maser <cmr@financial.com> - 1.29-1
 - Updated to version 1.29.
 
