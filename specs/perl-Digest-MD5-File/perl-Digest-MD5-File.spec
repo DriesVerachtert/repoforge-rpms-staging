@@ -8,7 +8,7 @@
 
 Summary: Perl extension for getting MD5 sums for files and urls
 Name: perl-Digest-MD5-File
-Version: 0.07
+Version: 0.08
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -19,6 +19,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Perl extension for getting MD5 sums for files and urls.
@@ -50,6 +51,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Digest/MD5/File.pm
 
 %changelog
+* Mon Feb 29 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.08-1
+- Updated to release 0.08.
+
 * Tue Oct 07 2008 Dag Wieers <dag@wieers.com> - 0.07-1
 - Updated to release 0.07.
 
