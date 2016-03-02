@@ -9,7 +9,7 @@
 
 Summary: Sets of intervals
 Name: perl-Set-Infinite
-Version: 0.63
+Version: 0.65
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -51,6 +51,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Set/Infinite/*.pm
 
 %changelog
+* Wed Mar 02 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.65-1
+- Updated to release 0.65.
+
 * Fri Jun 19 2009 Christoph Maser <cmr@financial.com> - 0.63-1
 - Updated to version 0.63.
 
