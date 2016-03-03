@@ -9,7 +9,7 @@
 
 Summary: PID file management utilities
 Name: perl-Proc-PidUtil
-Version: 0.08
+Version: 0.09
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 PID file management utilities.
@@ -50,5 +51,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Proc/PidUtil.pm
 
 %changelog
+* Thu Mar 03 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.09-1
+- Updated to release 0.09.
+
 * Sun Jun 22 2008 Dag Wieers <dag@wieers.com> - 0.08-1
 - Initial package. (using DAR)
