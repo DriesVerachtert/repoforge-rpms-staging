@@ -9,7 +9,7 @@
 
 Summary: Peek into the internals of a running POE environment
 Name: perl-POE-API-Peek
-Version: 1.34
+Version: 2.20
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -59,6 +59,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/POE/API/Peek.pm
 
 %changelog
+* Fri Mar 04 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.20-1
+- Updated to release 2.20.
+
 * Sat Jul  4 2009 Christoph Maser <cmr@financial.com> - 1.34-1
 - Updated to version 1.34.
 
