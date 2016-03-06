@@ -9,7 +9,7 @@
 
 Summary: Lookup the whois information for ipaddresses
 Name: perl-Net-Whois-IP
-Version: 1.04
+Version: 1.19
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -51,6 +51,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/auto/Net/Whois/IP/
 
 %changelog
+* Sun Mar 06 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.19-1
+- Updated to release 1.19.
+
 * Sun Apr 29 2007 Dries Verachtert <dries@ulyssis.org> - 1.04-1
 - Updated to release 1.04.
 
