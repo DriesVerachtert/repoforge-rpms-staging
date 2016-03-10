@@ -9,7 +9,7 @@
 
 Summary: Getopt processing with both long and short options
 Name: perl-Getopt-Mixed
-Version: 1.10
+Version: 1.12
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -53,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Getopt/Mixed.pm
 
 %changelog
+* Thu Mar 10 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.12-1
+- Updated to release 1.12.
+
 * Thu Jul 5 2007 Quien Sabe (aka Jim) <quien-sabe@metaorg.com> - 1.10-1
 - Updated to latest upstream version { old source not available }
 
