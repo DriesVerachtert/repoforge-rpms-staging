@@ -9,7 +9,7 @@
 
 Summary: Perl module to do NFS (or not) locking
 Name: perl-File-NFSLock
-Version: 1.20
+Version: 1.27
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -51,5 +51,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/File/NFSLock.pm
 
 %changelog
+* Sun Mar 13 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.27-1
+- Updated to release 1.27.
+
 * Tue May 01 2007 Dag Wieers <dag@wieers.com> - 1.20-1
 - Initial package. (using DAR)
