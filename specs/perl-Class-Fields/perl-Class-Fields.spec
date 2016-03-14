@@ -9,7 +9,7 @@
 
 Summary: Inspect the fields of a class
 Name: perl-Class-Fields
-Version: 0.203
+Version: 0.204
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -59,6 +59,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/public.pm
 
 %changelog
+* Mon Mar 14 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.204-1
+- Updated to release 0.204.
+
 * Fri Nov 09 2007 Dag Wieers <dag@wieers.com> - 0.203-1
 - Updated to release 0.203.
 
