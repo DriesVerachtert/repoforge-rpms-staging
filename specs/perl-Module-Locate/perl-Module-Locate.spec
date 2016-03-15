@@ -9,7 +9,7 @@
 
 Summary: Perl module to locate modules in the same fashion as require and use
 Name: perl-Module-Locate
-Version: 1.7
+Version: 1.80
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -51,5 +51,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Module/Locate.pm
 
 %changelog
+* Tue Mar 15 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.80-1
+- Updated to release 1.80.
+
 * Fri May 04 2007 Dag Wieers <dag@wieers.com> - 1.7-1
 - Initial package. (using DAR)
