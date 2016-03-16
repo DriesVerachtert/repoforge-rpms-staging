@@ -14,7 +14,7 @@
 
 Summary: BSD process resource limit and priority functions
 Name: perl-BSD-Resource
-Version: 1.2903
+Version: 1.2909
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -64,6 +64,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/BSD/Resource.pm
 
 %changelog
+* Wed Mar 16 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.2909-1
+- Updated to release 1.2909.
+
 * Thu Jan  7 2010 Christoph Maser <cmr@financial.com> - 1.2903-1
 - Updated to version 1.2903.
 
