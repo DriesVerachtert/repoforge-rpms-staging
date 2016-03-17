@@ -9,8 +9,8 @@
 
 Summary: Perl module for consistent signal handling
 Name: perl-Sys-SigAction
-Version: 0.11
-Release: 1%{?dist}
+Version: 0.21
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Sys-SigAction/
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Sys-SigAction is a Perl module for consistent signal handling.
@@ -46,9 +47,17 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc Changes MANIFEST META.yml README
 %doc %{_mandir}/man3/Sys::SigAction.3pm*
 %dir %{perl_vendorlib}/Sys/
+%dir %{perl_vendorlib}/Sys/SigAction/
 %{perl_vendorlib}/Sys/SigAction.pm
+%{perl_vendorlib}/Sys/SigAction/Alarm.pm
 
 %changelog
+* Thu Mar 17 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.21-2
+- Updated to release 0.21.
+
+* Thu Mar 17 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.21-1
+- Updated to release 0.21.
+
 * Fri Jun 12 2009 Christoph Maser <cmr@financial.com> - 0.11-1
 - Updated to version 0.11.
 
