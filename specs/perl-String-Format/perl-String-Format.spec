@@ -12,7 +12,7 @@
 
 Summary: Sprintf-like string formatting capabilities with arbitrary format definitions
 Name: perl-String-Format
-Version: 1.16
+Version: 1.17
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -57,6 +57,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/String/Format.pm
 
 %changelog
+* Fri Mar 18 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.17-1
+- Updated to release 1.17.
+
 * Thu Jun 18 2009 Christoph Maser <cmr@financial.com> - 1.16-1
 - Updated to version 1.16.
 
