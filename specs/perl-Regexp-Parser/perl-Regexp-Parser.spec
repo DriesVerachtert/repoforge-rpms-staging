@@ -9,8 +9,8 @@
 
 Summary: Perl module named Regexp-Parser
 Name: perl-Regexp-Parser
-Version: 0.20
-Release: 3%{?dist}
+Version: 0.21
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Regexp-Parser/
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 Provides: perl(Regexp::Parser::Handlers)
 Provides: perl(Regexp::Parser::Objects)
 Provides: perl(Regexp::Parser::Diagnostics)
@@ -59,6 +60,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Regexp/Parser/Objects.pm
 
 %changelog
+* Sat Mar 19 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.21-1
+- Updated to release 0.21.
+
 * Mon Sep 07 2009 Christoph Maser <cmr@financial.com> - 0.20-3
 - another missing provides 
 
