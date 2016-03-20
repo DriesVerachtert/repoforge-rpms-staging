@@ -10,7 +10,7 @@
 
 Summary: Routines for manipulating stashes
 Name: perl-Package-Stash
-Version: 0.13
+Version: 0.37
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -66,5 +66,8 @@ simple API.
 %exclude %{perl_vendorarch}/auto/*/*/.packlist
 
 %changelog
+* Sun Mar 20 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.37-1
+- Updated to release 0.37.
+
 * Thu Dec 16 2010 Steve Huff <shuff@vecna.org> - 0.13-1
 - Initial package.
