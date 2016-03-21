@@ -9,7 +9,7 @@
 
 Summary: Collection of C library DNS codes
 Name: perl-Net-DNS-Codes
-Version: 0.09
+Version: 0.12
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -49,6 +49,9 @@ library DNS codes as well as all the codes for the DNS HEADER field.
 %{perl_vendorlib}/Net/DNS/Codes.pm
 
 %changelog
+* Mon Mar 21 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.12-1
+- Updated to release 0.12.
+
 * Tue Sep 26 2006 Dries Verachtert <dries@ulyssis.org> - 0.09-1
 - Updated to release 0.09.
 
