@@ -9,7 +9,7 @@
 
 Summary: Perl module for bidirectional Hebrew support
 Name: perl-Locale-Hebrew
-Version: 1.04
+Version: 1.05
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -51,5 +51,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Locale/Hebrew/
 
 %changelog
+* Fri Mar 25 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.05-1
+- Updated to release 1.05.
+
 * Fri May 04 2007 Dag Wieers <dag@wieers.com> - 1.04-1
 - Initial package. (using DAR)
