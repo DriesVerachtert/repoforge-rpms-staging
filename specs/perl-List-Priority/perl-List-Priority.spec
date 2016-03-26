@@ -9,8 +9,8 @@
 
 Summary: List that manipulates objects by their priority
 Name: perl-List-Priority
-Version: 0.02
-Release: 1.2%{?dist}
+Version: 0.05
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/List-Priority/
@@ -55,6 +55,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/List/Priority.pm
 
 %changelog
+* Sat Mar 26 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.05-1
+- Updated to release 0.05.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.02-1.2
 - Rebuild for Fedora Core 5.
 
