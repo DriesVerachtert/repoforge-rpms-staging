@@ -10,8 +10,8 @@
 
 Summary: Share Perl variables between processes
 Name: perl-IPC-Shareable
-Version: 0.60
-Release: 2%{?dist}
+Version: 0.61
+Release: 1%{?dist}
 License: GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/IPC-Shareable/
@@ -57,6 +57,9 @@ find eg/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/IPC/Shareable.pm
 
 %changelog
+* Sun Mar 27 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.61-1
+- Updated to release 0.61.
+
 * Tue Aug 07 2007 Dag Wieers <dag@wieers.com> - 0.60-2
 - Disabled auto-requires for eg/.
 
