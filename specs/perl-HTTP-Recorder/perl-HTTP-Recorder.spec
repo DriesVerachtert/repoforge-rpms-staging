@@ -9,7 +9,7 @@
 
 Summary: Perl module to record interaction with websites
 Name: perl-HTTP-Recorder
-Version: 0.05
+Version: 0.07
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -46,10 +46,15 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %defattr(-, root, root, 0755)
 %doc CHANGES MANIFEST META.yml README
 %doc %{_mandir}/man3/HTTP::Recorder.3pm*
+%doc %{_mandir}/man1/httprecorder.1*
+%{_bindir}/httprecorder
 %dir %{perl_vendorlib}/HTTP/
 %{perl_vendorlib}/HTTP/Recorder/
 %{perl_vendorlib}/HTTP/Recorder.pm
 
 %changelog
+* Mon Mar 28 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.07-1
+- Updated to release 0.07.
+
 * Wed May 02 2007 Dag Wieers <dag@wieers.com> - 0.05-1
 - Initial package. (using DAR)
