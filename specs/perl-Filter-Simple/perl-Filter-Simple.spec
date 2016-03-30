@@ -9,7 +9,7 @@
 
 Summary: Simplified source filtering
 Name: perl-Filter-Simple
-Version: 0.84
+Version: 0.91
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -50,6 +50,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Filter/Simple.pm
 
 %changelog
+* Wed Mar 30 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.91-1
+- Updated to release 0.91.
+
 * Sun Jul  5 2009 Christoph Maser <cmr@financial.com> - 0.84-1
 - Updated to version 0.84.
 
