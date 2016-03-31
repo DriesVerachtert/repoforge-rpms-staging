@@ -9,7 +9,7 @@
 
 Summary: Determine file type
 Name: perl-File-MimeInfo
-Version: 0.15
+Version: 0.27
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -45,7 +45,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST META.yml README
+%doc Changes MANIFEST META.yml README.md
 %doc %{_mandir}/man1/mimeopen.1*
 %doc %{_mandir}/man1/mimetype.1*
 %doc %{_mandir}/man3/File::MimeInfo.3pm*
@@ -57,6 +57,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/File/MimeInfo.pm
 
 %changelog
+* Thu Mar 31 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.27-1
+- Updated to release 0.27.
+
 * Wed Feb 20 2008 Dag Wieers <dag@wieers.com> - 0.15-1
 - Updated to release 0.15.
 
