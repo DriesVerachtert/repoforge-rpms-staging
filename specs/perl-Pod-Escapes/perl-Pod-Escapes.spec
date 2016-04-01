@@ -12,8 +12,8 @@
 
 Summary: Resolves Pod E sequences
 Name: perl-Pod-Escapes
-Version: 1.04
-Release: 1.2%{?dist}
+Version: 1.07
+Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Pod-Escapes/
@@ -53,11 +53,14 @@ Pod::Escapes qw(:ALL);' to get all exportable symbols.
 
 %files
 %defattr(-, root, root, 0755)
-%doc ChangeLog README
+%doc Changes MANIFEST META.yml README
 %doc %{_mandir}/man3/*
 %{perl_vendorlib}/Pod/Escapes.pm
 
 %changelog
+* Fri Apr 01 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.07-1
+- Updated to release 1.07.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 1.04-1.2
 - Rebuild for Fedora Core 5.
 
