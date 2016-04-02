@@ -12,7 +12,7 @@
 
 Summary: Param checking functions
 Name: perl-Params-Util
-Version: 1.00
+Version: 1.07
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -58,6 +58,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 
 %changelog
+* Sat Apr 02 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.07-1
+- Updated to release 1.07.
+
 * Sat Jul  4 2009 Christoph Maser <cmr@financial.com> - 1.00-1
 - Updated to version 1.00.
 
