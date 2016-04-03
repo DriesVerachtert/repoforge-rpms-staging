@@ -9,7 +9,7 @@
 
 Summary: Perl module named Net-OpenSSH
 Name: perl-Net-OpenSSH
-Version: 0.52
+Version: 0.73
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -63,7 +63,10 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Net/OpenSSH.pm
 
 %changelog
-* Thu Aug 22 2011 Giacomo Tenaglia <Giacomo.Tenaglia@cern.ch> - 0.52-1
+* Sun Apr 03 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.73-1
+- Updated to release 0.73.
+
+* Mon Aug 22 2011 Giacomo Tenaglia <Giacomo.Tenaglia@cern.ch> - 0.52-1
 - Upgrade to version 0.52.
 - Updated description.
 
