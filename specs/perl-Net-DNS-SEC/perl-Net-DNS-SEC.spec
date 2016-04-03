@@ -9,7 +9,7 @@
 
 Summary: Support for DNS Resource Record
 Name: perl-Net-DNS-SEC
-Version: 0.15
+Version: 1.02
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -47,12 +47,15 @@ document set.
 %defattr(-, root, root, 0755)
 %doc Changes README
 %{_mandir}/man3/Net::DNS::*.3pm*
-%{perl_vendorlib}/Net/DNS/Keyset.pm
+#%{perl_vendorlib}/Net/DNS/Keyset.pm
 %{perl_vendorlib}/Net/DNS/SEC.pm
-%{perl_vendorlib}/Net/DNS/RR/
+#%{perl_vendorlib}/Net/DNS/RR/
 %{perl_vendorlib}/Net/DNS/SEC/
 
 %changelog
+* Sun Apr 03 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.02-1
+- Updated to release 1.02.
+
 * Sat Jul  4 2009 Christoph Maser <cmr@financial.com> - 0.15-1
 - Updated to version 0.15.
 
