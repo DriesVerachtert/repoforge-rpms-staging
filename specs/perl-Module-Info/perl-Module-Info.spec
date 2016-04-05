@@ -13,7 +13,7 @@
 
 Summary: Information about Perl modules
 Name: perl-Module-Info
-Version: 0.31
+Version: 0.37
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -56,6 +56,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/B
 
 %changelog
+* Tue Apr 05 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.37-1
+- Updated to release 0.37.
+
 * Mon Jun 18 2007 Dries Verachtert <dries@ulyssis.org> - 0.31-1
 - Updated to release 0.31.
 
