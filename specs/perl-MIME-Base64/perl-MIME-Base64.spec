@@ -16,8 +16,8 @@
 
 Summary: Perl module for encoding and decoding of base64 strings
 Name: perl-MIME-Base64
-Version: 3.13
-Release: 2%{?dist}
+Version: 3.15
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/MIME-Base64/
@@ -61,6 +61,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/MIME/Base64/
 
 %changelog
+* Wed Apr 06 2016 Dries Verachtert <dries.verachtert@dries.eu> - 3.15-1
+- Updated to release 3.15.
+
 * Tue Nov 01 2011 Dag Wieers <dag@wieers.com> - 3.13-2
 - Tagged package rfx for Repoforge Extras.
 
