@@ -8,7 +8,7 @@
 
 Summary: Encoding and decoding of base36 strings
 Name: perl-Math-Base36
-Version: 0.07
+Version: 0.14
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -58,6 +58,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Math/Base36.pm
 
 %changelog
+* Thu Apr 07 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.14-1
+- Updated to release 0.14.
+
 * Fri Dec 11 2009 Christoph Maser <cmr@financial.com> - 0.07-1
 - Updated to version 0.07.
 
