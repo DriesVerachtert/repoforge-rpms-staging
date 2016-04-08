@@ -12,7 +12,7 @@
 
 Summary: Generic message storage mechanism
 Name: perl-Log-Message
-Version: 0.02
+Version: 0.08
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -61,6 +61,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Log/Message/
 
 %changelog
+* Fri Apr 08 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.08-1
+- Updated to release 0.08.
+
 * Sat Jul  4 2009 Christoph Maser <cmr@financial.com> - 0.02-1
 - Updated to version 0.02.
 
