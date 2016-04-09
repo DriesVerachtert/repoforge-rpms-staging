@@ -9,7 +9,7 @@
 
 Summary: Log messages to several outputs
 Name: perl-%{real_name}
-Version: 0.64
+Version: 0.87
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -89,5 +89,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Log/Handler/*
 
 %changelog
+* Sat Apr 09 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.87-1
+- Updated to release 0.87.
+
 * Thu Apr 22 2010 Steve Huff <shuff@vecna.org> - 0.64-1
 - Initial package.
