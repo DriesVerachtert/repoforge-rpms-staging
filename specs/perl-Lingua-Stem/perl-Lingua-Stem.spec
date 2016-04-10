@@ -9,7 +9,7 @@
 
 Summary: Stemming of words
 Name: perl-Lingua-Stem
-Version: 0.83
+Version: 0.84
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -54,9 +54,12 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Lingua/Stem/
 %{perl_vendorlib}/Lingua/Stem.pm
 %{perl_vendorlib}/Lingua/Stem.pod
-%{perl_vendorlib}/Lingua/test.pl
+#%{perl_vendorlib}/Lingua/test.pl
 
 %changelog
+* Sun Apr 10 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.84-1
+- Updated to release 0.84.
+
 * Tue Nov 13 2007 Dag Wieers <dag@wieers.com> - 0.83-1
 - Updated to release 0.83.
 
