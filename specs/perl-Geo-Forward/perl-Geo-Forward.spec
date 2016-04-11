@@ -9,7 +9,7 @@
 
 Summary: Perl module to calculate geographic location from lat, lon, distance, and heading
 Name: perl-Geo-Forward
-Version: 0.11
+Version: 0.14
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -46,11 +46,14 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc CHANGES LICENSE MANIFEST META.yml README
+%doc Changes LICENSE MANIFEST META.yml README
 %doc %{_mandir}/man3/Geo::Forward.3pm*
 %dir %{perl_vendorlib}/Geo/
 %{perl_vendorlib}/Geo/Forward.pm
 
 %changelog
+* Mon Apr 11 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.14-1
+- Updated to release 0.14.
+
 * Tue May 01 2007 Dag Wieers <dag@wieers.com> - 0.11-1
 - Initial package. (using DAR)
