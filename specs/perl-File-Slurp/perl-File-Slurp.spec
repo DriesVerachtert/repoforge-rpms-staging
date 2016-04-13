@@ -12,7 +12,7 @@
 
 Summary: Efficient reading and writing of complete files
 Name: perl-File-Slurp
-Version: 9999.13
+Version: 9999.19
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -56,6 +56,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/File/Slurp.pm
 
 %changelog
+* Wed Apr 13 2016 Dries Verachtert <dries.verachtert@dries.eu> - 9999.19-1
+- Updated to release 9999.19.
+
 * Sat Jan 26 2008 Dag Wieers <dag@wieers.com> - 9999.13-1
 - Updated to release 9999.13.
 
