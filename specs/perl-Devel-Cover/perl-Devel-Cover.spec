@@ -12,7 +12,7 @@
 
 Summary: Code coverage metrics for Perl
 Name: perl-Devel-Cover
-Version: 0.65
+Version: 1.22
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -50,7 +50,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc BUGS CHANGES MANIFEST MANIFEST.SKIP META.yml README TODO
+%doc Changes Contributors docs LICENCE MANIFEST META.yml README
 %doc %{_mandir}/man1/cover.1*
 %doc %{_mandir}/man1/cpancover.1*
 %doc %{_mandir}/man1/gcov2perl.1*
@@ -66,6 +66,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Devel/Cover/
 
 %changelog
+* Sun Apr 17 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.22-1
+- Updated to release 1.22.
+
 * Mon Sep 14 2009 Christoph Maser <cmr@financial.com> - 0.65-1
 - Updated to version 0.65.
 
