@@ -9,8 +9,8 @@
 
 Summary: Read/write encrypted ASN.1 PEM files
 Name: perl-Convert-PEM
-Version: 0.07
-Release: 1.2%{?dist}
+Version: 0.08
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Convert-PEM/
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Convert/PEM
 
 %changelog
+* Mon Apr 18 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.08-1
+- Updated to release 0.08.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.07-1.2
 - Rebuild for Fedora Core 5.
 
