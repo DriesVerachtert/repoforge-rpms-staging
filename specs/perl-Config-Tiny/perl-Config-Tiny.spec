@@ -12,13 +12,13 @@
 
 Summary: Read/Write .ini style files with as little code as possible
 Name: perl-Config-Tiny
-Version: 2.12
+Version: 2.23
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Config-Tiny/
 
-Source: http://www.cpan.org/modules/by-module/Config/Config-Tiny-%{version}.tar.gz
+Source: http://www.cpan.org/modules/by-module/Config/Config-Tiny-%{version}.tgz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -68,6 +68,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Config/Tiny.pm
 
 %changelog
+* Tue Apr 19 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.23-1
+- Updated to release 2.23.
+
 * Tue Nov 06 2007 Dag Wieers <dag@wieers.com> - 2.12-1
 - Updated to release 2.12.
 
