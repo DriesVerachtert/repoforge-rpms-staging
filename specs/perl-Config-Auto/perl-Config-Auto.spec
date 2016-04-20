@@ -9,8 +9,8 @@
 
 Summary: Magical config file parser
 Name: perl-Config-Auto
-Version: 0.20
-Release: 2%{?dist}
+Version: 0.44
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Config-Auto/
@@ -66,6 +66,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Config/Auto.pm
 
 %changelog
+* Wed Apr 20 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.44-1
+- Updated to release 0.44.
+
 * Tue Apr 06 2010 Steve Huff <shuff@vecna.org> - 0.20-2
 - Captured missing dependencies.
 
