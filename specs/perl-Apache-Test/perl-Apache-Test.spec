@@ -9,8 +9,8 @@
 
 Summary: Perl module contains a Test.pm wrapper with helpers for testing Apache
 Name: perl-Apache-Test
-Version: 1.30
-Release: 2%{?dist}
+Version: 1.39
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Apache-Test/
@@ -28,6 +28,7 @@ BuildRequires: perl(Test::Builder)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(strict)
 BuildRequires: perl(warnings)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(Carp)
 Requires: perl(English)
 Requires: perl(Perl::Critic) >= 1.105
@@ -64,7 +65,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes INSTALL LICENSE MANIFEST META.yml README ToDo install-pl
+%doc Changes INSTALL LICENSE MANIFEST META.yml README ToDo
 %doc %{_mandir}/man3/Apache::*.3pm*
 %doc %{_mandir}/man3/Bundle::ApacheTest.3pm*
 %{perl_vendorlib}/Apache/
@@ -72,6 +73,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Bundle/ApacheTest.pm
 
 %changelog
+* Fri Apr 22 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.39-1
+- Updated to release 1.39.
+
 * Wed Dec 09 2009 Christoph Maser <cmr@financial.com> - 1.30-2
 - Turn off auto-dependencies
 
