@@ -12,7 +12,7 @@
 
 Summary: Check if Makefile.PL has the right pre-requisites
 Name: perl-Test-Prereq
-Version: 1.037
+Version: 1.039
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -47,12 +47,15 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes README
+%doc Changes examples/README
 %doc %{_mandir}/man3/*
 %{perl_vendorlib}/Test/Prereq.pm
 %{perl_vendorlib}/Test/Prereq
 
 %changelog
+* Sat Apr 23 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.039-1
+- Updated to release 1.039.
+
 * Thu Jun 11 2009 Christoph Maser <cmr@financial.com> - 1.037-1
 - Updated to version 1.037.
 
