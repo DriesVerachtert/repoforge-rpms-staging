@@ -10,7 +10,7 @@
 
 Summary: Perl module for handling MARC fields
 Name: perl-MARC-Record
-Version: 2.0.0
+Version: 2.0.6
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -53,5 +53,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/MARC/
 
 %changelog
+* Sun Apr 24 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.0.6-1
+- Updated to release 2.0.6.
+
 * Thu May 03 2007 Dag Wieers <dag@wieers.com> - 2.0.0-1
 - Initial package. (using DAR)
