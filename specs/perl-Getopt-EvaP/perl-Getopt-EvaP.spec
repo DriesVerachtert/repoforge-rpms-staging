@@ -9,8 +9,8 @@
 
 Summary: Evaluate Perl command line parameters
 Name: perl-Getopt-EvaP
-Version: 2.3.5
-Release: 1.2%{?dist}
+Version: 2.8
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Getopt-EvaP/
@@ -57,6 +57,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Getopt/DisU.pl
 
 %changelog
+* Mon Apr 25 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.8-1
+- Updated to release 2.8.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 2.3.5-1.2
 - Rebuild for Fedora Core 5.
 
