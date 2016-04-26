@@ -5,17 +5,17 @@
 %define perl_vendorlib %(eval "`%{__perl} -V:installvendorlib`"; echo $installvendorlib)
 %define perl_vendorarch %(eval "`%{__perl} -V:installvendorarch`"; echo $installvendorarch)
 
-%define real_name Getopt_Auto
+%define real_name Getopt-Auto
 
 Summary: Framework for command-line applications
 Name: perl-Getopt-Auto
-Version: 1.9.1
-Release: 1%{?dist}
+Version: 2.0
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Getopt-Auto/
 
-Source: http://search.cpan.org/CPAN/authors/id/G/GL/GLEACH/Getopt_Auto-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/G/GL/GLEACH/Getopt-Auto-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -28,6 +28,7 @@ BuildRequires: perl(Pod::Usage)
 BuildRequires: perl(Readonly)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Test::Output)
+BuildRequires: perl(Pod::Parser)
 
 
 %description
@@ -58,6 +59,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Getopt/Auto.pm
 
 %changelog
+* Tue Apr 26 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.0-2
+- Updated to release 2.0.
+
 * Wed Feb  3 2010 Christoph Maser <cmr@financial.com> - 1.9.1-1
 - Updated to version 1.9.1.
 
