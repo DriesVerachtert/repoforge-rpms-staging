@@ -9,7 +9,7 @@
 
 Summary: Perl module named Email-Store
 Name: perl-Email-Store
-Version: 0.256
+Version: 0.257
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 Requires: perl(Class::DBI)
 Requires: perl(Class::Data::Inheritable)
@@ -67,6 +68,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Email/Store/Mail.pm
 
 %changelog
+* Thu Apr 28 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.257-1
+- Updated to release 0.257.
+
 * Fri Jul 10 2009 Christoph Maser <cmr@financial.com> - 0.256-1
 - Updated to version 0.256.
 
