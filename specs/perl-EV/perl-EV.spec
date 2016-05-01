@@ -9,7 +9,7 @@
 
 Summary: Perl interface to libev
 Name: perl-EV
-Version: 4.03
+Version: 4.22
 Release: 1%{?dist}
 License: GPL
 Group: Applications/CPAN
@@ -58,6 +58,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/EV
 
 %changelog
+* Sun May  1 2016 Dries Verachtert <dries.verachtert@dries.eu> 4.22-1
+- Updated to version 4.22.
+
 * Tue Jun 14 2011 Steve Huff <shuff@vecna.org> - 4.03-1
 - Updated to version 4.03.
 - Split off 3.9 specfile for convenience.
