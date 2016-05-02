@@ -15,7 +15,7 @@ License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Cwd/
 
-Source: http://www.cpan.org/modules/by-module/Cwd/Cwd-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/K/KW/KWILLIAMS/Cwd-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
@@ -48,6 +48,9 @@ CFLAGS="%{optflags}" %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildr
 %{perl_vendorarch}/auto/Cwd/
 
 %changelog
+* Mon May  2 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.21-2
+- Fix source URL.
+
 * Wed Dec 29 2004 Dries Verachtert <dries@ulyssis.org> - 2.21-1
 - Updated to release 2.21.
 
