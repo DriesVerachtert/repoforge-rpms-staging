@@ -8,7 +8,7 @@
 
 Summary: Control when subroutines will be loaded
 Name: perl-load
-Version: 0.19
+Version: 0.23
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -58,5 +58,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/load.pm
 
 %changelog
+* Tue May  5 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.23-1
+- Updated to release 0.23.
+
 * Fri Jun 22 2007 Dominik Gehl <gehl@inverse.ca> - 0.19-1
 - Initial package.
