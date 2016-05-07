@@ -9,7 +9,7 @@
 
 Summary: Perl module named Argv
 Name: perl-Argv
-Version: 1.25
+Version: 1.28
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -59,6 +59,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Argv.pm
 
 %changelog
+* Sat May  7 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.28-1
+- Updated to release 1.28.
+
 * Sat Feb  6 2010 Christoph Maser <cmr@financial.com> - 1.25-1
 - Updated to version 1.25.
 
