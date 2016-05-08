@@ -9,7 +9,7 @@
 
 Summary: MLDBM module for perl
 Name: perl-MLDBM
-Version: 2.01
+Version: 2.05
 Release: 2.2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -51,6 +51,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/MLDBM.pm
 
 %changelog
+* Sun May  8 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.05-1
+- Updated to release 2.05.
+
 * Fri Jan 13 2006 Dag Wieers <dag@wieers.com> - 2.01-2
 - Cosmetic cleanup.
 
