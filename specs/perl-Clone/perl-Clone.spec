@@ -12,7 +12,7 @@
 
 Summary: Recursively copy Perl datatypes
 Name: perl-Clone
-Version: 0.31
+Version: 0.38
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Clone.pm
 
 %changelog
+* Mon May  9 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.38-1
+- Updated to release 0.38.
+
 * Wed Jul 15 2009 Christoph Maser <cmr@financial.com> - 0.31-1
 - Updated to version 0.31.
 
