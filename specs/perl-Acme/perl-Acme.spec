@@ -8,7 +8,7 @@
 
 Summary: Perl module that implements the base of perfection
 Name: perl-Acme
-Version: 1.11111
+Version: 1.11111111111
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -19,6 +19,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl >= 1:5.6.1
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl >= 1:5.6.1
 
 %description
@@ -46,7 +47,11 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc Changes MANIFEST META.yml README
 %doc %{_mandir}/man3/Acme.3pm*
 %{perl_vendorlib}/Acme.pm
+%{perl_vendorlib}/Acme.pod
 
 %changelog
+* Tue May 10 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.11111111111-1
+- Updated to release 1.11111111111.
+
 * Thu Oct 11 2007 Dag Wieers <dag@wieers.com> - 1.11111-1
 - Initial package. (using DAR)
