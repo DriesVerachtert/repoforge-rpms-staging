@@ -12,8 +12,8 @@
 
 Summary: Interface to pseudo Tty
 Name: perl-IO-Tty
-Version: 1.08
-Release: 2%{?dist}
+Version: 1.12
+Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/IO-Tty/
@@ -56,6 +56,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/IO/Tty/
 
 %changelog
+* Wed May 11 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.12-1
+- Updated to release 1.12.
+
 * Tue Jul 26 2011 Yury V. Zaytsev <yury@shurup.com> - 1.08-2
 - RFX'ed on RHEL6.
 
