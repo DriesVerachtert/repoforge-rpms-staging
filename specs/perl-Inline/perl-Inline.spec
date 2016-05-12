@@ -9,7 +9,7 @@
 
 Summary: Perl module to write Perl subroutines in other programming languages
 Name: perl-Inline
-Version: 0.45
+Version: 0.80
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl
 
 %description
@@ -56,6 +57,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/auto/Inline/
 
 %changelog
+* Thu May 12 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.80-1
+- Updated to release 0.80.
+
 * Sun Jul  5 2009 Christoph Maser <cmr@financial.com> - 0.45-1
 - Updated to version 0.45.
 
