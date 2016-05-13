@@ -11,7 +11,7 @@
 
 Summary: Establish an ISA relationship with base classes at compile time
 Name: perl-parent
-Version: 0.223
+Version: 0.234
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -22,6 +22,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Establish an ISA relationship with base classes at compile time.
@@ -51,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/parent.pm
 
 %changelog
+* Fri May 13 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.234-1
+- Updated to release 0.234.
+
 * Tue Sep  8 2009 Christoph Maser <cmr@financial.com> - 0.223-1
 - Updated to version 0.223.
 
