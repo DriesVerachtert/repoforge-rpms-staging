@@ -9,7 +9,7 @@
 
 Summary: Perl extension for representing and manipulating MAC addresses
 Name: perl-Net-MAC
-Version: 1.5
+Version: 2.103622
 Release: 1%{?dist}
 License: GPL/LGPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl >= 2:5.8.0
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl >= 2:5.8.0
 
 %description
@@ -44,13 +45,16 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes INSTALL MANIFEST META.yml README
+%doc Changes examples MANIFEST META.yml README
 %doc %{_mandir}/man3/Net::MAC.3pm*
 %dir %{perl_vendorlib}/Net/
 #%{perl_vendorlib}/Net/MAC/
 %{perl_vendorlib}/Net/MAC.pm
 
 %changelog
+* Sun May 15 2016 Dries Verachtert <dries.verachtert@dries.eu> 2.103622-1
+- Updated to release 2.103622.
+
 * Mon Jun  1 2009 Dries Verachtert <dries@ulyssis.org> - 1.5-1
 - Updated to release 1.5.
 
