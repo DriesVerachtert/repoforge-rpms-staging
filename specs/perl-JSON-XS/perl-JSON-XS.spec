@@ -6,11 +6,11 @@
 %define perl_vendorarch %(eval "`%{__perl} -V:installvendorarch`"; echo $installvendorarch)
 
 %define real_name JSON-XS
-%define real_version 2.3
+%define real_version 3.02
 
 Summary: Perl module that implements JSON serialising/deserialising
 Name: perl-JSON-XS
-Version: %{real_version}0
+Version: %{real_version}
 Release: 1%{?dist}
 License: GPL
 Group: Applications/CPAN
@@ -67,6 +67,9 @@ find eg/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorarch}/JSON/XS.pm
 
 %changelog
+* Mon May 16 2016 Dries Verachtert <dries.verachtert@dries.eu> - 3.02-1
+- Updated to release 3.02.
+
 * Sun Apr 03 2011 Yury V. Zaytsev <yury@shurup.com> - 2.30-1
 - Version bump to supersede 0.27.
 
