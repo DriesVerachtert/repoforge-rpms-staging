@@ -9,8 +9,8 @@
 
 Summary: Setting terminal parameters
 Name: perl-IO-Stty
-Version: .02
-Release: 1.2%{?dist}
+Version: 0.03
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/IO-Stty/
@@ -21,6 +21,8 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl
 BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(Module::Build)
+BuildRequires: perl(Test::More)
 
 %description
 The two perl items in this package are an stty shell script and a
@@ -31,12 +33,13 @@ module for setting terminal parameters.
 %{__perl} -pi -e "s|/usr/local/perl/bin/perl|%{_bindir}/perl|g;" *.pl
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
-%{__make} %{?_smp_mflags}
+%{__perl} Build.PL --installdirs vendor --destdir %{buildroot}
+./Build
+./Build test
 
 %install
 %{__rm} -rf %{buildroot}
-%{__make} pure_install
+./Build pure_install
 
 ### Clean up buildroot
 find %{buildroot} -name .packlist -exec %{__rm} {} \;
@@ -47,11 +50,14 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %files
 %defattr(-, root, root, 0755)
 %doc README
-#%doc %{_mandir}/man3/*
+%doc %{_mandir}/man3/*
 %{perl_vendorlib}/IO/Stty.pm
-%{perl_vendorlib}/IO/stty.pl
+%{_bindir}/stty.pl
 
 %changelog
+* Tue May 17 2016 Dries Verachtert <dries.verachtert@dries.eu> 0.03-1
+- Updated to release 0.03.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - .02-1.2
 - Rebuild for Fedora Core 5.
 
