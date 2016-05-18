@@ -9,7 +9,7 @@
 
 Summary: Framework for SIP and Voice Over IP
 Name: perl-Net-SIP
-Version: 0.56
+Version: 0.687
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -23,6 +23,7 @@ BuildRequires: perl
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(Net::DNS) >= 0.56
 BuildRequires: perl(Time::HiRes)
+BuildRequires: perl(Test::More)
 Requires: perl(Net::DNS) >= 0.56
 
 %filter_from_requires /^perl*/d
@@ -63,6 +64,9 @@ find samples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Net/SIP.pod
 
 %changelog
+* Wed May 18 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.687-1
+- Updated to release 0.687.
+
 * Sat Feb  6 2010 Christoph Maser <cmr@financial.com> - 0.56-1
 - Updated to version 0.56.
 
