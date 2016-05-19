@@ -9,7 +9,7 @@
 
 Summary: Interface to Domain Name Registries/Registrars/Resellers
 Name: perl-Net-DRI
-Version: 0.95
+Version: 0.96
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -75,6 +75,9 @@ find eg/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Net/DRI.pm
 
 %changelog
+* Thu May 19 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.96-1
+- Updated to release 0.96.
+
 * Tue Sep  8 2009 Christoph Maser <cmr@financial.com> - 0.95-1
 - Updated to version 0.95.
 
