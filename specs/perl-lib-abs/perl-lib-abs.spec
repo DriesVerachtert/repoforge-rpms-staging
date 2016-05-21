@@ -11,7 +11,7 @@
 
 Summary: The same as C<lib>, but makes relative path absolute
 Name: perl-lib-abs
-Version: 0.90
+Version: 0.93
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -64,5 +64,8 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/lib/abs.pm
 
 %changelog
+* Sat May 21 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.93-1
+- Updated to release 0.93.
+
 * Tue Sep 29 2009 Christoph Maser <cmr@financial.com> - 0.90-1
 - Initial package. (using DAR)
