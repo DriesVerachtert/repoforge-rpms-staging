@@ -9,7 +9,7 @@
 
 Summary: Document Object Model for Cascading Style Sheets
 Name: perl-%{real_name}
-Version: 0.10
+Version: 0.16
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -88,5 +88,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/CSS/*
 
 %changelog
+* Mon May 23 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.16-1
+- Updated to release 0.16.
+
 * Wed May 05 2010 Steve Huff <shuff@vecna.org> - 0.10-1
 - Initial package.
