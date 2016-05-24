@@ -9,13 +9,13 @@
 
 Summary: Helper functions for op tree manipulation
 Name: perl-%{real_name}
-Version: 0.11
+Version: 0.27
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/B-Utils/
 
-Source: http://search.cpan.org/CPAN/authors/id/J/JJ/JJORE/B-Utils-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/B-Utils-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl(Exporter)
@@ -71,6 +71,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/B/Utils/Install/typemap
 
 %changelog
+* Tue May 24 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.27-1
+- Updated to release 0.27.
+
 * Sat Feb  6 2010 Christoph Maser <cmr@financial.com> - 0.11-1
 - Updated to version 0.11.
 
