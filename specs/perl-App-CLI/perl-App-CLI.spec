@@ -10,8 +10,8 @@
 
 Summary: Dispatcher module for command line interface programs
 Name: perl-App-CLI
-Version: 0.08
-Release: 2%{?dist}
+Version: 0.313
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/App-CLI/
@@ -24,6 +24,7 @@ BuildRequires: perl(Locale::Maketext::Simple)
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(Getopt::Long) >= 2.35
 BuildRequires: perl(Pod::Simple::Text)
+BuildRequires: perl(Test::More)
 
 %description
 Dispatcher module for command line interface programs.
@@ -48,14 +49,19 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST META.yml SIGNATURE
+%doc Changes MANIFEST
 %doc %{_mandir}/man3/App::CLI.3pm*
 %doc %{_mandir}/man3/App::CLI::Command.3pm*
+%doc %{_mandir}/man3/App::CLI::Command::Help.3pm*
+%doc %{_mandir}/man3/App::CLI::Helper.3pm*
 %dir %{perl_vendorlib}/App/
 %{perl_vendorlib}/App/CLI/
 %{perl_vendorlib}/App/CLI.pm
 
 %changelog
+* Wed May 25 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.313-1
+- Updated to release 0.313.
+
 * Wed Feb 03 2010 Christoph Maser <cmr@financial.com> - 0.08-2
 - add skipdeps to Makefile.PL call
 
