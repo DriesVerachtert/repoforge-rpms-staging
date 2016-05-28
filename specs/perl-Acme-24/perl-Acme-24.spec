@@ -9,7 +9,7 @@
 
 Summary: Your favourite TV-show Acme module
 Name: perl-Acme-24
-Version: 0.03
+Version: 0.04
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Your favourite TV-show Acme module.
@@ -49,6 +50,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Acme/24.pm
 
 %changelog
+* Sat May 28 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.04-1
+- Updated to release 0.04.
+
 * Mon Sep 28 2009 Christoph Maser <cmr@financial.com> - 0.03-1
 - Updated to version 0.03.
 
