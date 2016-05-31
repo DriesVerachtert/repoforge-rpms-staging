@@ -9,7 +9,7 @@
 
 Summary: TFTP Client class
 Name: perl-Net-TFTP
-Version: 0.17
+Version: 0.19
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Net/TFTP.pm
 
 %changelog
+* Tue May 31 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.19-1
+- Updated to release 0.19.
+
 * Thu Nov 15 2007 Dag Wieers <dag@wieers.com> - 0.17-1
 - Updated to release 0.17.
 
