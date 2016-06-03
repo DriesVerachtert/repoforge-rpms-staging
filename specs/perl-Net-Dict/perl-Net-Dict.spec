@@ -9,7 +9,7 @@
 
 Summary: Perl module named Net-Dict
 Name: perl-Net-Dict
-Version: 2.07
+Version: 2.21
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Net-Dict is a Perl module.
@@ -46,7 +47,7 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc ChangeLog MANIFEST README examples/
+%doc Changes MANIFEST README TODO.md examples/
 %doc %{_mandir}/man1/dict.1*
 %doc %{_mandir}/man1/tkdict.1*
 %doc %{_mandir}/man3/Net::Dict.3pm*
@@ -58,5 +59,8 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Net/Dict.pod
 
 %changelog
+* Fri Jun  3 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.21-1
+- Updated to release 2.21.
+
 * Sun Jul 19 2009 Dag Wieers <dag@wieers.com> - 2.07-1
 - Initial package. (using DAR)
