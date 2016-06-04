@@ -9,7 +9,7 @@
 
 Summary: Fetch info from MPEG-4 files
 Name: perl-MP4-Info
-Version: 1.12
+Version: 1.13
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -51,6 +51,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/MP4/Info.pm
 
 %changelog
+* Sat Jun  4 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.13-1
+- Updated to release 1.13.
+
 * Thu Nov 15 2007 Dag Wieers <dag@wieers.com> - 1.12-1
 - Updated to release 1.12.
 
