@@ -9,13 +9,13 @@
 
 Summary: Wrapper Class for the various JSON classes
 Name: perl-JSON-Any
-Version: 1.22
+Version: 1.39
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/JSON-Any/
 
-Source: http://search.cpan.org/CPAN/authors/id/P/PE/PERIGRIN/JSON-Any-1.22.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/JSON-Any-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl(Carp)
@@ -60,6 +60,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/JSON/Any.pm
 
 %changelog
+* Sun Jun  5 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.39-1
+- Updated to release 1.39.
+
 * Wed Dec 23 2009 Christoph Maser <cmr@financial.com> - 1.22-1
 - Updated to version 1.22.
 
