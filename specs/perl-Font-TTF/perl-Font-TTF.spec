@@ -12,8 +12,8 @@
 
 Summary: TTF Fonts
 Name: perl-Font-TTF
-Version: 0.45
-Release: 1%{?dist}
+Version: 1.05
+Release: 2%{?dist}
 License: GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Font-TTF/
@@ -49,15 +49,19 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc COPYING Changes MANIFEST MANIFEST.SKIP META.yml README.TXT TODO
+%doc Changes CONTRIBUTORS MANIFEST LICENSE README.TXT TODO
 %doc %{_mandir}/man3/Font::TTF.3pm*
 %doc %{_mandir}/man3/Font::TTF::*.3pm*
+%doc %{_mandir}/man3/ttfmod.3pm*
 %dir %{perl_vendorlib}/Font/
 %{perl_vendorlib}/Font/TTF/
 %{perl_vendorlib}/Font/TTF.pm
 %{perl_vendorlib}/ttfmod.pl
 
 %changelog
+* Tue Jun 07 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.05-2
+- Updated to release 1.05.
+
 * Mon Jun 23 2008 Dag Wieers <dag@wieers.com> - 0.45-1
 - Updated to release 0.45.
 
