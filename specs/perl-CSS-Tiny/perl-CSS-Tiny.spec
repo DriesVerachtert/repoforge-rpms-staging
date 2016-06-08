@@ -12,8 +12,8 @@
 
 Summary: Read and write CSS files
 Name: perl-CSS-Tiny
-Version: 1.15
-Release: 1%{?dist}
+Version: 1.20
+Release: 2%{?dist}
 License: Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/CSS-Tiny/
@@ -25,6 +25,7 @@ BuildArch: noarch
 BuildRequires: perl
 BuildRequires: perl(File::Spec) >= 0.82
 BuildRequires: perl(Test::More) >= 0.47
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 CSS::Tiny is a perl class to read and write .css stylesheets with as
@@ -58,13 +59,16 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes LICENSE MANIFEST META.yml README
+%doc Changes MANIFEST META.yml
 %doc %{_mandir}/man3/CSS::Tiny.3pm*
 %dir %{perl_vendorlib}/CSS/
 #%{perl_vendorlib}/CSS/Tiny/
 %{perl_vendorlib}/CSS/Tiny.pm
 
 %changelog
+* Wed Jun 08 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.20-2
+- Updated to release 1.20.
+
 * Thu Nov 08 2007 Dag Wieers <dag@wieers.com> - 1.15-1
 - Updated to release 1.15.
 
