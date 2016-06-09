@@ -9,7 +9,7 @@
 
 Summary: Information about software packages on a system
 Name: perl-App-Info
-Version: 0.55
+Version: 0.57
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -54,12 +54,12 @@ added as needed.
 %{__perl} -pi.orig -e 's|^use to|use_to|g' lib/App/Info.pm
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
-%{__make} %{?_smp_mflags}
+%{__perl} Build.PL --installdirs vendor --destdir %{buildroot}
+./Build
 
 %install
 %{__rm} -rf %{buildroot}
-%{__make} pure_install
+./Build pure_install
 
 ### Clean up buildroot
 find %{buildroot} -name .packlist -exec %{__rm} {} \;
@@ -76,6 +76,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/App/Info.pm
 
 %changelog
+* Thu Jun 09 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.57-1
+- Updated to release 0.57.
+
 * Tue Oct 07 2008 Dag Wieers <dag@wieers.com> - 0.55-1
 - Updated to release 0.55.
 
