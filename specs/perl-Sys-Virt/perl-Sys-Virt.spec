@@ -12,11 +12,10 @@
 %define perl_vendorarch %(eval "`%{__perl} -V:installvendorarch`"; echo $installvendorarch)
 
 %define real_name Sys-Virt
-%define real_version 0.001002
 
 Summary: Perl module to represent and manage a libvirt hypervisor connection
 Name: perl-Sys-Virt
-Version: 0.2.0
+Version: 2.1.0
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -68,6 +67,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorarch}/Sys/Virt.pm
 
 %changelog
+* Thu Jun 09 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.1.0-1
+- Updated to release 2.1.0.
+
 * Tue Jul 21 2009 Dag Wieers <dag@wieers.com> - 0.2.0-1
 - Updated to release 0.2.0.
 
