@@ -6,11 +6,10 @@
 %define perl_vendorarch %(eval "`%{__perl} -V:installvendorarch`"; echo $installvendorarch)
 
 %define real_name Mail-GPG
-%define real_version 1.000006
 
 Summary: Handling of GnuPG encrypted / signed mails
 Name: perl-Mail-GPG
-Version: 1.0.6
+Version: 1.0.10
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -21,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Handling of GnuPG encrypted / signed mails.
@@ -53,5 +53,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Mail/GPG.pm
 
 %changelog
+* Fri Jun 10 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.0.10-1
+- Updated to release 1.0.10.
+
 * Sun Nov 09 2008 Dag Wieers <dag@wieers.com> - 1.0.6-1
 - Initial package. (using DAR)
