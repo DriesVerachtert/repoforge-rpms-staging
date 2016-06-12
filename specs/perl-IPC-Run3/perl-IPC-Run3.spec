@@ -12,7 +12,7 @@
 
 Summary: Run a subprocess with input/ouput redirection
 Name: perl-IPC-Run3
-Version: 0.043
+Version: 0.048
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -23,6 +23,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl >= 0:5.6.0
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl >= 0:5.6.0
 
 %description
@@ -55,6 +56,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/IPC/Run3.pm
 
 %changelog
+* Sun Jun 12 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.048-1
+- Updated to release 0.048.
+
 * Sat Jul  4 2009 Christoph Maser <cmr@financial.com> - 0.043-1
 - Updated to version 0.043.
 
