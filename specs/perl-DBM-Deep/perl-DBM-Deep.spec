@@ -9,13 +9,13 @@
 
 Summary: Pure perl multi-level hash/array DBM that supports transactions
 Name: perl-DBM-Deep
-Version: 1.0015
+Version: 2.0013
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/DBM-Deep/
 
-Source: http://search.cpan.org/CPAN/authors/id/S/SP/SPROUT/DBM-Deep-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/R/RK/RKINYON/DBM-Deep-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -32,6 +32,7 @@ BuildRequires: perl(Test::Exception) >= 0.21
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Test::Warn) >= 0.08
 BuildRequires: perl >= 5.006_000
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(Digest::MD5) >= 1.00
 Requires: perl(Fcntl) >= 0.01
 Requires: perl(Scalar::Util) >= 1.14
@@ -72,6 +73,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/DBM/Deep.pod
 
 %changelog
+* Mon Jun 13 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.0013-1
+- Updated to release 2.0013.
+
 * Wed Feb  3 2010 Christoph Maser <cmr@financial.com> - 1.0015-1
 - Updated to version 1.0015.
 
