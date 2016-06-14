@@ -9,7 +9,7 @@
 
 Summary: The Command-Line User Interface
 Name: perl-Term-Clui
-Version: 1.64
+Version: 1.70
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -21,6 +21,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(Term::ReadKey)
+BuildRequires: perl(Test::Simple)
 Requires: perl(Term::ReadKey)
 
 ### remove autoreq Perl dependencies
@@ -65,6 +66,9 @@ with its main subroutine &select_file.
 %{perl_vendorlib}/Term/Clui/*
 
 %changelog
+* Tue Jun 14 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.70-1
+- Updated to release 1.70.
+
 * Thu Feb 10 2011 Christoph Maser <cmaser@gmx.de> - 1.64-1
 - Updated to version 1.64.
 
