@@ -9,7 +9,7 @@
 
 Summary: Generate well-formed XHTML documents from POD format documentation
 Name: perl-Pod-Xhtml
-Version: 1.59
+Version: 1.61
 Release: 1%{?dist}
 License: GPL
 Group: Applications/CPAN
@@ -55,6 +55,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Pod/Xhtml.pm
 
 %changelog
+* Wed Jun 15 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.61-1
+- Updated to release 1.61.
+
 * Thu Nov 15 2007 Dag Wieers <dag@wieers.com> - 1.59-1
 - Updated to release 1.59.
 
