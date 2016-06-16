@@ -9,7 +9,7 @@
 
 Summary: Generate (possibly exuberant) Ctags-style tags for Perl
 Name: perl-Perl-Tags
-Version: 0.28
+Version: 0.32
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -79,5 +79,8 @@ get in touch to let me know what you want to do and I'll try to help).
 %exclude %{perl_vendorarch}/auto/*/*/.packlist
 
 %changelog
+* Thu Jun 16 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.32-1
+- Updated to release 0.32.
+
 * Fri Apr 29 2011 Steve Huff <shuff@vecna.org> - 0.28-1
 - Initial package.
