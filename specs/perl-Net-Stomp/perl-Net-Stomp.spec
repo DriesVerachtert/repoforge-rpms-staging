@@ -9,7 +9,7 @@
 
 Summary: A Streaming Text Orientated Messaging Protocol Client
 Name: perl-Net-Stomp
-Version: 0.34
+Version: 0.57
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 A Streaming Text Orientated Messaging Protocol Client.
@@ -46,10 +47,15 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc CHANGES MANIFEST META.yml README
 %doc %{_mandir}/man3/Net::Stomp.3pm*
 %doc %{_mandir}/man3/Net::Stomp::Frame.3pm*
+%doc %{_mandir}/man3/Net::Stomp::StupidLogger.3pm*
 %dir %{perl_vendorlib}/Net/
 %{perl_vendorlib}/Net/Stomp/Frame.pm
 %{perl_vendorlib}/Net/Stomp.pm
+%{perl_vendorlib}/Net/Stomp/StupidLogger.pm
 
 %changelog
+* Fri Jun 17 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.57-1
+- Updated to release 0.57.
+
 * Tue Jan 06 2009 Christoph Maser <cmr@financial.com> - 0.34-1
 - Initial package. (using DAR)
