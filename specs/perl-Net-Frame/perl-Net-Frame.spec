@@ -9,8 +9,8 @@
 
 Summary: the base framework for frame crafting
 Name: perl-Net-Frame
-Version: 1.06
-Release: 1%{?dist}
+Version: 1.16
+Release: 0%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Net-Frame/
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 the base framework for frame crafting.
