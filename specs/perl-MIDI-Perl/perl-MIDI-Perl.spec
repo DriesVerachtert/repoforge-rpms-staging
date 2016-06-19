@@ -9,8 +9,8 @@
 
 Summary: Read, compose, modify, and write MIDI files
 Name: perl-MIDI-Perl
-Version: 0.81
-Release: 1.2%{?dist}
+Version: 0.83
+Release: 0%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/MIDI-Perl/
