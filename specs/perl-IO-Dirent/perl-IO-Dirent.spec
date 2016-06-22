@@ -9,7 +9,7 @@
 
 Summary: Access to dirent structs returned by readdir
 Name: perl-IO-Dirent
-Version: 0.04
+Version: 0.05
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -19,6 +19,7 @@ Source: http://www.cpan.org/modules/by-module/IO/IO-Dirent-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Access to dirent structs returned by readdir.
@@ -50,5 +51,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/IO/Dirent.pm
 
 %changelog
+* Wed Jun 22 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.05-1
+- Updated to release 0.05.
+
 * Thu Dec 06 2007 Dag Wieers <dag@wieers.com> - 0.04-1
 - Initial package. (using DAR)
