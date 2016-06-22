@@ -9,8 +9,8 @@
 
 Summary: Access to fsync() and sync() function calls
 Name: perl-File-Sync
-Version: 0.09
-Release: 1.2%{?dist}
+Version: 0.11
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/File-Sync/
@@ -53,5 +53,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/File/Sync/
 
 %changelog
+* Wed Jun 22 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.11-1
+- Updated to release 0.11.
+
 * Sat Apr  9 2005 Dries Verachtert <dries@ulyssis.org> - 0.09-1
 - Initial package.
