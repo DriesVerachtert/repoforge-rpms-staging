@@ -9,8 +9,8 @@
 
 Summary: Interface to file data
 Name: perl-File-Data
-Version: 1.12
-Release: 1.2%{?dist}
+Version: 1.20
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/File-Data/
@@ -46,9 +46,12 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %defattr(-, root, root, 0755)
 %doc Changes README
 %doc %{_mandir}/man3/*
-%{perl_vendorlib}/File/Data.pm
+%{perl_vendorlib}/File/File/Data.pm
 
 %changelog
+* Thu Jun 23 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.20-1
+- Updated to release 1.20.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 1.12-1.2
 - Rebuild for Fedora Core 5.
 
