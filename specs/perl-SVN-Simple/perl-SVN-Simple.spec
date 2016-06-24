@@ -9,8 +9,8 @@
 
 Summary: Simple interface for delta editors
 Name: perl-SVN-Simple
-Version: 0.27
-Release: 1.2%{?dist}
+Version: 0.28
+Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/SVN-Simple/
@@ -53,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/SVN/Simple/
 
 %changelog
+* Fri Jun 24 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.28-1
+- Updated to release 0.28.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.27-1.2
 - Rebuild for Fedora Core 5.
 
