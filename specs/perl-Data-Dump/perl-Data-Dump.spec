@@ -9,7 +9,7 @@
 
 Summary: Pretty print data
 Name: perl-Data-Dump
-Version: 1.15
+Version: 1.23
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -48,11 +48,17 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc Changes MANIFEST META.yml README
 %doc %{_mandir}/man3/Data::Dump.3pm*
 %doc %{_mandir}/man3/Data::Dump::Trace.3pm*
+%doc %{_mandir}/man3/Data::Dump::Filtered.3pm*
 %dir %{perl_vendorlib}/Data/
 %{perl_vendorlib}/Data/Dump/Trace.pm
 %{perl_vendorlib}/Data/Dump.pm
+%{perl_vendorlib}/Data/Dump/FilterContext.pm
+%{perl_vendorlib}/Data/Dump/Filtered.pm
 
 %changelog
+* Sat Jun 25 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.23-1
+- Updated to release 1.23.
+
 * Sat Aug 22 2009 Christoph Maser <cmr@financial.com> - 1.15-1
 - Updated to version 1.15.
 
@@ -68,5 +74,5 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 * Wed Dec 29 2004 Dries Verachtert <dries@ulyssis.org> - 1.06-1
 - Updated to release 1.06.
 
-* Sat Jun 15 2004 Dries Verachtert <dries@ulyssis.org> - 1.03-1
+* Tue Jun 15 2004 Dries Verachtert <dries@ulyssis.org> - 1.03-1
 - Initial package.
