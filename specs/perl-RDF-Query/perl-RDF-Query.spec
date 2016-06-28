@@ -10,8 +10,8 @@
 
 Summary: An RDF query implementation of SPARQL/RDQL in Perl for use with RDF::Trine.
 Name: perl-RDF-Query
-Version: 2.904
-Release: 2%{?dist}
+Version: 2.917
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/RDF-Query/
@@ -265,6 +265,9 @@ Requires: perl(URI) >= 1.52
 %exclude %{perl_vendorarch}/auto/*/*/.packlist
 
 %changelog
+* Tue Jun 28 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.917-1
+- Updated to release 2.917.
+
 * Mon Mar 26 2012 Steve Huff <shuff@vecna.org> - 2.904-2
 - Rebuild as RFX.
 
