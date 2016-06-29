@@ -9,7 +9,7 @@
 
 Summary: Assemble and dissassemble network packets
 Name: perl-NetPacket
-Version: 1.1.1
+Version: 1.6.0
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -34,12 +34,14 @@ protocols.
 %setup -n %{real_name}-%{version}
 
 %build
-%{__perl} Build.PL
-./Build
+CFLAGS="%{optflags}" %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
+%{__make} %{?_smp_mflags} OPTIMIZE="%{optflags}"
 
 %install
 %{__rm} -rf %{buildroot}
-PERL_INSTALL_ROOT="%{buildroot}" ./Build install installdirs="vendor"
+%{__make} pure_install
+%{__rm} -f %{buildroot}%{perl_archlib}/perllocal.pod
+%{__rm} -f %{buildroot}%{perl_vendorarch}/auto/*/*/.packlist
 
 ### Clean up buildroot
 find %{buildroot} -name .packlist -exec %{__rm} {} \;
@@ -56,6 +58,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/NetPacket.pm
 
 %changelog
+* Wed Jun 29 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.6.0-1
+- Updated to release 1.6.0.
+
 * Wed Feb 16 2011 Dag Wieers <dag@wieers.com> - 1.1.1-1
 - Updated to release 1.1.1.
 
