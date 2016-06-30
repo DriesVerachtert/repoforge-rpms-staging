@@ -9,7 +9,7 @@
 
 Summary: Generates Globally/Universally Unique Identifiers
 Name: perl-Data-UUID
-Version: 1.203
+Version: 1.221
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -64,6 +64,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Data/UUID.pm
 
 %changelog
+* Thu Jun 30 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.221-1
+- Updated to release 1.221.
+
 * Thu Dec 31 2009 Christoph Maser <cmr@financial.com> - 1.203-1
 - Updated to version 1.203.
 
