@@ -9,7 +9,7 @@
 
 Summary: Curses based OO user interface framework
 Name: perl-Curses-UI
-Version: 0.9607
+Version: 0.9609
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -60,6 +60,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Curses/UI.pm
 
 %changelog
+* Sat Jul 02 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.9609-1
+- Updated to release 0.9609.
+
 * Thu Jul  9 2009 Christoph Maser <cmr@financial.com> - 0.9607-1
 - Updated to version 0.9607.
 
