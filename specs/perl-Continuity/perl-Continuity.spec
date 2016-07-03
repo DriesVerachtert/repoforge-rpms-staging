@@ -9,7 +9,7 @@
 
 Summary: Abstract away statelessness of HTTP, for stateful Web applications
 Name: perl-%{real_name}
-Version: 1.4
+Version: 1.6
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -75,6 +75,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Continuity/*
 
 %changelog
+* Sun Jul 03 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.6-1
+- Updated to release 1.6.
+
 * Thu Aug 25 2011 Steve Huff <shuff@vecna.org> - 1.4-1
 - Update to version 1.4.
 
