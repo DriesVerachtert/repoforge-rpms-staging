@@ -9,7 +9,7 @@
 
 Summary: Easily create test classes in an xUnit/JUnit style
 Name: perl-Test-Class
-Version: 0.31
+Version: 0.50
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl >= 1:5.6.1
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl >= 1:5.6.1
 
 %description
@@ -52,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Test/Class.pm
 
 %changelog
+* Tue Jul 05 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.50-1
+- Updated to release 0.50.
+
 * Fri Jun 12 2009 Christoph Maser <cmr@financial.com> - 0.31-1
 - Updated to version 0.31.
 
