@@ -11,7 +11,7 @@
 
 Summary: Manipulate SVN access files
 Name: perl-SVN-Access
-Version: 0.08
+Version: 0.10
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -75,6 +75,9 @@ that object-oriented programming interface.
 %exclude %{perl_vendorarch}/auto/*/*/.packlist
 
 %changelog
+* Wed Jul 06 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.10-1
+- Updated to release 0.10.
+
 * Wed Apr 25 2012 David Hrbáč <david@hrbac.cz> - 0.08-1
 - new upstream release
 
