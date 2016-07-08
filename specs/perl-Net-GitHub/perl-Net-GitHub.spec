@@ -1,5 +1,5 @@
 Name:           perl-Net-GitHub
-Version:        0.30
+Version:        0.83
 Release:        1%{?dist}
 Summary:        Perl Interface for github.com
 License:        GPL+ or Artistic
@@ -64,5 +64,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/*
 
 %changelog
+* Fri Jul 08 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.83-1
+- Updated to release 0.83.
+
 * Mon Dec 05 2011 David Hrbáč <david@hrbac.cz> - 0.30-1
 - initial build
