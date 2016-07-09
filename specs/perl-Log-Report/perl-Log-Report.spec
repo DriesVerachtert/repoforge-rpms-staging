@@ -9,7 +9,7 @@
 
 Summary: Report a problem, pluggable handlers and language support
 Name: perl-Log-Report
-Version: 0.25
+Version: 1.16
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Report a problem, pluggable handlers and language support.
@@ -46,15 +47,30 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc ChangeLog MANIFEST META.yml README
 %doc %{_mandir}/man3/Log::Report.3pm*
 %doc %{_mandir}/man3/Log::Report::*.3pm*
-%{_bindir}/xgettext-perl
+%doc %{_mandir}/man3/Dancer2::Logger::LogReport.3pm*
+%doc %{_mandir}/man3/Dancer2::Plugin::LogReport.3pm*
+%doc %{_mandir}/man3/Dancer2::Plugin::LogReport::Message.3pm*
+%doc %{_mandir}/man3/Dancer::Logger::LogReport.3pm*
+%doc %{_mandir}/man3/MojoX::Log::Report.3pm*
+
+#{_bindir}/xgettext-perl
 %dir %{perl_vendorlib}/Log/
 %{perl_vendorlib}/Log/Report/
+%{perl_vendorlib}/Dancer/Logger/
+%{perl_vendorlib}/Dancer2/Logger/
+%{perl_vendorlib}/Dancer2/Plugin/
+%{perl_vendorlib}/Dancer2/Plugin/LogReport.p*
+%{perl_vendorlib}/Dancer2/Plugin/LogReport/
 %{perl_vendorlib}/Log/Report.pm
 %{perl_vendorlib}/Log/Report.pod
-%exclude %{perl_vendorlib}/Log/Report/Win32Locale.pm
-%exclude %{perl_vendorlib}/Log/Report/Win32Locale.pod
+%{perl_vendorlib}/MojoX/Log/Report.p*
+#exclude %{perl_vendorlib}/Log/Report/Win32Locale.pm
+#exclude %{perl_vendorlib}/Log/Report/Win32Locale.pod
 
 %changelog
+* Sat Jul 09 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.16-1
+- Updated to release 1.16.
+
 * Thu Jul 23 2009 Christoph Maser <cmr@financial.com> - 0.25-1
 - Updated to version 0.25.
 
