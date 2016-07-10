@@ -7,7 +7,7 @@
 
 Summary: Objects for cycling through a list of values
 Name: perl-List-Cycle
-Version: 1.00
+Version: 1.02
 Release: 1%{?dist}
 License: unknown
 Group: Applications/CPAN
@@ -57,5 +57,8 @@ List::Cycle gives you an iterator object for cycling through a series of values.
 
 
 %changelog
+* Sun Jul 10 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.02-1
+- Updated to release 1.02.
+
 * Fri Oct 29 2010 Christoph Maser <cmaser.gmx.de> - 1.00-1
 - initial package
