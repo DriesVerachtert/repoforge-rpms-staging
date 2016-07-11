@@ -9,8 +9,8 @@
 
 Summary: Write Perl subroutines and classes in C++
 Name: perl-Inline-CPP
-Version: 0.25
-Release: 1.2%{?dist}
+Version: 0.74
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Inline-CPP/
@@ -21,6 +21,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl
 BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(ExtUtils::CppGuess)
 
 %description
 Inline::CPP lets you write Perl subroutines and classes in C++. You
@@ -52,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Inline/CPP
 
 %changelog
+* Mon Jul 11 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.74-1
+- Updated to release 0.74.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.25-1.2
 - Rebuild for Fedora Core 5.
 
