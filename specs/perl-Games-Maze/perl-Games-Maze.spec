@@ -9,7 +9,7 @@
 
 Summary: Create Mazes as Objects
 Name: perl-Games-Maze
-Version: 1.03
+Version: 1.08
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -49,6 +49,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Games/Maze.pm
 
 %changelog
+* Wed Jul 13 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.08-1
+- Updated to release 1.08.
+
 * Sun Apr 29 2007 Dries Verachtert <dries@ulyssis.org> - 1.03-1
 - Updated to release 1.03.
 
