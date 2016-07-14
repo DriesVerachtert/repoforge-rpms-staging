@@ -11,7 +11,7 @@
 
 Summary: Perl interface to the MD5 algorithm
 Name: perl-Digest-MD5
-Version: 2.39
+Version: 2.55
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -21,6 +21,7 @@ Source: http://www.cpan.org/modules/by-module/Digest/Digest-MD5-%{version}.tar.g
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 The Digest::MD5 module allows you to use the RSA Data Security Inc.
@@ -55,6 +56,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Digest/MD5/
 
 %changelog
+* Thu Jul 14 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.55-1
+- Updated to release 2.55.
+
 * Mon Jul  6 2009 Christoph Maser <cmr@financial.com> - 2.39-1
 - Updated to version 2.39.
 
