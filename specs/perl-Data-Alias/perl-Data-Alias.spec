@@ -9,7 +9,7 @@
 
 Summary: Comprehensive set of aliasing operations
 Name: perl-Data-Alias
-Version: 1.07
+Version: 1.20
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -52,5 +52,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Data/Alias/
 
 %changelog
+* Fri Jul 15 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.20-1
+- Updated to release 1.20.
+
 * Sun Nov 19 2006 Dries Verachtert <dries@ulyssis.org> - 1.01-1
 - Initial package.
