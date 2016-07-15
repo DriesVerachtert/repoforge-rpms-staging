@@ -9,8 +9,8 @@
 
 Summary: Interface to the MD2 algorithm
 Name: perl-Digest-MD2
-Version: 2.03
-Release: 1.2%{?dist}
+Version: 2.04
+Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Digest-MD2/
@@ -53,6 +53,9 @@ CFLAGS="%{optflags}" %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildr
 %{perl_vendorarch}/auto/Digest/MD2/
 
 %changelog
+* Fri Jul 15 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.04-1
+- Updated to release 2.04.
+
 * Sun Apr 29 2007 Dries Verachtert <dries@ulyssis.org> - 2.03-2
 - Cleanup
 
