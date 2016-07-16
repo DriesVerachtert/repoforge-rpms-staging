@@ -9,7 +9,7 @@
 
 Summary: Object oriented X.509 certificate parser
 Name: perl-Crypt-X509
-Version: 0.40
+Version: 0.51
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Crypt/X509.pm
 
 %changelog
+* Sat Jul 16 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.51-1
+- Updated to release 0.51.
+
 * Thu Jul  9 2009 Christoph Maser <cmr@financial.com> - 0.40-1
 - Updated to version 0.40.
 
