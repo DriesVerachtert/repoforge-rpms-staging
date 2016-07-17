@@ -18,7 +18,7 @@
 
 Summary: Date manipulation routines
 Name: perl-Date-Manip
-Version: 5.56
+Version: 6.54
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -82,6 +82,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Date/Manip.pod
 
 %changelog
+* Sun Jul 17 2016 Dries Verachtert <dries.verachtert@dries.eu> - 6.54-1
+- Updated to release 6.54.
+
 * Tue Jun 29 2010 Steve Huff <shuff@vecna.org> - 5.56-1
 - Updated to release 5.56.
 - Manually specify Perl dependencies.
