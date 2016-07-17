@@ -9,7 +9,7 @@
 
 Summary: IDEA block cipher
 Name: perl-Crypt-IDEA
-Version: 1.08
+Version: 1.10
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -48,11 +48,14 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Crypt/
 %{perl_vendorarch}/Crypt/IDEA.pm
 %{perl_vendorarch}/Crypt/IDEA.pod
-%{perl_vendorarch}/Crypt/._test.pl
+# {perl_vendorarch}/Crypt/._test.pl
 %dir %{perl_vendorarch}/auto/Crypt/
 %{perl_vendorarch}/auto/Crypt/IDEA/
 
 %changelog
+* Sun Jul 17 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.10-1
+- Updated to release 1.10.
+
 * Fri Jun  2 2006 Dries Verachtert <dries@ulyssis.org> - 1.08-1
 - Updated to release 1.08.
 
