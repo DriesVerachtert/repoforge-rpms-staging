@@ -9,7 +9,7 @@
 
 Summary: Table data types
 Name: perl-Data-Table
-Version: 1.54
+Version: 1.75
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -47,12 +47,15 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %defattr(-, root, root, 0755)
 %doc Changes MANIFEST README Table.html
 %doc %{_mandir}/man3/Data::Table.3pm*
-%{perl_vendorlib}/auto/Data/Table
+#%{perl_vendorlib}/auto/Data/Table
 %dir %{perl_vendorlib}/Data/
 #%{perl_vendorlib}/Data/Table/
 %{perl_vendorlib}/Data/Table.pm
 
 %changelog
+* Mon Jul 18 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.75-1
+- Updated to release 1.75.
+
 * Tue Feb 19 2008 Dag Wieers <dag@wieers.com> - 1.54-1
 - Updated to release 1.54.
 
