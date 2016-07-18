@@ -9,16 +9,17 @@
 
 Summary: Perl module named Clone-Fast
 Name: perl-Clone-Fast
-Version: 0.93
+Version: 0.96
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Clone-Fast/
 
-Source: http://www.cpan.org/modules/by-module/Clone/Clone-Fast-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/J/JJ/JJORE/Clone-Fast-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Clone-Fast is a Perl module.
@@ -50,5 +51,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Clone/Fast.pm
 
 %changelog
+* Mon Jul 18 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.96-1
+- Updated to release 0.96.
+
 * Wed Jul 08 2009 Christoph Maser <cmr@financial.com> - 0.93-1
 - Initial package. (using DAR)
