@@ -9,8 +9,8 @@
 
 Summary: Find the differences between two arrays
 Name: perl-Array-Diff
-Version: 0.04
-Release: 1%{?dist}
+Version: 0.07
+Release: 0%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Array-Diff/
