@@ -12,8 +12,8 @@
 
 Summary: Hyphenate words using TeX's patterns
 Name: perl-TeX-Hyphen
-Version: 0.140
-Release: 1.2%{?dist}
+Version: 1.16
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/TeX-Hyphen/
@@ -57,10 +57,14 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc %{_mandir}/man3/TeX::Hyphen.3pm*
 %doc %{_mandir}/man3/TeX::Hyphen::czech.3pm*
 %doc %{_mandir}/man3/TeX::Hyphen::german.3pm*
+%doc %{_mandir}/man3/TeX::Hyphen::utf8.3pm*
 %dir %{perl_vendorlib}/TeX/
 %{perl_vendorlib}/TeX/Hyphen/
 %{perl_vendorlib}/TeX/Hyphen.pm
 
 %changelog
+* Wed Jul 20 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.16-1
+- Updated to release 1.16.
+
 * Sat Apr  9 2005 Dries Verachtert <dries@ulyssis.org> - 0.140-1
 - Initial package.
