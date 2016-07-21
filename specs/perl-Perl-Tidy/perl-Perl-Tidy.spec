@@ -12,7 +12,7 @@
 
 Summary: Perl module that parses and beautifies perl source
 Name: perl-Perl-Tidy
-Version: 20090616
+Version: 20160302
 Release: 1%{?dist}
 License: GPL
 Group: Applications/CPAN
@@ -62,8 +62,12 @@ find docs/ examples/ -type f -exec %{__chmod} a-x {} \;
 %dir %{perl_vendorlib}/Perl/
 #%{perl_vendorlib}/Perl/Tidy/
 %{perl_vendorlib}/Perl/Tidy.pm
+%{perl_vendorlib}/Perl/Tidy.pod
 
 %changelog
+* Thu Jul 21 2016 Dries Verachtert <dries.verachtert@dries.eu> - 20160302-1
+- Updated to release 20160302.
+
 * Sat Jul  4 2009 Christoph Maser <cmr@financial.com> - 20090616-1
 - Updated to version 20090616.
 
