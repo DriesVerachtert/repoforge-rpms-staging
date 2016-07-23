@@ -9,7 +9,7 @@
 
 Summary: The Illicit Love Child of Moose and POE
 Name: perl-MooseX-POE
-Version: 0.205
+Version: 0.215
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -49,25 +49,32 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc %{_mandir}/man3/MooseX::POE.3pm*
 %doc %{_mandir}/man3/MooseX::POE::Aliased.3pm*
 %doc %{_mandir}/man3/MooseX::POE::Meta::Trait::Class.3pm*
-%doc %{_mandir}/man3/MooseX::POE::Meta::Trait::Constructor.3pm*
+#%doc %{_mandir}/man3/MooseX::POE::Meta::Trait::Constructor.3pm*
 %doc %{_mandir}/man3/MooseX::POE::Meta::Trait::Instance.3pm*
 %doc %{_mandir}/man3/MooseX::POE::Meta::Trait::Object.3pm*
 %doc %{_mandir}/man3/MooseX::POE::Meta::Trait::SweetArgs.3pm*
 %doc %{_mandir}/man3/MooseX::POE::Role.3pm*
 %doc %{_mandir}/man3/MooseX::POE::SweetArgs.3pm*
+%doc %{_mandir}/man3/MooseX::POE::Meta::Method::State.3pm*
+%doc %{_mandir}/man3/MooseX::POE::Meta::Role.3pm*
+%doc %{_mandir}/man3/MooseX::POE::Meta::Trait.3pm*
 %dir %{perl_vendorlib}/MooseX/
 %{perl_vendorlib}/MooseX/POE.pm
 %{perl_vendorlib}/MooseX/POE/Aliased.pm
 %{perl_vendorlib}/MooseX/POE/Meta/Role.pm
 %{perl_vendorlib}/MooseX/POE/Meta/Trait/Class.pm
-%{perl_vendorlib}/MooseX/POE/Meta/Trait/Constructor.pm
+#%{perl_vendorlib}/MooseX/POE/Meta/Trait/Constructor.pm
 %{perl_vendorlib}/MooseX/POE/Meta/Trait/Instance.pm
 %{perl_vendorlib}/MooseX/POE/Meta/Trait/Object.pm
 %{perl_vendorlib}/MooseX/POE/Meta/Trait/SweetArgs.pm
 %{perl_vendorlib}/MooseX/POE/Role.pm
 %{perl_vendorlib}/MooseX/POE/SweetArgs.pm
-
-
+%{perl_vendorlib}/MooseX/POE/Meta/Method/State.pm
+%{perl_vendorlib}/MooseX/POE/Meta/Trait.pm
+   
 %changelog
+* Sat Jul 23 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.215-1
+- Updated to release 0.215.
+
 * Fri Sep 04 2009 Christoph Maser <cmr@financial.com> - 0.205-1
 - Initial package. (using DAR)
