@@ -9,7 +9,7 @@
 
 Summary: Send email
 Name: perl-Email-Send
-Version: 2.198
+Version: 2.201
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -74,6 +74,9 @@ find eg/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Email/Send.pm
 
 %changelog
+* Tue Jul 26 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.201-1
+- Updated to release 2.201.
+
 * Wed Jul 15 2009 Christoph Maser <cmr@financial.com> - 2.198-1
 - Updated to version 2.198.
 
