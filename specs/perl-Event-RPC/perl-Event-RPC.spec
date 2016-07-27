@@ -9,7 +9,7 @@
 
 Summary: Event based transparent Client/Server RPC framework
 Name: perl-Event-RPC
-Version: 1.01
+Version: 1.08
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -60,6 +60,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Event/RPC.pm
 
 %changelog
+* Wed Jul 27 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.08-1
+- Updated to release 1.08.
+
 * Mon Jul  6 2009 Christoph Maser <cmr@financial.com> - 1.01-1
 - Updated to version 1.01.
 
