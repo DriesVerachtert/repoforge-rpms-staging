@@ -9,7 +9,7 @@
 
 Summary: Easy to Use DBI interface
 Name: perl-DBIx-Easy
-Version: 0.18
+Version: 0.21
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/DBIx/Easy/Import.pm
 
 %changelog
+* Thu Jul 28 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.21-1
+- Updated to release 0.21.
+
 * Mon Jul  6 2009 Christoph Maser <cmr@financial.com> - 0.18-1
 - Updated to version 0.18.
 
