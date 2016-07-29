@@ -9,8 +9,8 @@
 
 Summary: ICalendar date objects
 Name: perl-Date-ICal
-Version: 1.72
-Release: 1.2%{?dist}
+Version: 2.678
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Date-ICal/
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Date/ICal
 
 %changelog
+* Fri Jul 29 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.678-1
+- Updated to release 2.678.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 1.72-1.2
 - Rebuild for Fedora Core 5.
 
