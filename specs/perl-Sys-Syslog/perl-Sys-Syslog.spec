@@ -9,7 +9,7 @@
 
 Summary: Perl interface to the UNIX syslog(3) calls
 Name: perl-Sys-Syslog
-Version: 0.27
+Version: 0.34
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -28,6 +28,7 @@ BuildRequires: perl(POSIX)
 BuildRequires: perl(Socket)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(XSLoader)
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 
 %description
@@ -63,5 +64,8 @@ find eg/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorarch}/Sys/Syslog.pm
 
 %changelog
+* Sun Jul 31 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.34-1
+- Updated to release 0.34.
+
 * Mon Sep 14 2009 Christoph Maser <cmr@financial.com> - 0.27-1
 - Initial package. (using DAR)
