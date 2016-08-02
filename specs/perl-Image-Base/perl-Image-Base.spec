@@ -12,8 +12,8 @@
 
 Summary: Base class for loading, manipulating and saving images
 Name: perl-Image-Base
-Version: 1.07
-Release: 2.2%{?dist}
+Version: 1.17
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Image-Base/
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Image/Base.pm
 
 %changelog
+* Tue Aug 02 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.17-1
+- Updated to release 1.17.
+
 * Tue Oct 05 2004 Dries Verachtert <dries@ulyssis.org> - 1.07-2
 - Rebuild.
 
