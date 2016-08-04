@@ -9,8 +9,8 @@
 
 Summary: Perl module for deriving other modules
 Name: perl-Class-Base
-Version: 0.03
-Release: 1%{?dist}
+Version: 0.08
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Class-Base/
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Class-Base is a Perl module for deriving other modules.
@@ -49,5 +50,11 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Class/Base.pm
 
 %changelog
+* Thu Aug 04 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.08-2
+- Updated to release 0.08.
+
+* Thu Aug 04 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.08-1
+- Updated to release 0.08.
+
 * Fri Aug 03 2007 Dag Wieers <dag@wieers.com> - 0.03-1
 - Initial package. (using DAR)
