@@ -9,7 +9,7 @@
 
 Summary: Class for easy date and time manipulation
 Name: perl-Class-Date
-Version: 1.1.9
+Version: 1.1.15
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -55,6 +55,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Class/Date/
 
 %changelog
+* Fri Aug 05 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.1.15-1
+- Updated to release 1.1.15.
+
 * Fri Jun  2 2006 Dries Verachtert <dries@ulyssis.org> - 1.1.9-1
 - Updated to release 1.1.9.
 
