@@ -9,7 +9,7 @@
 
 Summary: Simple totally OO CGI interface that is CGI.pm compliant
 Name: perl-CGI-Simple
-Version: 1.112
+Version: 1.115
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -48,7 +48,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST META.yml README SIGNATURE
+%doc Changes MANIFEST META.yml README
 %doc %{_mandir}/man3/CGI::Simple.3pm*
 %doc %{_mandir}/man3/CGI::Simple::*.3pm*
 %dir %{perl_vendorlib}/CGI/
@@ -56,6 +56,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/CGI/Simple.pm
 
 %changelog
+* Sat Aug 06 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.115-1
+- Updated to release 1.115.
+
 * Sat Aug 22 2009 Christoph Maser <cmr@financial.com> - 1.112-1
 - Updated to version 1.112.
 
