@@ -9,7 +9,7 @@
 
 Summary: More sensible way to change directories
 Name: perl-File-chdir
-Version: 0.1002
+Version: 0.1010
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -47,14 +47,17 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes INSTALL LICENSE MANIFEST META.yml README examples/
+%doc Changes LICENSE MANIFEST META.yml README examples/
 %doc %{_mandir}/man3/File::chdir.3pm*
 %dir %{perl_vendorlib}/File/
 #%{perl_vendorlib}/File/chdir/
 %{perl_vendorlib}/File/chdir.pm
-%{perl_vendorlib}/File/chdir.pod
+#%{perl_vendorlib}/File/chdir.pod
 
 %changelog
+* Sun Aug 07 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.1010-1
+- Updated to release 0.1010.
+
 * Wed Feb 20 2008 Dag Wieers <dag@wieers.com> - 0.1002-1
 - Updated to release 0.1002.
 
