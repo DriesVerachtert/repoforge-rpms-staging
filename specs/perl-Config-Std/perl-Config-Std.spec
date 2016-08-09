@@ -9,12 +9,12 @@
 
 Summary: Generic config module
 Name: perl-Config-Std
-Version: 0.900
+Version: 0.901
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Config-Std/
-Source: http://www.cpan.org/modules/by-module/Config/Config-Std-v%{version}.tar.gz
+Source: http://www.cpan.org/modules/by-module/Config/Config-Std-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -32,7 +32,7 @@ See Chapter 19 of "Perl Best Practices" (O'Reilly, 2005) for the
 rationale for this approach.
 
 %prep
-%setup -n %{real_name}-v%{version}
+%setup -n %{real_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
@@ -54,7 +54,11 @@ rationale for this approach.
 %{perl_vendorlib}/Config/Std.pm
 
 %changelog
+* Tue Aug 09 2016 Dries Verachtert <dries.verachtert@dries.eu> 0.901-1
+- Updated to release 0.901.
+
+* Wed Dec 14 2011 Roderick A Anderson <raanders@cyber-office.net> - 0.900-1
+- Brought up to version 0.900
+
 * Fri Jun 29 2007 Quien Sabe (aka Jim) <quien-sabe@metaorg.com> - 0.0.4-1
 - Initial package.
-* Wed Dec 14 2011 Roderick A Anderson <raanders@cyber-office.net> - 0.900
-- Brought up to version 0.900
