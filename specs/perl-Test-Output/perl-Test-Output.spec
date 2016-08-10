@@ -12,7 +12,7 @@
 
 Summary: Utilities to test STDOUT and STDERR messages
 Name: perl-Test-Output
-Version: 0.16
+Version: 1.03
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -23,6 +23,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Utilities to test STDOUT and STDERR messages.
@@ -48,12 +49,15 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %defattr(-, root, root, 0755)
 %doc Changes MANIFEST META.yml README
 %doc %{_mandir}/man3/Test::Output.3pm*
-%doc %{_mandir}/man3/Test::Output::Tie.3pm*
+#%doc %{_mandir}/man3/Test::Output::Tie.3pm*
 %dir %{perl_vendorlib}/Test/
-%{perl_vendorlib}/Test/Output/
+#%{perl_vendorlib}/Test/Output/
 %{perl_vendorlib}/Test/Output.pm
 
 %changelog
+* Wed Aug 10 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.03-1
+- Updated to release 1.03.
+
 * Thu Jun 11 2009 Christoph Maser <cmr@financial.com> - 0.16-1
 - Updated to version 0.16.
 
