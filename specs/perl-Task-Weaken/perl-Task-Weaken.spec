@@ -12,7 +12,7 @@
 
 Summary: Ensure that a platform has weaken support
 Name: perl-Task-Weaken
-Version: 1.03
+Version: 1.04
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -25,6 +25,7 @@ BuildArch: noarch
 BuildRequires: perl >= 0:5.005
 BuildRequires: perl(File::Spec) >= 0.8
 BuildRequires: perl(Test::More) >= 0.42
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl >= 0:5.005
 
 %description
@@ -56,6 +57,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Task/Weaken.pm
 
 %changelog
+* Thu Aug 11 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.04-1
+- Updated to release 1.04.
+
 * Wed Jun 17 2009 Christoph Maser <cmr@financial.com> - 1.03-1
 - Updated to version 1.03.
 
