@@ -9,7 +9,7 @@
 
 Summary: Manages sets of integers
 Name: perl-Set-IntSpan
-Version: 1.13
+Version: 1.19
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Set/IntSpan.pm
 
 %changelog
+* Fri Aug 12 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.19-1
+- Updated to release 1.19.
+
 * Sun Nov 18 2007 Dag Wieers <dag@wieers.com> - 1.13-1
 - Updated to release 1.13.
 
