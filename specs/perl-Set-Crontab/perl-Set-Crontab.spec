@@ -9,7 +9,7 @@
 
 Summary: Expand crontab(5)-style integer lists
 Name: perl-Set-Crontab
-Version: 1.02
+Version: 1.03
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -51,6 +51,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Set/Crontab.pm
 
 %changelog
+* Sat Aug 13 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.03-1
+- Updated to release 1.03.
+
 * Fri Jun 19 2009 Christoph Maser <cmr@financial.com> - 1.02-1
 - Updated to version 1.02.
 
