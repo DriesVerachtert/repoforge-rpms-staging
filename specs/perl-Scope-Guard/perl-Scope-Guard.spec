@@ -9,7 +9,7 @@
 
 Summary: Lexically scoped resource management
 Name: perl-Scope-Guard
-Version: 0.03
+Version: 0.21
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -50,5 +50,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Scope/Guard.pm
 
 %changelog
+* Sun Aug 14 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.21-1
+- Updated to release 0.21.
+
 * Sun Dec 30 2007 Dag Wieers <dag@wieers.com> - 0.03-1
 - Initial package. (using DAR)
