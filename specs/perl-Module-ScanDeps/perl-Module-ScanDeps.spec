@@ -12,7 +12,7 @@
 
 Summary: Recursively scan Perl code for dependencies
 Name: perl-Module-ScanDeps
-Version: 0.98
+Version: 1.21
 Release: 1
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -71,13 +71,16 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc AUTHORS Changes MANIFEST META.yml README
 %doc %{_mandir}/man1/scandeps.pl.1*
 %doc %{_mandir}/man3/Module::ScanDeps.3pm*
-%doc %{_mandir}/man3/Module::ScanDeps::DataFeed.3pm*
+#%doc %{_mandir}/man3/Module::ScanDeps::DataFeed.3pm*
 %{_bindir}/scandeps.pl
 %dir %{perl_vendorlib}/Module/
 %{perl_vendorlib}/Module/ScanDeps/
 %{perl_vendorlib}/Module/ScanDeps.pm
 
 %changelog
+* Sat Feb 20 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.21-1
+- Updated to release 1.21.
+
 * Sat Feb 05 2011 Denis Fateyev <denis@fateyev.com> - 0.98-1
 - Updated to version 0.98.
 
