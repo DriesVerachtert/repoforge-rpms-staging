@@ -17,7 +17,7 @@
 
 Summary: Database independent interface for Perl
 Name: perl-DBI
-Version: 1.622
+Version: 1.636
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -31,7 +31,8 @@ BuildRequires: perl(File::Spec)
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Storable) >= 1
 #BuildRequires: perl(Test::Simple) >= 0.84
-BuildRequires: perl(Test::Simple) 
+BuildRequires: perl(Test::Simple)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(File::Spec)
 Requires: perl(Scalar::Util)
 Requires: perl(Storable) >= 1
@@ -46,7 +47,7 @@ Requires: perl(Test::Simple)
 perl-DBI is a Perl module that implements a database independent interface.
 
 %prep
-%setup -q -n %{real_name}-%{version}
+%setup -n %{real_name}-%{version}
 
 %build
 CFLAGS="%{optflags}" %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
@@ -65,7 +66,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST META.yml README TODO_2005.txt
+%doc Changes INSTALL MANIFEST META.yml README.md
 %doc %{_mandir}/man1/dbilogstrip.1*
 %doc %{_mandir}/man1/dbiprof.1*
 %doc %{_mandir}/man1/dbiproxy.1*
@@ -96,6 +97,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %exclude %{perl_vendorarch}/DBI/W32ODBC.pm
 
 %changelog
+* Mon Aug 15 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.636-1
+- Updated to release 1.636.
+
 * Mon Dec 17 2012 David Hrbáč <david@hrbac.cz> - 1.622-1
 - new upstream release
 
