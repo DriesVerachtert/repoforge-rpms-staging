@@ -12,8 +12,8 @@
 
 Summary: Perl module that implements character encodings
 Name: perl-Encode
-Version: 2.39
-Release: 2%{?dist}
+Version: 2.86
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Encode/
@@ -53,14 +53,19 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc %{_mandir}/man3/Encode.3pm*
 %doc %{_mandir}/man3/Encode::*.3pm*
 %doc %{_mandir}/man3/encoding.3pm*
+%doc %{_mandir}/man1/encguess.1*
 %{_bindir}/enc2xs
 %{_bindir}/piconv
+%{_bindir}/encguess
 %{perl_vendorarch}/auto/Encode/
 %{perl_vendorarch}/Encode/
 %{perl_vendorarch}/Encode.pm
 %{perl_vendorarch}/encoding.pm
 
 %changelog
+* Tue Aug 16 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.86-1
+- Updated to release 2.86.
+
 * Mon Dec 13 2010 Steve Huff <shuff@vecna.org> - 2.39-2
 - Tagged rfx for el5.
 
