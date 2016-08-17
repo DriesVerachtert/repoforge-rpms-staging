@@ -14,13 +14,13 @@
 
 Summary: Checks for POD errors in files
 Name: perl-Test-Pod
-Version: 1.45
+Version: 1.51
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Test-Pod/
 
-Source: http://search.cpan.org/CPAN/authors/id/D/DW/DWHEELER/Test-Pod-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/Test-Pod-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -42,17 +42,17 @@ Requires: perl(Test::More)
 This module allows you to check for POD errors in files.
 
 %prep
-%setup -q -n %{real_name}-%{version}
+%setup -n %{real_name}-%{version}
 
 
 
 %build
-%{__perl} Build.PL --installdirs vendor --destdir %{buildroot}
-./Build
+FLAGS="%{optflags}" %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
+%{__make} %{?_smp_mflags} OPTIMIZE="%{optflags}"
 
 %install
 %{__rm} -rf %{buildroot}
-./Build pure_install
+%{__make} pure_install
 
 ### Clean up buildroot
 find %{buildroot} -name .packlist -exec %{__rm} {} \;
@@ -68,6 +68,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Test/Pod.pm
 
 %changelog
+* Wed Aug 17 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.51-1
+- Updated to release 1.51.
+
 * Mon Mar 14 2011 David Hrbáč <david@hrbac.cz> - 1.45-1
 - new upstream release
 
