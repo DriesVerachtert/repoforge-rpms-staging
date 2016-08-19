@@ -21,6 +21,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: perl
 Obsoletes: perl-Ace <= %{version}-%{release}
 Provides: perl-Ace = %{version}-%{release}
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 ### Provides the required module that is nowhere to be found in CPAN :-/
 Provides: perl(Ace::Browser::LocalSiteDefs) = %{version}-%{release}
