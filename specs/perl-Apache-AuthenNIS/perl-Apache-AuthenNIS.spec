@@ -24,6 +24,7 @@ BuildRequires: perl
 BuildRequires: perl(Compress::Zlib)
 BuildRequires: perl(LWP::UserAgent)
 BuildRequires: perl(Storable)
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 mod_perl NIS Authentication module.
