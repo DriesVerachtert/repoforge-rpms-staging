@@ -19,6 +19,7 @@ Source: http://www.cpan.org/modules/by-module/Apache/Apache-DB-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Apache-DB is a Perl module to run the interactive Perl debugger
