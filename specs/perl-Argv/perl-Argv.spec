@@ -21,6 +21,8 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl
 BuildRequires: perl(Getopt::Long) >= 2.23
+BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(Data::Dumper)
 Requires: perl(Getopt::Long) >= 2.23
 
 %filter_from_requires /^perl*/d
