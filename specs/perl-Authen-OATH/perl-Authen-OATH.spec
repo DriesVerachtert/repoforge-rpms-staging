@@ -17,6 +17,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch: noarch
 BuildRequires: perl
 BuildRequires: rpm-macros-rpmforge
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl
 Requires: perl(Digest::HMAC)
 Requires: perl(Math::BigInt)
