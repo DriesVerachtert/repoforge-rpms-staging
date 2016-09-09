@@ -25,6 +25,7 @@ BuildRequires: perl(Net::SSLeay) >= 1.14
 Requires: perl(CGI)
 Requires: perl(Digest::MD5)
 Requires: perl(Net::SSLeay) >= 1.14
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %filter_from_requires /^perl*/d
 %filter_setup
