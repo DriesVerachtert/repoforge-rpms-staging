@@ -27,6 +27,7 @@ BuildRequires: perl(Data::Dumper)
 BuildRequires: perl(Digest::MD5)
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Test::More)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(CGI) >= 3.26
 Requires: perl(Data::Dumper)
 Requires: perl(Digest::MD5)
