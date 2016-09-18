@@ -21,6 +21,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl
 BuildRequires: perl(Class::Data::Inheritable)
+BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: rpm-macros-rpmforge
 Requires: perl
 Requires: perl(Class::Data::Inheritable)
