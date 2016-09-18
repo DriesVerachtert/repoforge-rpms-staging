@@ -22,6 +22,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl
 BuildRequires: perl(Test::More)
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Faster but less secure than Class::Std.
