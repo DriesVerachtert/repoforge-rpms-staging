@@ -20,6 +20,9 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
 BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(ExtUtils::Embed)
+BuildRequires: perl(Test::More)
+BuildRequires: perl(Inline)
 
 %description
 Inline::BC is an ILSM (Inline Support Language Module ) for Gnu bc, the arbitrary
