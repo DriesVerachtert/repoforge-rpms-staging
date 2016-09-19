@@ -26,6 +26,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl(Net::SSLeay) >= 1.21
 BuildRequires: perl(Scalar::Util)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(Net::SSLeay) >= 1.21
 Requires: perl(Scalar::Util)
 
