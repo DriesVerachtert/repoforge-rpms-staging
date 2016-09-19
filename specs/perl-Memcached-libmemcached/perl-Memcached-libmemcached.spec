@@ -20,6 +20,8 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
 BuildRequires: memcached
+BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(Data::Dumper)
 Requires: memcached
 
 %description
