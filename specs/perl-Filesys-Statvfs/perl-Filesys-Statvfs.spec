@@ -19,6 +19,7 @@ Source: http://www.cpan.org/modules/by-module/Filesys/Filesys-Statvfs-%{version}
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Filesys-Statvfs is a Perl module for statvfs() and fstatvfs().
