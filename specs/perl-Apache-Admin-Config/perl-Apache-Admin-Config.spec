@@ -9,8 +9,8 @@
 
 Summary: Read/write Apache like configuration files
 Name: perl-Apache-Admin-Config
-Version: 0.94
-Release: 1%{?dist}
+Version: 0.95
+Release: 0%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Apache-Admin-Config/
