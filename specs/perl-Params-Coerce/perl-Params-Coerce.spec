@@ -21,6 +21,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl >= 0:5.5
 BuildRequires: perl(Test::More) >= 0.47
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl >= 0:5.5
 
 %description
