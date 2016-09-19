@@ -20,6 +20,7 @@ Source: http://www.cpan.org/authors/id/J/JE/JESUS/MersenneTwister-%{version}.tar
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Perl extension for a Mersenne Twister PRGN implementation with context.
