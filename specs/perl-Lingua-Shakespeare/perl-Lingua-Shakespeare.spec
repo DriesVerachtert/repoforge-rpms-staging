@@ -22,6 +22,7 @@ BuildArch: noarch
 BuildRequires: perl >= 5.4
 BuildRequires: perl(Test::More)
 BuildRequires: rpm-macros-rpmforge
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl >= 5.4
 Requires: perl(Filter::Util::Call)
 
