@@ -9,7 +9,7 @@
 
 Summary: Manage Unix crypt-style password file
 Name: perl-Apache-Htpasswd
-Version: 1.8
+Version: 1.9
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -55,6 +55,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Apache/Htpasswd.pm
 
 %changelog
+* Mon Sep 19 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.9-1
+- Updated to release 1.9.
+
 * Fri Jun  2 2006 Dries Verachtert <dries@ulyssis.org> - 1.8-1
 - Updated to release 1.8.
 
