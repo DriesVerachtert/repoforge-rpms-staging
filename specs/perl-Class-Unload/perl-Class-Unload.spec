@@ -19,6 +19,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: perl(Class::Inspector)
 BuildRequires: perl(Test::More)
 BuildRequires: perl >= 5.005
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(Class::Inspector)
 Requires: perl >= 5.005
 
