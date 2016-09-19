@@ -19,6 +19,7 @@ Source: http://www.cpan.org/authors/id/D/DP/DPAVLIN/Fuse-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl, fuse-devel
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Write filesystems in Perl using FUSE.
