@@ -19,6 +19,7 @@ Source: http://www.cpan.org/authors/id/P/PV/PVANDRY/gettext-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 gettext module is a Perl module implementing message handling functions.
