@@ -19,6 +19,7 @@ Source: http://www.cpan.org/modules/by-module/Math/Math-Geometry-Planar-GPC-%{ve
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Math-Geometry-Planar-GPC is a Perl module that implements a wrapper for
