@@ -19,6 +19,7 @@ Source: http://www.cpan.org/modules/by-module/Net/Net-NIS-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Interface to Sun's Network Information Service.
