@@ -21,6 +21,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl >= 2:5.8.1
 Requires: perl >= 2:5.8.1
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Version of Egg WEB Application Framework.
