@@ -21,6 +21,8 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl
 BuildRequires: perl(Image::Magick)
+BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(GD)
 
 %description
 Graph Plotting Module (deprecated).
