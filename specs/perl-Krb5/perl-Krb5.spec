@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: krb5-devel
 BuildRequires: openssl-devel
+BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl
 
 %description
