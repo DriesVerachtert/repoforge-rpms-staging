@@ -25,6 +25,7 @@ BuildRequires: perl(Test::More)
 # From yaml recommends
 BuildRequires: perl(Test::Pod)
 BuildRequires: perl(Test::Pod::Coverage)
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 
 %description
