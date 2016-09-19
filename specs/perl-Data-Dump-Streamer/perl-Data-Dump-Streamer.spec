@@ -17,6 +17,7 @@ Source: http://search.cpan.org/CPAN/authors/id/Y/YV/YVES/Data-Dump-Streamer-%{ve
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 ### Provides required by package itself
 Provides: perl(Data::Dump::Streamer::_::Printers)
