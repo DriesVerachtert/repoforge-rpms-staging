@@ -24,6 +24,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: perl
 BuildRequires: perl(Test::Pod) >= 1.00
 BuildRequires: perl(Test::Pod::Coverage) >= 1.04
+BuildRequires: perl(ExtUtils::MakeMaker)
 %{!?_without_krb5:BuildRequires: krb5-devel}
 %{?_with_heimdal:BuildRequires: heimdal-devel}
 
