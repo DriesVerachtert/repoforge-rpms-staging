@@ -22,6 +22,8 @@ BuildArch: noarch
 BuildRequires: perl
 BuildRequires: perl(File::Find::Rule) >= 0.1
 BuildRequires: perl(Scalar::Util)
+BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(Test::More)
 Requires: perl(File::Find::Rule) >= 0.1
 Requires: perl(Scalar::Util)
 
