@@ -21,6 +21,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl
 BuildRequires: rpm-macros-rpmforge
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: openssh-clients >= 4.1
 Requires: perl
 
