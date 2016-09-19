@@ -27,6 +27,7 @@ BuildRequires: perl(Module::Pluggable)
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Sub::Exporter)
 BuildRequires: perl(Sub::Install)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl >= 1:5.6.1
 
 %description
@@ -56,8 +57,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc %{_mandir}/man3/Object::Array::Plugin::Builtins.3pm*
 %doc %{_mandir}/man3/Object::Array::Plugin::ListMoreUtils.3pm*
 %dir %{perl_vendorlib}/Object/
-%dir %{perl_vendorlib}/Object/Array/Plugin/Builtins.pm
-%dir %{perl_vendorlib}/Object/Array/Plugin/ListMoreUtils.pm
+%{perl_vendorlib}/Object/Array/Plugin/Builtins.pm
+%{perl_vendorlib}/Object/Array/Plugin/ListMoreUtils.pm
 %{perl_vendorlib}/Object/Array.pm
 
 
