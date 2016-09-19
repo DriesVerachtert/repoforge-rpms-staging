@@ -19,6 +19,7 @@ Source: http://www.cpan.org/modules/by-module/Mail/Mail-Transport-Dbx-%{version}
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Mail-Transport-Dbx is a Perl module to parse Outlook Express mailboxes.
