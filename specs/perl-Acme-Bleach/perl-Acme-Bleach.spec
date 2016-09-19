@@ -10,7 +10,7 @@
 
 Summary: Perl module named Acme-Bleach
 Name: perl-Acme-Bleach
-Version: 1.12
+Version: 1.150
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -21,6 +21,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Acme-Bleach is a Perl module.
@@ -57,7 +58,11 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Acme/Bleach.pm
 %{perl_vendorlib}/Acme/DWIM.pm
 %{perl_vendorlib}/Acme/Morse.pm
+%{perl_vendorlib}/Acme/unbleach.pl
 
 %changelog
+* Mon Sep 19 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.150-1
+- Updated to release 1.150.
+
 * Thu Oct 11 2007 Dag Wieers <dag@wieers.com> - 1.12-1
 - Initial package. (using DAR)
