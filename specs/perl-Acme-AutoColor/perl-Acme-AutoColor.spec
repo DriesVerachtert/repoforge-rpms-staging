@@ -9,7 +9,7 @@
 
 Summary: Perl module that implements automatic color names
 Name: perl-Acme-AutoColor
-Version: 0.01
+Version: 0.03
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Acme-AutoColor is a Perl module that implements automatic color names.
@@ -43,11 +44,14 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST README SIGNATURE
+%doc Changes MANIFEST README
 %doc %{_mandir}/man3/Acme::AutoColor.3pm*
 %dir %{perl_vendorlib}/Acme/
 %{perl_vendorlib}/Acme/AutoColor.pm
 
 %changelog
+* Mon Sep 19 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.03-1
+- Updated to release 0.03.
+
 * Thu Oct 11 2007 Dag Wieers <dag@wieers.com> - 0.01-1
 - Initial package. (using DAR)
