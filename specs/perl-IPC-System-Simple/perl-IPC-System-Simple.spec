@@ -25,6 +25,7 @@ BuildRequires: perl(List::Util)
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Test)
 BuildRequires: perl(Test::More)
+BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl >= 5.6.0
 Requires: perl(Config)
 Requires: perl(List::Util)
