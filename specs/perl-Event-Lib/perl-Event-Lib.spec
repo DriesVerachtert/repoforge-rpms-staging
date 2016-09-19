@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: libevent-devel
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: libevent
 
 %description
