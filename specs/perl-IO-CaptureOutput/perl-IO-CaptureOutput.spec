@@ -23,6 +23,7 @@ BuildArch: noarch
 BuildRequires: perl(Carp)
 BuildRequires: perl(Exporter)
 BuildRequires: perl(File::Basename)
+BuildRequires: perl(ExtUtils::MakeMaker)
 #BuildRequires: perl(File::Spec) >= 3.27
 BuildRequires: perl(File::Temp) >= 0.16
 BuildRequires: perl(IO::File)
