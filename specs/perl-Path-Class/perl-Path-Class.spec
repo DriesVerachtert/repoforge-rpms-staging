@@ -29,6 +29,7 @@ BuildRequires: perl(IO::Dir)
 BuildRequires: perl(IO::File)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(overload)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(Cwd)
 Requires: perl(File::Path)
 Requires: perl(File::Spec) >= 0.87
