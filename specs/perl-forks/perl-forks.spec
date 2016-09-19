@@ -21,6 +21,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: perl
 ### FIXME: Find out why this provides it missing ?
 Provides: perl(forks::Devel::Symdump) = %{version}
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 forks - emulate threads with fork.
