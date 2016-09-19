@@ -19,6 +19,7 @@ Source: http://www.cpan.org/modules/by-module/Mail/Mail-Box-Parser-C-%{version}.
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Mail-Box-Parser-C is a Perl module for parsing folders for MailBox
