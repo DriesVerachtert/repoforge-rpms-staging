@@ -18,6 +18,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl(Exception::Class) >= 1.21
 BuildRequires: perl(Test::Simple) >= 0.40
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(Exception::Class) >= 1.21
 Requires: perl(Test::Simple) >= 0.40
 
