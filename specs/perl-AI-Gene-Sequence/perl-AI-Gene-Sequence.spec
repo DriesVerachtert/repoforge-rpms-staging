@@ -9,8 +9,8 @@
 
 Summary: Gene sequences
 Name: perl-AI-Gene-Sequence
-Version: 0.21
-Release: 1.2%{?dist}
+Version: 0.22
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/AI-Gene-Sequence/
@@ -45,10 +45,14 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %files
 %defattr(-, root, root, 0755)
 %doc Changes
-%doc %{_mandir}/man3/*
-%{perl_vendorlib}/AI/Gene/AI/Gene/Sequence.pm
-%{perl_vendorlib}/AI/Gene/AI/Gene/Simple.pm
+%doc %{_mandir}/man3/AI::Gene::AI::Gene::Sequence.3pm*
+%doc %{_mandir}/man3/AI::Gene::AI::Gene::Simple.3pm*
+%{perl_vendorlib}/AI/Gene/Sequence.pm
+%{perl_vendorlib}/AI/Gene/Simple.pm
 
 %changelog
+* Mon Sep 19 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.22-1
+- Updated to release 0.22.
+
 * Sat Apr  9 2005 Dries Verachtert <dries@ulyssis.org> - 0.21-1
 - Initial package.
