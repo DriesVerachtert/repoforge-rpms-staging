@@ -22,6 +22,7 @@ BuildArch: noarch
 BuildRequires: perl(DBI)
 BuildRequires: perl(FreezeThaw)
 BuildRequires: perl(Storable)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(DBI)
 Requires: perl(FreezeThaw)
 Requires: perl(Storable)
