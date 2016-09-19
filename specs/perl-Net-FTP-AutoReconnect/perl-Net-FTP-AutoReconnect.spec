@@ -24,6 +24,7 @@ BuildRequires: perl
 BuildRequires: perl(Fcntl)
 BuildRequires: perl(IO::Handle)
 BuildRequires: perl(Net::FTP)
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 
 %description
