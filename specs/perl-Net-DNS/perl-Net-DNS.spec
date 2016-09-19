@@ -27,6 +27,8 @@ URL: http://search.cpan.org/dist/Net-DNS/
 Source: http://search.cpan.org/CPAN/authors/id/N/NL/NLNETLABS/Net-DNS-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
+BuildRequires: perl(ExtUtils::MakeMaker)
+
 %description
 Net::DNS is a DNS resolver implemented in Perl.  It allows the
 programmer to perform nearly any type of DNS query from a Perl
