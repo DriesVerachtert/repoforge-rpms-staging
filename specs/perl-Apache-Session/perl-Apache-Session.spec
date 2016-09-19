@@ -9,7 +9,7 @@
 
 Summary: Persistence framework for session data
 Name: perl-Apache-Session
-Version: 1.87
+Version: 1.93
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -21,6 +21,10 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl
 BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(Test::More)
+BuildRequires: perl(Test::Deep)
+BuildRequires: perl(Test::Exception)
+BuildRequires: perl(Digest::MD5)
 Requires: perl-DBI
 
 %description
@@ -59,6 +63,9 @@ find eg/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Apache/Session.pm
 
 %changelog
+* Mon Sep 19 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.93-1
+- Updated to release 1.93.
+
 * Tue Oct 07 2008 Dag Wieers <dag@wieers.com> - 1.87-1
 - Updated to release 1.87.
 
