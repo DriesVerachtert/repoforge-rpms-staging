@@ -26,6 +26,7 @@ Source: http://www.cpan.org/modules/by-module/IO/IO-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-IO is a Perl module to load various IO modules.
