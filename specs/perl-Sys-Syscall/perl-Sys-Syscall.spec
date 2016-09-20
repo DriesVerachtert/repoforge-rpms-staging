@@ -21,6 +21,7 @@ BuildArch: noarch
 
 BuildRequires: perl(POSIX)
 BuildRequires: perl(Test::More)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(POSIX)
 Requires: perl(Test::More)
 
