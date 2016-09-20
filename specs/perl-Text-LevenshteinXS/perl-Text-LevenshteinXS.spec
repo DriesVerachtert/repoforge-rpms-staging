@@ -19,6 +19,7 @@ Source: http://www.cpan.org/modules/by-module/Text/Text-LevenshteinXS-%{version}
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Text-LevenshteinXS is a Perl module provides an XS implementation
