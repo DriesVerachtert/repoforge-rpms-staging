@@ -19,6 +19,7 @@ Source: http://www.cpan.org/modules/by-module/Sys/Sys-Lastlog-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Sys-Lastlog is a Perl module to provide a moderately Object Oriented
