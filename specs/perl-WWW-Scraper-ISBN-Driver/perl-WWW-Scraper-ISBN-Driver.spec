@@ -22,7 +22,7 @@ BuildArch: noarch
 BuildRequires: perl
 # From yaml requires
 BuildRequires: perl(Carp) >= 1
-
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-WWW-Scraper-ISBN-Driver is a Perl module.
