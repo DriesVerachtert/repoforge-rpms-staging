@@ -20,6 +20,8 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(Module::Build)
 
 %description
 perl-UNIVERSAL-canAUTOLOAD is a Perl module that respects AUTOLOAD subs.
