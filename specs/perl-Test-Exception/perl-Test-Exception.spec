@@ -30,6 +30,7 @@ BuildRequires: perl(Test::Builder::Tester)
 BuildRequires: perl(Test::Harness) >= 2.03
 BuildRequires: perl(Test::More) >= 0.7
 BuildRequires: perl(Test::Simple) >= 0.7
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(Sub::Uplevel) >= 0.18
 Requires: perl(Test::Builder) >= 0.7
 #Requires: perl(Test::Builder::Tester) >= 1.07
