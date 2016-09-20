@@ -19,6 +19,7 @@ Source: http://www.cpan.org/modules/by-module/Unix/Unix-Mknod-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Unix-Mknod is a Perl module for mknod, major, minor, and makedev.
