@@ -19,6 +19,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 Requires: perl >= 5.8.4
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 ProjectBuilder is a perl module providing set of functions
