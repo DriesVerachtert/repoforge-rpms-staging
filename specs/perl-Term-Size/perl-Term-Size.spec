@@ -19,6 +19,7 @@ Source: http://www.cpan.org/modules/by-module/Term/Term-Size-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Perl extension for retrieving terminal size.
