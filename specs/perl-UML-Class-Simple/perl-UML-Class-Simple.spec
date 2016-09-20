@@ -29,6 +29,7 @@ BuildRequires: perl(List::MoreUtils)
 BuildRequires: perl(Template)
 BuildRequires: perl(Class::Inspector)
 BuildRequires: perl(XML::LibXML)
+BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: graphviz
 Requires: perl >= 0:5.004
 Requires: perl(Test::More)
