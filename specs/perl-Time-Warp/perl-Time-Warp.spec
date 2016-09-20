@@ -19,6 +19,7 @@ Source: http://www.cpan.org/modules/by-module/Time/Time-Warp-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Time-Warp is a Perl module to have control over the flow of time.
