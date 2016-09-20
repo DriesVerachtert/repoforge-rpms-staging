@@ -31,6 +31,7 @@ BuildRequires: perl(Test::Builder)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(strict)
 BuildRequires: perl(warnings)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(Carp)
 Requires: perl(English)
 Requires: perl(Perl::Critic) >= 1.105
