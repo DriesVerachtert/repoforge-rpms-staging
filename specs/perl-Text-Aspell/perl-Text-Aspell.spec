@@ -19,6 +19,8 @@ Source: http://www.cpan.org/modules/by-module/Text/Text-Aspell-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: aspell-devel
 
 %description
 perl-Text-Aspell is a Perl module to the GNU Aspell library.
