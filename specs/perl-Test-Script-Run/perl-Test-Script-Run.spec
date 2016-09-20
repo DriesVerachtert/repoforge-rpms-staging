@@ -22,6 +22,7 @@ BuildArch: noarch
 BuildRequires: perl(IPC::Run3)
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Test::More)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(IPC::Run3)
 Requires: perl(Test::Exception)
 
