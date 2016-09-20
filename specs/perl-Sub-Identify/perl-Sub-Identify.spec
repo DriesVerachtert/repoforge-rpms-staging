@@ -19,6 +19,7 @@ Source: http://www.cpan.org/modules/by-module/Sub/Sub-Identify-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl
 
 %description
