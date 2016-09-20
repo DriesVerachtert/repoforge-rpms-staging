@@ -59,6 +59,8 @@ BuildRequires: perl(overload)
 BuildRequires: perl(strict)
 BuildRequires: perl(version)
 BuildRequires: perl(warnings)
+BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(Fatal)
 Requires: perl(B::Keywords) >= 1.05
 Requires: perl(Carp)
 Requires: perl(Config::Tiny) >= 2
