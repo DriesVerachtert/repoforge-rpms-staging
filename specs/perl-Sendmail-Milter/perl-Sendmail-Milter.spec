@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
 BuildRequires: sendmail-devel
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Sendmail-Milter is a Perl module.
