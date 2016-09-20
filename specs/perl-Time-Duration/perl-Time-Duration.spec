@@ -22,6 +22,7 @@ BuildArch: noarch
 BuildRequires: perl
 BuildRequires: perl(Test::Pod)
 BuildRequires: perl(Test::Pod::Coverage)
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Time-Duration is a Perl module to provide rounded or exact English
