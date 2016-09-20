@@ -18,6 +18,7 @@ BuildRequires: perl >= 0:5.00503
 Requires:  perl >= 0:5.00503
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root 
 
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 XML::CSV is a new module in is going to be upgraded very often as my time permits.
