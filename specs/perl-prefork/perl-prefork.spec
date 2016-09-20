@@ -27,6 +27,7 @@ BuildRequires: perl(File::Spec) >= 0.8
 BuildRequires: perl(Test::More) >= 0.47
 BuildRequires: perl(List::Util) >=  0.18
 BuildRequires: perl(Scalar::Util) >=  0.18
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl >= 0:5.005
 
 %description
