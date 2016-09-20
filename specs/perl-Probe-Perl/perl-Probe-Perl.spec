@@ -26,6 +26,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 # From yaml build_requires
 BuildRequires: perl(Test)
+BuildRequires: perl(ExtUtils::MakeMaker)
 # From yaml requires
 Requires: perl(Config)
 
