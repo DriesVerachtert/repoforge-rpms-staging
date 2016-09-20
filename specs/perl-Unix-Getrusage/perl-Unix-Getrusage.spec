@@ -19,6 +19,7 @@ Source: http://www.cpan.org/modules/by-module/Unix/Unix-Getrusage-%{version}.tar
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Unix-Getrusage is a Perl interface to the Unix getrusage system call.
