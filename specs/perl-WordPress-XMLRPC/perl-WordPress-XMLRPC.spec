@@ -27,6 +27,7 @@ Requires: perl(SOAP::Lite)
 Requires: perl(XMLRPC::Lite)
 Requires: perl(YAML)
 Requires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(ExtUtils::MakeMaker)
 # BuildRequires: rpm-macros-rpmforge
 
 ### Remove autoreq Perl dependencies
