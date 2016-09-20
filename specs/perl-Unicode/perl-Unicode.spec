@@ -21,6 +21,8 @@ Source: http://www.cpan.org/modules/by-module/Unicode/Unicode-Transliterate.%{ve
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: libicu-devel
 
 %description
 perl-Unicode-Transliterate is a Perl module.
