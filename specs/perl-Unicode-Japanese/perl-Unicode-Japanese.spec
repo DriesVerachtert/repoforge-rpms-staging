@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl(Test)
 BuildRequires: perl(Test::More)
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %filter_from_requires /^perl*/d
 %filter_setup
@@ -53,10 +54,10 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc %{_mandir}/man3/Unicode::Japanese::JA.3pm*
 %{_bindir}/ujconv
 %{_bindir}/ujguess
-%dir %{perl_vendorarch}/Unicode/
-%{perl_vendorarch}/Unicode/Japanese/
-%{perl_vendorarch}/Unicode/Japanese.mlpod
-%{perl_vendorarch}/Unicode/Japanese.pm
+%dir %{perl_vendorlib}/Unicode/
+%{perl_vendorlib}/Unicode/Japanese/
+%{perl_vendorlib}/Unicode/Japanese.mlpod
+%{perl_vendorlib}/Unicode/Japanese.pm
 %dir %{perl_vendorarch}/auto/Unicode/
 %{perl_vendorarch}/auto/Unicode/Japanese/
 
