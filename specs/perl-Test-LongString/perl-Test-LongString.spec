@@ -23,6 +23,7 @@ BuildRequires: perl
 BuildRequires: perl(Test::Builder) >= 0.12
 #BuildRequires: perl(Test::Builder::Tester) >= 1.04
 BuildRequires: perl(Test::Builder::Tester)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(Test::Builder) >= 0.12
 #Requires: perl(Test::Builder::Tester) >= 1.04
 Requires: perl(Test::Builder::Tester)
