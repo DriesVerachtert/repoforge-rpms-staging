@@ -19,6 +19,7 @@ Source: http://www.cpan.org/authors/id/L/LU/LUKKA/WeakRef-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-WeakRef is a Perl module that implements an API to the Perl
