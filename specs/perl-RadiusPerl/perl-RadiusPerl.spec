@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 Provides: perl-Authen-Radius = %{version}-%{release}
 Obsoletes: perl-Authen-Radius <= %{version}-%{release}
