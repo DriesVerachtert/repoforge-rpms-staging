@@ -19,6 +19,7 @@ Source: http://www.cpan.org/modules/by-module/Safe/Safe-Hole-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Safe-Hole is a Perl module to make a hole to the original main
