@@ -20,6 +20,8 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(URI)
 
 %description
 Java ARchive URI.
