@@ -27,6 +27,7 @@ Source: http://search.cpan.org/CPAN/authors/id/Z/ZE/ZEFRAM/Time-HiRes-%{version}
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Time-HiRes is a Perl module that implements high resolution alarm,
