@@ -19,6 +19,7 @@ Source: http://www.cpan.org/modules/by-module/Tie/Tie-Hash-Indexed-%{version}.ta
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Ordered hashes for Perl.
