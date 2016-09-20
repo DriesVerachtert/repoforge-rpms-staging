@@ -28,7 +28,8 @@ BuildRequires: perl(Config::Tiny) >= 2.00
 #BuildRequires: perl(ExtUtils::MakeMaker) >= 6.42
 BuildRequires: perl(File::Spec) >= 0.83
 BuildRequires: perl(Params::Util) >= 1.00
-BuildRequires: perl(Test::More) >= 0.47 
+BuildRequires: perl(Test::More) >= 0.47
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl >= 5.6.0
 
 %description
