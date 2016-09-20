@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Unix-MyPathToInc is a Perl module to add the location
