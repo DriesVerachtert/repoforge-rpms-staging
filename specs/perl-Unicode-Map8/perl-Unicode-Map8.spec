@@ -24,6 +24,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: perl
 BuildRequires: perl(Unicode::String) >= 2
 Requires: perl(Unicode::String) >= 2
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %filter_from_requires /^perl*/d
 %filter_setup
