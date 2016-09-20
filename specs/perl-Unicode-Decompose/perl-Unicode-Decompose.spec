@@ -18,6 +18,7 @@ Source: http://www.cpan.org/modules/by-module/Unicode/Unicode-Decompose-%{versio
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Unicode-Decompose is a Perl module that implements Unicode decomposition
