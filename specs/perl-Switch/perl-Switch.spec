@@ -21,6 +21,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl(Filter::Util::Call)
 BuildRequires: perl(Text::Balanced)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(Filter::Util::Call)
 Requires: perl(Text::Balanced)
 
