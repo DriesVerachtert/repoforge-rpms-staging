@@ -22,6 +22,7 @@ BuildArch: noarch
 BuildRequires: perl(HTML::Parser)
 BuildRequires: perl(Template) >= 2
 BuildRequires: perl(Test::More)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(HTML::Parser)
 Requires: perl(Template) >= 2
 
