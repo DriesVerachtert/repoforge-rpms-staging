@@ -22,6 +22,7 @@ BuildArch: noarch
 BuildRequires: perl >= 0:5.005
 BuildRequires: perl(Test::More)
 Requires: perl >= 0:5.005
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 weighted linear regression package (line+plane fitting).
