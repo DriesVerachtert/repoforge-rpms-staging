@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl(Text::Balanced)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(Text::Balanced)
 
 %filter_from_requires /^perl*/d
