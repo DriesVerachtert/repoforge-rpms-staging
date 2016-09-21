@@ -20,6 +20,8 @@ BuildArch: noarch
 BuildRequires: perl(Error)
 BuildRequires: perl(Filter::Util::Call)
 BuildRequires: perl >= 5.005003
+BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(Data::Dumper)
 Requires: perl(Error)
 Requires: perl(Filter::Util::Call)
 Requires: perl >= 5.005003
