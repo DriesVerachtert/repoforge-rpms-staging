@@ -19,6 +19,8 @@ BuildArch: noarch
 
 
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(Test::More)
 Requires: perl
 ### remove autoreq Perl dependencies
 %filter_from_requires /^perl.*/d
