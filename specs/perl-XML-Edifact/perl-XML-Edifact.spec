@@ -21,6 +21,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl
 BuildRequires: perl(XML::Parser)
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-XML-Edifact is a Perl module.
@@ -29,7 +30,7 @@ perl-XML-Edifact is a Perl module.
 %setup -n %{real_name}-%{version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
+echo http://www.xml-edifact.org | %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
 %{__make} %{?_smp_mflags}
 
 %install
