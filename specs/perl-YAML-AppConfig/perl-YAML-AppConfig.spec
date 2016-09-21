@@ -21,6 +21,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl
 BuildRequires: perl(YAML)
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-YAML-AppConfig is a Perl module to manage configuration files with YAML
