@@ -23,6 +23,7 @@ BuildRequires: perl
 BuildRequires: perl(Test::More)
 BuildRequires: perl(XML::LibXML) >= 1.60
 BuildRequires: rpm-macros-rpmforge
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 # don't scan the examples for autoreq/prov
 %filter_requires_in %{_docdir}
