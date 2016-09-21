@@ -9,8 +9,8 @@
 
 Summary: Perl extension for comparing arrays
 Name: perl-Array-Compare
-Version: 2.01
-Release: 1%{?dist}
+Version: 2.12
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Array-Compare/
@@ -68,6 +68,12 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Array/Compare.pm
 
 %changelog
+* Wed Sep 21 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.12-2
+- Updated to release 2.12.
+
+* Wed Sep 21 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.12-1
+- Updated to release 2.12.
+
 * Thu Jan  7 2010 Christoph Maser <cmr@financial.com> - 2.01-1
 - Updated to version 2.01.
 
