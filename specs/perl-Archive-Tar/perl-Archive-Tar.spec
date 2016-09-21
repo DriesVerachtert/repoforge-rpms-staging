@@ -16,8 +16,8 @@
 
 Summary: Archive-Tar module for perl
 Name: perl-Archive-Tar
-Version: 1.56
-Release: 2%{?dist}
+Version: 2.10
+Release: 1%{?dist}
 Epoch: 1
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -79,15 +79,20 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc CHANGES MANIFEST META.yml README
 %doc %{_mandir}/man1/ptar.1*
 %doc %{_mandir}/man1/ptardiff.1*
+%doc %{_mandir}/man1/ptargrep.1*
 %doc %{_mandir}/man3/Archive::Tar.3pm*
 %doc %{_mandir}/man3/Archive::Tar::File.3pm*
 %{_bindir}/ptar
 %{_bindir}/ptardiff
+%{_bindir}/ptargrep
 %dir %{perl_vendorlib}/Archive/
 %{perl_vendorlib}/Archive/Tar/
 %{perl_vendorlib}/Archive/Tar.pm
 
 %changelog
+* Wed Sep 21 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1:2.10-1
+- Updated to release 2.10.
+
 * Sat Mar 12 2011 Yury V. Zaytsev <yury@shurup.com> - 1.56-2
 - Added epoch to follow upstream (thanks to Dave Miller!)
 
