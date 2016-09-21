@@ -22,6 +22,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl
 BuildRequires: perl(version)
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Youri-Utils is a Perl module that implements Youri shared functions.
