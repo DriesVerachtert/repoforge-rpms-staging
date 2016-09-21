@@ -9,14 +9,13 @@
 
 Summary: Perl module that provides simple Radius client facilities
 Name: perl-Authen-Radius
-Version: 0.13
+Version: 0.24
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Authen-Radius/
 
-#Source: http://www.cpan.org/modules/by-module/Authen/Authen-Radius-%{version}.tar.gz
-Source: http://www.cpan.org/modules/by-module/Authen/RadiusPerl-%{version}.tar.gz
+Source: http://www.cpan.org/modules/by-module/Authen/Authen-Radius-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -53,5 +52,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Authen/Radius.pm
 
 %changelog
+* Wed Sep 21 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.24-1
+- Updated to release 0.24.
+
 * Sun Apr 29 2007 Dag Wieers <dag@wieers.com> - 0.13-1
 - Initial package. (using DAR)
