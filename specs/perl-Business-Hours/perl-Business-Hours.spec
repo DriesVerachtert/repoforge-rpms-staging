@@ -9,7 +9,7 @@
 
 Summary: Perl module to calculate business hours in a time period
 Name: perl-Business-Hours
-Version: 0.09
+Version: 0.12
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -56,6 +56,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Business/Hours.pm
 
 %changelog
+* Thu Sep 22 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.12-1
+- Updated to release 0.12.
+
 * Tue Jan  5 2010 Christoph Maser <cmr@financial.com> - 0.09-1
 - Updated to version 0.09.
 
