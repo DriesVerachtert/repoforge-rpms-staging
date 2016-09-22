@@ -6,21 +6,22 @@
 %define perl_vendorarch %(eval "`%{__perl} -V:installvendorarch`"; echo $installvendorarch)
 
 %define real_name Bio-ASN1-EntrezGene
-%define real_version 1.09
+%define real_version 1.72
 
 Summary: Perl module that implements a Parser for NCBI Entrez Gene
 Name: perl-Bio-ASN1-EntrezGene
-Version: 1.091
+Version: 1.72
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Bio-ASN1-EntrezGene/
 
-Source: http://www.cpan.org/modules/by-module/Bio/Bio-ASN1-EntrezGene-%{version}.tgz
+Source: http://www.cpan.org/modules/by-module/Bio/Bio-ASN1-EntrezGene-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Bio-ASN1-EntrezGene is a Perl module that implements regular
@@ -48,7 +49,7 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST README README.1st examples/
+%doc Changes MANIFEST README.md examples/
 %doc %{_mandir}/man3/*.3pm*
 %dir %{perl_vendorlib}/Bio/
 %dir %{perl_vendorlib}/Bio/ASN1/
@@ -58,6 +59,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Bio/ASN1/Sequence.pm
 
 %changelog
+* Thu Sep 22 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.72-1
+- Updated to release 1.72.
+
 * Sun Nov 18 2007 Dag Wieers <dag@wieers.com> - 1.091-1
 - Updated to release 1.091.
 
