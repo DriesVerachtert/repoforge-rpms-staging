@@ -12,7 +12,7 @@
 
 Summary: Work with International Standard Book Numbers
 Name: perl-Business-ISBN
-Version: 2.05
+Version: 3.003
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -58,10 +58,10 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes LICENSE MANIFEST META.yml README bad-isbn13s.txt bad-isbns.txt isbn13s.txt isbns.txt examples/
-%doc %{_mandir}/man3/ISBN.3pm*
-%doc %{_mandir}/man3/ISBN10.3pm*
-%doc %{_mandir}/man3/ISBN13.3pm*
+%doc Changes LICENSE MANIFEST META.yml README.pod bad-isbn13s.txt bad-isbns.txt isbn13s.txt isbns.txt examples/
+%doc %{_mandir}/man3/Business::ISBN.3pm*
+%doc %{_mandir}/man3/Business::ISBN10.3pm*
+%doc %{_mandir}/man3/Business::ISBN13.3pm*
 %dir %{perl_vendorlib}/Business/
 #%{perl_vendorlib}/Business/ISBN/
 %{perl_vendorlib}/Business/ISBN.pm
@@ -69,6 +69,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Business/ISBN13.pm
 
 %changelog
+* Thu Sep 22 2016 Dries Verachtert <dries.verachtert@dries.eu> - 3.003-1
+- Updated to release 3.003.
+
 * Tue Jan  5 2010 Christoph Maser <cmr@financial.com> - 2.05-1
 - Updated to version 2.05.
 
