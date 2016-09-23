@@ -9,7 +9,7 @@
 
 Summary: Uses an mmap'ed file to act as a shared memory interprocess cache
 Name: perl-Cache-FastMmap
-Version: 1.34
+Version: 1.44
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -50,14 +50,17 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %defattr(-, root, root, 0755)
 %doc Changes MANIFEST META.yml README
 %doc %{_mandir}/man3/Cache::FastMmap.3pm*
-%doc %{_mandir}/man3/Cache::FastMmap::CImpl.3pm*
+#%doc %{_mandir}/man3/Cache::FastMmap::CImpl.3pm*
 %dir %{perl_vendorarch}/auto/Cache/
 %{perl_vendorarch}/auto/Cache/FastMmap/
 %dir %{perl_vendorarch}/Cache/
-%{perl_vendorarch}/Cache/FastMmap/
+#%{perl_vendorarch}/Cache/FastMmap/
 %{perl_vendorarch}/Cache/FastMmap.pm
 
 %changelog
+* Fri Sep 23 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.44-1
+- Updated to release 1.44.
+
 * Tue Jan  5 2010 Christoph Maser <cmr@financial.com> - 1.34-1
 - Updated to version 1.34.
 
