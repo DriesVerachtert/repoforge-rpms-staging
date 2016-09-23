@@ -9,7 +9,7 @@
 
 Summary: Produce csv output from a CGI::Application runmode
 Name: perl-CGI-Application-Plugin-Output-XSV
-Version: 1.00
+Version: 1.02
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -55,6 +55,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/CGI/Application/Plugin/Output/XSV.pm
 
 %changelog
+* Fri Sep 23 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.02-1
+- Updated to release 1.02.
+
 * Tue Nov 06 2007 Dag Wieers <dag@wieers.com> - 1.00-1
 - Updated to release 1.00.
 
