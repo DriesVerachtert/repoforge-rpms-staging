@@ -10,7 +10,7 @@
 
 Summary: Perl module named common-sense
 Name: perl-common-sense
-Version: 3.0
+Version: 3.74
 Release: 1%{?dist}
 License: GPL
 Group: Applications/CPAN
@@ -51,9 +51,13 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %defattr(-, root, root, 0755)
 %doc Changes MANIFEST META.yml README
 %doc %{_mandir}/man3/common::sense.3pm.gz
-%{perl_vendorlib}/common/sense.pm
+%{perl_vendorarch}/common/sense.pm
+%{perl_vendorarch}/common/sense.pod
 
 %changelog
+* Sat Sep 24 2016 Dries Verachtert <dries.verachtert@dries.eu> - 3.74-1
+- Updated to release 3.74.
+
 * Thu Dec 31 2009 Christoph Maser <cmr@financial.com> - 3.0-1
 - Updated to version 3.0.
 
