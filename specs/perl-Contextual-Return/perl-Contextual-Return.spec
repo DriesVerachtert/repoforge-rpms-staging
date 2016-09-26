@@ -6,18 +6,18 @@
 %define perl_vendorarch %(eval "`%{__perl} -V:installvendorarch`"; echo $installvendorarch)
 
 %define real_name Contextual-Return
-%define real_version 0.002001
+%define real_version 0.004008
 
 Summary: Perl module to create context-senstive return values
 Name: perl-Contextual-Return
-Version: 0.2.1
+Version: 0.4.8
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Contextual-Return/
 
 #Source: http://www.cpan.org/modules/by-module/Contextual/Contextual-Return-v%{version}.tar.gz
-Source: http://www.cpan.org/authors/id/D/DC/DCONWAY/Contextual-Return-v%{version}.tar.gz
+Source: http://www.cpan.org/authors/id/D/DC/DCONWAY/Contextual-Return-%{real_version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -29,7 +29,7 @@ Requires: perl
 Contextual-Return is a Perl module to create context-senstive return values.
 
 %prep
-%setup -n %{real_name}-v%{version}
+%setup -n %{real_name}-%{real_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
@@ -54,5 +54,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Contextual/Return.pm
 
 %changelog
+* Mon Sep 26 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.4.8-1
+- Updated to release 0.4.8.
+
 * Mon Apr 30 2007 Dag Wieers <dag@wieers.com> - 0.002001-1
 - Initial package. (using DAR)
