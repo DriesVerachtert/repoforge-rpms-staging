@@ -16,7 +16,7 @@
 
 Summary: Convert between perl data structures and ASN.1 encoded packets
 Name: perl-Convert-ASN1
-Version: 0.22
+Version: 0.27
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -58,7 +58,7 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc ChangeLog MANIFEST META.yml README SIGNATURE examples/
+%doc ChangeLog MANIFEST META.yml README.md SIGNATURE examples/
 %doc %{_mandir}/man3/Convert::ASN1.3pm*
 %doc %{perl_vendorlib}/Convert/ASN1/
 %{perl_vendorlib}/Convert/ASN1/
@@ -66,6 +66,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Convert/ASN1.pod
 
 %changelog
+* Mon Sep 26 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.27-1
+- Updated to release 0.27.
+
 * Tue Oct 07 2008 Dag Wieers <dag@wieers.com> - 0.22-1
 - Updated to release 0.22.
 
