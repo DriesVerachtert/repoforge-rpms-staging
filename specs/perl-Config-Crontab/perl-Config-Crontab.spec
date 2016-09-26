@@ -9,7 +9,7 @@
 
 Summary: Read and write Vixie compatible crontab files
 Name: perl-Config-Crontab
-Version: 1.30
+Version: 1.41
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -75,6 +75,9 @@ find example/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Config/Crontab.pm
 
 %changelog
+* Mon Sep 26 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.41-1
+- Updated to release 1.41.
+
 * Thu Dec 18 2008 Dag Wieers <dag@wieers.com> - 1.30-1
 - Updated to release 1.30.
 
