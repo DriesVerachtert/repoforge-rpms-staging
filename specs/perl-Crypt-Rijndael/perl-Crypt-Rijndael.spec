@@ -10,13 +10,13 @@
 
 Summary: Crypt::CBC compliant Rijndael encryption module
 Name: perl-Crypt-Rijndael
-Version: 1.09
+Version: 1.13
 Release: 1%{?dist}
 License: GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Crypt-Rijndael/
 
-Source: http://search.cpan.org/CPAN/authors/id/B/BD/BDFOY/Crypt-Rijndael-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/L/LE/LEONT/Crypt-Rijndael-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
@@ -49,14 +49,14 @@ CFLAGS="%{optflags}" %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildr
 find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 ### Clean up docs
-find examples/ -type f -exec %{__chmod} a-x {} \;
+#find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %clean
 %{__rm} -rf %{buildroot}
 
 %files
 %defattr(-, root, root, 0755)
-%doc COPYING Changes LICENSE MANIFEST META.yml NEWS README examples/
+%doc COPYING Changes LICENSE MANIFEST META.yml NEWS README
 %doc %{_mandir}/man3/Crypt::Rijndael.3*
 %dir %{perl_vendorarch}/auto/Crypt/
 %{perl_vendorarch}/auto/Crypt/Rijndael/
@@ -64,6 +64,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorarch}/Crypt/Rijndael.pm
 
 %changelog
+* Mon Sep 26 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.13-1
+- Updated to release 1.13.
+
 * Sat Feb  6 2010 Christoph Maser <cmr@financial.com> - 1.09-1
 - Updated to version 1.09.
 
