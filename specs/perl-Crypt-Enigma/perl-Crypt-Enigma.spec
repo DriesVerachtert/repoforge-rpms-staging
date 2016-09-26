@@ -10,8 +10,8 @@
 
 Summary: Implementation of the WWII Enigma Machine
 Name: perl-Crypt-Enigma
-Version: 1.3
-Release: 1.2%{?dist}
+Version: 1.1
+Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Crypt-Enigma/
@@ -45,10 +45,15 @@ This module contains a perl implementation of the WWII Enigma machine.
 %files
 %defattr(-, root, root, 0755)
 %doc Changes README
-%doc %{_mandir}/man3/*
+%doc %{_mandir}/man3/Crypt::Enigma.3pm*
 %{perl_vendorlib}/Crypt/Enigma.pm
+%{perl_vendorlib}/Crypt/bombe.pl
+%{perl_vendorlib}/Crypt/encode.pl
 
 %changelog
+* Mon Sep 26 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.1-1
+- Updated to release 1.1.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 1.3-1.2
 - Rebuild for Fedora Core 5.
 
