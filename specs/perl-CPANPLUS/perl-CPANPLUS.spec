@@ -12,7 +12,7 @@
 
 Summary: Command-line access to the CPAN interface
 Name: perl-CPANPLUS
-Version: 0.9001
+Version: 0.9160
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -24,6 +24,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl >= 2:5.8.1
 BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(Data::Dumper)
 Requires: perl >= 2:5.8.1
 
 %description
@@ -67,6 +68,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/CPANPLUS.pm
 
 %changelog
+* Mon Sep 26 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.9160-1
+- Updated to release 0.9160.
+
 * Thu Dec 31 2009 Christoph Maser <cmr@financial.com> - 0.9001-1
 - Updated to version 0.9001.
 
