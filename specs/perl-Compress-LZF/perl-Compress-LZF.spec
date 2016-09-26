@@ -9,7 +9,7 @@
 
 Summary: Extremely light-weight Lev-Zimpel-Free compression
 Name: perl-Compress-LZF
-Version: 3.43
+Version: 3.8
 Release: 1%{?dist}
 License: GPL
 Group: Applications/CPAN
@@ -56,6 +56,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Compress/LZF.pm
 
 %changelog
+* Mon Sep 26 2016 Dries Verachtert <dries.verachtert@dries.eu> - 3.8-1
+- Updated to release 3.8.
+
 * Wed Jul 15 2009 Christoph Maser <cmr@financial.com> - 3.43-1
 - Updated to version 3.43.
 
