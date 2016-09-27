@@ -9,7 +9,7 @@
 
 Summary: Framework to provide start/stop/reload for a daemon
 Name: perl-Daemon-Generic
-Version: 0.61
+Version: 0.84
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Framework to provide start/stop/reload for a daemon.
@@ -43,7 +44,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc CHANGELOG MANIFEST META.yml README
+%doc Changes MANIFEST META.yml README
 %doc %{_mandir}/man3/Daemon::Generic.3pm*
 %doc %{_mandir}/man3/Daemon::Generic::*.3pm*
 %dir %{perl_vendorlib}/Daemon/
@@ -52,5 +53,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Daemon/Generic.pod
 
 %changelog
+* Tue Sep 27 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.84-1
+- Updated to release 0.84.
+
 * Sun Jul 19 2009 Dag Wieers <dag@wieers.com> - 0.61-1
 - Initial package. (using DAR)
