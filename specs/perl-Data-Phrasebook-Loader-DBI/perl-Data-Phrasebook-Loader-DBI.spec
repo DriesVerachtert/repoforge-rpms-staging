@@ -9,7 +9,7 @@
 
 Summary: Absract your phrases with a DBI driver
 Name: perl-Data-Phrasebook-Loader-DBI
-Version: 0.11
+Version: 0.16
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -51,5 +51,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %dir %{perl_vendorlib}/Data/Phrasebook/
 
 %changelog
+* Wed Sep 28 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.16-1
+- Updated to release 0.16.
+
 * Sun Apr 29 2007 Dries Verachtert <dries@ulyssis.org> - 0.11-1
 - Initial package.
