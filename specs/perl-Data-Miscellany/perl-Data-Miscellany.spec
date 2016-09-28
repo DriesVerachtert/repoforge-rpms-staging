@@ -7,7 +7,7 @@
 
 Summary: Collection of miscellaneous subroutines
 Name: perl-Data-Miscellany
-Version: 0.04
+Version: 1.100850
 Release: 1%{?dist}
 License: perl
 Group: Applications/CPAN
@@ -55,6 +55,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Data/Miscellany.pm
 
 %changelog
+* Wed Sep 28 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.100850-1
+- Updated to release 1.100850.
+
 * Fri Mar 26 2010 Christoph Maser <cmr.financial.com> - 0.04-1
 - initial package
 
