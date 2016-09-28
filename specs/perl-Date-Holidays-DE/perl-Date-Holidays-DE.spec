@@ -9,7 +9,7 @@
 
 Summary: Creates a list of german holidays in a given year
 Name: perl-Date-Holidays-DE
-Version: 1.0.1
+Version: 1.9
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -64,6 +64,9 @@ find example/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Date/Holidays/DE.pm
 
 %changelog
+* Wed Sep 28 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.9-1
+- Updated to release 1.9.
+
 * Sat May 10 2008 Dag Wieers <dag@wieers.com> - 1.0.1-1
 - Updated to release 1.0.1.
 
