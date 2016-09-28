@@ -9,7 +9,7 @@
 
 Summary: Create DateTime parser classes and objects
 Name: perl-DateTime-Format-Builder
-Version: 0.7901
+Version: 0.81
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -51,16 +51,19 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc AUTHORS Artistic COPYING CREDITS Changes INSTALL LICENCE MANIFEST MANIFEST.SKIP META.yml README SIGNATURE examples/
+%doc Changes INSTALL LICENSE MANIFEST META.json README examples/
 %doc %{_mandir}/man3/DateTime::Format::Builder.3pm*
 %doc %{_mandir}/man3/DateTime::Format::Builder::*.3pm*
 %dir %{perl_vendorlib}/DateTime/
 %dir %{perl_vendorlib}/DateTime/Format/
 %{perl_vendorlib}/DateTime/Format/Builder/
 %{perl_vendorlib}/DateTime/Format/Builder.pm
-%{perl_vendorlib}/DateTime/Format/Builder.pod
+#%{perl_vendorlib}/DateTime/Format/Builder.pod
 
 %changelog
+* Wed Sep 28 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.81-1
+- Updated to release 0.81.
+
 * Mon Nov 05 2007 Dag Wieers <dag@wieers.com> - 0.7901-1
 - Updated to release 0.7901.
 
