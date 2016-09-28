@@ -65,6 +65,7 @@ you will need to install %{name}-devel.
 %install
 %{__rm} -rf %{buildroot}
 %{__make} install DESTDIR="%{buildroot}"
+%{__rm} -f %{buildroot}%{_datadir}/info/dir
 
 %clean
 %{__rm} -rf %{buildroot}
