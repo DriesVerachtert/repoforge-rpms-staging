@@ -10,11 +10,11 @@
 %define perl_vendorarch %(eval "`%{__perl} -V:installvendorarch`"; echo $installvendorarch)
 
 %define real_name DateTime
-%define real_version 0.70
+%define real_version 1.39
 
 Summary: Date and time objects
 Name: perl-DateTime
-Version: %{real_version}00
+Version: %{real_version}
 %{?_with_epoch:Epoch: 1}
 Release: 1%{?dist}
 License: Artistic/GPL
@@ -87,6 +87,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/DateTime/
 
 %changelog
+* Wed Sep 28 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.39-1
+- Updated to release 1.39.
+
 * Mon Jun 13 2011 Steve Huff <shuff@vecna.org> - 1:0.7000-1
 - Updated to version 0.70.
 - Added Epoch in el6 because RH did.
