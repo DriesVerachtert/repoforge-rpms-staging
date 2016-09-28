@@ -9,7 +9,7 @@
 
 Summary: Perl module that implements stringified perl data structures
 Name: perl-Data-Dumper
-Version: 2.125
+Version: 2.161
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -55,6 +55,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Data/Dumper/
 
 %changelog
+* Wed Sep 28 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.161-1
+- Updated to release 2.161.
+
 * Thu Dec 31 2009 Christoph Maser <cmr@financial.com> - 2.125-1
 - Updated to version 2.125.
 
