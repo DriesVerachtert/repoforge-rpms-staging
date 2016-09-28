@@ -12,7 +12,7 @@
 
 Summary: Perl module to parse and validate simple name/value option pairs
 Name: perl-Data-OptList
-Version: 0.105
+Version: 0.110
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -27,6 +27,7 @@ BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(List::Util)
 BuildRequires: perl(Params::Util) >= 0.14
 BuildRequires: perl(Sub::Install) >= 0.92
+BuildRequires: perl(Test::More)
 Requires: perl
 Requires: perl(List::Util)
 Requires: perl(Params::Util) >= 0.14
@@ -67,6 +68,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Data/OptList.pm
 
 %changelog
+* Wed Sep 28 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.110-1
+- Updated to release 0.110.
+
 * Sat Feb  6 2010 Christoph Maser <cmr@financial.com> - 0.105-1
 - Updated to version 0.105.
 
