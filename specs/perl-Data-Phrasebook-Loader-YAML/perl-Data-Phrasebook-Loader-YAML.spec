@@ -9,7 +9,7 @@
 
 Summary: Absract your phrases with YAML
 Name: perl-Data-Phrasebook-Loader-YAML
-Version: 0.09
+Version: 0.13
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -45,7 +45,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Artistic COPYING Changes INSTALL LICENSE MANIFEST MANIFEST.SKIP META.yml README
+%doc Changes INSTALL LICENSE MANIFEST META.json README
 %doc %{_mandir}/man3/Data::Phrasebook::Loader::YAML.3pm*
 %dir %{perl_vendorlib}/Data/
 %dir %{perl_vendorlib}/Data/Phrasebook/
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Data/Phrasebook/Loader/YAML.pm
 
 %changelog
+* Wed Sep 28 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.13-1
+- Updated to release 0.13.
+
 * Thu Nov 08 2007 Dag Wieers <dag@wieers.com> - 0.09-1
 - Updated to release 0.09.
 
