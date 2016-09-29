@@ -11,7 +11,7 @@
 
 Summary: Extension for the GNU Readline/History library
 Name: perl-Term-ReadLine-Gnu
-Version: 1.19
+Version: 1.34
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -62,6 +62,7 @@ find eg/ -type f -exec %{__chmod} a-x {} \;
 %defattr(-, root, root, 0755)
 %doc INSTALL MANIFEST META.yml README eg/
 %doc %{_mandir}/man3/Term::ReadLine::Gnu.3pm*
+%doc %{_mandir}/man1/perlsh.1*
 %dir %{perl_vendorarch}/auto/Term/
 %dir %{perl_vendorarch}/auto/Term/ReadLine/
 %{perl_vendorarch}/auto/Term/ReadLine/Gnu/
@@ -69,8 +70,12 @@ find eg/ -type f -exec %{__chmod} a-x {} \;
 %dir %{perl_vendorarch}/Term/ReadLine/
 %{perl_vendorarch}/Term/ReadLine/Gnu/
 %{perl_vendorarch}/Term/ReadLine/Gnu.pm
-
+%{_bindir}/perlsh
+   
 %changelog
+* Thu Sep 29 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.34-1
+- Updated to release 1.34.
+
 * Fri Jun 12 2009 Christoph Maser <cmr@financial.com> - 1.19-1
 - Updated to version 1.19.
 
