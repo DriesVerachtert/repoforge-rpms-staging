@@ -9,8 +9,8 @@
 
 Summary: Provides a DAV Server
 Name: perl-Net-DAV-Server
-Version: 1.29
-Release: 1%{?dist}
+Version: 1.305
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Net-DAV-Server/
@@ -58,9 +58,19 @@ cadaver and the Mac OS X Finder as clients.
 %defattr(-, root, root, 0755)
 %doc CHANGES README
 %doc %{_mandir}/man3/*
+%dir %{perl_vendorlib}/Net/DAV/
 %{perl_vendorlib}/Net/DAV/Server.pm
+%{perl_vendorlib}/Net/DAV/Lock.pm
+%{perl_vendorlib}/Net/DAV/LockManager.pm
+%{perl_vendorlib}/Net/DAV/LockManager.pod
+%{perl_vendorlib}/Net/DAV/LockManager/DB.pm
+%{perl_vendorlib}/Net/DAV/LockManager/Simple.pm
+%{perl_vendorlib}/Net/DAV/UUID.pm
 
 %changelog
+* Thu Sep 29 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.305-2
+- Updated to release 1.305.
+
 * Mon Sep 18 2006 Dries Verachtert <dries@ulyssis.org> - 1.29-1
 - Updated to release 1.29.
 
