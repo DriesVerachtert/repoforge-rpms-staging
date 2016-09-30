@@ -12,7 +12,7 @@
 
 Summary: Library to extract height/width from images
 Name: perl-Image-Size
-Version: 3.220
+Version: 3.300
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -55,17 +55,20 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc ChangeLog MANIFEST MANIFEST.SKIP META.yml README SIGNATURE
+%doc ChangeLog MANIFEST MANIFEST.SKIP META.yml README
 %doc %{_mandir}/man3/Image::Size.3pm*
 %doc %{_mandir}/man1/imgsize.1*
 %dir %{perl_vendorlib}/Image/
 #%{perl_vendorlib}/Image/Size/
 %{perl_vendorlib}/Image/Size.pm
-%dir %{perl_vendorlib}/auto/Image/
-%{perl_vendorlib}/auto/Image/Size/
+#%dir %{perl_vendorlib}/auto/Image/
+#%{perl_vendorlib}/auto/Image/Size/
 %{_bindir}/imgsize
 
 %changelog
+* Fri Sep 30 2016 Dries Verachtert <dries.verachtert@dries.eu> - 3.300-1
+- Updated to release 3.300.
+
 * Wed Dec 23 2009 Christoph Maser <cmr@financial.com> - 3.220-1
 - Updated to version 3.220.
 
