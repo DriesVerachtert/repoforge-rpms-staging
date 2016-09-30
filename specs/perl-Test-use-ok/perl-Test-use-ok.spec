@@ -9,7 +9,7 @@
 
 Summary: Alternative to Test::More::use_ok
 Name: perl-Test-use-ok
-Version: 0.02
+Version: 0.11
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl >= 0:5.005
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl >= 0:5.005
 
 %description
@@ -44,7 +45,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST META.yml README SIGNATURE
+%doc Changes MANIFEST META.yml README
 %doc %{_mandir}/man3/ok.3pm*
 %doc %{_mandir}/man3/Test::use::ok.3pm*
 %dir %{perl_vendorlib}/Test/
@@ -53,5 +54,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Test/use/ok.pm
 
 %changelog
+* Thu Sep 29 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.11-1
+- Updated to release 0.11.
+
 * Sun Aug 05 2007 Dag Wieers <dag@wieers.com> - 0.02-1
 - Initial package. (using DAR)
