@@ -9,7 +9,7 @@
 
 Summary: Perl extension to model fractions
 Name: perl-Number-Fraction
-Version: 1.12
+Version: 2.00
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Number/Fraction.pm
 
 %changelog
+* Sun Oct 02 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.00-1
+- Updated to release 2.00.
+
 * Sat Jul  4 2009 Christoph Maser <cmr@financial.com> - 1.12-1
 - Updated to version 1.12.
 
