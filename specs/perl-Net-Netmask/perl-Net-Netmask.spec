@@ -10,7 +10,7 @@
 
 Summary: Parse, manipulate and lookup IP network blocks
 Name: perl-Net-Netmask
-Version: 1.9015
+Version: 1.9022
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -46,12 +46,15 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc CHANGELOG README
+%doc Changes README
 %{_mandir}/man3/*
 %{perl_vendorlib}/Net/Netmask.pm
 %{perl_vendorlib}/Net/Netmask.pod
 
 %changelog
+* Mon Oct 03 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.9022-1
+- Updated to release 1.9022.
+
 * Wed Jan 03 2007 Dries Verachtert <dries@ulyssis.org> - 1.9015-1
 - Updated to release 1.9015.
 
