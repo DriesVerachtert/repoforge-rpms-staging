@@ -9,7 +9,7 @@
 
 Summary: Convert to and from the Rad50 character set
 Name: perl-Encode-RAD50
-Version: 0.005
+Version: 0.012
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -51,6 +51,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Encode/RAD50.pm
 
 %changelog
+* Tue Oct 04 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.012-1
+- Updated to release 0.012.
+
 * Fri Nov 09 2007 Dag Wieers <dag@wieers.com> - 0.005-1
 - Updated to release 0.005.
 
