@@ -9,7 +9,7 @@
 
 Summary: Convert singular to plural
 Name: perl-Lingua-EN-Inflect
-Version: 1.891
+Version: 1.900
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -21,6 +21,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl(Test::More)
 BuildRequires: perl(version)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(Test::More)
 Requires: perl(version)
 
@@ -67,9 +68,12 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %dir %{perl_vendorlib}/Lingua/EN/
 #%{perl_vendorlib}/Lingua/EN/Inflect/
 %{perl_vendorlib}/Lingua/EN/Inflect.pm
-%{perl_vendorlib}/Lingua/EN/*.pl
+#%{perl_vendorlib}/Lingua/EN/*.pl
 
 %changelog
+* Wed Oct 05 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.900-1
+- Updated to release 1.900.
+
 * Tue Dec 22 2009 Christoph Maser <cmr@financial.com> - 1.891-1
 - Updated to version 1.891.
 
