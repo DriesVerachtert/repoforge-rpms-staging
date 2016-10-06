@@ -10,7 +10,7 @@
 
 Summary: Perl module for managing simple SQL libraries stored in INI-like files
 Name: perl-SQL-Library
-Version: 0.0.3
+Version: 0.0.5
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -52,5 +52,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/SQL/Library.pm
 
 %changelog
+* Thu Oct 06 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.0.5-1
+- Updated to release 0.0.5.
+
 * Fri May 04 2007 Dag Wieers <dag@wieers.com> - 0.0.3-1
 - Initial package. (using DAR)
