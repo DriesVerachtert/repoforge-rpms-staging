@@ -9,7 +9,7 @@
 
 Summary: Use references as hash keys
 Name: perl-Tie-RefHash
-Version: 1.38
+Version: 1.39
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -50,6 +50,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Tie/RefHash.pm
 
 %changelog
+* Fri Oct 07 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.39-1
+- Updated to release 1.39.
+
 * Wed Jan 23 2008 Dag Wieers <dag@wieers.com> - 1.38-1
 - Updated to release 1.38.
 
