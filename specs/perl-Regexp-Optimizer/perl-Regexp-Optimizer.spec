@@ -9,7 +9,7 @@
 
 Summary: Perl module to build regular expressions out of a list of words
 Name: perl-Regexp-Optimizer
-Version: 0.15
+Version: 0.23
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Regexp-Optimizer is a Perl module to build regular expressions
@@ -40,14 +41,14 @@ out of a list of words.
 find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 ### Clean up docs
-find eg/ -type f -exec %{__chmod} a-x {} \;
+#find eg/ -type f -exec %{__chmod} a-x {} \;
 
 %clean
 %{__rm} -rf %{buildroot}
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST META.yml README eg/
+%doc Changes MANIFEST META.yml README
 %doc %{_mandir}/man3/Regexp::List.3pm*
 %doc %{_mandir}/man3/Regexp::Optimizer.3pm*
 %dir %{perl_vendorlib}/Regexp/
@@ -55,5 +56,8 @@ find eg/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Regexp/Optimizer.pm
 
 %changelog
+* Sat Oct 08 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.23-1
+- Updated to release 0.23.
+
 * Sun Oct 07 2007 Dag Wieers <dag@wieers.com> - 0.15-1
 - Initial package. (using DAR)
