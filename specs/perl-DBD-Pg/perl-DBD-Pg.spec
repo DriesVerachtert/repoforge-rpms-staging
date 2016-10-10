@@ -16,8 +16,8 @@
 
 Summary: DBI PostgreSQL interface
 Name: perl-DBD-Pg
-Version: 3.5.1
-Release: 1%{?dist}
+Version: 3.5.3
+Release: 0%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/DBD-Pg/
