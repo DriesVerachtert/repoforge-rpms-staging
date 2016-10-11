@@ -12,7 +12,7 @@
 
 Summary: Perl module to update RPM packages automatically
 Name: perl-Youri-Package-RPM-Updater
-Version: 0.4.7
+Version: 0.6.0
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -23,6 +23,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Youri-Package-RPM-Updater is a Perl module to update RPM packages
@@ -56,6 +57,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Youri/Package/RPM/Updater.pm
 
 %changelog
+* Tue Oct 11 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.6.0-1
+- Updated to release 0.6.0.
+
 * Mon Jul 20 2009 Christoph Maser <cmr@financial.com> - 0.4.7-1
 - Updated to version 0.4.7.
 
