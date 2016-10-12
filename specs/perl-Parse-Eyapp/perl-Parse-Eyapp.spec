@@ -9,7 +9,7 @@
 
 Summary: Extensions for Parse::Yapp
 Name: perl-Parse-Eyapp
-Version: 1.156
+Version: 1.182
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -22,6 +22,8 @@ BuildArch: noarch
 BuildRequires: perl(Data::Dumper) >= 1.0
 BuildRequires: perl(List::Util) >= 1.0
 BuildRequires: perl(Pod::Usage) >= 1.0
+BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(Test::More)
 Requires: perl(Data::Dumper) >= 1.0
 Requires: perl(List::Util) >= 1.0
 Requires: perl(Pod::Usage) >= 1.0
@@ -58,18 +60,24 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %doc Changes MANIFEST META.yml README TODO examples/
 %doc %{_mandir}/man1/eyapp.1*
 %doc %{_mandir}/man1/treereg.1*
-%doc %{_mandir}/man1/vgg.1*
+#%doc %{_mandir}/man1/vgg.1*
 %doc %{_mandir}/man3/Parse::Eyapp.3pm*
 %doc %{_mandir}/man3/Parse::Eyapp::*.3pm*
 %{_bindir}/eyapp
 %{_bindir}/treereg
-%{_bindir}/vgg
+#%{_bindir}/vgg
 %dir %{perl_vendorlib}/Parse/
 %{perl_vendorlib}/Parse/Eyapp/
 %{perl_vendorlib}/Parse/Eyapp.pm
 %{perl_vendorlib}/Parse/Eyapp.pod
+%{perl_vendorlib}/Parse/filter.pl
+%{perl_vendorlib}/Parse/local.preamble.pl
+
 
 %changelog
+* Wed Oct 12 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.182-1
+- Updated to release 1.182.
+
 * Sat Feb  6 2010 Christoph Maser <cmr@financial.com> - 1.156-1
 - Updated to version 1.156.
 
