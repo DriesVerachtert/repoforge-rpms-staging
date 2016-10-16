@@ -9,7 +9,7 @@
 
 Summary: Perl module named HTTP-Parser
 Name: perl-HTTP-Parser
-Version: 0.04
+Version: 0.06
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -23,6 +23,7 @@ BuildRequires: perl
 # From yaml requires
 BuildRequires: perl(HTTP::Request)
 BuildRequires: perl(HTTP::Response)
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 
 %description
@@ -54,5 +55,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/HTTP/Parser.pm
 
 %changelog
+* Sun Oct 16 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.06-1
+- Updated to release 0.06.
+
 * Mon Sep 07 2009 Christoph Maser <cmr@financial.com> - 0.04-1
 - Initial package. (using DAR)
