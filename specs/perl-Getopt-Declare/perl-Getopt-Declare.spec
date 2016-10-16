@@ -9,7 +9,7 @@
 
 Summary: Declaratively Expressed Command-Line Arguments via Regular Expressions
 Name: perl-Getopt-Declare
-Version: 1.12
+Version: 1.14
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -50,6 +50,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Getopt/Declare.pm
 
 %changelog
+* Sun Oct 16 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.14-1
+- Updated to release 1.14.
+
 * Mon Sep 14 2009 Christoph Maser <cmr@financial.com> - 1.12-1
 - Updated to version 1.12.
 
