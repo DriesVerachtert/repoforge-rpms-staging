@@ -9,7 +9,7 @@
 
 Summary: Nagios::Object - Nagios object configuration parsing
 Name: perl-Nagios-Object
-Version: 0.21.12
+Version: 0.21.20
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -68,6 +68,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Nagios/
 
 %changelog
+* Mon Oct 17 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.21.20-1
+- Updated to release 0.21.20.
+
 * Mon Aug  2 2010 Christoph Maser <cmaser@gmx.de> - 0.21.12-1
 - Updated to version 0.21.12.
 
