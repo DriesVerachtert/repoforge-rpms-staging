@@ -9,8 +9,8 @@
 
 Summary: Perl module for operations on Unix Passwd file
 Name: perl-Unix-PasswdFileOps
-Version: 0.2
-Release: 1%{?dist}
+Version: 0.4
+Release: 0%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Unix-PasswdFileOps/
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Unix-PasswdFileOps is a Perl module for operations on Unix Passwd file.
