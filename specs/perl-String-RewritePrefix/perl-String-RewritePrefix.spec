@@ -8,7 +8,7 @@
 
 Summary: Perl module named String-RewritePrefix
 Name: perl-String-RewritePrefix
-Version: 0.005
+Version: 0.007
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -50,13 +50,16 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes INSTALL LICENSE MANIFEST MANIFEST.SKIP META.yml README
+%doc Changes LICENSE MANIFEST META.yml README
 %doc %{_mandir}/man3/String::RewritePrefix.3pm*
 %dir %{perl_vendorlib}/String/
 #%{perl_vendorlib}/String/RewritePrefix/
 %{perl_vendorlib}/String/RewritePrefix.pm
 
 %changelog
+* Tue Oct 18 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.007-1
+- Updated to release 0.007.
+
 * Thu Dec 10 2009 Christoph Maser <cmr@financial.com> - 0.005-1
 - Updated to version 0.005.
 
