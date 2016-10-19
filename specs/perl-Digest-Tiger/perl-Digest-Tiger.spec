@@ -9,8 +9,8 @@
 
 Summary: Implements the tiger hash
 Name: perl-Digest-Tiger
-Version: 0.02
-Release: 1.2%{?dist}
+Version: 0.03
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Digest-Tiger/
@@ -51,5 +51,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Digest/Tiger/
 
 %changelog
+* Wed Oct 19 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.03-1
+- Updated to release 0.03.
+
 * Sat Apr  9 2005 Dries Verachtert <dries@ulyssis.org> - 0.02-1
 - Initial package.
