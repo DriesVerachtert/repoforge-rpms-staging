@@ -8,7 +8,7 @@
 
 Summary: Perl Module Compilation
 Name: perl-Module-Compile
-Version: 0.20
+Version: 0.35
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -19,6 +19,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl >= 0:5.6.0
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl >= 0:5.6.0
 
 %description
@@ -46,13 +47,20 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc Changes MANIFEST META.yml README
 %doc %{_mandir}/man3/*.3pm*
 %dir %{perl_vendorlib}/Module/
-%dir %{perl_vendorlib}/Module/Install/
-%dir %{perl_vendorlib}/Module/Install/Admin/
+#%dir %{perl_vendorlib}/Module/Install/
+#%dir %{perl_vendorlib}/Module/Install/Admin/
 %{perl_vendorlib}/Module/Compile.pm
-%{perl_vendorlib}/Module/Install/Admin/PMC.pm
-%{perl_vendorlib}/Module/Install/PMC.pm
+%{perl_vendorlib}/Module/Compile.pod
+%{perl_vendorlib}/Module/Compile/Opt.pm
+%{perl_vendorlib}/Module/Compile/Opt.pod
+#%{perl_vendorlib}/Module/Install/Admin/PMC.pm
+#%{perl_vendorlib}/Module/Install/PMC.pm
 %{perl_vendorlib}/Module/Optimize.pm
+%{perl_vendorlib}/Module/Compile/Optimize.pod
 
 %changelog
+* Wed Oct 19 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.35-1
+- Updated to release 0.35.
+
 * Sat Aug 04 2007 Dag Wieers <dag@wieers.com> - 0.20-1
 - Initial package. (using DAR)
