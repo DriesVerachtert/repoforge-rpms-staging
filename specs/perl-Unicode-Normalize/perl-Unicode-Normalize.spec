@@ -9,13 +9,13 @@
 
 Summary: Perl module that implements Unicode Normalization Forms
 Name: perl-Unicode-Normalize
-Version: 1.10
+Version: 1.25
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Unicode-Normalize/
 
-Source: http://search.cpan.org/CPAN/authors/id/S/SA/SADAHIRO/Unicode-Normalize-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/K/KH/KHW/Unicode-Normalize-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl(Carp)
@@ -28,6 +28,7 @@ BuildRequires: perl(bytes)
 BuildRequires: perl(constant)
 BuildRequires: perl(strict)
 BuildRequires: perl(warnings)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(Carp)
 Requires: perl(DynaLoader)
 Requires: perl(Exporter)
@@ -79,6 +80,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Unicode/Normalize/
 
 %changelog
+* Sat Oct 22 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.25-1
+- Updated to release 1.25.
+
 * Tue Feb  8 2011 Christoph Maser <cmaser@gmx.de> - 1.10-1
 - Updated to version 1.10.
 
