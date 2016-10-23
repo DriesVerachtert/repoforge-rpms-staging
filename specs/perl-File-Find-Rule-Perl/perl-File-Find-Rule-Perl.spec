@@ -12,8 +12,8 @@
 
 Summary: Common rules for searching for Perl things
 Name: perl-File-Find-Rule-Perl
-Version: 1.09
-Release: 1%{?dist}
+Version: 1.15
+Release: 0%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/File-Find-Rule-Perl/
@@ -56,7 +56,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes LICENSE MANIFEST META.yml README
+%doc Changes MANIFEST META.yml
 %doc %{_mandir}/man3/File::Find::Rule::Perl.3pm*
 %dir %{perl_vendorlib}/File/
 %dir %{perl_vendorlib}/File/Find/
