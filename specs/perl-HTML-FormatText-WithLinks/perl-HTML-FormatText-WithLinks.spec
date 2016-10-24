@@ -9,7 +9,7 @@
 
 Summary: HTML to text conversion with links as footnotes
 Name: perl-HTML-FormatText-WithLinks
-Version: 0.11
+Version: 0.15
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -21,6 +21,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl
 BuildRequires: perl(Test::More)
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 HTML to text conversion with links as footnotes.
@@ -56,6 +57,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/HTML/FormatText/WithLinks.pm
 
 %changelog
+* Mon Oct 24 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.15-1
+- Updated to release 0.15.
+
 * Wed Oct 08 2008 Dag Wieers <dag@wieers.com> - 0.11-1
 - Updated to release 0.11.
 
