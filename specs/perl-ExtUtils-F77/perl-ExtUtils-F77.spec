@@ -9,7 +9,7 @@
 
 Summary: Simple interface to F77 libs
 Name: perl-ExtUtils-F77
-Version: 1.16
+Version: 1.20
 Release: 1%{?dist}
 License: GPL
 Group: Applications/CPAN
@@ -52,9 +52,12 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %dir %{perl_vendorlib}/ExtUtils/
 #%{perl_vendorlib}/ExtUtils/F77/
 %{perl_vendorlib}/ExtUtils/F77.pm
-%{perl_vendorlib}/ExtUtils/._F77.pm
+#%{perl_vendorlib}/ExtUtils/._F77.pm
 
 %changelog
+* Tue Oct 25 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.20-1
+- Updated to release 1.20.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 1.15-1.2
 - Rebuild for Fedora Core 5.
 
