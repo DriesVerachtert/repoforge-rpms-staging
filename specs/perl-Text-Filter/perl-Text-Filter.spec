@@ -9,7 +9,7 @@
 
 Summary: Base class for objects that can read and write text lines
 Name: perl-Text-Filter
-Version: 1.9
+Version: 1.10
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -53,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Text/Filter/
 
 %changelog
+* Wed Oct 26 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.10-1
+- Updated to release 1.10.
+
 * Mon Jun 18 2007 Dries Verachtert <dries@ulyssis.org> - 1.9-1
 - Updated to release 1.9.
 
