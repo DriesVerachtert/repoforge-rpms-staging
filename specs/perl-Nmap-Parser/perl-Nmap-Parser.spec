@@ -9,8 +9,8 @@
 
 Summary: Perl module to parse nmap scan data
 Name: perl-Nmap-Parser
-Version: 1.19
-Release: 2%{?dist}
+Version: 1.31
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Nmap-Parser/
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 perl-Nmap-Parser is a Perl module to parse nmap scan data.
@@ -46,12 +47,15 @@ find %{buildroot} -name "._*" -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes LICENSE MANIFEST META.yml README
+%doc Changes LICENSE MANIFEST META.yml README.md
 %doc %{_mandir}/man3/Nmap::Parser.3pm*
 %dir %{perl_vendorlib}/Nmap/
 %{perl_vendorlib}/Nmap/Parser.pm
 
 %changelog
+* Sat Oct 29 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.31-1
+- Updated to release 1.31.
+
 * Fri Mar 13 2009 Dries Verachtert <cmr@financial.com> - 1.19-2
 - Remove ._ files
 
