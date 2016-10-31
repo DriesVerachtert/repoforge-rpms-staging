@@ -9,8 +9,8 @@
 
 Summary: Provide commonly requested regular expressions
 Name: perl-Regexp-Common
-Version: 2010010201
-Release: 2%{?dist}
+Version: 2016060801
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Regexp-Common/
@@ -61,6 +61,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Regexp/Common.pm
 
 %changelog
+* Mon Oct 31 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2016060801-1
+- Updated to release 2016060801.
+
 * Fri Jun 18 2010 Christoph Maser <cmr@financial.com> - 2010010201-2
 - Changed perl dependency from 5.00473 to 5.4.730.
 
