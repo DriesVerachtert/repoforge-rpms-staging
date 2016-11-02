@@ -7,7 +7,7 @@
 
 Summary: Simple factory objects for SAX namespaced names
 Name: perl-XML-NamespaceFactory
-Version: 1.00
+Version: 1.02
 Release: 1%{?dist}
 License: unknown
 Group: Applications/CPAN
@@ -51,5 +51,8 @@ BuildRequires: perl(ExtUtils::MakeMaker)
 %exclude %{perl_vendorarch}/auto/*/*/.packlist
 
 %changelog
+* Wed Nov 02 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.02-1
+- Updated to release 1.02.
+
 * Mon Feb 07 2011 Christoph Maser <cmaser.gmx.de> - 1.00-1
 - initial package
