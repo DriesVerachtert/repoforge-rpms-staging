@@ -17,7 +17,7 @@
 
 Summary: Perl module for parsing XML encoding maps
 Name: perl-XML-Encoding
-Version: 2.08
+Version: 2.09
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -67,6 +67,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/XML/Encoding.pm
 
 %changelog
+* Thu Nov 03 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.09-1
+- Updated to release 2.09.
+
 * Mon Feb  7 2011 Christoph Maser <cmaser@gmx.de> - 2.08-1
 - Updated to version 2.08.
 
