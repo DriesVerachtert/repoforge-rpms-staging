@@ -9,7 +9,7 @@
 
 Summary: IANA Character Set Registry names and Unicode::MapUTF8
 Name: perl-I18N-Charset
-Version: 1.394
+Version: 1.415
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -23,6 +23,7 @@ BuildRequires: perl >= 0:5.004
 BuildRequires: perl(IO::Capture::Stderr)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Test::Pod)
+BuildRequires: perl(Env)
 BuildRequires: perl(Test::Pod::Coverage)
 BuildRequires: perl(ExtUtils::MakeMaker) >= 0:5.00503
 Requires: perl >= 0:5.004
@@ -58,6 +59,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/I18N/Charset.pm
 
 %changelog
+* Sat Nov 05 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.415-1
+- Updated to release 1.415.
+
 * Wed Oct 08 2008 Dag Wieers <dag@wieers.com> - 1.394-1
 - Updated to release 1.394.
 
