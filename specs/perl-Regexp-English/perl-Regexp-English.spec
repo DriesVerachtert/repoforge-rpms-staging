@@ -9,8 +9,8 @@
 
 Summary: Create regular expressions more verbosely
 Name: perl-Regexp-English
-Version: 1.00
-Release: 1.2%{?dist}
+Version: 1.01
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Regexp-English/
@@ -49,6 +49,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Regexp/English.pm
 
 %changelog
+* Mon Nov 07 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.01-1
+- Updated to release 1.01.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 1.00-1.2
 - Rebuild for Fedora Core 5.
 
