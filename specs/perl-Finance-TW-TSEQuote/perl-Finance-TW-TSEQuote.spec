@@ -9,7 +9,7 @@
 
 Summary: Check stock quotes from Taiwan Security Exchange
 Name: perl-Finance-TW-TSEQuote
-Version: 0.27
+Version: 0.28
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -52,8 +52,13 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %dir %{perl_vendorlib}/Finance/TW/
 #%{perl_vendorlib}/Finance/TW/TSEQuote/
 %{perl_vendorlib}/Finance/TW/TSEQuote.pm
+%{_bindir}/twse-eod-dump
+%{_bindir}/twse-eod-update
 
 %changelog
+* Tue Nov 08 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.28-1
+- Updated to release 0.28.
+
 * Fri Nov 09 2007 Dag Wieers <dag@wieers.com> - 0.27-1
 - Updated to release 0.27.
 
