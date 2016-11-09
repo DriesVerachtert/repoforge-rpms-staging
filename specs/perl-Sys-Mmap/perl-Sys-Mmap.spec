@@ -9,7 +9,7 @@
 
 Summary: Perl module to use mmap to map in a file as a Perl variable
 Name: perl-Sys-Mmap
-Version: 0.14
+Version: 0.17
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -60,6 +60,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Sys/Mmap/
 
 %changelog
+* Wed Nov 09 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.17-1
+- Updated to release 0.17.
+
 * Thu Feb 10 2011 Christoph Maser <cmaser@gmx.de> - 0.14-1
 - Updated to version 0.14.
 
