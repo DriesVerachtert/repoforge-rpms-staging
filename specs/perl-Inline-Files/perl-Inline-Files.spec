@@ -9,7 +9,7 @@
 
 Summary: Multiple virtual files at the end of your code
 Name: perl-Inline-Files
-Version: 0.63
+Version: 0.69
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Inline/Files
 
 %changelog
+* Fri Nov 11 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.69-1
+- Updated to release 0.69.
+
 * Sun Jul  5 2009 Christoph Maser <cmr@financial.com> - 0.63-1
 - Updated to version 0.63.
 
