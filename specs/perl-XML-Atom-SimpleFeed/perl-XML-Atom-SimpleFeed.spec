@@ -9,7 +9,7 @@
 
 Summary: No-fuss generation of Atom syndication feeds
 Name: perl-XML-Atom-SimpleFeed
-Version: 0.86
+Version: 0.900
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -62,5 +62,8 @@ documented, to specify more particulars.
 %exclude %{perl_vendorarch}/auto/*/*/*/.packlist
 
 %changelog
+* Sat Nov 12 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.900-1
+- Updated to release 0.900.
+
 * Tue Aug 03 2010 Steve Huff <shuff@vecna.org> - 0.86-1
 - Initial package.
