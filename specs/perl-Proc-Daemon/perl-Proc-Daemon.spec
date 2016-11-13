@@ -9,8 +9,8 @@
 
 Summary: Run a perl program as a daemon process
 Name: perl-Proc-Daemon
-Version: 0.03
-Release: 1.2%{?dist}
+Version: 0.23
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Proc-Daemon/
@@ -45,12 +45,16 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes README
+%doc Changes LICENSE README.md
 %doc %{_mandir}/man3/*
 %dir %{perl_vendorlib}/Proc/
 %{perl_vendorlib}/Proc/Daemon.pm
+%{perl_vendorlib}/Proc/Daemon.pod
 
 %changelog
+* Sun Nov 13 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.23-1
+- Updated to release 0.23.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.03-1.2
 - Rebuild for Fedora Core 5.
 
