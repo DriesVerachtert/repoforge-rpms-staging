@@ -9,7 +9,7 @@
 
 Summary: Used to justify strings to various alignment styles
 Name: perl-Text-Aligner
-Version: 0.03
+Version: 0.13
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Used to justify strings to various alignment styles.
@@ -50,5 +51,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Text/Aligner.pm
 
 %changelog
+* Tue Nov 15 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.13-1
+- Updated to release 0.13.
+
 * Fri Nov 23 2007 Dag Wieers <dag@wieers.com> - 0.03-1
 - Initial package. (using DAR)
