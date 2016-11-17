@@ -10,13 +10,13 @@
 
 Summary: Load config files of various types
 Name: perl-Catalyst-Plugin-ConfigLoader
-Version: 0.27
+Version: 0.34
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Catalyst-Plugin-ConfigLoader/
 
-Source: http://search.cpan.org/CPAN/authors/id/B/BR/BRICAS/Catalyst-Plugin-ConfigLoader-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/B/BO/BOBTFISH/Catalyst-Plugin-ConfigLoader-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -71,6 +71,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Catalyst/Plugin/ConfigLoader.pm
 
 %changelog
+* Sun Oct 16 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.34-1
+- Updated to release 0.34.
+
 * Tue Jan 12 2010 Christoph Maser <cmr@financial.com> - 0.27-1
 - Updated to version 0.27.
 
