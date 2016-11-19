@@ -9,7 +9,7 @@
 
 Summary: Perl interface to the uulib library
 Name: perl-Convert-UUlib
-Version: 1.34
+Version: 1.5
 Release: 1%{?dist}
 Epoch: 1
 License: GPL or Artistic
@@ -20,7 +20,8 @@ Source: http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/Convert-UUlib-%{ver
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
-BuildRequires: perl(ExtUtils::MakeMaker) 
+BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(Canary::Stability)
 Requires: perl >= 2:5.8.0
 
 %description
@@ -51,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Convert/
 
 %changelog
+* Sat Nov 19 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1:1.5-1
+- Updated to release 1.5.
+
 * Fri Mar 11 2011 David Hrbáč <david@hrbac.cz> - 1:1.34-1
 - new upstream release
 
