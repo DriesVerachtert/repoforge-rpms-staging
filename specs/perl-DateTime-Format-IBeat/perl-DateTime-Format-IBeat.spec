@@ -9,13 +9,13 @@
 
 Summary: Perl module to format times in .beat notation
 Name: perl-DateTime-Format-IBeat
-Version: 0.161
+Version: 0.16
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/DateTime-Format-IBeat/
 
-Source: http://www.cpan.org/modules/by-module/DateTime/DateTime-Format-IBeat-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/S/SP/SPOON/DateTime-Format-IBeat-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -56,5 +56,5 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/DateTime/Format/IBeat.pm
 
 %changelog
-* Mon Apr 30 2007 Dag Wieers <dag@wieers.com> - 0.161-1
+* Mon Apr 30 2007 Dag Wieers <dag@wieers.com> - 0.16-1
 - Initial package. (using DAR)
