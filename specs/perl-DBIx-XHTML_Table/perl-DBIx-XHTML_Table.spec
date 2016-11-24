@@ -9,7 +9,7 @@
 
 Summary: SQL query result set to XML-based HTML table
 Name: perl-%{real_name}
-Version: 1.36
+Version: 1.48
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -60,11 +60,14 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST README
+%doc Changes MANIFEST
 %doc %{_mandir}/man?/*
 %dir %{perl_vendorlib}/DBIx/
 %{perl_vendorlib}/DBIx/*
 
 %changelog
+* Thu Nov 24 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.48-1
+- Updated to release 1.48.
+
 * Thu Feb 04 2010 Steve Huff <shuff@vecna.org> - 1.36-1
 - Initial package.
