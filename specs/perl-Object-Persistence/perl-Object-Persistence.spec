@@ -15,11 +15,12 @@ License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Object-Persistence/
 
-Source: http://www.cpan.org/modules/by-module/Persistence/Object-Persistence-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/V/VI/VIPUL/Object-Persistence-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Object Persistence with Data::Dumper.
