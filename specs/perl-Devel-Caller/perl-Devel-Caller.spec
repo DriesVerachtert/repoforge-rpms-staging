@@ -9,7 +9,7 @@
 
 Summary: meatier versions of C<caller>
 Name: perl-Devel-Caller
-Version: 2.03
+Version: 2.06
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -53,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Devel/Caller.pm
 
 %changelog
+* Fri Nov 25 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.06-1
+- Updated to release 2.06.
+
 * Wed Jan 23 2008 Dag Wieers <dag@wieers.com> - 2.03-1
 - Updated to release 2.03.
 
