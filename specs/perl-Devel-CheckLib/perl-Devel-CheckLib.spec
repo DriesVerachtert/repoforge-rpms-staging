@@ -9,7 +9,7 @@
 
 Summary: Check that a library is available
 Name: perl-Devel-CheckLib
-Version: 0.6
+Version: 1.07
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
+BuildRequires: perl(ExtUtils::MakeMaker)
 
 %description
 Check that a library is available.
@@ -51,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Devel/CheckLib.pm
 
 %changelog
+* Sat Nov 26 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.07-1
+- Updated to release 1.07.
+
 * Mon Jul  6 2009 Christoph Maser <cmr@financial.com> - 0.6-1
 - Updated to version 0.6.
 
