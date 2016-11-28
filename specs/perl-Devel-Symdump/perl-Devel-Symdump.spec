@@ -12,7 +12,7 @@
 
 Summary: Dump symbol names or the symbol table
 Name: perl-Devel-Symdump
-Version: 2.08
+Version: 2.17
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -47,13 +47,16 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc ChangeLog ChangeLog.svn MANIFEST META.yml README SIGNATURE
+%doc Changes MANIFEST META.yml README SIGNATURE
 %doc %{_mandir}/man3/Devel::Symdump.3pm*
 %dir %{perl_vendorlib}/Devel/
 %{perl_vendorlib}/Devel/Symdump/
 %{perl_vendorlib}/Devel/Symdump.pm
 
 %changelog
+* Mon Nov 28 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.17-1
+- Updated to release 2.17.
+
 * Fri Nov 09 2007 Dag Wieers <dag@wieers.com> - 2.08-1
 - Updated to release 2.08.
 
