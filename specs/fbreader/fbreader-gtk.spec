@@ -6,13 +6,13 @@
 
 Summary: E-book reader
 Name: fbreader
-Version: 0.8.4
+Version: 0.99.4
 Release: 1%{?dist}
 License: GPL
 Group: Applications/Multimedia
-URL: http://only.mawhrin.net/fbreader/
+URL: https://fbreader.org/
 
-Source: http://only.mawhrin.net/fbreader/fbreader-sources-%{version}.tgz
+Source: https://fbreader.org/files/desktop/fbreader-sources-%{version}.tgz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: gcc-c++, enca-devel, gtk2-devel
@@ -48,6 +48,9 @@ HTML, fb2, and plain text.
 %{_datadir}/zlibrary/
 
 %changelog
+* Sat Jan 14 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.99.4-1
+- Updated to release 0.99.4.
+
 * Thu Jun 07 2007 Dag Wieers <dag@wieers.com> - 0.8.4-1
 - Updated to release 0.8.4.
 
