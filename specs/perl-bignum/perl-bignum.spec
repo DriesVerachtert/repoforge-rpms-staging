@@ -9,13 +9,13 @@
 
 Summary: Transparent BigNumber support for Perl
 Name: perl-bignum
-Version: 0.23
+Version: 0.47
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/bignum/
 
-Source: http://www.cpan.org/authors/id/T/TE/TELS/math/bignum-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/P/PJ/PJACKLAM/bignum-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -46,7 +46,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc BUGS CHANGES INSTALL LICENSE MANIFEST MANIFEST.SKIP META.yml README SIGNATURE TODO
+%doc BUGS CHANGES LICENSE MANIFEST MANIFEST.SKIP META.yml README SIGNATURE TODO
 %doc %{_mandir}/man3/bigint.3pm*
 %doc %{_mandir}/man3/bignum.3pm*
 %doc %{_mandir}/man3/bigrat.3pm*
@@ -61,6 +61,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/bigrat.pm
 
 %changelog
+* Fri Feb 10 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.47-1
+- Updated to release 0.47.
+
 * Sat May 03 2008 Dag Wieers <dag@wieers.com> - 0.23-1
 - Updated to release 0.23.
 
