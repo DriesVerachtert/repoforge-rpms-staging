@@ -9,18 +9,19 @@
 
 Summary: Library for generic Version Control System access in Perl
 Name: perl-VCS
-Version: 0.16
-Release: 1%{?dist}
+Version: 0.25
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/VCS/
 
-Source: http://search.cpan.org/CPAN/authors/id/M/MK/MKANAT/VCS-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/E/ET/ETJ/VCS-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
 BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(URI)
 
 %description
 `VCS' is an API for abstracting access to all version control systems
@@ -49,14 +50,17 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes README
-%{_bindir}/diff-hist
+%doc BUGS Changes examples MANIFEST META.yml README
+#%{_bindir}/diff-hist
 %doc %{_mandir}/man?/*
 %{perl_vendorlib}/VCS.pm
 %{perl_vendorlib}/VCS/*
 %{perl_vendorlib}/VCS_dev.pod
 
 %changelog
+* Sat Feb 11 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.25-2
+- Updated to release 0.25.
+
 * Tue Feb  8 2011 Christoph Maser <cmaser@gmx.de> - 0.16-1
 - Updated to version 0.16.
 
