@@ -9,8 +9,8 @@
 
 Summary: Perl interface to Careerjet's public search API
 Name: perl-WebService-Careerjet
-Version: 0.12
-Release: 1%{?dist}
+Version: 3.1
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/WebService-Careerjet/
@@ -29,6 +29,7 @@ BuildRequires: perl(LWP::UserAgent) >= 2.033
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Text::Wrap) >= 2001.09292
 BuildRequires: perl(URI::Escape) >= 3.28
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(Carp) >= 1.03
 Requires: perl(Class::AutoAccess) >= 0.02
 Requires: perl(Encode) >= 2.08
@@ -74,6 +75,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/WebService/Careerjet.pm
 
 %changelog
+* Mon Feb 13 2017 Dries Verachtert <dries.verachtert@dries.eu> - 3.1-2
+- Updated to release 3.1.
+
 * Wed Dec  9 2009 Christoph Maser <cmr@financial.com> - 0.12-1
 - Updated to version 0.12.
 
