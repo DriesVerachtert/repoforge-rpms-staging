@@ -9,13 +9,13 @@
 
 Summary: Web service API to MusicBrainz database
 Name: perl-WebService-MusicBrainz
-Version: 0.22
+Version: 1.0.3
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/WebService-MusicBrainz/
 
-Source: http://www.cpan.org/modules/by-module/WebService/WebService-MusicBrainz-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/B/BF/BFAIST/WebService-MusicBrainz-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -46,7 +46,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST META.yml README
+%doc Changes MANIFEST META.* README.md
 %doc %{_mandir}/man3/WebService::MusicBrainz.3pm*
 %doc %{_mandir}/man3/WebService::MusicBrainz::*.3pm*
 %dir %{perl_vendorlib}/WebService/
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/WebService/MusicBrainz.pm
 
 %changelog
+* Tue Feb 14 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.0.3-1
+- Updated to release 1.0.3.
+
 * Mon Jun  8 2009 Christoph Maser <cmr@financial.com> - 0.22-1
 - Updated to version 0.22.
 
