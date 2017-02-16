@@ -9,7 +9,7 @@
 
 Summary: Shorten URL using 0rz.tw
 Name: perl-WWW-Shorten-0rz
-Version: 0.07
+Version: 0.074
 Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/WWW/Shorten/0rz.pm
 
 %changelog
+* Thu Feb 16 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.074-2
+- Updated to release 0.074.
+
 * Thu Jun 11 2009 Christoph Maser <cmr@financial.com> - 0.07-2
 - Add dependency for perl(WWW::Shorten)
 
