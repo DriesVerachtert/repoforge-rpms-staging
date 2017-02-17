@@ -9,8 +9,8 @@
 
 Summary: Automated interface to the Wikipedia
 Name: perl-WWW-Wikipedia
-Version: 1.98
-Release: 1%{?dist}
+Version: 2.04
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/WWW-Wikipedia/
@@ -67,6 +67,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/WWW/Wikipedia.pm
 
 %changelog
+* Fri Feb 17 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.04-2
+- Updated to release 2.04.
+
 * Mon Feb  7 2011 Christoph Maser <cmaser@gmx.de> - 1.98-1
 - Updated to version 1.98.
 
