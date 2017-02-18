@@ -9,8 +9,8 @@
 
 Summary: Run-time properties on scalar variables
 Name: perl-Scalar-Properties
-Version: 0.13
-Release: 1%{?dist}
+Version: 1.100860
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Scalar-Properties/
@@ -50,13 +50,16 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST META.yml README TODO
+%doc Changes INSTALL LICENSE MANIFEST META.* README
 %doc %{_mandir}/man3/Scalar::Properties.3pm*
 %dir %{perl_vendorlib}/Scalar/
 #%{perl_vendorlib}/Scalar/Properties/
 %{perl_vendorlib}/Scalar/Properties.pm
 
 %changelog
+* Sat Feb 18 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.100860-2
+- Updated to release 1.100860.
+
 * Sun Nov 18 2007 Dag Wieers <dag@wieers.com> - 0.13-1
 - Updated to release 0.13.
 
