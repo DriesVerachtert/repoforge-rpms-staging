@@ -9,8 +9,8 @@
 
 Summary: OS independent interface to the Unix 'at' command
 Name: perl-Schedule-At
-Version: 1.09
-Release: 1%{?dist}
+Version: 1.15
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Schedule-At/
@@ -50,6 +50,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Schedule/At.pm
 
 %changelog
+* Sun Feb 19 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.15-2
+- Updated to release 1.15.
+
 * Tue Dec 22 2009 Christoph Maser <cmr@financial.com> - 1.09-1
 - Updated to version 1.09.
 
