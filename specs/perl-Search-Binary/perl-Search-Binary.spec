@@ -9,8 +9,8 @@
 
 Summary: Generic binary search
 Name: perl-Search-Binary
-Version: 0.95
-Release: 1.2%{?dist}
+Version: 0.99
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Search-Binary/
@@ -44,11 +44,14 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc ChangeLog README
+%doc Changes LICENSE MANIFEST META.* README
 %doc %{_mandir}/man3/*
 %{perl_vendorlib}/Search/Binary.pm
 
 %changelog
+* Mon Feb 20 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.99-2
+- Updated to release 0.99.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.95-1.2
 - Rebuild for Fedora Core 5.
 
