@@ -9,8 +9,8 @@
 
 Summary: Library for doing consistent hashing
 Name: perl-Set-ConsistentHash
-Version: 0.91
-Release: 1%{?dist}
+Version: 0.92
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Set-ConsistentHash/
@@ -49,5 +49,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Set/ConsistentHash.pm
 
 %changelog
+* Tue Feb 21 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.92-2
+- Updated to release 0.92.
+
 * Sun Apr 29 2007 Dries Verachtert <dries@ulyssis.org> - 0.91-1
 - Initial package.
