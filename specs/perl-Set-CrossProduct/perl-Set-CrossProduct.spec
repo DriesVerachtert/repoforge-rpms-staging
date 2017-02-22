@@ -9,8 +9,8 @@
 
 Summary: Work with the cross product of two or more sets
 Name: perl-Set-CrossProduct
-Version: 1.93
-Release: 1%{?dist}
+Version: 2.002
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Set-CrossProduct/
@@ -47,7 +47,7 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes LICENSE MANIFEST META.yml README examples/
+%doc Changes LICENSE MANIFEST META.yml README.pod examples/
 %doc %{_mandir}/man1/cross.1*
 %doc %{_mandir}/man3/Set::CrossProduct.3*
 %{_bindir}/cross
@@ -56,6 +56,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Set/CrossProduct.pm
 
 %changelog
+* Wed Feb 22 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.002-2
+- Updated to release 2.002.
+
 * Tue Dec 04 2007 Dag Wieers <dag@wieers.com> - 1.93-1
 - Updated to release 1.93.
 
