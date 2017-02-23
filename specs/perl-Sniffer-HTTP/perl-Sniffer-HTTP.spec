@@ -9,8 +9,8 @@
 
 Summary: Multi-connection sniffer driver
 Name: perl-Sniffer-HTTP
-Version: 0.19
-Release: 1%{?dist}
+Version: 0.24
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Sniffer-HTTP/
@@ -44,7 +44,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST MANIFEST.skip META.yml
+%doc Changes MANIFEST MANIFEST.SKIP META.*
 %doc %{_mandir}/man3/Net::Pcap::FindDevice.3pm*
 %doc %{_mandir}/man3/Sniffer::*
 %dir %{perl_vendorlib}/Net/Pcap/
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Sniffer/
 
 %changelog
+* Thu Feb 23 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.24-2
+- Updated to release 0.24.
+
 * Thu Jun 18 2009 Christoph Maser <cmr@financial.com> - 0.19-1
 - Updated to version 0.19.
 
