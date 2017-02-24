@@ -9,8 +9,8 @@
 
 Summary: Create half-sort subs easily
 Name: perl-Sort-Half-Maker
-Version: 0.03
-Release: 1%{?dist}
+Version: 0.04
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Sort-Half-Maker/
@@ -50,5 +50,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %dir %{perl_vendorlib}/Sort/Half/
 
 %changelog
+* Fri Feb 24 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.04-2
+- Updated to release 0.04.
+
 * Sun Apr 29 2007 Dries Verachtert <dries@ulyssis.org> - 0.03-1
 - Initial package.
