@@ -12,8 +12,8 @@
 
 Summary: Spiffy Perl Interface Framework For You
 Name: perl-Spiffy
-Version: 0.30
-Release: 1%{?dist}
+Version: 0.46
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Spiffy/
@@ -54,8 +54,13 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc Changes README
 %doc %{_mandir}/man3/*
 %{perl_vendorlib}/Spiffy.pm
+%{perl_vendorlib}/Spiffy.pod
+%{perl_vendorlib}/Spiffy/
 
 %changelog
+* Sun Feb 26 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.46-2
+- Updated to release 0.46.
+
 * Sun Mar 26 2006 Dries Verachtert <dries@ulyssis.org> - 0.30-1
 - Updated to release 0.30.
 
