@@ -9,8 +9,8 @@
 
 Summary: Chi Squared test
 Name: perl-Statistics-ChiSquare
-Version: 0.5
-Release: 1.2%{?dist}
+Version: 1.0000
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Statistics-ChiSquare/
@@ -44,11 +44,14 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes README
+%doc ARTISTIC.txt CHANGELOG GPL2.txt MANIFEST.* META.* README
 %doc %{_mandir}/man3/*
 %{perl_vendorlib}/Statistics/ChiSquare.pm
 
 %changelog
+* Tue Feb 28 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.0000-2
+- Updated to release 1.0000.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.5-1.2
 - Rebuild for Fedora Core 5.
 
