@@ -9,8 +9,8 @@
 
 Summary: Simple counting of elements
 Name: perl-Statistics-Frequency
-Version: 0.03
-Release: 1.2%{?dist}
+Version: 0.04
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Statistics-Frequency/
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Statistics/Frequency.pm
 
 %changelog
+* Fri Mar 03 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.04-2
+- Updated to release 0.04.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.03-1.2
 - Rebuild for Fedora Core 5.
 
