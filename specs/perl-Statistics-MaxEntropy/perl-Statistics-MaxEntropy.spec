@@ -9,8 +9,8 @@
 
 Summary: Maximum Entropy Modeling and Feature Induction
 Name: perl-Statistics-MaxEntropy
-Version: 0.9
-Release: 1.2%{?dist}
+Version: 1.0
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Statistics-MaxEntropy/
@@ -61,6 +61,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/auto/Statistics
 
 %changelog
+* Sat Mar 04 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.0-2
+- Updated to release 1.0.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.9-1.2
 - Rebuild for Fedora Core 5.
 
