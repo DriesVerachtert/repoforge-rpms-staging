@@ -9,8 +9,8 @@
 
 Summary: Shannon index.
 Name: perl-Statistics-Shannon
-Version: 0.03
-Release: 1.2%{?dist}
+Version: 0.05
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Statistics-Shannon/
@@ -49,6 +49,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Statistics/Shannon.pm
 
 %changelog
+* Sun Mar 05 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.05-2
+- Updated to release 0.05.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.03-1.2
 - Rebuild for Fedora Core 5.
 
