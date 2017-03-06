@@ -9,8 +9,8 @@
 
 Summary: Simpson index
 Name: perl-Statistics-Simpson
-Version: 0.01
-Release: 1.2%{?dist}
+Version: 0.03
+Release: 2%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Statistics-Simpson/
@@ -49,6 +49,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Statistics/Simpson.pm
 
 %changelog
+* Mon Mar 06 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.03-2
+- Updated to release 0.03.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.01-1.2
 - Rebuild for Fedora Core 5.
 
