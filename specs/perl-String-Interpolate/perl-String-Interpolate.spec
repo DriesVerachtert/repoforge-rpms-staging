@@ -9,8 +9,8 @@
 
 Summary: Wrapper for builtin the Perl interpolation engine
 Name: perl-String-Interpolate
-Version: 0.3
-Release: 1.2%{?dist}
+Version: 0.32
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/String-Interpolate/
@@ -50,6 +50,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/String/Interpolate.pm
 
 %changelog
+* Thu Mar 09 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.32-1
+- Updated to release 0.32.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.3-1.2
 - Rebuild for Fedora Core 5.
 
