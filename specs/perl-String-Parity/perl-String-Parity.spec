@@ -9,8 +9,8 @@
 
 Summary: Generate and test even, odd, mark and space parity on arbitrary strings
 Name: perl-String-Parity
-Version: 1.31
-Release: 1.2%{?dist}
+Version: 1.34
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/String-Parity/
@@ -50,5 +50,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/String/Parity.pm
 
 %changelog
+* Fri Mar 10 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.34-1
+- Updated to release 1.34.
+
 * Sat Apr  2 2005 Dries Verachtert <dries@ulyssis.org> - 1.31-1
 - Initial package.
