@@ -9,7 +9,7 @@
 
 Summary: Perl module to generate random strings based on a pattern
 Name: perl-String-Random
-Version: 0.22
+Version: 0.29
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -57,6 +57,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/String/Random.pm
 
 %changelog
+* Sat Mar 11 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.29-1
+- Updated to release 0.29.
+
 * Sun Nov 18 2007 Dag Wieers <dag@wieers.com> - 0.22-1
 - Updated to release 0.22.
 
