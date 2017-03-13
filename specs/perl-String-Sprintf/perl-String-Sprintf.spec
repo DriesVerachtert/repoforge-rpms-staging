@@ -9,7 +9,7 @@
 
 Summary: Custom overloading of sprintf
 Name: perl-String-Sprintf
-Version: 0.01
+Version: 0.02
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -49,5 +49,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/String/Sprintf.pm
 
 %changelog
+* Mon Mar 13 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.02-1
+- Updated to release 0.02.
+
 * Sun Nov 19 2006 Dries Verachtert <dries@ulyssis.org> - 0.01-1
 - Initial package.
