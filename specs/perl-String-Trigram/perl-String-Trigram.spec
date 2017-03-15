@@ -9,7 +9,7 @@
 
 Summary: Find similar strings by trigram (or 1, 2, 4, etc.-gram) method
 Name: perl-String-Trigram
-Version: 0.11
+Version: 0.12
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -52,12 +52,13 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %defattr(-, root, root, 0755)
 %doc Changes README
 %doc %{_mandir}/man3/*.3pm*
-%dir %{perl_vendorarch}/String/
-%{perl_vendorarch}/String/Trigram.pm
-%dir %{perl_vendorarch}/auto/String/
-%{perl_vendorarch}/auto/String/Trigram/
+%dir %{perl_vendorlib}/String/
+%{perl_vendorlib}/String/Trigram.pm
 
 %changelog
+* Wed Mar 15 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.12-1
+- Updated to release 0.12.
+
 * Thu Jun 18 2009 Christoph Maser <cmr@financial.com> - 0.11-1
 - Updated to version 0.11.
 
