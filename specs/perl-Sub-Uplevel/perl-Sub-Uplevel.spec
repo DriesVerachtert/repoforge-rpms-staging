@@ -12,7 +12,7 @@
 
 Summary: Apparently run a function in a higher stack frame
 Name: perl-Sub-Uplevel
-Version: 0.22
+Version: 0.25
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -56,14 +56,17 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes INSTALL LICENSE MANIFEST MANIFEST.SKIP META.yml README Todo examples/
+%doc Changes LICENSE MANIFEST MANIFEST META.* README examples/
 %doc %{_mandir}/man3/Sub::Uplevel.3pm*
 %dir %{perl_vendorlib}/Sub/
 #%{perl_vendorlib}/Sub/Uplevel/
 %{perl_vendorlib}/Sub/Uplevel.pm
-%{perl_vendorlib}/Sub/Uplevel.pod
+#%{perl_vendorlib}/Sub/Uplevel.pod
 
 %changelog
+* Thu Mar 16 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.25-1
+- Updated to release 0.25.
+
 * Thu Dec 10 2009 Christoph Maser <cmr@financial.com> - 0.22-1
 - Updated to version 0.22.
 
