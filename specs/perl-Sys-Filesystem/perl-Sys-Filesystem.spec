@@ -9,7 +9,7 @@
 
 Summary: Interface to filesystem names and their properties
 Name: perl-Sys-Filesystem
-Version: 1.30
+Version: 1.406
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -22,7 +22,8 @@ BuildArch: noarch
 BuildRequires: perl(Carp)
 BuildRequires: perl(FindBin)
 BuildRequires: perl(IO)
-BuildRequires: perl(Module::Build) >= 0.36
+BuildRequires: perl(ExtUtils::MakeMaker)
+#BuildRequires: perl(Module::Build) >= 0.36
 BuildRequires: perl(Module::Pluggable) >= 3.9
 BuildRequires: perl(Params::Util) >= 1.00
 BuildRequires: perl(Test::More) >= 0.9
@@ -47,12 +48,15 @@ query filesystem names and their properties.
 %setup -n %{real_name}-%{version}
 
 %build
-%{__perl} Build.PL --installdirs vendor --destdir %{buildroot}
-./Build
+#%{__perl} Build.PL --installdirs vendor --destdir %{buildroot}
+CFLAGS="%{optflags}" %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
+%{__make} %{?_smp_mflags} OPTIMIZE="%{optflags}"
+#./Build
 
 %install
 %{__rm} -rf %{buildroot}
-./Build pure_install
+%{__make} pure_install
+#./Build pure_install
 
 ### Clean up buildroot
 find %{buildroot} -name .packlist -exec %{__rm} {} \;
@@ -63,12 +67,15 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes README
+%doc Changes CREDITS LICENSE MANIFEST* META* NOTICE README TODO
 %doc %{_mandir}/man3/Sys::Filesystem*
 %{perl_vendorlib}/Sys/Filesystem.pm
 %{perl_vendorlib}/Sys/Filesystem/
 
 %changelog
+* Fri Mar 17 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.406-1
+- Updated to release 1.406.
+
 * Thu Feb 10 2011 Christoph Maser <cmaser@gmx.de> - 1.30-1
 - Updated to version 1.30.
 
@@ -81,7 +88,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 * Fri Jun 12 2009 Christoph Maser <cmr@financial.com> - 1.23-1
 - Updated to version 1.23.
 
-* Sun Dec 07 2007 Dries Verachtert <dries@ulyssis.org> - 1.22-1
+* Sun Dec  9 2007 Dries Verachtert <dries@ulyssis.org> - 1.22-1
 - Updated to release 1.22.
 - Fixed Win32::DriveInfo requirement, thanks to Noah Romer.
 
