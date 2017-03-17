@@ -9,8 +9,8 @@
 
 Summary: Get the full hostname
 Name: perl-Sys-Hostname-Long
-Version: 1.4
-Release: 1.2%{?dist}
+Version: 1.5
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Sys-Hostname-Long/
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Sys/Hostname/testall.pl
 
 %changelog
+* Fri Mar 17 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.5-1
+- Updated to release 1.5.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 1.4-1.2
 - Rebuild for Fedora Core 5.
 
