@@ -9,7 +9,7 @@
 
 Summary: Get information about memory usage
 Name: perl-Sys-MemInfo
-Version: 0.91
+Version: 0.99
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -26,7 +26,7 @@ This module return the total amount of free and used physical memory
 in bytes in totalmem and freemem variables.
 
 %prep
-%setup -n %{real_name}
+%setup -n %{real_name}-%{version}
 
 %build
 CFLAGS="%{optflags}" %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Sys/MemInfo.pm
 
 %changelog
+* Sat Mar 18 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.99-1
+- Updated to release 0.99.
+
 * Sun Nov 18 2007 Dag Wieers <dag@wieers.com> - 0.91-1
 - Updated to release 0.91.
 
