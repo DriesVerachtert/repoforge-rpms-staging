@@ -9,7 +9,7 @@
 
 Summary: Run only one invocation
 Name: perl-Sys-RunAlone
-Version: 0.09
+Version: 0.12
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -51,6 +51,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Sys/RunAlone.pm
 
 %changelog
+* Sun Mar 19 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.12-1
+- Updated to release 0.12.
+
 * Fri Jun 12 2009 Christoph Maser <cmr@financial.com> - 0.09-1
 - Updated to version 0.09.
 
