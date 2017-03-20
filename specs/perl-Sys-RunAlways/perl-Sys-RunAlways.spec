@@ -9,7 +9,7 @@
 
 Summary: Make sure always one invocation of a script is active
 Name: perl-Sys-RunAlways
-Version: 0.04
+Version: 0.05
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -49,5 +49,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Sys/RunAlways.pm
 
 %changelog
+* Mon Mar 20 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.05-1
+- Updated to release 0.05.
+
 * Sun Nov 19 2006 Dries Verachtert <dries@ulyssis.org> - 0.04-1
 - Initial package.
