@@ -9,13 +9,13 @@
 
 Summary: Perlish declarative templates
 Name: perl-Template-Declare
-Version: 0.44
+Version: 0.47
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Template-Declare/
 
-Source: http://search.cpan.org/CPAN/authors/id/S/SA/SARTAK/Template-Declare-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/A/AL/ALEXMV/Template-Declare-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -62,7 +62,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST MANIFEST.SKIP META.yml README SIGNATURE
+%doc Changes MANIFEST META.yml README SIGNATURE
 %doc %{_mandir}/man3/Template::Declare.3pm*
 %doc %{_mandir}/man3/Template::Declare::*.3pm*
 %dir %{perl_vendorlib}/Template/
@@ -70,6 +70,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Template/Declare.pm
 
 %changelog
+* Tue Mar 21 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.47-1
+- Updated to release 0.47.
+
 * Thu Feb 10 2011 Christoph Maser <cmaser@gmx.de> - 0.44-1
 - Updated to version 0.44.
 
