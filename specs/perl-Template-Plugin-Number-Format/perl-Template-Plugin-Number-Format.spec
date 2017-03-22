@@ -9,7 +9,7 @@
 
 Summary: Plugin/filter interface to Number::Format
 Name: perl-Template-Plugin-Number-Format
-Version: 1.02
+Version: 1.06
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Template/Plugin/Number/Format.pm
 
 %changelog
+* Wed Mar 22 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.06-1
+- Updated to release 1.06.
+
 * Sun Nov 18 2007 Dag Wieers <dag@wieers.com> - 1.02-1
 - Updated to release 1.02.
 
