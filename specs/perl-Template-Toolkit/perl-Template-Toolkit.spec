@@ -12,7 +12,7 @@
 
 Summary: Comprehensive template processing system
 Name: perl-Template-Toolkit
-Version: 2.22
+Version: 2.26
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -74,6 +74,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Template/
 
 %changelog
+* Thu Mar 23 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.26-1
+- Updated to release 2.26.
+
 * Thu Aug 20 2009 Christoph Maser <cmr@financial.com> - 2.22-1
 - Updated to version 2.22.
 
