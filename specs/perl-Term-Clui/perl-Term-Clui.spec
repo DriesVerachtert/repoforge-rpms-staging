@@ -9,7 +9,7 @@
 
 Summary: The Command-Line User Interface
 Name: perl-Term-Clui
-Version: 1.70
+Version: 1.71
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -66,6 +66,9 @@ with its main subroutine &select_file.
 %{perl_vendorlib}/Term/Clui/*
 
 %changelog
+* Fri Mar 24 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.71-1
+- Updated to release 1.71.
+
 * Tue Jun 14 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.70-1
 - Updated to release 1.70.
 
