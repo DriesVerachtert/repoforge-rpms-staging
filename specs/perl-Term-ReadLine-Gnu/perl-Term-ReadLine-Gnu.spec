@@ -11,7 +11,7 @@
 
 Summary: Extension for the GNU Readline/History library
 Name: perl-Term-ReadLine-Gnu
-Version: 1.34
+Version: 1.35
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -73,6 +73,9 @@ find eg/ -type f -exec %{__chmod} a-x {} \;
 %{_bindir}/perlsh
    
 %changelog
+* Sat Mar 25 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.35-1
+- Updated to release 1.35.
+
 * Thu Sep 29 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.34-1
 - Updated to release 1.34.
 
