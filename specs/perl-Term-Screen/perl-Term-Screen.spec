@@ -9,8 +9,8 @@
 
 Summary: Term::Cap based screen positioning module
 Name: perl-Term-Screen
-Version: 1.03
-Release: 1.2%{?dist}
+Version: 1.06
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Term-Screen/
@@ -50,5 +50,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Term/Screen.pm
 
 %changelog
+* Sun Mar 26 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.06-1
+- Updated to release 1.06.
+
 * Tue Dec 06 2005 Dries Verachtert <dries@ulyssis.org> - 1.03-1
 - Initial package.
