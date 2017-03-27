@@ -9,7 +9,7 @@
 
 Summary: A fully-featured shell-like command line environment
 Name: perl-Term-ShellUI
-Version: 0.86
+Version: 0.92
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -51,5 +51,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Text/Shellwords/
 
 %changelog
+* Mon Mar 27 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.92-1
+- Updated to release 0.92.
+
 * Sun Apr 29 2007 Dries Verachtert <dries@ulyssis.org> - 0.86-1
 - Initial package.
