@@ -9,7 +9,7 @@
 
 Summary: Test functions for particular variable types
 Name: perl-Test-Data
-Version: 1.22
+Version: 1.241
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -47,7 +47,7 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes LICENSE MANIFEST META.yml README examples/
+%doc Changes LICENSE MANIFEST* META.* README.pod examples/
 %doc %{_mandir}/man3/Test::Data.3*
 %doc %{_mandir}/man3/Test::Data::*.3*
 %dir %{perl_vendorlib}/Test/
@@ -55,6 +55,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Test/Data.pm
 
 %changelog
+* Tue Mar 28 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.241-1
+- Updated to release 1.241.
+
 * Fri Jun 12 2009 Christoph Maser <cmr@financial.com> - 1.22-1
 - Updated to version 1.22.
 
