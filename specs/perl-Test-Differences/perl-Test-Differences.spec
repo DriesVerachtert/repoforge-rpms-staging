@@ -12,7 +12,7 @@
 
 Summary: Test strings and data structures and show differences if not ok
 Name: perl-Test-Differences
-Version: 0.500
+Version: 0.64
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -24,6 +24,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Text::Diff) >= 0.35
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(Test::More)
 Requires: perl(Text::Diff) >= 0.35
 
@@ -59,6 +60,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Test/Differences.pm
 
 %changelog
+* Wed Mar 29 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.64-1
+- Updated to release 0.64.
+
 * Thu Oct 22 2009 Christoph Maser <cmr@financial.com> - 0.500-1
 - Updated to version 0.500.
 
