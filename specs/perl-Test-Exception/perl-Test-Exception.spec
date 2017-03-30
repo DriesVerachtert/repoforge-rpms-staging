@@ -12,14 +12,14 @@
 
 Summary: Test exception based code
 Name: perl-Test-Exception
-Version: 0.31
+Version: 0.43
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Test-Exception/
 
 
-Source: http://search.cpan.org/CPAN/authors/id/A/AD/ADIE/Test-Exception-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/E/EX/EXODIST/Test-Exception-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -67,13 +67,16 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST META.yml README
+%doc Changes MANIFEST META.*
 %doc %{_mandir}/man3/Test::Exception.3pm*
 %dir %{perl_vendorlib}/Test/
 #%{perl_vendorlib}/Test/Exception/
 %{perl_vendorlib}/Test/Exception.pm
 
 %changelog
+* Thu Mar 30 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.43-1
+- Updated to release 0.43.
+
 * Fri Oct 29 2010 Christoph Maser <cmaser@gmx.de> - 0.31-1
 - Updated to version 0.31.
 
