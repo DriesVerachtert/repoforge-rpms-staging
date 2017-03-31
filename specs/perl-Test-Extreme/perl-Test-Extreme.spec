@@ -9,8 +9,8 @@
 
 Summary: Perlish unit testing framework
 Name: perl-Test-Extreme
-Version: 0.12
-Release: 1.2%{?dist}
+Version: 1.01
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Test-Extreme/
@@ -49,6 +49,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Test/Extreme.pm
 
 %changelog
+* Fri Mar 31 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.01-1
+- Updated to release 1.01.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.12-1.2
 - Rebuild for Fedora Core 5.
 
