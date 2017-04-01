@@ -12,7 +12,7 @@
 
 Summary: Interact with a t/test_manifest file
 Name: perl-Test-Manifest
-Version: 1.23
+Version: 2.02
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -55,8 +55,12 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %dir %{perl_vendorlib}/Test/
 #%{perl_vendorlib}/Test/Manifest/
 %{perl_vendorlib}/Test/Manifest.pm
+%doc %{_mandir}/man3/Test::Manifest*
 
 %changelog
+* Sat Apr 01 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.02-1
+- Updated to release 2.02.
+
 * Mon Jul 20 2009 Christoph Maser <cmr@financial.com> - 1.23-1
 - Updated to version 1.23.
 
