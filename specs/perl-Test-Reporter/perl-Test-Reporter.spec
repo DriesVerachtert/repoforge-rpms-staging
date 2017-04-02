@@ -9,7 +9,7 @@
 
 Summary: Report test results of a package retrieved from CPAN
 Name: perl-Test-Reporter
-Version: 1.57
+Version: 1.62
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -78,15 +78,18 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes INSTALL MANIFEST MANIFEST.SKIP META.yml README
+%doc Changes CONTRIBUTING.mkdn MANIFEST MANIFEST META.* README
 %doc %{_mandir}/man3/Test::Reporter*.3pm*
-%doc %{_mandir}/man1/cpantest.1*
+#%doc %{_mandir}/man1/cpantest.1*
 %dir %{perl_vendorlib}/Test/
 %{perl_vendorlib}/Test/Reporter/
 %{perl_vendorlib}/Test/Reporter.pm
-%{_bindir}/cpantest
+#%{_bindir}/cpantest
 
 %changelog
+* Sun Apr 02 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.62-1
+- Updated to release 1.62.
+
 * Tue Feb  8 2011 Christoph Maser <cmaser@gmx.de> - 1.57-1
 - Updated to version 1.57.
 
