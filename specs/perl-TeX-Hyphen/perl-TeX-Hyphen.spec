@@ -12,7 +12,7 @@
 
 Summary: Hyphenate words using TeX's patterns
 Name: perl-TeX-Hyphen
-Version: 1.16
+Version: 1.18
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -63,6 +63,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/TeX/Hyphen.pm
 
 %changelog
+* Mon Apr 03 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.18-1
+- Updated to release 1.18.
+
 * Wed Jul 20 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.16-1
 - Updated to release 1.16.
 
