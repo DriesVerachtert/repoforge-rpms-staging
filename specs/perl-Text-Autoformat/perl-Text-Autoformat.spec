@@ -12,7 +12,7 @@
 
 Summary: Automatic text wrapping and reformatting
 Name: perl-Text-Autoformat
-Version: 1.666.0
+Version: 1.74
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -60,10 +60,13 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc Changes MANIFEST README
 %doc %{_mandir}/man3/Text::Autoformat.3pm*
 %dir %{perl_vendorlib}/Text/
-#%{perl_vendorlib}/Text/Autoformat/
+%{perl_vendorlib}/Text/Autoformat/
 %{perl_vendorlib}/Text/Autoformat.pm
 
 %changelog
+* Tue Apr 04 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.74-1
+- Updated to release 1.74.
+
 * Thu Jun 11 2009 Christoph Maser <cmr@financial.com> - 1.666.0-1
 - Updated to version 1.666.0.
 
