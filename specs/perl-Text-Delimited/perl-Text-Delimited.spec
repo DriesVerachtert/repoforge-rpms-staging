@@ -9,7 +9,7 @@
 
 Summary: Module for parsing delimited text files
 Name: perl-Text-Delimited
-Version: 2.00
+Version: 2.11
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -55,6 +55,9 @@ corresonding column headings.
 %{perl_vendorlib}/Text/Delimited.pm
 
 %changelog
+* Wed Apr 05 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.11-1
+- Updated to release 2.11.
+
 * Fri Sep 22 2006 Dries Verachtert <dries@ulyssis.org> - 2.00-1
 - Updated to release 2.00.
 
