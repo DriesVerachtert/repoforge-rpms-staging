@@ -9,7 +9,7 @@
 
 Summary: XHMTL format for Text::Diff::Unified
 Name: perl-Text-Diff-HTML
-Version: 0.06
+Version: 0.07
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -50,7 +50,7 @@ find eg/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST META.yml README eg/
+%doc Changes MANIFEST META.* README.md eg/
 %doc %{_mandir}/man3/Text::Diff::HTML.3pm*
 %dir %{perl_vendorlib}/Text/
 %dir %{perl_vendorlib}/Text/Diff/
@@ -58,6 +58,9 @@ find eg/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Text/Diff/HTML.pm
 
 %changelog
+* Thu Apr 06 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.07-1
+- Updated to release 0.07.
+
 * Thu Jun 11 2009 Christoph Maser <cmr@financial.com> - 0.06-1
 - Updated to version 0.06.
 
