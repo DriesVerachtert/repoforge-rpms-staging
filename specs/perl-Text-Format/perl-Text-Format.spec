@@ -9,7 +9,7 @@
 
 Summary: Various subroutines to format text
 Name: perl-Text-Format
-Version: 0.53
+Version: 0.60
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -62,6 +62,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Text/Format.pm
 
 %changelog
+* Fri Apr 07 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.60-1
+- Updated to release 0.60.
+
 * Tue Feb  8 2011 Christoph Maser <cmaser@gmx.de> - 0.53-1
 - Updated to version 0.53.
 
