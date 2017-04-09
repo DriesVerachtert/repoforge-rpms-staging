@@ -9,8 +9,8 @@
 
 Summary: Macro pre-processor with embedded perl capability
 Name: perl-Text-MacroScript
-Version: 1.38
-Release: 1.2%{?dist}
+Version: 2.11
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Text-MacroScript/
@@ -55,8 +55,14 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc README
 %doc %{_mandir}/man3/*
 %{perl_vendorlib}/Text/MacroScript.pm
-%{perl_vendorlib}/Text/macroutil.pl
+#%{perl_vendorlib}/Text/macroutil.pl
+%{_bindir}/macrodir
+%{_bindir}/macropp
+%doc %{_mandir}/man1/macropp*
 
 %changelog
+* Sun Apr 09 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.11-1
+- Updated to release 2.11.
+
 * Sat Apr  2 2005 Dries Verachtert <dries@ulyssis.org> - 1.38-1
 - Initial package.
