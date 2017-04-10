@@ -9,7 +9,7 @@
 
 Summary: Modern soundex, phonetic encoding of words
 Name: perl-Text-Metaphone
-Version: 20081017
+Version: 20160805
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -46,7 +46,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes INSTALL MANIFEST META.yml README SIGNATURE
+%doc Changes INSTALL MANIFEST* META.* README
 %doc %{_mandir}/man3/Text::Metaphone.3pm*
 %dir %{perl_vendorarch}/auto/Text/
 %{perl_vendorarch}/auto/Text/Metaphone/
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Text/Metaphone.pm
 
 %changelog
+* Mon Apr 10 2017 Dries Verachtert <dries.verachtert@dries.eu> - 20160805-1
+- Updated to release 20160805.
+
 * Thu Jun 11 2009 Christoph Maser <cmr@financial.com> - 20081017-1
 - Updated to version 20081017.
 
