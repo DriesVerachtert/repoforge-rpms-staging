@@ -9,11 +9,11 @@
 %define perl_vendorarch %(eval "`%{__perl} -V:installvendorarch`"; echo $installvendorarch)
 
 %define real_name Text-PDF
-%define real_version 0.29
+%define real_version 0.31
 
 Summary: PDF Functions
 Name: perl-Text-PDF
-Version: 0.29a
+Version: 0.31
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -62,6 +62,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Text/PDF.pm
 
 %changelog
+* Wed Apr 12 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.31-1
+- Updated to release 0.31.
+
 * Mon Nov 19 2007 Dag Wieers <dag@wieers.com> - 0.29a-1
 - Updated to release 0.29a.
 
