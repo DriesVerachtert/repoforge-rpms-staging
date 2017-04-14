@@ -9,7 +9,7 @@
 
 Summary: Text templates functions
 Name: perl-Text-Template
-Version: 1.45
+Version: 1.47
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -56,6 +56,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Text/Template.pm
 
 %changelog
+* Fri Apr 14 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.47-1
+- Updated to release 1.47.
+
 * Wed May 14 2008 Dag Wieers <dag@wieers.com> - 1.45-1
 - Updated to release 1.45.
 
