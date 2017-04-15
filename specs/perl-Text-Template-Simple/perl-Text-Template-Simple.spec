@@ -9,7 +9,7 @@
 
 Summary: Simple text template engine
 Name: perl-Text-Template-Simple
-Version: 0.83
+Version: 0.90
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -61,6 +61,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Text/Template/Simple.pm
 
 %changelog
+* Sat Apr 15 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.90-1
+- Updated to release 0.90.
+
 * Thu Feb 10 2011 Christoph Maser <cmaser@gmx.de> - 0.83-1
 - Updated to version 0.83.
 
