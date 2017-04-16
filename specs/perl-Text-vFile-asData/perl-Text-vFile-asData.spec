@@ -9,7 +9,7 @@
 
 Summary: Parse vFile formatted files into data structures
 Name: perl-Text-vFile-asData
-Version: 0.07
+Version: 0.08
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -56,6 +56,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Text/vFile/asData.pm
 
 %changelog
+* Sun Apr 16 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.08-1
+- Updated to release 0.08.
+
 * Tue Feb  8 2011 Christoph Maser <cmaser@gmx.de> - 0.07-1
 - Updated to version 0.07.
 
