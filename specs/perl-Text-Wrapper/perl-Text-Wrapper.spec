@@ -9,7 +9,7 @@
 
 Summary: Simple word wrapping routine
 Name: perl-Text-Wrapper
-Version: 1.02
+Version: 1.05
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -37,15 +37,15 @@ Text::Format module.
 %setup -n %{real_name}-%{version}
 
 %build
-#%{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
-#%{__make} %{?_smp_mflags}
-%{__perl} Build.PL
-./Build
+%{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
+%{__make} %{?_smp_mflags}
+#%{__perl} Build.PL
+#./Build
 
 %install
 %{__rm} -rf %{buildroot}
-#%{__make} pure_install
-PERL_INSTALL_ROOT="%{buildroot}" ./Build install installdirs="vendor"
+%{__make} pure_install
+#PERL_INSTALL_ROOT="%{buildroot}" ./Build install installdirs="vendor"
 
 ### Clean up buildroot
 find %{buildroot} -name .packlist -exec %{__rm} {} \;
@@ -65,6 +65,9 @@ find example/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Text/Wrapper.pm
 
 %changelog
+* Mon Apr 17 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.05-1
+- Updated to release 1.05.
+
 * Thu May 15 2008 Dag Wieers <dag@wieers.com> - 1.02-1
 - Updated to release 1.02.
 
