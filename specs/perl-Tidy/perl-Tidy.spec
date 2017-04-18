@@ -9,7 +9,7 @@
 
 Summary: Perl module that parses and beautifies perl source
 Name: perl-Tidy
-Version: 20150815
+Version: 20160302
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -57,6 +57,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Perl/Tidy.pod
 
 %changelog
+* Tue Apr 18 2017 Dries Verachtert <dries.verachtert@dries.eu> - 20160302-1
+- Updated to release 20160302.
+
 * Tue Sep 15 2015 Dries Verachtert <dries.verachtert@dries.eu> - 20150815-1
 - Updated to release 20150815.
 
