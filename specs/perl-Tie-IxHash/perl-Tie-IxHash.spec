@@ -12,7 +12,7 @@
 
 Summary: Ordered associative arrays for Perl
 Name: perl-Tie-IxHash
-Version: 1.22
+Version: 1.23
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -62,6 +62,9 @@ index of one of the numerous books on perl.
 %{perl_vendorlib}/Tie/IxHash.pm
 
 %changelog
+* Thu Apr 20 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.23-1
+- Updated to release 1.23.
+
 * Thu Mar 11 2010 Christoph Maser <cmr@financial.com> - 1.22-1
 - Updated to version 1.22.
 
