@@ -9,8 +9,8 @@
 
 Summary: Ordered hashes
 Name: perl-Tie-LLHash
-Version: 1.003
-Release: 1.2%{?dist}
+Version: 1.004
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Tie-LLHash/
@@ -50,6 +50,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Tie/LLHash.pm
 
 %changelog
+* Fri Apr 21 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.004-1
+- Updated to release 1.004.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 1.003-1.2
 - Rebuild for Fedora Core 5.
 
