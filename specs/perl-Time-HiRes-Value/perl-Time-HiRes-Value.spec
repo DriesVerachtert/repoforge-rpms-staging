@@ -9,7 +9,7 @@
 
 Summary: Class representing a time value or interval in exact microseconds
 Name: perl-Time-HiRes-Value
-Version: 0.07
+Version: 0.08
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -56,6 +56,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Time/HiRes/Value.pm
 
 %changelog
+* Sun Apr 23 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.08-1
+- Updated to release 0.08.
+
 * Tue Sep  8 2009 Christoph Maser <cmr@financial.com> - 0.07-1
 - Updated to version 0.07.
 
