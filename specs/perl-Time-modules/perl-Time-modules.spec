@@ -12,7 +12,7 @@
 
 Summary: Date and time objects
 Name: perl-Time-modules
-Version: 2006.0814
+Version: 2013.0912
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Time/
 
 %changelog
+* Mon Apr 24 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2013.0912-1
+- Updated to release 2013.0912.
+
 * Mon Nov 19 2007 Dag Wieers <dag@wieers.com> - 2006.0814-1
 - Updated to release 2006.0814.
 
