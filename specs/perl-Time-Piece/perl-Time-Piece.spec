@@ -12,14 +12,13 @@
 
 Summary: Object Oriented time objects
 Name: perl-Time-Piece
-Version: 1.20
+Version: 1.30
 Release: 1%{?dist}
-Epoch: 1
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Time-Piece/
 
-Source: http://search.cpan.org/CPAN/authors/id/M/MS/MSERGEANT/Time-Piece-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Time-Piece-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
@@ -47,7 +46,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST MANIFEST.SKIP META.yml README
+%doc Changes MANIFEST MANIFEST META.* README
 %doc %{_mandir}/man3/Time::Piece.3pm*
 %doc %{_mandir}/man3/Time::Seconds.3pm*
 %dir %{perl_vendorarch}/auto/Time/
@@ -58,6 +57,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Time/Seconds.pm
 
 %changelog
+* Tue Apr 25 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.30-1
+- Updated to release 1.30.
+
 * Fri Mar 26 2010 Christoph Maser <cmr@financial.com> - 1.20-1
 - Updated to version 1.20.
 
