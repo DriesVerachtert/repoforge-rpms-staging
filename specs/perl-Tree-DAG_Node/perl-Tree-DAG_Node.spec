@@ -12,13 +12,13 @@
 
 Summary: (super)class for representing nodes in a tree
 Name: perl-Tree-DAG_Node
-Version: 1.06
+Version: 1.30
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Tree-DAG_Node/
 
-Source: http://www.cpan.org/modules/by-module/Tree/Tree-DAG_Node-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/R/RS/RSAVAGE/Tree-DAG_Node-%{version}.tgz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -55,13 +55,16 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc ChangeLog MANIFEST MANIFEST.SKIP META.yml README
+%doc Changes LICENSE MANIFEST* META.yml README
 %doc %{_mandir}/man3/Tree::DAG_Node.3pm*
 %dir %{perl_vendorlib}/Tree/
 #%{perl_vendorlib}/Tree/DAG_Node/
 %{perl_vendorlib}/Tree/DAG_Node.pm
 
 %changelog
+* Thu Apr 27 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.30-1
+- Updated to release 1.30.
+
 * Fri Dec 14 2007 Dag Wieers <dag@wieers.com> - 1.06-1
 - Updated to release 1.06.
 
