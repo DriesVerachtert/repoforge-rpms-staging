@@ -9,13 +9,13 @@
 
 Summary: Visitor for Tree::Simple objects
 Name: perl-Tree-Simple-VisitorFactory
-Version: 0.10
+Version: 0.15
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Tree-Simple-VisitorFactory/
 
-Source: http://www.cpan.org/modules/by-module/Tree/Tree-Simple-VisitorFactory-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/R/RS/RSAVAGE/Tree-Simple-VisitorFactory-%{version}.tgz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -53,5 +53,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Tree/Simple/VisitorFactory.pm
 
 %changelog
+* Fri Apr 28 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.15-1
+- Updated to release 0.15.
+
 * Thu Dec 15 2005 Dries Verachtert <dries@ulyssis.org> - 0.10-1
 - Initial package.
