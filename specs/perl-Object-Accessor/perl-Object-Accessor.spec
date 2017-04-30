@@ -12,7 +12,7 @@
 
 Summary: Interface to create per object accessors
 Name: perl-Object-Accessor
-Version: 0.36
+Version: 0.48
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -63,6 +63,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Object/Accessor.pm
 
 %changelog
+* Sun Apr 30 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.48-1
+- Updated to release 0.48.
+
 * Thu Dec 10 2009 Christoph Maser <cmr@financial.com> - 0.36-1
 - Updated to version 0.36.
 
