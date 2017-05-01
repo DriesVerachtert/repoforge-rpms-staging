@@ -9,7 +9,7 @@
 
 Summary: Generate cryptographic signatures for objects
 Name: perl-Object-Signature
-Version: 1.05
+Version: 1.07
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -47,7 +47,12 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc Changes README
 %doc %{_mandir}/man3/Object::Signature*
 %{perl_vendorlib}/Object/Signature.pm
+%dir %{perl_vendorlib}/Object/Signature/
+%{perl_vendorlib}/Object/Signature/File.pm
 
 %changelog
+* Mon May 01 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.07-1
+- Updated to release 1.07.
+
 * Sun Nov 19 2006 Dries Verachtert <dries@ulyssis.org> - 1.05-1
 - Initial package.
