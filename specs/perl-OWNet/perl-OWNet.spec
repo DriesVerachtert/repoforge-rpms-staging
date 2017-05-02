@@ -9,7 +9,7 @@
 
 Summary: Light weight access to owserver
 Name: perl-OWNet
-Version: 1.8
+Version: 1.20
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -26,7 +26,7 @@ BuildRequires: perl(ExtUtils::MakeMaker)
 Light weight access to owserver.
 
 %prep
-%setup -n %{real_name}-%{version}
+%setup -n %{real_name}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
@@ -50,6 +50,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/OWNet.pm
 
 %changelog
+* Tue May 02 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.20-1
+- Updated to release 1.20.
+
 * Thu Nov 15 2007 Dag Wieers <dag@wieers.com> - 1.8-1
 - Updated to release 1.8.
 
