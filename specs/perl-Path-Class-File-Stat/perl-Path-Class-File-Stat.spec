@@ -9,7 +9,7 @@
 
 Summary: Cache and compare stat() calls on a Path::Class::File object
 Name: perl-Path-Class-File-Stat
-Version: 0.02
+Version: 0.05
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -49,5 +49,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Path/Class/File/Stat.pm
 
 %changelog
+* Thu May 04 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.05-1
+- Updated to release 0.05.
+
 * Sun Nov 19 2006 Dries Verachtert <dries@ulyssis.org> - 0.02-1
 - Initial package.
