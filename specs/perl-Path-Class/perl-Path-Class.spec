@@ -9,7 +9,7 @@
 
 Summary: Cross-platform path specification manipulation
 Name: perl-Path-Class
-Version: 0.18
+Version: 0.37
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -59,6 +59,7 @@ Unix, Windows, Mac, VMS, Epoc, Cygwin, OS/2, and NetWare.
 %install
 %{__rm} -rf %{buildroot}
 %{__make} pure_install
+%{__rm} -f %{buildroot}%{perl_vendorlib}/Path/README.pod
 
 ### Clean up buildroot
 find %{buildroot} -name .packlist -exec %{__rm} {} \;
@@ -68,12 +69,15 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes README
+%doc Changes LICENSE MANIFEST* META* README* SIGNATURE
 %doc %{_mandir}/man3/*
 %{perl_vendorlib}/Path/Class.pm
 %{perl_vendorlib}/Path/Class/
 
 %changelog
+* Fri May 05 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.37-1
+- Updated to release 0.37.
+
 * Tue Dec 22 2009 Christoph Maser <cmr@financial.com> - 0.18-1
 - Updated to version 0.18.
 
