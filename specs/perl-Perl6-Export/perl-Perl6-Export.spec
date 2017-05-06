@@ -9,13 +9,13 @@
 
 Summary: Implements the Perl 6 is export trait
 Name: perl-Perl6-Export
-Version: 0.07
-Release: 2%{?dist}
+Version: 0.009
+Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Perl6-Export/
 
-Source: http://www.cpan.org/modules/by-module/Perl6/Perl6-Export-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/D/DC/DCONWAY/Perl6-Export-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Perl6/Export.pm
 
 %changelog
+* Sat May 06 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.009-1
+- Updated to release 0.009.
+
 * Thu Feb 21 2008 Dries Verachtert <dries@ulyssis.org> - 0.07-2
 - Fixed the description, thanks to Bill McGonigle.
 
