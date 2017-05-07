@@ -9,7 +9,7 @@
 
 Summary: PerlIO layer to gzip and gunzip
 Name: perl-PerlIO-gzip
-Version: 0.18
+Version: 0.19
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -51,6 +51,9 @@ CFLAGS="%{optflags}" %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildr
 %{perl_vendorarch}/auto/PerlIO/
 
 %changelog
+* Sun May 07 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.19-1
+- Updated to release 0.19.
+
 * Tue Nov 14 2006 Dries Verachtert <dries@ulyssis.org> - 0.18-1
 - Updated to release 0.18.
 
