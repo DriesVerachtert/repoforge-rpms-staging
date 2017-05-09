@@ -9,7 +9,7 @@
 
 Summary: Turn one or more Pod files into a table of contents
 Name: perl-Pod-Perldoc-ToToc
-Version: 1.09
+Version: 1.12
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -57,6 +57,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Pod/TOC.pm
 
 %changelog
+* Tue May 09 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.12-1
+- Updated to release 1.12.
+
 * Sat Jul  4 2009 Christoph Maser <cmr@financial.com> - 1.09-1
 - Updated to version 1.09.
 
