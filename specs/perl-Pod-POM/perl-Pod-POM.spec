@@ -12,7 +12,7 @@
 
 Summary: POD Object Model
 Name: perl-Pod-POM
-Version: 0.25
+Version: 2.01
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -54,7 +54,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes README
+%doc Changes MANIFEST* META* README* examples/
 %doc %{_mandir}/man1/*
 %doc %{_mandir}/man3/*
 %{_bindir}/pomdump
@@ -65,6 +65,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Pod/POM/
 
 %changelog
+* Wed May 10 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.01-1
+- Updated to release 2.01.
+
 * Sat Jul  4 2009 Christoph Maser <cmr@financial.com> - 0.25-1
 - Updated to version 0.25.
 
