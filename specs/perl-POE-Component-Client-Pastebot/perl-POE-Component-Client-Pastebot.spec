@@ -9,7 +9,7 @@
 
 Summary: Interact with Bot::Pastebot web services from POE
 Name: perl-POE-Component-Client-Pastebot
-Version: 1.16
+Version: 1.18
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -57,6 +57,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/POE/Component/Client/Pastebot.pm
 
 %changelog
+* Sat May 13 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.18-1
+- Updated to release 1.18.
+
 * Thu Oct 01 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.16-1
 - Updated to release 1.16.
 
