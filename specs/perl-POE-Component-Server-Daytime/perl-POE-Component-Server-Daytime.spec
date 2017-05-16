@@ -9,7 +9,7 @@
 
 Summary: POE component implementing a RFC 865 Daytime server
 Name: perl-POE-Component-Server-Daytime
-Version: 1.14
+Version: 1.16
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -56,6 +56,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/POE/Component/Server/Daytime.pm
 
 %changelog
+* Tue May 16 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.16-1
+- Updated to release 1.16.
+
 * Sat Jul  4 2009 Christoph Maser <cmr@financial.com> - 1.14-1
 - Updated to version 1.14.
 
