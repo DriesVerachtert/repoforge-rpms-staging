@@ -9,7 +9,7 @@
 
 Summary: POE component that implements a RFC 863 Discard server
 Name: perl-POE-Component-Server-Discard
-Version: 1.14
+Version: 1.16
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -56,6 +56,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/POE/Component/Server/Discard.pm
 
 %changelog
+* Wed May 17 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.16-1
+- Updated to release 1.16.
+
 * Sat Jul  4 2009 Christoph Maser <cmr@financial.com> - 1.14-1
 - Updated to version 1.14.
 
