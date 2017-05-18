@@ -9,7 +9,7 @@
 
 Summary: Non-blocking, concurrent DNS server component
 Name: perl-POE-Component-Server-DNS
-Version: 0.20
+Version: 0.32
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -56,6 +56,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/POE/Component/Server/DNS.pm
 
 %changelog
+* Thu May 18 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.32-1
+- Updated to release 0.32.
+
 * Sat Jul  4 2009 Christoph Maser <cmr@financial.com> - 0.20-1
 - Updated to version 0.20.
 
