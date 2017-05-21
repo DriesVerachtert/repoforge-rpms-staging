@@ -9,7 +9,7 @@
 
 Summary: POE component that implements an RFC 865 QotD server
 Name: perl-POE-Component-Server-Qotd
-Version: 1.14
+Version: 1.16
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -56,6 +56,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/POE/Component/Server/Qotd.pm
 
 %changelog
+* Sun May 21 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.16-1
+- Updated to release 1.16.
+
 * Fri Jul  3 2009 Christoph Maser <cmr@financial.com> - 1.14-1
 - Updated to version 1.14.
 
