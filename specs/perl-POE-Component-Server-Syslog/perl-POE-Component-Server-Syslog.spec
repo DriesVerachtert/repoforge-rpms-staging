@@ -9,7 +9,7 @@
 
 Summary: Syslog services for POE
 Name: perl-POE-Component-Server-Syslog
-Version: 1.18
+Version: 1.22
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -49,7 +49,7 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes INSTALL LICENSE MANIFEST META.yml README VERSION examples/
+%doc Changes INSTALL LICENSE MANIFEST META.* README examples/
 %doc %{_mandir}/man3/POE::Component::Server::Syslog.3pm*
 %doc %{_mandir}/man3/POE::Component::Server::Syslog::*.3pm*
 %doc %{_mandir}/man3/POE::Filter::Syslog.3pm*
@@ -62,6 +62,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/POE/Filter/Syslog.pm
 
 %changelog
+* Mon May 22 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.22-1
+- Updated to release 1.22.
+
 * Fri Jul  3 2009 Christoph Maser <cmr@financial.com> - 1.18-1
 - Updated to version 1.18.
 
