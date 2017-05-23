@@ -9,7 +9,7 @@
 
 Summary: POE component that implements an RFC 868 Time server
 Name: perl-POE-Component-Server-Time
-Version: 1.14
+Version: 1.16
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -57,6 +57,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/POE/Component/Server/Time.pm
 
 %changelog
+* Tue May 23 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.16-1
+- Updated to release 1.16.
+
 * Fri Jul  3 2009 Christoph Maser <cmr@financial.com> - 1.14-1
 - Updated to version 1.14.
 
