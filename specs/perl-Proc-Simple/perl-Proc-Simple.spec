@@ -9,7 +9,7 @@
 
 Summary: Launch and control background processes
 Name: perl-Proc-Simple
-Version: 1.26
+Version: 1.32
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -49,13 +49,16 @@ find eg/ -type f -exec %{__chmod} a-x {} \;
 %defattr(-, root, root, 0755)
 %doc Changes MANIFEST MANIFEST.SKIP META.yml README eg/
 %doc %{_mandir}/man3/Proc::Simple.3pm*
-%dir %{perl_vendorlib}/auto/Proc/
-%{perl_vendorlib}/auto/Proc/Simple/
+#%dir %{perl_vendorlib}/auto/Proc/
+#%{perl_vendorlib}/auto/Proc/Simple/
 %dir %{perl_vendorlib}/Proc/
 #%{perl_vendorlib}/Proc/Simple/
 %{perl_vendorlib}/Proc/Simple.pm
 
 %changelog
+* Sun May 28 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.32-1
+- Updated to release 1.32.
+
 * Wed Jul 22 2009 Christoph Maser <cmr@financial.com> - 1.26-1
 - Updated to version 1.26.
 
