@@ -9,13 +9,13 @@
 
 Summary: Create Regular expressions
 Name: perl-Regexp-Assemble
-Version: 0.34
+Version: 0.37
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Regexp-Assemble/
 
-Source: http://www.cpan.org/modules/by-module/Regexp/Regexp-Assemble-%{version}.tar.gz
+Source: http://www.cpan.org/modules/by-module/Regexp/Regexp-Assemble-%{version}.tgz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -40,20 +40,23 @@ You can create regular expressions with this module.
 find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 ### Clean up docs
-find eg/ -type f -exec %{__chmod} a-x {} \;
+find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %clean
 %{__rm} -rf %{buildroot}
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST MANIFEST.SKIP META.yml README TODO eg/
+%doc Changes LICENCE MANIFEST MANIFEST* META.* README TODO examples/
 %doc %{_mandir}/man3/Regexp::Assemble.3pm*
 %dir %{perl_vendorlib}/Regexp/
 #%{perl_vendorlib}/Regexp/Assemble/
 %{perl_vendorlib}/Regexp/Assemble.pm
 
 %changelog
+* Mon May 29 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.37-1
+- Updated to release 0.37.
+
 * Mon Jun 22 2009 Christoph Maser <cmr@financial.com> - 0.34-1
 - Updated to version 0.34.
 
