@@ -9,7 +9,7 @@
 
 Summary: Provide commonly requested regular expressions
 Name: perl-Regexp-Common
-Version: 2016060801
+Version: 2017040401
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -61,6 +61,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Regexp/Common.pm
 
 %changelog
+* Tue May 30 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2017040401-1
+- Updated to release 2017040401.
+
 * Mon Oct 31 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2016060801-1
 - Updated to release 2016060801.
 
