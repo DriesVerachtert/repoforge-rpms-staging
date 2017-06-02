@@ -9,7 +9,7 @@
 
 Summary: Read and write meta information
 Name: perl-Image-ExifTool
-Version: 8.15
+Version: 10.50
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -64,6 +64,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Image/ExifTool.pod
 
 %changelog
+* Fri Jun 02 2017 Dries Verachtert <dries.verachtert@dries.eu> - 10.50-1
+- Updated to release 10.50.
+
 * Wed May 26 2010 Christoph Maser <cmaser@gmx.de> - 8.15-1
 - Updated to version 8.15.
 
