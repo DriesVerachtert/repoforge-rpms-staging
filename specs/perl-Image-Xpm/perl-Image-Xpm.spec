@@ -12,7 +12,7 @@
 
 Summary: Load, create, manipulate and save xpm image files
 Name: perl-Image-Xpm
-Version: 1.11
+Version: 1.13
 Release: 1%{?dist}
 License: LGPL
 Group: Applications/CPAN
@@ -59,6 +59,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Image/Xpm.pm
 
 %changelog
+* Sun Jun 04 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.13-1
+- Updated to release 1.13.
+
 * Wed Dec 23 2009 Christoph Maser <cmr@financial.com> - 1.11-1
 - Updated to version 1.11.
 
