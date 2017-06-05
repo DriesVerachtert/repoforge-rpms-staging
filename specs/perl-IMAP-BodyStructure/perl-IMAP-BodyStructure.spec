@@ -9,7 +9,7 @@
 
 Summary: Interface to parse the output of an IMAP4 MIME-parser
 Name: perl-IMAP-BodyStructure
-Version: 1.01
+Version: 1.03
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -33,12 +33,15 @@ with parsing previous sentence.
 %setup -n %{real_name}-%{version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
-%{__make} %{?_smp_mflags}
+#%{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
+#%{__make} %{?_smp_mflags}
+%{__perl} Build.PL --installdirs vendor --destdir %{buildroot}
+./Build
 
 %install
 %{__rm} -rf %{buildroot}
-%{__make} pure_install
+#%{__make} pure_install
+./Build pure_install
 
 ### Clean up buildroot
 find %{buildroot} -name .packlist -exec %{__rm} {} \;
@@ -48,11 +51,14 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes README
+%doc Changes LICENSE MANIFEST* META* README*
 %doc %{_mandir}/man3/*
 %{perl_vendorlib}/IMAP/BodyStructure.pm
 
 %changelog
+* Mon Jun 05 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.03-1
+- Updated to release 1.03.
+
 * Fri Sep 22 2006 Dries Verachtert <dries@ulyssis.org> - 1.01-1
 - Updated to release 1.01.
 
