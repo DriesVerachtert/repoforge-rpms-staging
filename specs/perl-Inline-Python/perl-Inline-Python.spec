@@ -9,7 +9,7 @@
 
 Summary: Write Perl subs and classes in Python
 Name: perl-Inline-Python
-Version: 0.28
+Version: 0.53
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -21,6 +21,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: perl
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: python-devel
+BuildRequires: perl(Data::Dumper)
 
 %description
 Inline::Python lets you write Perl subroutines and classes in
@@ -57,6 +58,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Inline/Python.pod
 
 %changelog
+* Wed Jun 07 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.53-1
+- Updated to release 0.53.
+
 * Sun Jul  5 2009 Christoph Maser <cmr@financial.com> - 0.28-1
 - Updated to version 0.28.
 
