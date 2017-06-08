@@ -9,8 +9,8 @@
 
 Summary: Manipulate C structs directly from Perl
 Name: perl-Inline-Struct
-Version: 0.06
-Release: 1.2%{?dist}
+Version: 0.23
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Inline-Struct/
@@ -51,6 +51,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Inline/Struct
 
 %changelog
+* Thu Jun 08 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.23-1
+- Updated to release 0.23.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.06-1.2
 - Rebuild for Fedora Core 5.
 
