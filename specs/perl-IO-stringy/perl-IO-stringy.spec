@@ -12,8 +12,8 @@
 
 Summary: IO-Stringy - I/O on in-core objects like strings and arrays
 Name: perl-IO-stringy
-Version: 2.110
-Release: 1.2%{?dist}
+Version: 2.111
+Release: 1%{?dist}
 License: GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/IO-stringy/
@@ -64,6 +64,9 @@ find contrib/ examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/IO/
 
 %changelog
+* Fri Jun 09 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.111-1
+- Updated to release 2.111.
+
 * Sat Nov  5 2005 Dries Verachtert <dries@ulyssis.org> - 2.110-1
 - Updated to release 2.110.
 
