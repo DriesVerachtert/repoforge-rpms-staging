@@ -9,7 +9,7 @@
 
 Summary: Distributed lock handler
 Name: perl-IPC-Locker
-Version: 1.492
+Version: 1.496
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -71,6 +71,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/IPC/PidStat.pm
 
 %changelog
+* Sun Jun 11 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.496-1
+- Updated to release 1.496.
+
 * Tue Jul 26 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.492-1
 - Updated to release 1.492.
 
