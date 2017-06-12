@@ -12,14 +12,14 @@
 
 Summary: Converts Perl data to and from JavaScript Object Notation
 Name: perl-JSON
-Version: 2.50
+Version: 2.94
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/JSON/
 
 #Source: http://www.cpan.org/modules/by-module/JSON/JSON-%{version}.tar.gz
-Source: http://search.cpan.org/CPAN/authors/id/M/MA/MAKAMAKA/JSON-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/I/IS/ISHIGAKI/JSON-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -74,6 +74,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/JSON.pm
 
 %changelog
+* Mon Jun 12 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.94-1
+- Updated to release 2.94.
+
 * Sat Feb 05 2011 Denis Fateyev <denis@fateyev.com> - 2.50-1
 - Updated to version 2.50.
 
