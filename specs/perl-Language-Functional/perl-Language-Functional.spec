@@ -9,7 +9,7 @@
 
 Summary: Makes Perl slightly more functional like Haskell
 Name: perl-Language-Functional
-Version: 0.04
+Version: 0.05
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Language/Functional.pm
 
 %changelog
+* Tue Jun 13 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.05-1
+- Updated to release 0.05.
+
 * Sat Jul  4 2009 Christoph Maser <cmr@financial.com> - 0.04-1
 - Updated to version 0.04.
 
