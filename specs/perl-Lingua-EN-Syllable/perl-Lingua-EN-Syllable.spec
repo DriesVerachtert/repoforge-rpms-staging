@@ -9,8 +9,8 @@
 
 Summary: Routine for estimating syllable count in words
 Name: perl-Lingua-EN-Syllable
-Version: 0.251
-Release: 1.2%{?dist}
+Version: 0.30
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Lingua-EN-Syllable/
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Lingua/EN/Syllable.pm
 
 %changelog
+* Mon Jun 19 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.30-1
+- Updated to release 0.30.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.251-1.2
 - Rebuild for Fedora Core 5.
 
