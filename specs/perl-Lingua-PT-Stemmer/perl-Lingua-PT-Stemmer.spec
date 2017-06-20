@@ -9,8 +9,8 @@
 
 Summary: Galician Stemmer
 Name: perl-Lingua-PT-Stemmer
-Version: 0.01
-Release: 1.2%{?dist}
+Version: 0.02
+Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Lingua-PT-Stemmer/
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Lingua/PT/Stemmer.pm
 
 %changelog
+* Tue Jun 20 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.02-1
+- Updated to release 0.02.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.01-1.2
 - Rebuild for Fedora Core 5.
 
