@@ -9,17 +9,17 @@
 %define perl_vendorarch %(eval "`%{__perl} -V:installvendorarch`"; echo $installvendorarch)
 
 %define real_name List-MoreUtils
-%define real_version 0.25_02
+%define real_version 0.419
 
 Summary: Additions to List::Util
 Name: perl-List-MoreUtils
-Version: 0.25.2
+Version: 0.419
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/List-MoreUtils/
 
-Source: http://search.cpan.org/CPAN/authors/id/V/VP/VPARSEVAL/List-MoreUtils-%{real_version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/R/RE/REHSACK/List-MoreUtils-%{real_version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
@@ -48,14 +48,23 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST META.yml README
+%doc Changes MANIFEST META.* README*
 %doc %{_mandir}/man3/List::MoreUtils.3pm*
-%dir %{perl_vendorarch}/List/
-%{perl_vendorarch}/List/MoreUtils.pm
+%doc %{_mandir}/man3/List::MoreUtils::Contributing.3pm*
+%doc %{_mandir}/man3/List::MoreUtils::PP.3pm*
+#%dir %{perl_vendorarch}/List/
+#%{perl_vendorarch}/List/MoreUtils.pm
 %dir %{perl_vendorarch}/auto/List/
 %{perl_vendorarch}/auto/List/MoreUtils/
+%{perl_vendorlib}/List/MoreUtils.pm
+%dir %{perl_vendorlib}/List/MoreUtils/
+%{perl_vendorlib}/List/MoreUtils/Contributing.pod
+%{perl_vendorlib}/List/MoreUtils/PP.pm
 
 %changelog
+* Wed Jun 21 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.419-1
+- Updated to release 0.419.
+
 * Wed Aug 05 2009 Christoph Maser <cmr@financial.com> - 0.25.2-1
 - Updated to version 0.25.2 (Dev. release, setting test-Tag)
 
