@@ -9,7 +9,7 @@
 
 Summary: Functions for formatting monetary values
 Name: perl-Locale-Currency-Format
-Version: 1.28
+Version: 1.35
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Locale/Currency/Format.pm
 
 %changelog
+* Thu Jun 22 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.35-1
+- Updated to release 1.35.
+
 * Sat Jul  4 2009 Christoph Maser <cmr@financial.com> - 1.28-1
 - Updated to version 1.28.
 
