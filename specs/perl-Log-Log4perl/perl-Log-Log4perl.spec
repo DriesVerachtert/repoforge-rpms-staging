@@ -9,7 +9,7 @@
 
 Summary: Perl port of log4j
 Name: perl-Log-Log4perl
-Version: 1.26
+Version: 1.49
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -95,6 +95,9 @@ find eg/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Log/Log4perl/Appender/RRDs.pm
 
 %changelog
+* Sat Jun 24 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.49-1
+- Updated to release 1.49.
+
 * Tue Dec 22 2009 Christoph Maser <cmr@financial.com> - 1.26-1
 - Updated to version 1.26.
 
