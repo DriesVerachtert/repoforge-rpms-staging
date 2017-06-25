@@ -9,7 +9,7 @@
 
 Summary: IMAP4 client library
 Name: perl-Mail-IMAPClient
-Version: 3.38
+Version: 3.39
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -85,6 +85,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Mail/IMAPClient.pod
 
 %changelog
+* Sun Jun 25 2017 Dries Verachtert <dries.verachtert@dries.eu> - 3.39-1
+- Updated to release 3.39.
+
 * Tue Feb 23 2016 Dries Verachtert <dries.verachtert@dries.eu> - 3.38-1
 - Updated to release 3.38.
 
