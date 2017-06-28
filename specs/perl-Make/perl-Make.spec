@@ -9,8 +9,8 @@
 
 Summary: Module for processing makefiles
 Name: perl-Make
-Version: 1.00
-Release: 1.2%{?dist}
+Version: 1.1.5
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Make/
@@ -45,12 +45,22 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %files
 %defattr(-, root, root, 0755)
 %doc Changes README
-%doc %{_mandir}/man1/pmake.1*
+#%doc %{_mandir}/man1/pmake.1*
 %doc %{_mandir}/man3/Make.3pm*
-%{_bindir}/pmake
+#%{_bindir}/pmake
 %{perl_vendorlib}/Make.pm
+%dir %{perl_vendorlib}/Make/
+%{perl_vendorlib}/Make/Rule.pm
+%dir %{perl_vendorlib}/Make/Rule/
+%{perl_vendorlib}/Make/Rule/Vars.pm
+%{perl_vendorlib}/Make/Target.pm
+
+
 
 %changelog
+* Wed Jun 28 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.1.5-1
+- Updated to release 1.1.5.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 1.00-1.2
 - Rebuild for Fedora Core 5.
 
