@@ -9,7 +9,7 @@
 
 Summary: Exact Currency Math with Formatting and Rounding
 Name: perl-Math-Currency
-Version: 0.46
+Version: 0.51
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -46,11 +46,15 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %defattr(-, root, root, 0755)
 %doc Changes LICENSE MANIFEST META.yml README
 %doc %{_mandir}/man3/Math::Currency.3pm*
+%doc %{_mandir}/man3/Math::Currency::*.3pm*
 %dir %{perl_vendorlib}/Math/
 %{perl_vendorlib}/Math/Currency/
 %{perl_vendorlib}/Math/Currency.pm
 
 %changelog
+* Fri Jun 30 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.51-1
+- Updated to release 0.51.
+
 * Tue Nov 13 2007 Dag Wieers <dag@wieers.com> - 0.46-1
 - Updated to release 0.46.
 
