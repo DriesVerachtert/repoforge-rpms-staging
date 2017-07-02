@@ -9,7 +9,7 @@
 
 Summary: Factorise numbers and calculate matching multiplications
 Name: perl-Math-Factor-XS
-Version: 0.37
+Version: 0.40
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -25,6 +25,7 @@ BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(XSLoader)
 BuildRequires: perl(boolean)
+BuildRequires: perl(ExtUtils::MakeMaker)
 Requires: perl(Carp)
 Requires: perl(Exporter)
 Requires: perl(List::MoreUtils)
@@ -68,6 +69,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Math/Factor/XS.pm
 
 %changelog
+* Sun Jul 02 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.40-1
+- Updated to release 0.40.
+
 * Fri Dec 11 2009 Christoph Maser <cmr@financial.com> - 0.37-1
 - Updated to version 0.37.
 
