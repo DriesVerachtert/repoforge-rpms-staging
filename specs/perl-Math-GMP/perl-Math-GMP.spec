@@ -11,7 +11,7 @@
 
 Summary: High speed arbitrary size integer math
 Name: perl-Math-GMP
-Version: 2.06
+Version: 2.15
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -22,6 +22,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
 BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(Devel::CheckLib)
 #BuildRequires: perl(Test::More) >= 0.61
 BuildRequires: perl(Test::More)
 BuildRequires: gmp-devel
@@ -49,7 +50,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc COPYING.LIB Changes INSTALL LICENSE MANIFEST MANIFEST.SKIP META.yml README SIGNATURE
+%doc COPYING.LIB Changes INSTALL LICENSE MANIFEST META.* README SIGNATURE
 %doc %{_mandir}/man3/Math::GMP.3pm*
 %dir %{perl_vendorarch}/auto/Math/
 %{perl_vendorarch}/auto/Math/GMP/
@@ -57,6 +58,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Math/GMP.pm
 
 %changelog
+* Tue Jul 04 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.15-1
+- Updated to release 2.15.
+
 * Fri Dec 11 2009 Christoph Maser <cmr@financial.com> - 2.06-1
 - Updated to version 2.06.
 
