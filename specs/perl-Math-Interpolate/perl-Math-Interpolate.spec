@@ -9,8 +9,8 @@
 
 Summary: Interpolate values
 Name: perl-Math-Interpolate
-Version: 1.05
-Release: 1.2%{?dist}
+Version: 1.06
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Math-Interpolate/
@@ -51,6 +51,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Math/IntervalSearch.pm
 
 %changelog
+* Wed Jul 05 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.06-1
+- Updated to release 1.06.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 1.05-1.2
 - Rebuild for Fedora Core 5.
 
