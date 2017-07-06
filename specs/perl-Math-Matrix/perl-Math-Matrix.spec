@@ -8,7 +8,7 @@
 
 Summary: Multiply and invert Matrices
 Name: perl-Math-Matrix
-Version: 0.5
+Version: 0.8
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -48,6 +48,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Math/Matrix.pm
 
 %changelog
+* Thu Jul 06 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.8-1
+- Updated to release 0.8.
+
 * Sun Mar 26 2006 Dries Verachtert <dries@ulyssis.org> - 0.5-1
 - Updated to release 0.5.
 
