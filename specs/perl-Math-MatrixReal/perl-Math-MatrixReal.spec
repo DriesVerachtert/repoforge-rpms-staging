@@ -9,7 +9,7 @@
 
 Summary: Manipulate NxN matrices of real numbers
 Name: perl-Math-MatrixReal
-Version: 2.12
+Version: 2.13
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -57,9 +57,13 @@ find example/ -type f -exec %{__chmod} a-x {} \;
 %dir %{perl_vendorlib}/Math/
 %{perl_vendorlib}/Math/Kleene.pod
 %{perl_vendorlib}/Math/MatrixReal.pm
+%{perl_vendorlib}/Math/.MatrixReal.pm.swo
 %{perl_vendorlib}/Math/funcs.pl
 
 %changelog
+* Fri Jul 07 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.13-1
+- Updated to release 2.13.
+
 * Mon Feb 22 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.12-1
 - Updated to release 2.12.
 
