@@ -9,7 +9,7 @@
 
 Summary: Calculate/detect prime numbers with deterministic tests
 Name: perl-Math-Prime-XS
-Version: 0.26
+Version: 0.27
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -56,6 +56,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Math/Prime/XS.pm
 
 %changelog
+* Sat Jul 08 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.27-1
+- Updated to release 0.27.
+
 * Thu Mar 24 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.26-1
 - Updated to release 0.26.
 
