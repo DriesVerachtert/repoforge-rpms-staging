@@ -9,7 +9,7 @@
 
 Summary: Random number generators
 Name: perl-Math-Random
-Version: 0.71
+Version: 0.72
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -58,6 +58,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %exclude %{perl_vendorarch}/Math/test2.pl
 
 %changelog
+* Sun Jul 09 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.72-1
+- Updated to release 0.72.
+
 * Mon Oct 13 2008 Dag Wieers <dag@wieers.com> - 0.71-1
 - Updated to release 0.71.
 
