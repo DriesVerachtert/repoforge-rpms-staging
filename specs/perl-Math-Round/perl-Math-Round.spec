@@ -9,7 +9,7 @@
 
 Summary: Perl extension for rounding numbers
 Name: perl-Math-Round
-Version: 0.06
+Version: 0.07
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/auto/Math/Round/
 
 %changelog
+* Mon Jul 10 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.07-1
+- Updated to release 0.07.
+
 * Wed Jan 03 2007 Dries Verachtert <dries@ulyssis.org> - 0.06-1
 - Updated to release 0.06.
 
