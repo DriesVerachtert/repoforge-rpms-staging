@@ -9,7 +9,7 @@
 
 Summary: Deal with RFC-1522 encoded words
 Name: perl-MIME-EncWords
-Version: 1.011.1
+Version: 1.014.3
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -48,12 +48,29 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %defattr(-, root, root, 0755)
 %doc ARTISTIC Changes MANIFEST META.yml README
 %doc %{_mandir}/man3/MIME::EncWords.3pm*
-%doc %{_mandir}/man3/MIME::EncWords::JA_JP.3pm*
+%doc %{_mandir}/man3/Encode::MIME::EncWords.3pm*
+%doc %{_mandir}/man3/POD2::JA::Encode::MIME::EncWords.3pm*
+%doc %{_mandir}/man3/POD2::JA::MIME::EncWords.3pm*
 %dir %{perl_vendorlib}/MIME/
 %{perl_vendorlib}/MIME/EncWords/
 %{perl_vendorlib}/MIME/EncWords.pm
+%dir %{perl_vendorlib}/Encode/
+%dir %{perl_vendorlib}/Encode/MIME/
+%{perl_vendorlib}/Encode/MIME/EncWords.pm
+%dir %{perl_vendorlib}/POD2/
+%dir %{perl_vendorlib}/POD2/JA/
+%dir %{perl_vendorlib}/POD2/JA/Encode/
+%dir %{perl_vendorlib}/POD2/JA/Encode/MIME/
+%{perl_vendorlib}/POD2/JA/Encode/MIME/EncWords.pod
+%dir %{perl_vendorlib}/POD2/
+%dir %{perl_vendorlib}/POD2/JA/
+%dir %{perl_vendorlib}/POD2/JA/MIME/
+%{perl_vendorlib}/POD2/JA/MIME/EncWords.pod
 
 %changelog
+* Wed Jul 12 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.014.3-1
+- Updated to release 1.014.3.
+
 * Sat Jul  4 2009 Christoph Maser <cmr@financial.com> - 1.011.1-1
 - Updated to version 1.011.1.
 
