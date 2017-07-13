@@ -9,13 +9,13 @@
 
 Summary: Identify the dependencies of a distribution
 Name: perl-Module-Depends
-Version: 0.14
+Version: 0.15
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Module-Depends/
 
-Source: http://www.cpan.org/modules/by-module/Module/Module-Depends-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/R/RC/RCLAMP/Module-Depends-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -53,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Module/Depends.pm
 
 %changelog
+* Thu Jul 13 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.15-1
+- Updated to release 0.15.
+
 * Wed Feb 20 2008 Dag Wieers <dag@wieers.com> - 0.14-1
 - Updated to release 0.14.
 
