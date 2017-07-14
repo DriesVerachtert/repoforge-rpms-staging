@@ -12,8 +12,8 @@
 
 Summary: Find and use installed modules in a (sub)category
 Name: perl-Module-Find
-Version: 0.08
-Release: 2%{?dist}
+Version: 0.13
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Module-Find/
@@ -62,6 +62,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Module/Find.pm
 
 %changelog
+* Fri Jul 14 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.13-1
+- Updated to release 0.13.
+
 * Tue Jul 26 2011 Yury V. Zaytsev <yury@shurup.com> - 0.08-2
 - RFX'ed on RHEL6.
 
