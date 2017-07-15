@@ -9,7 +9,7 @@
 
 Summary: Module::Install extension for specifying the location of other programs
 Name: perl-Module-Install-GetProgramLocations
-Version: 0.3003
+Version: 0.3008
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -24,6 +24,7 @@ BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(IO::CaptureOutput)
 BuildRequires: perl(Sort::Versions)
 BuildRequires: perl(Test::More)
+BuildRequires: perl(URI::Escape)
 Requires: perl >= 0:5.004
 
 %description
@@ -59,6 +60,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Module/Install/GetProgramLocations.pm
 
 %changelog
+* Sat Jul 15 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.3008-1
+- Updated to release 0.3008.
+
 * Wed Oct 15 2008 Dag Wieers <dag@wieers.com> - 0.3003-1
 - Updated to release 0.3003.
 
