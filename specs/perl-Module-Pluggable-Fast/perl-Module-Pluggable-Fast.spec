@@ -9,8 +9,8 @@
 
 Summary: Fast plugins with instantiation
 Name: perl-Module-Pluggable-Fast
-Version: 0.18
-Release: 1.2%{?dist}
+Version: 0.19
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Module-Pluggable-Fast/
@@ -50,6 +50,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Module/Pluggable/Fast.pm
 
 %changelog
+* Mon Jul 17 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.19-1
+- Updated to release 0.19.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.18-1.2
 - Rebuild for Fedora Core 5.
 
