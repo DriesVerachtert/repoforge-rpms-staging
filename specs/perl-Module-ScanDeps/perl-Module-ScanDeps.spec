@@ -12,8 +12,8 @@
 
 Summary: Recursively scan Perl code for dependencies
 Name: perl-Module-ScanDeps
-Version: 1.21
-Release: 1
+Version: 1.24
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Module-ScanDeps/
@@ -78,6 +78,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Module/ScanDeps.pm
 
 %changelog
+* Thu Jul 20 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.24-1
+- Updated to release 1.24.
+
 * Sat Feb 20 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.21-1
 - Updated to release 1.21.
 
