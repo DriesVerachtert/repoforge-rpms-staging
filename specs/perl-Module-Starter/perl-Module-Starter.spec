@@ -10,13 +10,13 @@
 
 Summary: Simple starterkit for any module
 Name: perl-Module-Starter
-Version: 1.54
-Release: 1
+Version: 1.72
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Module-Starter/
 
-Source: http://search.cpan.org/CPAN/authors/id/P/PE/PETDANCE/Module-Starter-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/D/DB/DBOOK/Module-Starter-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -69,6 +69,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Module/Starter.pm
 
 %changelog
+* Sat Jul 22 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.72-1
+- Updated to release 1.72.
+
 * Fri Dec 11 2009 Christoph Maser <cmr@financial.com> - 1.54-1
 - Updated to version 1.54.
 
