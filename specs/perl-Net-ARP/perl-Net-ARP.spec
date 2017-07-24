@@ -9,13 +9,13 @@
 
 Summary: Create and send ARP packets
 Name: perl-Net-ARP
-Version: 1.0.6
+Version: 1.0.9
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Net-ARP/
 
-Source: http://www.cpan.org/modules/by-module/Net/Net-ARP-%{version}.tgz
+Source: http://search.cpan.org/CPAN/authors/id/C/CR/CRAZYDJ/Net-ARP-%{version}.tgz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
@@ -53,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Net/ARP.pm
 
 %changelog
+* Mon Jul 24 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.0.9-1
+- Updated to release 1.0.9.
+
 * Wed Jul 22 2009 Christoph Maser <cmr@financial.com> - 1.0.6-1
 - Updated to version 1.0.6.
 
