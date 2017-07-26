@@ -9,7 +9,7 @@
 
 Summary: Lookup the username on the remote end of a TCP/IP connection
 Name: perl-Net-Ident
-Version: 1.23
+Version: 1.24
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -56,6 +56,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Net/Ident.pm
 
 %changelog
+* Wed Jul 26 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.24-1
+- Updated to release 1.24.
+
 * Thu Sep 23 2010 David Hrbáč <david@hrbac.cz> - 1.23-1
 - new upstream release
 
