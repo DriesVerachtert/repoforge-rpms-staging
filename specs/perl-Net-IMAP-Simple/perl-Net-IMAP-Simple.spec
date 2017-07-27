@@ -9,7 +9,7 @@
 
 Summary: Perl extension for simple IMAP account handling
 Name: perl-Net-IMAP-Simple
-Version: 1.2206
+Version: 1.2209
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -62,6 +62,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Net/IMAP/SimpleX.pod
 
 %changelog
+* Thu Jul 27 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.2209-1
+- Updated to release 1.2209.
+
 * Thu Jan 14 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.2206-1
 - Updated to release 1.2206.
 
