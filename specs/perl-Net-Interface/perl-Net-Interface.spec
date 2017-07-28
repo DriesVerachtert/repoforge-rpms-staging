@@ -9,7 +9,7 @@
 
 Summary: Access network interfaces
 Name: perl-Net-Interface
-Version: 1.012
+Version: 1.016
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -55,6 +55,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Net/Interface/
 
 %changelog
+* Fri Jul 28 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.016-1
+- Updated to release 1.016.
+
 * Sun Jul 16 2013 Denis Fateyev <denis@fateyev.com> - 1.012-1
 - Updated to version 1.012.
 
