@@ -14,8 +14,8 @@
 
 Summary: Interface to telnet
 Name: perl-Net-Telnet
-Version: 3.03
-Release: 2%{?dist}
+Version: 3.04
+Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Net-Telnet/
@@ -62,6 +62,9 @@ shell.
 %{perl_vendorlib}/Net/Telnet.pm
 
 %changelog
+* Sat Jul 29 2017 Dries Verachtert <dries.verachtert@dries.eu> - 3.04-1
+- Updated to release 3.04.
+
 * Tue Jul 26 2011 Yury V. Zaytsev <yury@shurup.com> - 3.03-2
 - RFX'ed on RHEL6.
 
