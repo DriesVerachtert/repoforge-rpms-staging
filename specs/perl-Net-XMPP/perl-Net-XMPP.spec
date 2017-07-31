@@ -12,7 +12,7 @@
 
 Summary: XMPP Perl Library
 Name: perl-Net-XMPP
-Version: 1.02
+Version: 1.05
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -53,7 +53,7 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc CHANGES LICENSE.LGPL MANIFEST META.yml README examples/
+%doc CHANGES LICENSE MANIFEST META.* README examples/
 %doc %{_mandir}/man3/Net::XMPP.3pm*
 %doc %{_mandir}/man3/Net::XMPP::*.3pm*
 %dir %{perl_vendorlib}/Net/
@@ -61,6 +61,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Net/XMPP.pm
 
 %changelog
+* Mon Jul 31 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.05-1
+- Updated to release 1.05.
+
 * Thu Nov 15 2007 Dag Wieers <dag@wieers.com> - 1.02-1
 - Updated to release 1.02.
 
