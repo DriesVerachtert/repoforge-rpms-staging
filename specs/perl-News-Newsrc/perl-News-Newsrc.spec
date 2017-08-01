@@ -9,7 +9,7 @@
 
 Summary: Manage newsrc files
 Name: perl-News-Newsrc
-Version: 1.09
+Version: 1.11
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -51,6 +51,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/News/Newsrc.pm
 
 %changelog
+* Tue Aug 01 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.11-1
+- Updated to release 1.11.
+
 * Fri Dec 14 2007 Dag Wieers <dag@wieers.com> - 1.09-1
 - Updated to release 1.09.
 
