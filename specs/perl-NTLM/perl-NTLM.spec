@@ -9,13 +9,13 @@
 
 Summary: Extension for NTLM related computations
 Name: perl-NTLM
-Version: 1.05
+Version: 1.09
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/NTLM/
 
-Source: http://search.cpan.org/CPAN/authors/id/B/BU/BUZZ/NTLM-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/N/NB/NBEBOUT/NTLM-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -66,6 +66,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Authen/NTLM
 
 %changelog
+* Wed Aug 02 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.09-1
+- Updated to release 1.09.
+
 * Thu Jan  7 2010 Christoph Maser <cmr@financial.com> - 1.05-1
 - Updated to version 1.05.
 
