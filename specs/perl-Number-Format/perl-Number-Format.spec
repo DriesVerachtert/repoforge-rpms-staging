@@ -9,8 +9,8 @@
 
 Summary: Convert numbers to strings with pretty formatting
 Name: perl-Number-Format
-Version: 1.73
-Release: 1
+Version: 1.75
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Number-Format/
@@ -66,6 +66,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Number/Format.pm
 
 %changelog
+* Thu Aug 03 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.75-1
+- Updated to release 1.75.
+
 * Thu Dec 10 2009 Christoph Maser <cmr@financial.com> - 1.73-1
 - Updated to version 1.73.
 
