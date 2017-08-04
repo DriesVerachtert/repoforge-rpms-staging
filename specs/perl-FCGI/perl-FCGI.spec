@@ -9,13 +9,13 @@
 
 Summary: Fast CGI module
 Name: perl-FCGI
-Version: 0.68
+Version: 0.78
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/FCGI/
 
-Source: http://search.cpan.org/CPAN/authors/id/M/MS/MSTROUT/FCGI-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/FCGI-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
@@ -44,12 +44,15 @@ CFLAGS="%{optflags}" %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildr
 
 %files
 %defattr(-, root, root, 0755)
-%doc ChangeLog LICENSE.TERMS README
+%doc ChangeLog LICENSE MANIFEST* META* README
 %{_mandir}/man3/*.3pm*
 %{perl_vendorarch}/FCGI.pm
 %{perl_vendorarch}/auto/FCGI/
 
 %changelog
+* Fri Aug 04 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.78-1
+- Updated to release 0.78.
+
 * Thu Jan  7 2010 Christoph Maser <cmr@financial.com> - 0.68-1
 - Updated to version 0.68.
 
