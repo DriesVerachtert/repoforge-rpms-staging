@@ -9,7 +9,7 @@
 
 Summary: Implements symbolic and ls chmod modes
 Name: perl-File-chmod
-Version: 0.32
+Version: 0.42
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -50,5 +50,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/File/chmod.pm
 
 %changelog
+* Sun Aug 06 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.42-1
+- Updated to release 0.42.
+
 * Mon Sep  3 2007 Dries Verachtert <dries@ulyssis.org> - 0.32-1
 - Initial package.
