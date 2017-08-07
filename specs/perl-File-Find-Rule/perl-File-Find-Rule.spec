@@ -12,7 +12,7 @@
 
 Summary: Alternative interface to File::Find
 Name: perl-File-Find-Rule
-Version: 0.32
+Version: 0.34
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -59,7 +59,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST META.yml README
+%doc Changes MANIFEST META.*
 %doc %{_mandir}/man1/findrule.1*
 %doc %{_mandir}/man3/File::Find::Rule.3pm*
 %doc %{_mandir}/man3/File::Find::Rule::*.3pm*
@@ -70,6 +70,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/File/Find/Rule.pm
 
 %changelog
+* Mon Aug 07 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.34-1
+- Updated to release 0.34.
+
 * Wed Dec 30 2009 Christoph Maser <cmr@financial.com> - 0.32-1
 - Updated to version 0.32.
 
