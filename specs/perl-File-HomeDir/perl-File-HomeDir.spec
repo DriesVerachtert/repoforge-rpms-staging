@@ -12,7 +12,7 @@
 
 Summary: Find your home and other directories, on any platform
 Name: perl-File-HomeDir
-Version: 1.00
+Version: 1.002
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -49,7 +49,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes LICENSE MANIFEST META.yml README
+%doc Changes LICENSE MANIFEST META.yml README*
 %doc %{_mandir}/man3/File::HomeDir.3pm*
 %doc %{_mandir}/man3/File::HomeDir::*.3pm*
 %dir %{perl_vendorlib}/File/
@@ -57,6 +57,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/File/HomeDir.pm
 
 %changelog
+* Tue Aug 08 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.002-1
+- Updated to release 1.002.
+
 * Sun Oct 09 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.00-1
 - Updated to release 1.00.
 
