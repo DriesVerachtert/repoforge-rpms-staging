@@ -9,13 +9,13 @@
 
 Summary: Determine if a file was modified
 Name: perl-File-Modified
-Version: 0.07
-Release: 1.2%{?dist}
+Version: 0.08
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/File-Modified/
 
-Source: http://www.cpan.org/modules/by-module/File/File-Modified-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/C/CO/CORION/File-Modified-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/File/Modified.pm
 
 %changelog
+* Wed Aug 09 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.08-1
+- Updated to release 0.08.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.07-1.2
 - Rebuild for Fedora Core 5.
 
