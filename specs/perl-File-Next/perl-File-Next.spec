@@ -9,7 +9,7 @@
 
 Summary: File-finding iterator
 Name: perl-File-Next
-Version: 1.06
+Version: 1.16
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -48,12 +48,15 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST META.yml README
+%doc Changes MANIFEST META.* README*
 %doc %{_mandir}/man3/File::Next.3pm*
 %dir %{perl_vendorlib}/File/
 %{perl_vendorlib}/File/Next.pm
 
 %changelog
+* Thu Aug 10 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.16-1
+- Updated to release 1.16.
+
 * Sat Aug 22 2009 Christoph Maser <cmr@financial.com> - 1.06-1
 - Updated to version 1.06.
 
