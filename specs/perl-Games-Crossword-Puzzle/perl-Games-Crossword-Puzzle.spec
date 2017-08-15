@@ -9,7 +9,7 @@
 
 Summary: Module for crossword puzzles
 Name: perl-Games-Crossword-Puzzle
-Version: 0.001
+Version: 0.003
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -50,5 +50,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Games/Crossword/Puzzle/
 
 %changelog
+* Tue Aug 15 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.003-1
+- Updated to release 0.003.
+
 * Sun Apr 29 2007 Dries Verachtert <dries@ulyssis.org> - 0.001-1
 - Initial package.
