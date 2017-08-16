@@ -9,7 +9,7 @@
 
 Summary: Dissociated Press algorithm and filter
 Name: perl-Games-Dissociate
-Version: 0.19
+Version: 1
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -57,6 +57,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Games/Dissociate.pm
 
 %changelog
+* Wed Aug 16 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1-1
+- Updated to release 1.
+
 * Fri Nov 09 2007 Dag Wieers <dag@wieers.com> - 0.19-1
 - Updated to release 0.19.
 
