@@ -9,7 +9,7 @@
 
 Summary: Converts mazes to SVG
 Name: perl-Games-Maze-SVG
-Version: 0.75
+Version: 0.9
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Games/Maze/SVG/
 
 %changelog
+* Thu Aug 17 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.9-1
+- Updated to release 0.9.
+
 * Mon Sep 18 2006 Dries Verachtert <dries@ulyssis.org> - 0.75-1
 - Updated to release 0.75.
 
