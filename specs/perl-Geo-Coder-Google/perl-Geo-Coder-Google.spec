@@ -9,13 +9,13 @@
 
 Summary: Google Maps Geocoding API 
 Name: perl-Geo-Coder-Google
-Version: 0.06
+Version: 0.18
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Geo-Coder-Google/
 
-Source: http://search.cpan.org/CPAN/authors/id/M/MI/MIYAGAWA/Geo-Coder-Google-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/A/AR/ARCANEZ/Geo-Coder-Google-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -57,12 +57,19 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %defattr(-, root, root, 0755)
 %doc Changes MANIFEST META.yml README
 %doc %{_mandir}/man3/Geo::Coder::Google.3pm*
+%doc %{_mandir}/man3/Geo::Coder::Google::V2.3pm*
+%doc %{_mandir}/man3/Geo::Coder::Google::V3.3pm*
 %dir %{perl_vendorlib}/Geo/
 %dir %{perl_vendorlib}/Geo/Coder/
-#%{perl_vendorlib}/Geo/Coder/Google/
+%dir %{perl_vendorlib}/Geo/Coder/Google/
 %{perl_vendorlib}/Geo/Coder/Google.pm
+%{perl_vendorlib}/Geo/Coder/Google/V2.pm
+%{perl_vendorlib}/Geo/Coder/Google/V3.pm
 
 %changelog
+* Fri Aug 18 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.18-1
+- Updated to release 0.18.
+
 * Wed Dec 30 2009 Christoph Maser <cmr@financial.com> - 0.06-1
 - Updated to version 0.06.
 
