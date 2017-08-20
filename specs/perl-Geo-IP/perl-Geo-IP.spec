@@ -9,13 +9,13 @@
 
 Summary: Database which maps IP blocks on countries
 Name: perl-Geo-IP
-Version: 1.38
+Version: 1.50
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Geo-IP/
 
-Source: http://search.cpan.org/CPAN/authors/id/B/BO/BORISZ/Geo-IP-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/M/MA/MAXMIND/Geo-IP-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: geoip-devel
@@ -50,16 +50,19 @@ find example/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes INSTALL MANIFEST META.yml README example/
+%doc Changes INSTALL MANIFEST META.* README* example/
 %doc %{_mandir}/man?/*
 %dir %{perl_vendorarch}/auto/Geo/
 %{perl_vendorarch}/auto/Geo/IP/
 %dir %{perl_vendorarch}/Geo/
 %{perl_vendorarch}/Geo/IP/
 %{perl_vendorarch}/Geo/IP.pm
-%{perl_vendorarch}/Geo/Mirror.pm
+#%{perl_vendorarch}/Geo/Mirror.pm
 
 %changelog
+* Sun Aug 20 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.50-1
+- Updated to release 1.50.
+
 * Tue Feb 02 2010 Steve Huff <shuff@vecna.org> - 
 - Previous CPAN source URL didn't work for me.
 - Clean up manpage specification in %files.
