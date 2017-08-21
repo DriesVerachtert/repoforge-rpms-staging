@@ -9,13 +9,13 @@
 
 Summary: Look up country by IP Address
 Name: perl-Geo-IP-PurePerl
-Version: 1.24
+Version: 1.26
 Release: 1%{?dist}
 License: GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Geo-IP-PurePerl/
 
-Source: http://search.cpan.org/CPAN/authors/id/B/BO/BORISZ/Geo-IP-PurePerl-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/M/MA/MAXMIND/Geo-IP-PurePerl-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -59,6 +59,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Geo/IP/PurePerl.pm
 
 %changelog
+* Mon Aug 21 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.26-1
+- Updated to release 1.26.
+
 * Wed Dec 30 2009 Christoph Maser <cmr@financial.com> - 1.24-1
 - Updated to version 1.24.
 
