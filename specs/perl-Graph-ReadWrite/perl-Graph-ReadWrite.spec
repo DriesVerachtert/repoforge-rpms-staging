@@ -9,8 +9,8 @@
 
 Summary: Graph file format readers and writers
 Name: perl-Graph-ReadWrite
-Version: 2.00
-Release: 1.2%{?dist}
+Version: 2.09
+Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Graph-ReadWrite/
@@ -46,7 +46,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc ChangeLog README
+%doc Changes MANIFEST META.* README TODO
 %doc %{_mandir}/man3/*
 %dir %{perl_vendorlib}/Graph/
 %{perl_vendorlib}/Graph/*.pm
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Graph/Writer/
 
 %changelog
+* Wed Aug 23 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.09-1
+- Updated to release 2.09.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 2.00-1.2
 - Rebuild for Fedora Core 5.
 
