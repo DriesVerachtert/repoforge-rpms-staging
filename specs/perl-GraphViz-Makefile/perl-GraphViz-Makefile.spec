@@ -9,7 +9,7 @@
 
 Summary: Visualize Makefile dependencies
 Name: perl-GraphViz-Makefile
-Version: 1.16
+Version: 1.17
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/GraphViz/Makefile.pm
 
 %changelog
+* Thu Aug 24 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.17-1
+- Updated to release 1.17.
+
 * Tue Oct 07 2008 Dag Wieers <dag@wieers.com> - 0.16-1
 - Updated to release 0.16.
 
