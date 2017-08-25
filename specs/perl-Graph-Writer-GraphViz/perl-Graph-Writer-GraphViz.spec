@@ -9,8 +9,8 @@
 
 Summary: GraphViz Writer for Graph object
 Name: perl-Graph-Writer-GraphViz
-Version: 0.10
-Release: 1.2%{?dist}
+Version: 0.11
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Graph-Writer-GraphViz/
@@ -53,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Graph/Writer/GraphViz.pm
 
 %changelog
+* Fri Aug 25 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.11-1
+- Updated to release 0.11.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.10-1.2
 - Rebuild for Fedora Core 5.
 
