@@ -12,7 +12,7 @@
 
 Summary: Format HTML as plaintext, PostScript or RTF
 Name: perl-HTML-Format
-Version: 2.05
+Version: 2.12
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -23,7 +23,8 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl
-BuildRequires: perl(ExtUtils::MakeMaker)
+#BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(Module::Build)
 
 %description
 This is a collection of modules that formats HTML as plaintext,
@@ -37,12 +38,15 @@ This package contains the following Perl module:
 %setup -n %{real_name}-%{version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
-%{__make} %{?_smp_mflags}
+#%{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
+#%{__make} %{?_smp_mflags}
+%{__perl} Build.PL --installdirs vendor --destdir %{buildroot}
+./Build
 
 %install
 %{__rm} -rf %{buildroot}
-%{__make} pure_install
+#%{__make} pure_install
+./Build pure_install
 
 ### Clean up buildroot
 find %{buildroot} -name .packlist -exec %{__rm} {} \;
@@ -57,14 +61,19 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc %{_mandir}/man3/HTML::FormatPS.3pm*
 %doc %{_mandir}/man3/HTML::FormatText.3pm*
 %doc %{_mandir}/man3/HTML::Formatter.3pm*
+%doc %{_mandir}/man3/HTML::FormatMarkdown.3pm*
 %dir %{perl_vendorlib}/HTML/
 #%{perl_vendorlib}/HTML/Format/
 %{perl_vendorlib}/HTML/FormatRTF.pm
 %{perl_vendorlib}/HTML/FormatPS.pm
 %{perl_vendorlib}/HTML/FormatText.pm
 %{perl_vendorlib}/HTML/Formatter.pm
+%{perl_vendorlib}/HTML/FormatMarkdown.pm
 
 %changelog
+* Sat Aug 26 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.12-1
+- Updated to release 2.12.
+
 * Tue Apr 05 2011 Denis Fateyev <denis@fateyev.com> - 2.05-1
 - Updated to version 2.05.
 
