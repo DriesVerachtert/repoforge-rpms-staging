@@ -9,7 +9,7 @@
 
 Summary: Scrub or sanitize html
 Name: perl-HTML-Scrubber
-Version: 0.15
+Version: 0.17
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -31,12 +31,15 @@ Perl extension for scrubbing/sanitizing html.
 %setup -n %{real_name}-%{version}
 
 %build
-%{__perl} Build.PL --installdirs vendor --destdir %{buildroot}
-./Build
+#%{__perl} Build.PL --installdirs vendor --destdir %{buildroot}
+#./Build
+%{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
+%{__make} %{?_smp_mflags}
 
 %install
 %{__rm} -rf %{buildroot}
-./Build pure_install
+#./Build pure_install
+%{__make} pure_install
 
 ### Clean up buildroot
 find %{buildroot} -name .packlist -exec %{__rm} {} \;
@@ -51,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/HTML/Scrubber.pm
 
 %changelog
+* Sun Aug 27 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.17-1
+- Updated to release 0.17.
+
 * Fri Oct 21 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.15-1
 - Updated to release 0.15.
 
