@@ -9,8 +9,8 @@
 
 Summary: Generating a summary from a web page
 Name: perl-HTML-Summary
-Version: 0.017
-Release: 1.2%{?dist}
+Version: 0.022
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/HTML-Summary/
@@ -56,6 +56,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Text/Sentence.pm
 
 %changelog
+* Mon Aug 28 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.022-1
+- Updated to release 0.022.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.017-1.2
 - Rebuild for Fedora Core 5.
 
