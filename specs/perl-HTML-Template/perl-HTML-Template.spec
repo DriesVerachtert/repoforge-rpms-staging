@@ -9,7 +9,7 @@
 
 Summary: HTML Templates for CGI scripts
 Name: perl-HTML-Template
-Version: 2.9
+Version: 2.97
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -44,11 +44,17 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc ANNOUNCE Changes FAQ README
+%doc LICENSE MANIFEST META.* Changes README
 %doc %{_mandir}/man3/*
+%dir %{perl_vendorlib}/HTML/
+%dir %{perl_vendorlib}/HTML/Template/
 %{perl_vendorlib}/HTML/Template.pm
+%{perl_vendorlib}/HTML/Template/FAQ.pm
 
 %changelog
+* Wed Aug 30 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.97-1
+- Updated to release 2.97.
+
 * Sun Apr 29 2007 Dries Verachtert <dries@ulyssis.org> - 2.9-1
 - Updated to release 2.9.
 
