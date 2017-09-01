@@ -12,7 +12,7 @@
 
 Summary: HTML-Tree module for perl
 Name: perl-HTML-Tree
-Version: 5.03
+Version: 5.07
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -55,10 +55,14 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %defattr(-, root, root, 0755)
 %doc Changes MANIFEST META.yml README TODO
 %doc %{_mandir}/man3/*.3pm*
+%doc %{_mandir}/man1/htmltree.1*
 %{perl_vendorlib}/HTML/
 %{_bindir}/htmltree
 
 %changelog
+* Fri Sep 01 2017 Dries Verachtert <dries.verachtert@dries.eu> - 5.07-1
+- Updated to release 5.07.
+
 * Thu Oct 08 2015 Dries Verachtert <dries.verachtert@dries.eu> - 5.03-1
 - Updated to release 5.03.
 
