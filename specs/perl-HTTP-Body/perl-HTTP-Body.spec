@@ -11,19 +11,20 @@
 
 Summary: HTTP Body parser
 Name: perl-HTTP-Body
-Version: 1.07
-Release: 2%{?dist}
+Version: 1.22
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/HTTP-Body/
 
-Source: http://search.cpan.org/CPAN/authors/id/M/MR/MRAMBERG/HTTP-Body-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/G/GE/GETTY/HTTP-Body-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 BuildRequires: perl(Carp)
 #BuildRequires: perl(ExtUtils::MakeMaker) >= 6.42
 BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(Digest::MD5)
 BuildRequires: perl(File::Temp) >= 0.14
 BuildRequires: perl(HTTP::Headers)
 #BuildRequires: perl(IO::File) >= 1.14
@@ -74,6 +75,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/HTTP/Body.pm
 
 %changelog
+* Sat Sep 02 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.22-1
+- Updated to release 1.22.
+
 * Sat Feb 06 2010 Christoph Maser <cmr@financial.com> - 1.07-2
 - Remove version for dependency IO::File
 
