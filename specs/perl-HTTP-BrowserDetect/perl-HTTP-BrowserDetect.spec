@@ -9,7 +9,7 @@
 
 Summary: Determine the Web browser, version, and platform
 Name: perl-HTTP-BrowserDetect
-Version: 1.22
+Version: 3.14
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -54,11 +54,14 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes README
+%doc Changes CONTRIBUTORS INSTALL MANIFEST META.* TODO
 %doc %{_mandir}/man3/*
 %{perl_vendorlib}/HTTP/BrowserDetect.pm
 
 %changelog
+* Sun Sep 03 2017 Dries Verachtert <dries.verachtert@dries.eu> - 3.14-1
+- Updated to release 3.14.
+
 * Tue Apr 05 2011 Denis Fateyev <denis@fateyev.com> - 1.22-1
 - Updated to version 1.22.
 
