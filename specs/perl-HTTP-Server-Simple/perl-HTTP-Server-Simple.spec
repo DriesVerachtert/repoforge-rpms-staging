@@ -9,13 +9,13 @@
 
 Summary: Simple standalone HTTP daemon
 Name: perl-HTTP-Server-Simple
-Version: 0.43
+Version: 0.52
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/HTTP-Server-Simple/
 
-Source: http://search.cpan.org/CPAN/authors/id/J/JE/JESSE/HTTP-Server-Simple-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/B/BP/BPS/HTTP-Server-Simple-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 
@@ -65,6 +65,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/HTTP/Server/Simple.pm
 
 %changelog
+* Mon Sep 04 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.52-1
+- Updated to release 0.52.
+
 * Tue Feb  8 2011 Christoph Maser <cmaser@gmx.de> - 0.43-1
 - Updated to version 0.43.
 
