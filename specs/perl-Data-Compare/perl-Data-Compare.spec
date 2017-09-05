@@ -9,7 +9,7 @@
 
 Summary: Compare perl data structures
 Name: perl-Data-Compare
-Version: 1.2102
+Version: 1.25
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -55,7 +55,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc CHANGES MANIFEST META.yml NOTES README TODO
+%doc MAINTAINERS-NOTE MANIFEST* META.* NOTES README TODO
 %doc %{_mandir}/man3/Data::Compare.3pm*
 %doc %{_mandir}/man3/Data::Compare::*.3pm*
 %dir %{perl_vendorlib}/Data/
@@ -63,6 +63,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Data/Compare.pm
 
 %changelog
+* Tue Sep 05 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.25-1
+- Updated to release 1.25.
+
 * Sat Feb  6 2010 Christoph Maser <cmr@financial.com> - 1.2102-1
 - Updated to version 1.2102.
 
