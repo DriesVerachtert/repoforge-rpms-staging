@@ -9,8 +9,8 @@
 
 Summary: Format data in columns
 Name: perl-Data-ShowTable
-Version: 3.3
-Release: 1.2%{?dist}
+Version: 4.6
+Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Data-ShowTable/
@@ -53,6 +53,9 @@ HTML-formatting (for World-Wide-Web output).
 %{perl_vendorlib}/Data/ShowTable.pm
 
 %changelog
+* Thu Sep 07 2017 Dries Verachtert <dries.verachtert@dries.eu> - 4.6-1
+- Updated to release 4.6.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 3.3-1.2
 - Rebuild for Fedora Core 5.
 
