@@ -9,7 +9,7 @@
 
 Summary: Common data validation methods
 Name: perl-Data-Validate
-Version: 0.08
+Version: 0.09
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -50,6 +50,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/auto/Data/Validate/
 
 %changelog
+* Sat Sep 09 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.09-1
+- Updated to release 0.09.
+
 * Wed May 02 2007 Dries Verachtert <dries@ulyssis.org> - 0.08-1
 - Updated to release 0.08.
 
