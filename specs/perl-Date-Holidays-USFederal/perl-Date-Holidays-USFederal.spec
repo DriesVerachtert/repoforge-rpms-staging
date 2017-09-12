@@ -9,7 +9,7 @@
 
 Summary: Determine US Federal Public Holidays
 Name: perl-Date-Holidays-USFederal
-Version: 0.01
+Version: 1.0
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -49,5 +49,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Date/Holidays/USFederal.pm
 
 %changelog
+* Tue Sep 12 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.0-1
+- Updated to release 1.0.
+
 * Sun Nov 19 2006 Dries Verachtert <dries@ulyssis.org> - 0.01-1
 - Initial package.
