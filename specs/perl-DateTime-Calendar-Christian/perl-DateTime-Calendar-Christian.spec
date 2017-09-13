@@ -10,8 +10,8 @@
 
 Summary: Dates in the Christian calendar
 Name: perl-DateTime-Calendar-Christian
-Version: 0.04
-Release: 1.3%{?dist}
+Version: 0.06
+Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/DateTime-Calendar-Christian/
@@ -53,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/DateTime/Calendar/Christian.pm
 
 %changelog
+* Wed Sep 13 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.06-1
+- Updated to release 0.06.
+
 * Mon Mar 26 2012 Steve Huff <shuff@vecna.org> - 0.04-1.3
 - Rebuild as RFX.
 
