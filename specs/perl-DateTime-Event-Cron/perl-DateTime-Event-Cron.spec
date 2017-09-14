@@ -9,7 +9,7 @@
 
 Summary: DateTime extension for generating recurrence sets from crontab files
 Name: perl-DateTime-Event-Cron
-Version: 0.08
+Version: 0.09
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -48,6 +48,9 @@ DateTime extension for generating recurrence sets from crontab lines and files.
 %{perl_vendorlib}/DateTime/Event/Cron.pm
 
 %changelog
+* Thu Sep 14 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.09-1
+- Updated to release 0.09.
+
 * Wed Sep 28 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.08-1
 - Updated to release 0.08.
 
