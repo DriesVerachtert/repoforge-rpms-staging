@@ -9,8 +9,8 @@
 
 Summary: Returns Easter events for DateTime objects
 Name: perl-DateTime-Event-Easter
-Version: 1.04
-Release: 1.2%{?dist}
+Version: 1.05
+Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/DateTime-Event-Easter/
@@ -56,6 +56,9 @@ Easter Sunday) by passing 49.
 %{perl_vendorlib}/DateTime/Event/Easter.pm
 
 %changelog
+* Fri Sep 15 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.05-1
+- Updated to release 1.05.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 1.04-1.2
 - Rebuild for Fedora Core 5.
 
