@@ -9,8 +9,8 @@
 
 Summary: DateTime extension for computing the sunrise/sunset on a given day
 Name: perl-DateTime-Event-Sunrise
-Version: 0.0501
-Release: 1.2%{?dist}
+Version: 0.0505
+Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/DateTime-Event-Sunrise/
@@ -49,6 +49,9 @@ given day.
 %{perl_vendorlib}/DateTime/Event/Sunrise.pm
 
 %changelog
+* Sun Sep 17 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.0505-1
+- Updated to release 0.0505.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.0501-1.2
 - Rebuild for Fedora Core 5.
 
