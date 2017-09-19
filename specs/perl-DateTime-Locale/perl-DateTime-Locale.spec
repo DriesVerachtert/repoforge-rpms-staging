@@ -12,7 +12,7 @@
 
 Summary: Localization support for DateTime.pm
 Name: perl-DateTime-Locale
-Version: 0.45
+Version: 1.16
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -28,6 +28,7 @@ BuildRequires: perl(Class::ISA)
 BuildRequires: perl(List::MoreUtils)
 BuildRequires: perl(Params::Validate) >= 0.91
 BuildRequires: perl >= 0:5.6
+BuildRequires: perl(File::ShareDir::Install)
 Requires: perl >= 0:5.6
 
 Conflicts: perl(DateTime::Format::Strptime) <= 1.1000
@@ -41,7 +42,7 @@ DateTime.pm class.
 %setup -n %{real_name}-%{version}
 
 %build
-%{__perl} Build.PL
+#%{__perl} Build.PL
 %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
 %{__make} %{?_smp_mflags}
 
@@ -57,14 +58,20 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes LICENSE LICENSE.cldr MANIFEST MANIFEST.SKIP MANIFEST.base META.yml README SIGNATURE
+%doc Changes LICENSE LICENSE.cldr MANIFEST META.* README*
 %doc %{_mandir}/man?/*
 %dir %{perl_vendorlib}/DateTime/
 %{perl_vendorlib}/DateTime/Locale/
 %{perl_vendorlib}/DateTime/Locale.pm
-%{perl_vendorlib}/DateTime/LocaleCatalog.pm
+#%{perl_vendorlib}/DateTime/LocaleCatalog.pm
+%dir %{perl_vendorlib}/auto/share/
+%dir %{perl_vendorlib}/auto/share/dist/
+%{perl_vendorlib}/auto/share/dist/DateTime-Locale/*.pl
 
 %changelog
+* Tue Sep 19 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.16-1
+- Updated to release 1.16.
+
 * Wed Jun 30 2010 Steve Huff <shuff@vecna.org> - 0.45-1
 - Updated to versioN 0.45.
 
