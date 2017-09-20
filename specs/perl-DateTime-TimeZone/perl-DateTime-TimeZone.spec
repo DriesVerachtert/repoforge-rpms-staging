@@ -12,7 +12,7 @@
 
 Summary: Time zone object base class and factory
 Name: perl-DateTime-TimeZone
-Version: 1.34
+Version: 2.13
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -70,17 +70,20 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes INSTALL LICENSE MANIFEST META.json META.yml README SIGNATURE
+%doc Changes INSTALL LICENSE MANIFEST META.json META.yml README*
 %doc %{_mandir}/man?/*
 %dir %{perl_vendorlib}/DateTime/
 %{perl_vendorlib}/DateTime/TimeZone/
 %{perl_vendorlib}/DateTime/TimeZone.pm
 
 ### Exclude to disable Win32 dependencies
-%exclude %{_mandir}/man3/DateTime::TimeZone::Local::Win32.3pm*
-%exclude %{perl_vendorlib}/DateTime/TimeZone/Local/Win32.pm
+#%exclude %{_mandir}/man3/DateTime::TimeZone::Local::Win32.3pm*
+#%exclude %{perl_vendorlib}/DateTime/TimeZone/Local/Win32.pm
 
 %changelog
+* Wed Sep 20 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.13-1
+- Updated to release 2.13.
+
 * Mon Jun 13 2011 Steve Huff <shuff@vecna.org> - 1.34-1
 - Updated to version 1.34.
 
