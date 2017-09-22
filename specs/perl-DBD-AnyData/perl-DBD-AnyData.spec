@@ -9,7 +9,7 @@
 
 Summary: Interface to data in many formats and from many sources
 Name: perl-DBD-AnyData
-Version: 0.09
+Version: 0.110
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -58,6 +58,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/DBD/AnyData.pm
 
 %changelog
+* Fri Sep 22 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.110-1
+- Updated to release 0.110.
+
 * Fri Nov 09 2007 Dag Wieers <dag@wieers.com> - 0.09-1
 - Updated to release 0.09.
 
