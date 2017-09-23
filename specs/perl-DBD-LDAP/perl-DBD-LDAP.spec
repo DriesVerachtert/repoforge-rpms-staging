@@ -9,7 +9,7 @@
 
 Summary: SQL/Perl DBI interface to Ldap databases
 Name: perl-DBD-LDAP
-Version: 0.20
+Version: 0.22
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -60,6 +60,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/JLdap.pm
 
 %changelog
+* Sat Sep 23 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.22-1
+- Updated to release 0.22.
+
 * Wed Dec 30 2009 Christoph Maser <cmr@financial.com> - 0.20-1
 - Updated to version 0.20.
 
