@@ -14,7 +14,7 @@
 
 Summary: Small fast embedded SQL database engine
 Name: perl-DBD-SQLite
-Version: 1.48
+Version: 1.54
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -85,6 +85,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 
 %changelog
+* Sun Sep 24 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.54-1
+- Updated to release 1.54.
+
 * Sun Oct 25 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.48-1
 - Updated to release 1.48.
 
