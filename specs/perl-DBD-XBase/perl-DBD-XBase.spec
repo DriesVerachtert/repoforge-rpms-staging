@@ -9,7 +9,7 @@
 
 Summary: DBI driver for XBase compatible database files
 Name: perl-DBD-XBase
-Version: 1.05
+Version: 1.08
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -21,6 +21,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: perl
 BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(DBI)
 
 %description
 Module XBase provides access to XBase (dBase, Fox*) dbf files.
@@ -61,6 +62,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/XBase.pm
 
 %changelog
+* Mon Sep 25 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.08-1
+- Updated to release 1.08.
+
 * Sun Oct 18 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.05-1
 - Updated to release 1.05.
 
