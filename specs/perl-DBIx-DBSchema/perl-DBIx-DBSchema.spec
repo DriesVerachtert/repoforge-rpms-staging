@@ -9,7 +9,7 @@
 
 Summary: Interface to database schemas
 Name: perl-DBIx-DBSchema
-Version: 0.38
+Version: 0.45
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -23,6 +23,7 @@ BuildRequires: perl(DBI)
 BuildRequires: perl(FreezeThaw)
 BuildRequires: perl(Storable)
 BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(Test::More)
 Requires: perl(DBI)
 Requires: perl(FreezeThaw)
 Requires: perl(Storable)
@@ -65,6 +66,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/DBIx/DBSchema.pm
 
 %changelog
+* Tue Sep 26 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.45-1
+- Updated to release 0.45.
+
 * Wed Feb  3 2010 Christoph Maser <cmr@financial.com> - 0.38-1
 - Updated to version 0.38.
 
