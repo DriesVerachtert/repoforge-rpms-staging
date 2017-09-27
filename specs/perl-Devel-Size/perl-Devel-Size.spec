@@ -9,7 +9,7 @@
 
 Summary: Perl extension for finding the memory usage of Perl variables
 Name: perl-Devel-Size
-Version: 0.80
+Version: 0.81
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Devel/Size.pm
 
 %changelog
+* Wed Sep 27 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.81-1
+- Updated to release 0.81.
+
 * Sat Jul 16 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.80-1
 - Updated to release 0.80.
 
