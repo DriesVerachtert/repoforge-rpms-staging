@@ -12,7 +12,7 @@
 
 Summary: Dump symbol names or the symbol table
 Name: perl-Devel-Symdump
-Version: 2.17
+Version: 2.18
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Devel/Symdump.pm
 
 %changelog
+* Thu Sep 28 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.18-1
+- Updated to release 2.18.
+
 * Mon Nov 28 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.17-1
 - Updated to release 2.17.
 
