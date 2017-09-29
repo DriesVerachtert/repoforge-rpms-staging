@@ -9,7 +9,7 @@
 
 Summary: Track usage of objects
 Name: perl-Devel-TrackObjects
-Version: 0.3
+Version: 0.5
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -51,6 +51,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Devel/TrackObjects.pm
 
 %changelog
+* Fri Sep 29 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.5-1
+- Updated to release 0.5.
+
 * Sun Feb 24 2008 Dag Wieers <dag@wieers.com> - 0.3-1
 - Updated to release 0.3.
 
