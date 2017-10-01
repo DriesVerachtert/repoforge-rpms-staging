@@ -9,8 +9,8 @@
 
 Summary: Perl interface to the MD4 Algorithm
 Name: perl-Digest-MD4
-Version: 1.5
-Release: 1.2%{?dist}
+Version: 1.9
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Digest-MD4/
@@ -55,6 +55,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Digest/MD4/
 
 %changelog
+* Sun Oct 01 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.9-1
+- Updated to release 1.9.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 1.5-1.2
 - Rebuild for Fedora Core 5.
 
