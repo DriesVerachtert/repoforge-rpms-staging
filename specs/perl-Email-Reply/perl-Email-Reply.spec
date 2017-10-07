@@ -9,7 +9,7 @@
 
 Summary: Reply to mails
 Name: perl-Email-Reply
-Version: 1.202
+Version: 1.204
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -51,6 +51,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Email/Reply.pm
 
 %changelog
+* Sat Oct 07 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.204-1
+- Updated to release 1.204.
+
 * Tue Nov 06 2007 Dag Wieers <dag@wieers.com> - 1.202-1
 - Updated to release 1.202.
 
