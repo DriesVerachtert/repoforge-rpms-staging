@@ -9,13 +9,13 @@
 
 Summary: Generic Perl Event Loop
 Name: perl-Event
-Version: 1.21
+Version: 1.26
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Event/
 
-Source: http://search.cpan.org/CPAN/authors/id/J/JP/JPRIT/Event-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/E/ET/ETJ/Event-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
@@ -50,7 +50,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc ANNOUNCE ChangeLog INSTALL MANIFEST MANIFEST.SKIP META.yml README TODO
+%doc ANNOUNCE Changes INSTALL MANIFEST* META.* README Tutorial.pdf
 %doc %{_mandir}/man3/Event.3pm*
 %doc %{_mandir}/man3/Event::*.3pm*
 %{perl_vendorarch}/auto/Event/
@@ -59,6 +59,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Event.pod
 
 %changelog
+* Sun Oct 08 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.26-1
+- Updated to release 1.26.
+
 * Sun Sep 27 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.21-1
 - Updated to release 1.21.
 
