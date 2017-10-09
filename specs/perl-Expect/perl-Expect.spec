@@ -9,7 +9,7 @@
 
 Summary: Expect for perl
 Name: perl-Expect
-Version: 1.21
+Version: 1.35
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -47,13 +47,16 @@ find examples/ tutorial/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST META.yml README examples/ tutorial/
+%doc Changes MANIFEST META.yml README* examples/ tutorial/
 %doc %{_mandir}/man3/Expect.3pm*
 #%{perl_vendorlib}/Expect/
 %{perl_vendorlib}/Expect.pm
-%{perl_vendorlib}/Expect.pod
+#%{perl_vendorlib}/Expect.pod
 
 %changelog
+* Mon Oct 09 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.35-1
+- Updated to release 1.35.
+
 * Fri Nov 09 2007 Dag Wieers <dag@wieers.com> - 1.21-1
 - Updated to release 1.21.
 
