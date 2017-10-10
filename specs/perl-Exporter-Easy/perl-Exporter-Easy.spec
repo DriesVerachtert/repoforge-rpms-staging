@@ -9,8 +9,8 @@
 
 Summary: Takes the drudgery out of Exporting symbols
 Name: perl-Exporter-Easy
-Version: 0.16
-Release: 1.2%{?dist}
+Version: 0.18
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Exporter-Easy/
@@ -46,12 +46,15 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc CHANGES README
+%doc Changes LICENSE MANIFEST META.* README TODO
 %doc %{_mandir}/man3/*
 %{perl_vendorlib}/Exporter/Easy.pm
 %{perl_vendorlib}/Exporter/Easiest.pm
 
 %changelog
+* Tue Oct 10 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.18-1
+- Updated to release 0.18.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.16-1.2
 - Rebuild for Fedora Core 5.
 
