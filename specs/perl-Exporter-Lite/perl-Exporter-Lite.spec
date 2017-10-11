@@ -9,7 +9,7 @@
 
 Summary: Lightweight exporting of variables
 Name: perl-Exporter-Lite
-Version: 0.02
+Version: 0.08
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -49,6 +49,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Exporter/Lite.pm
 
 %changelog
+* Wed Oct 11 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.08-1
+- Updated to release 0.08.
+
 * Tue Nov 14 2006 Dries Verachtert <dries@ulyssis.org> - 0.02-1
 - Updated to release 0.02.
 
