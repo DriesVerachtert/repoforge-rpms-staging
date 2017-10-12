@@ -13,8 +13,8 @@
 
 Summary: Automatic install of dependencies via CPAN
 Name: perl-ExtUtils-AutoInstall
-Version: 0.63
-Release: 1.2%{?dist}
+Version: 0.64
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/ExtUtils-AutoInstall/
@@ -56,6 +56,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/ExtUtils/AutoInstall.pm
 
 %changelog
+* Thu Oct 12 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.64-1
+- Updated to release 0.64.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.63-1.2
 - Rebuild for Fedora Core 5.
 
