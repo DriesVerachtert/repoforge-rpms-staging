@@ -9,12 +9,12 @@
 %define perl_vendorarch %(eval "`%{__perl} -V:installvendorarch`"; echo $installvendorarch)
 
 %define real_name ExtUtils-CBuilder
-%define real_version 0.280224
+%define real_version 0.280226
 
 Summary: Compile and link C code for Perl modules
 Name: perl-ExtUtils-CBuilder
-Version: 0.2802.24
-Release: 2%{?dist}
+Version: 0.280226
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/ExtUtils-CBuilder/
@@ -62,6 +62,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/ExtUtils/CBuilder.pm
 
 %changelog
+* Fri Oct 13 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.280226-1
+- Updated to release 0.280226.
+
 * Fri Dec 25 2015 Dries Verachtert <dries.verachtert@dries.eu> - 0.2802.24-2
 - Updated to release 0.2802.24.
 
