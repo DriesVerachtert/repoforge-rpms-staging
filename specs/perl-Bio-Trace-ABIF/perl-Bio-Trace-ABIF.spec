@@ -9,7 +9,7 @@
 
 Summary: Parse ABIF files
 Name: perl-Bio-Trace-ABIF
-Version: 1.04
+Version: 1.06
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -60,6 +60,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Bio/Trace/ABIF.pm
 
 %changelog
+* Sat Oct 14 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.06-1
+- Updated to release 1.06.
+
 * Sat Feb  6 2010 Christoph Maser <cmr@financial.com> - 1.04-1
 - Updated to version 1.04.
 
