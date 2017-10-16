@@ -12,7 +12,7 @@
 
 Summary: Work with International Standard Book Numbers
 Name: perl-Business-ISBN
-Version: 3.003
+Version: 3.004
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -69,6 +69,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Business/ISBN13.pm
 
 %changelog
+* Mon Oct 16 2017 Dries Verachtert <dries.verachtert@dries.eu> - 3.004-1
+- Updated to release 3.004.
+
 * Thu Sep 22 2016 Dries Verachtert <dries.verachtert@dries.eu> - 3.003-1
 - Updated to release 3.003.
 
