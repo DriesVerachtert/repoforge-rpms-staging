@@ -9,13 +9,13 @@
 
 Summary: Work with International Standard Serial Numbers
 Name: perl-Business-ISSN
-Version: 0.91
+Version: 1.002
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Business-ISSN/
 
-Source: http://www.cpan.org/modules/by-module/Business/Business-ISSN-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/B/BD/BDFOY/Business-ISSN-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -47,13 +47,16 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes LICENSE MANIFEST META.yml README examples/
-%doc %{_mandir}/man3/Business-ISSN.3*
+%doc Changes LICENSE MANIFEST META.* README* examples/
+%doc %{_mandir}/man3/Business::ISSN.3*
 %dir %{perl_vendorlib}/Business/
 #%{perl_vendorlib}/Business/ISSN/
 %{perl_vendorlib}/Business/ISSN.pm
 
 %changelog
+* Tue Oct 17 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.002-1
+- Updated to release 1.002.
+
 * Tue Oct 07 2008 Dag Wieers <dag@wieers.com> - 0.91-1
 - Updated to release 0.91.
 
