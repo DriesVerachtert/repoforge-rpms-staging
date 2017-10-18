@@ -9,7 +9,7 @@
 
 Summary: Executable commments
 Name: perl-Carp-Assert
-Version: 0.20
+Version: 0.21
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -49,6 +49,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Carp/
 
 %changelog
+* Wed Oct 18 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.21-1
+- Updated to release 0.21.
+
 * Sun Apr 29 2007 Dries Verachtert <dries@ulyssis.org> - 0.20-1
 - Updated to release 0.20.
 
