@@ -14,13 +14,13 @@
 
 Summary: Report errors from perspective of caller of a "clan" of modules
 Name: perl-Carp-Clan
-Version: 6.04
+Version: 6.06
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Carp-Clan/
 
-Source: http://search.cpan.org/CPAN/authors/id/S/ST/STBEY/Carp-Clan-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/K/KE/KENTNL/Carp-Clan-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -59,6 +59,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Carp/Clan.pod
 
 %changelog
+* Thu Oct 19 2017 Dries Verachtert <dries.verachtert@dries.eu> - 6.06-1
+- Updated to release 6.06.
+
 * Thu Dec 31 2009 Christoph Maser <cmr@financial.com> - 6.04-1
 - Updated to version 6.04.
 
