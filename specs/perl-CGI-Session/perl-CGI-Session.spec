@@ -12,7 +12,7 @@
 
 Summary: Persistent session data in CGI applications
 Name: perl-CGI-Session
-Version: 4.42
+Version: 4.48
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -75,6 +75,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/CGI/Session.pm
 
 %changelog
+* Mon Oct 23 2017 Dries Verachtert <dries.verachtert@dries.eu> - 4.48-1
+- Updated to release 4.48.
+
 * Thu Dec 31 2009 Christoph Maser <cmr@financial.com> - 4.42-1
 - Updated to version 4.42.
 
