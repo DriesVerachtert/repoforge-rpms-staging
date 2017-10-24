@@ -9,8 +9,8 @@
 
 Summary: Clone of the classic Eliza program
 Name: perl-Chatbot-Eliza
-Version: 1.04
-Release: 1.2%{?dist}
+Version: 1.08
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Chatbot-Eliza/
@@ -55,5 +55,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Chatbot/Eliza.pm
 
 %changelog
+* Tue Oct 24 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.08-1
+- Updated to release 1.08.
+
 * Sat Apr  9 2005 Dries Verachtert <dries@ulyssis.org> - 1.04-1
 - Initial package.
