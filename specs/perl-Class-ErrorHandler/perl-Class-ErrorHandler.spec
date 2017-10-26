@@ -9,8 +9,8 @@
 
 Summary: Base class for classes that need to do error handling
 Name: perl-Class-ErrorHandler
-Version: 0.01
-Release: 1.2%{?dist}
+Version: 0.04
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Class-ErrorHandler/
@@ -44,10 +44,13 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes README
+%doc Changes MANIFEST META* README*
 %doc %{_mandir}/man3/*
 %{perl_vendorlib}/Class/ErrorHandler.pm
 
 %changelog
+* Thu Oct 26 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.04-1
+- Updated to release 0.04.
+
 * Thu Dec 22 2005 Dries Verachtert <dries@ulyssis.org> - 0.01-1
 - Initial package.
