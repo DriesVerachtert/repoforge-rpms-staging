@@ -9,7 +9,7 @@
 
 Summary: Add hooks on methods from other classes
 Name: perl-Class-Hook
-Version: 0.03
+Version: 0.05
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -54,6 +54,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Class/Hook.pm
 
 %changelog
+* Fri Oct 27 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.05-1
+- Updated to release 0.05.
+
 * Thu Jul 16 2009 Christoph Maser <cmr@financial.com> - 0.03-1
 - Updated to version 0.03.
 
