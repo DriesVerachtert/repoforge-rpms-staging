@@ -9,8 +9,8 @@
 
 Summary: Generate common types of methods
 Name: perl-Class-MakeMethods
-Version: 1.01
-Release: 1.2%{?dist}
+Version: 1.009
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Class-MakeMethods/
@@ -48,8 +48,11 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc %{_mandir}/man3/*
 %{perl_vendorlib}/Class/MakeMethods.pm
 %{perl_vendorlib}/Class/MakeMethods
-%{perl_vendorlib}/Class/benchmark.pl
+#%{perl_vendorlib}/Class/benchmark.pl
 
 %changelog
+* Sun Oct 29 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.009-1
+- Updated to release 1.009.
+
 * Sat Apr  9 2005 Dries Verachtert <dries@ulyssis.org> - 1.01-1
 - Initial package.
