@@ -9,8 +9,8 @@
 
 Summary: Support multimethods and subroutine overloading in Perl
 Name: perl-Class-Multimethods
-Version: 1.70
-Release: 1.2%{?dist}
+Version: 1.701
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Class-Multimethods/
@@ -26,7 +26,7 @@ BuildRequires: perl(ExtUtils::MakeMaker)
 Support multimethods and subroutine overloading in Perl.
 
 %prep
-%setup -n %{real_name}-%{version}
+%setup -n %{real_name}-1.700
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS="vendor" PREFIX="%{buildroot}%{_prefix}"
@@ -49,5 +49,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Class/Multimethods.p*
 
 %changelog
+* Mon Oct 30 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.701-1
+- Updated to release 1.701.
+
 * Sat Apr  9 2005 Dries Verachtert <dries@ulyssis.org> - 1.70-1
 - Initial package.
