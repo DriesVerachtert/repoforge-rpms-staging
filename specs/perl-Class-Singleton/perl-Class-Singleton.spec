@@ -12,7 +12,7 @@
 
 Summary: Implementation of a "Singleton" class
 Name: perl-Class-Singleton
-Version: 1.4
+Version: 1.5
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -62,6 +62,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Class/Singleton.pm
 
 %changelog
+* Tue Oct 31 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.5-1
+- Updated to release 1.5.
+
 * Tue Nov 06 2007 Dag Wieers <dag@wieers.com> - 1.4-1
 - Updated to release 1.4.
 
