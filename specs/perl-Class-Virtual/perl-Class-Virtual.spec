@@ -9,7 +9,7 @@
 
 Summary: Base class for virtual base classes
 Name: perl-Class-Virtual
-Version: 0.06
+Version: 0.08
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -50,6 +50,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Class/Virtually
 
 %changelog
+* Wed Nov 01 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.08-1
+- Updated to release 0.08.
+
 * Mon Sep 18 2006 Dries Verachtert <dries@ulyssis.org> - 0.06-1
 - Updated to release 0.06.
 
