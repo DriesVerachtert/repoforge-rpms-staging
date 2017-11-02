@@ -9,8 +9,8 @@
 
 Summary: Interface to the bzip2 compression library
 Name: perl-Compress-Bzip2
-Version: 2.09
-Release: 1.2%{?dist}
+Version: 2.26
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Compress-Bzip2/
@@ -45,7 +45,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc README
+%doc Changes INSTALL MANIFEST META.* NEWS README.md SIGNATURE
 %doc %{_mandir}/man3/*.3pm*
 %dir %{perl_vendorarch}/Compress/
 %{perl_vendorarch}/Compress/Bzip2.pm
@@ -53,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Compress/Bzip2/
 
 %changelog
+* Thu Nov 02 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.26-1
+- Updated to release 2.26.
+
 * Sat Nov  5 2005 Dries Verachtert <dries@ulyssis.org> - 2.09-1
 - Updated to release 2.09.
 
