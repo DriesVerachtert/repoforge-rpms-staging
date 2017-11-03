@@ -9,8 +9,8 @@
 
 Summary: Bindings for LZO
 Name: perl-Compress-LZO
-Version: 1.08
-Release: 1.2%{?dist}
+Version: 1.09
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Compress-LZO/
@@ -20,6 +20,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
 BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(Devel::CheckLib)
 BuildRequires: lzo-devel
 
 %description
@@ -54,5 +55,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Compress/LZO/
 
 %changelog
+* Fri Nov 03 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.09-1
+- Updated to release 1.09.
+
 * Sat Apr  9 2005 Dries Verachtert <dries@ulyssis.org> - 1.08-1
 - Initial package.
