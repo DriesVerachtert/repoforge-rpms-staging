@@ -9,7 +9,7 @@
 
 Summary: Parse an application configuration file with wildcard keywords
 Name: perl-Config-Wild
-Version: 2.01
+Version: 2.02
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -50,6 +50,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Config/Wild.pm
 
 %changelog
+* Wed Nov 08 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.02-1
+- Updated to release 2.02.
+
 * Mon Aug 08 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.01-1
 - Updated to release 2.01.
 
