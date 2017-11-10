@@ -12,7 +12,7 @@
 
 Summary: Command-line access to the CPAN interface
 Name: perl-CPANPLUS
-Version: 0.9160
+Version: 0.9172
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -68,6 +68,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/CPANPLUS.pm
 
 %changelog
+* Fri Nov 10 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.9172-1
+- Updated to release 0.9172.
+
 * Mon Sep 26 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.9160-1
 - Updated to release 0.9160.
 
