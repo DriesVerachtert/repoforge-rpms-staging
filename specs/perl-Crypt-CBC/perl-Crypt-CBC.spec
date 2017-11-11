@@ -9,7 +9,7 @@
 
 Summary: Encrypt Data with Cipher Block Chaining Mode
 Name: perl-Crypt-CBC
-Version: 2.30
+Version: 2.33
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -58,6 +58,9 @@ find eg/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Crypt/CBC.pm
 
 %changelog
+* Sat Nov 11 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.33-1
+- Updated to release 2.33.
+
 * Thu Jul  9 2009 Christoph Maser <cmr@financial.com> - 2.30-1
 - Updated to version 2.30.
 
