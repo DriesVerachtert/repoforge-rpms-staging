@@ -9,7 +9,7 @@
 
 Summary: Encrypt Data using ECB Mode
 Name: perl-Crypt-ECB
-Version: 1.45
+Version: 2.21
 Release: 1%{?dist}
 License: GPL
 Group: Applications/CPAN
@@ -48,13 +48,16 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc CHANGES COPYING MANIFEST META.yml README
+%doc CHANGES MANIFEST META.* README*
 %doc %{_mandir}/man3/Crypt::ECB.3pm*
 %dir %{perl_vendorlib}/Crypt/
 #%{perl_vendorlib}/Crypt/ECB/
 %{perl_vendorlib}/Crypt/ECB.pm
 
 %changelog
+* Mon Nov 13 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.21-1
+- Updated to release 2.21.
+
 * Tue Oct 07 2008 Dag Wieers <dag@wieers.com> - 1.45-1
 - Updated to release 1.45.
 
