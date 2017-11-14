@@ -9,8 +9,8 @@
 
 Summary: Generate secure random pronounceable passwords
 Name: perl-Crypt-GeneratePassword
-Version: 0.03
-Release: 1.2%{?dist}
+Version: 0.05
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Crypt-GeneratePassword/
@@ -53,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Crypt/GeneratePassword
 
 %changelog
+* Tue Nov 14 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.05-1
+- Updated to release 0.05.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.03-1.2
 - Rebuild for Fedora Core 5.
 
