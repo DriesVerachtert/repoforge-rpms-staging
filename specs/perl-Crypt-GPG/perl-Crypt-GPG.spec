@@ -9,7 +9,7 @@
 
 Summary: Object Oriented Interface to GnuPG
 Name: perl-Crypt-GPG
-Version: 1.63
+Version: 1.64
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -53,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Crypt/GPG.pm
 
 %changelog
+* Wed Nov 15 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.64-1
+- Updated to release 1.64.
+
 * Sun Apr 29 2007 Dries Verachtert <dries@ulyssis.org> - 1.63-1
 - Updated to release 1.63.
 
