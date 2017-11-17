@@ -9,8 +9,8 @@
 
 Summary: One way hash chaining encryption using SHA
 Name: perl-Crypt-HCE_SHA
-Version: 0.70
-Release: 1.2%{?dist}
+Version: 0.75
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Crypt-HCE_SHA/
@@ -53,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/auto/Crypt/HCE_SHA
 
 %changelog
+* Fri Nov 17 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.75-1
+- Updated to release 0.75.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.70-1.2
 - Rebuild for Fedora Core 5.
 
