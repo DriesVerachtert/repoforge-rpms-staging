@@ -12,7 +12,7 @@
 
 Summary: OpenSSL's multiprecision integer arithmetic
 Name: perl-Crypt-OpenSSL-Bignum
-Version: 0.04
+Version: 0.08
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -66,6 +66,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Crypt/OpenSSL/Bignum/
 
 %changelog
+* Sat Nov 18 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.08-1
+- Updated to release 0.08.
+
 * Thu Nov 08 2007 Dag Wieers <dag@wieers.com> - 0.04-1
 - Updated to release 0.04.
 
