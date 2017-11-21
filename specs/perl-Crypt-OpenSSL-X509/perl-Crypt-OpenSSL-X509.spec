@@ -11,17 +11,18 @@
 
 Summary: Crypt::OpenSSL::X509 module
 Name: perl-Crypt-OpenSSL-X509
-Version: 1.0
+Version: 1.808
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Crypt-OpenSSL-X509/
 
-Source: http://search.cpan.org/CPAN/authors/id/D/DA/DANIEL/Crypt-OpenSSL-X509-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/J/JO/JONASBN/Crypt-OpenSSL-X509-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: perl
 BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(Test::More)
 BuildRequires: openssl-devel
 
 %description
@@ -57,6 +58,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/Crypt/OpenSSL/X509/
 
 %changelog
+* Tue Nov 21 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.808-1
+- Updated to release 1.808.
+
 * Sat Feb  6 2010 Christoph Maser <cmr@financial.com> - 1.0-1
 - Updated to version 1.0.
 
