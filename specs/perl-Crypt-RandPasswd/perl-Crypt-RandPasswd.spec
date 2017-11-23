@@ -9,8 +9,8 @@
 
 Summary: Random password generator based on FIPS-181
 Name: perl-Crypt-RandPasswd
-Version: 0.02
-Release: 1.2%{?dist}
+Version: 0.06
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Crypt-RandPasswd/
@@ -51,6 +51,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Crypt/RandPasswd.pm
 
 %changelog
+* Thu Nov 23 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.06-1
+- Updated to release 0.06.
+
 * Wed Mar 22 2006 Dries Verachtert <dries@ulyssis.org> - 0.02-1.2
 - Rebuild for Fedora Core 5.
 
