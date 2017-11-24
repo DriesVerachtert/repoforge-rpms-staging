@@ -9,7 +9,7 @@
 
 Summary: Assists in working with salted hashes
 Name: perl-Crypt-SaltedHash
-Version: 0.05
+Version: 0.09
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -49,6 +49,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Crypt/SaltedHash.pm
 
 %changelog
+* Fri Nov 24 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.09-1
+- Updated to release 0.09.
+
 * Mon Sep 18 2006 Dries Verachtert <dries@ulyssis.org> - 0.05-1
 - Updated to release 0.05.
 
