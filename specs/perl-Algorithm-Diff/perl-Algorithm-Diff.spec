@@ -11,7 +11,7 @@
 
 Summary: Compute intelligent differences between two files or lists
 Name: perl-Algorithm-Diff
-Version: 1.1902
+Version: 1.1903
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -56,6 +56,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Algorithm/
 
 %changelog
+* Mon Nov 27 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.1903-1
+- Updated to release 1.1903.
+
 * Tue Sep 19 2006 Dries Verachtert <dries@ulyssis.org> - 1.1902-1
 - Updated to release 1.1902.
 
