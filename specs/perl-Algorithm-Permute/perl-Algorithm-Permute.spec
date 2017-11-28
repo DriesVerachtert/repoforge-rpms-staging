@@ -9,7 +9,7 @@
 
 Summary: Fast permutation
 Name: perl-Algorithm-Permute
-Version: 0.12
+Version: 0.16
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -51,6 +51,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Algorithm/Permute.pm
 
 %changelog
+* Tue Nov 28 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.16-1
+- Updated to release 0.16.
+
 * Fri May 02 2008 Dag Wieers <dag@wieers.com> - 0.12-1
 - Updated to release 0.12.
 
