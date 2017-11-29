@@ -9,13 +9,13 @@
 
 Summary: Persistent database connections and basic authentication support
 Name: perl-Apache-DBI
-Version: 1.08
+Version: 1.12
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Apache-DBI/
 
-Source: http://search.cpan.org/CPAN/authors/id/A/AB/ABH/Apache-DBI-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/P/PH/PHRED/Apache-DBI-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -71,6 +71,9 @@ find eg/ -type f -exec %{__chmod} a-x {} \;
 
 
 %changelog
+* Wed Nov 29 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.12-1
+- Updated to release 1.12.
+
 * Sat Feb  6 2010 Christoph Maser <cmr@financial.com> - 1.08-1
 - Updated to version 1.08.
 
