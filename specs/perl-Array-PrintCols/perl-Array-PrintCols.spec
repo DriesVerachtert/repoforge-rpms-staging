@@ -9,8 +9,8 @@
 
 Summary: Print vertically sorted columns
 Name: perl-Array-PrintCols
-Version: 2.1
-Release: 1.2%{?dist}
+Version: 2.6
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Array-PrintCols/
@@ -52,5 +52,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Array/PrintCols.pm
 
 %changelog
+* Sun Dec 03 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.6-1
+- Updated to release 2.6.
+
 * Sat Apr  9 2005 Dries Verachtert <dries@ulyssis.org> - 2.1-1
 - Initial package.
