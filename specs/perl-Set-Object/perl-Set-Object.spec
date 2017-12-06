@@ -9,7 +9,7 @@
 
 Summary: Set of objects and strings
 Name: perl-Set-Object
-Version: 1.35
+Version: 1.38
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -59,6 +59,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/Set/Changes.pod
 
 %changelog
+* Wed Dec 06 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.38-1
+- Updated to release 1.38.
+
 * Sat Aug 15 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.35-1
 - Updated to release 1.35.
 
