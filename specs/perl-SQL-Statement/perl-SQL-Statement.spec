@@ -9,8 +9,8 @@
 
 Summary: SQL parsing and processing engine
 Name: perl-SQL-Statement
-Version: 1.410
-Release: 2%{?dist}
+Version: 1.412
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/SQL-Statement/
@@ -71,7 +71,10 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/SQL
 
 %changelog
-* Mon Feb 27 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.410-2
+* Thu Dec 07 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.412-1
+- Updated to release 1.412.
+
+* Mon Feb 27 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.410-1
 - Updated to release 1.410.
 
 * Thu Feb 10 2011 Christoph Maser <cmaser@gmx.de> - 1.33-1
