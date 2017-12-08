@@ -9,7 +9,7 @@
 
 Summary: Perl extension for approximate matching (fuzzy matching)
 Name: perl-String-Approx
-Version: 3.27
+Version: 3.28
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -55,6 +55,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/String/Approx
 
 %changelog
+* Fri Dec 08 2017 Dries Verachtert <dries.verachtert@dries.eu> - 3.28-1
+- Updated to release 3.28.
+
 * Tue Mar 07 2017 Dries Verachtert <dries.verachtert@dries.eu> - 3.27-1
 - Updated to release 3.27.
 
