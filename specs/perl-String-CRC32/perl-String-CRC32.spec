@@ -14,7 +14,7 @@
 
 Summary: Cyclic redundency check generation
 Name: perl-String-CRC32
-Version: 1.5
+Version: 1.6
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -49,7 +49,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc README
+%doc LICENSE MANIFEST META.* README*
 %doc %{_mandir}/man3/*.3pm*
 %dir %{perl_vendorarch}/String/
 %{perl_vendorarch}/String/CRC32.pm
@@ -58,6 +58,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorarch}/auto/String/CRC32
 
 %changelog
+* Sat Dec 09 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.6-1
+- Updated to release 1.6.
+
 * Wed Mar 08 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.5-1
 - Updated to release 1.5.
 
