@@ -12,7 +12,7 @@
 
 Summary: Apparently run a function in a higher stack frame
 Name: perl-Sub-Uplevel
-Version: 0.25
+Version: 0.2800
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -64,6 +64,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 #%{perl_vendorlib}/Sub/Uplevel.pod
 
 %changelog
+* Sun Dec 10 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.2800-1
+- Updated to release 0.2800.
+
 * Thu Mar 16 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.25-1
 - Updated to release 0.25.
 
