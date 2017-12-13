@@ -9,13 +9,13 @@
 
 Summary: An interpreter for the Chef programming language
 Name: perl-%{real_name}
-Version: 1.01
+Version: 1.03
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Acme-Chef/
 
-Source: http://search.cpan.org/CPAN/authors/id/S/SM/SMUELLER/Acme-Chef-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/W/WE/WERNERMP/Acme-Chef-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 
@@ -54,7 +54,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST META.yml README
+%doc Changes MANIFEST META.* README*
 %doc examples
 %doc %{_mandir}/man?/*
 %dir %{perl_vendorlib}/Acme/
@@ -62,5 +62,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{_bindir}/
 
 %changelog
+* Wed Dec 13 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.03-1
+- Updated to release 1.03.
+
 * Wed Dec 02 2009 Steve Huff <shuff@vecna.org> - 1.01-1
 - Initial package.
