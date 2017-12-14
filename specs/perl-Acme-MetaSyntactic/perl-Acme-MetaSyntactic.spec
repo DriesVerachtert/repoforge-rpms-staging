@@ -9,7 +9,7 @@
 
 Summary: Themed metasyntactic variables names
 Name: perl-Acme-MetaSyntactic
-Version: 1.012
+Version: 1.014
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -60,6 +60,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/eta.pm
 
 %changelog
+* Thu Dec 14 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.014-1
+- Updated to release 1.014.
+
 * Thu Dec 24 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.012-1
 - Updated to release 1.012.
 
