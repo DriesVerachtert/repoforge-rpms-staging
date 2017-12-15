@@ -9,13 +9,13 @@
 
 Summary: Use shorter versions of class names
 Name: perl-aliased
-Version: 0.30
+Version: 0.34
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/aliased/
 
-Source: http://www.cpan.org/authors/id/O/OV/OVID/aliased-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/aliased-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -53,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/aliased.pm
 
 %changelog
+* Fri Dec 15 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.34-1
+- Updated to release 0.34.
+
 * Tue Sep 29 2009 Christoph Maser <cmr@financial.com> - 0.30-1
 - Updated to version 0.30.
 
