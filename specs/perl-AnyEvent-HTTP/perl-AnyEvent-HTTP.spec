@@ -12,7 +12,7 @@
 
 Summary: Simple but non-blocking HTTP/HTTPS client
 Name: perl-%{real_name}
-Version: 2.22
+Version: 2.23
 Release: 1%{?dist}
 License: GPL
 Group: Applications/CPAN
@@ -73,6 +73,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/AnyEvent/HTTP.pm
 
 %changelog
+* Sat Dec 16 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.23-1
+- Updated to release 2.23.
+
 * Sun Feb 07 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.22-1
 - Updated to release 2.22.
 
