@@ -8,7 +8,7 @@
 
 Summary: Perl module to deal with file archives
 Name: perl-Archive-Any
-Version: 0.0932
+Version: 0.0945
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -44,7 +44,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST META.yml README
+%doc Changes CONTRIBUTORS INSTALL MANIFEST META.* README
 %doc %{_mandir}/man3/Archive::Any.3pm*
 %doc %{_mandir}/man3/Archive::Any::*.3pm*
 %dir %{perl_vendorlib}/Archive/
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Archive/Any.pm
 
 %changelog
+* Mon Dec 18 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.0945-1
+- Updated to release 0.0945.
+
 * Sat May 03 2008 Dag Wieers <dag@wieers.com> - 0.0932-1
 - Updated to release 0.0932.
 
