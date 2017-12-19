@@ -16,7 +16,7 @@
 
 Summary: Archive-Tar module for perl
 Name: perl-Archive-Tar
-Version: 2.10
+Version: 2.26
 Release: 1%{?dist}
 Epoch: 1
 License: Artistic/GPL
@@ -90,6 +90,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Archive/Tar.pm
 
 %changelog
+* Tue Dec 19 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1:2.26-1
+- Updated to release 2.26.
+
 * Wed Sep 21 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1:2.10-1
 - Updated to release 2.10.
 
