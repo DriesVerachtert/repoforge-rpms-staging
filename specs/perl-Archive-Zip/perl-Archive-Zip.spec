@@ -14,13 +14,13 @@
 
 Summary: Provide an interface to ZIP archive files
 Name: perl-Archive-Zip
-Version: 1.30
+Version: 1.60
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Archive-Zip/
 
-Source: http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/Archive-Zip-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/P/PH/PHRED/Archive-Zip-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -88,7 +88,7 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes LICENSE MANIFEST META.yml README examples/
+%doc Changes MANIFEST META.* README* examples/
 %doc %{_mandir}/man3/Archive::Zip.3pm*
 %doc %{_mandir}/man3/Archive::Zip::*.3pm*
 %{_bindir}/crc32
@@ -97,6 +97,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Archive/Zip.pm
 
 %changelog
+* Wed Dec 20 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.60-1
+- Updated to release 1.60.
+
 * Thu Jan  7 2010 Christoph Maser <cmr@financial.com> - 1.30-1
 - Updated to version 1.30.
 
