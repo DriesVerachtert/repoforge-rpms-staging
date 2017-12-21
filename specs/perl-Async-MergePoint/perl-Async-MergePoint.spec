@@ -9,7 +9,7 @@
 
 Summary: resynchronise diverged control flow
 Name: perl-Async-MergePoint
-Version: 0.03
+Version: 0.04
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -53,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Async/MergePoint.pm
 
 %changelog
+* Thu Dec 21 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.04-1
+- Updated to release 0.04.
+
 * Fri Jan  8 2010 Christoph Maser <cmr@financial.com> - 0.03-1
 - Updated to version 0.03.
 
