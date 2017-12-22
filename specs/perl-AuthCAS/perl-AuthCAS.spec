@@ -9,7 +9,7 @@
 
 Summary: Client library for CAS 2.0 authentication server
 Name: perl-AuthCAS
-Version: 1.4
+Version: 1.7
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -48,7 +48,11 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %doc %{_mandir}/man3/AuthCAS.3pm*
 #%{perl_vendorlib}/AuthCAS/
 %{perl_vendorlib}/AuthCAS.pm
+%{perl_vendorlib}/sampleCasClient.pl
 
 %changelog
+* Fri Dec 22 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.7-1
+- Updated to release 1.7.
+
 * Sat Jul 04 2009 Unknown - 1.4-1
 - Initial package. (using DAR)
