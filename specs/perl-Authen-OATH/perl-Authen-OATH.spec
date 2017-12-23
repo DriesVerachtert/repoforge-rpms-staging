@@ -5,13 +5,13 @@
 
 Summary: OATH One Time Passwords
 Name: perl-%{real_name}
-Version: 1.0.0
+Version: 2.0.1
 Release: 1%{?dist}
 License: GPL or Artistic
 Group: Development/Libraries
 URL: http://search.cpan.org/dist/Authen-OATH/
 
-Source0: http://search.cpan.org/CPAN/authors/id/S/SI/SIFUKURT/Authen-OATH-v1.0.0.tar.gz
+Source0: http://search.cpan.org/CPAN/authors/id/O/OA/OALDERS/Authen-OATH-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch: noarch
@@ -40,7 +40,7 @@ The methods implemented by this module can verify logins for Google
 Authenticator.
 
 %prep
-%setup -q -n %{real_name}-v%{version}
+%setup -n %{real_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor PREFIX="%{buildroot}%{_prefix}"
@@ -58,10 +58,13 @@ find $RPM_BUILD_ROOT -type d -depth -exec rmdir {} 2>/dev/null ';'
 
 %files
 %defattr(-,root,root,0755)
-%doc Changes README
+%doc Changes CONTRIBUTORS INSTALL MANIFEST META.* README*
 %{perl_vendorlib}/Authen/OATH.pm
 %{_mandir}/man3/*.3*
 
 %changelog
+* Sat Dec 23 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.0.1-1
+- Updated to release 2.0.1.
+
 * Tue Aug 30 2011 Todd Lyons <tlyons@ivenue.com> - 0:1.0.0-1iv
 - Initial package.
