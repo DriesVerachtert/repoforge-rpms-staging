@@ -9,7 +9,7 @@
 
 Summary: Perl module that provides simple Radius client facilities
 Name: perl-Authen-Radius
-Version: 0.24
+Version: 0.26
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Authen/Radius.pm
 
 %changelog
+* Sun Dec 24 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.26-1
+- Updated to release 0.26.
+
 * Wed Sep 21 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.24-1
 - Updated to release 0.24.
 
