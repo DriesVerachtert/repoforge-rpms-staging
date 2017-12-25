@@ -9,13 +9,13 @@
 
 Summary: Perl module to establish an ISA relationship with base classes at compile time
 Name: perl-base
-Version: 2.14
+Version: 2.23
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/base/
 
-Source: http://www.cpan.org/authors/id/R/RG/RGARCIA/base-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/base-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/fields.pm
 
 %changelog
+* Mon Dec 25 2017 Dries Verachtert <dries.verachtert@dries.eu> - 2.23-1
+- Updated to release 2.23.
+
 * Thu Jan  7 2010 Christoph Maser <cmr@financial.com> - 2.14-1
 - Updated to version 2.14.
 
