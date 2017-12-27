@@ -9,7 +9,7 @@
 
 Summary: Perl module that implements a sample Perl Bloom filter
 Name: perl-Bloom-Filter
-Version: 1.0
+Version: 1.2
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -50,5 +50,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Bloom/Filter.pm
 
 %changelog
+* Wed Dec 27 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.2-1
+- Updated to release 1.2.
+
 * Thu Oct 11 2007 Dag Wieers <dag@wieers.com> - 1.0-1
 - Initial package. (using DAR)
