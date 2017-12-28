@@ -9,7 +9,7 @@
 
 Summary: Boolean support for Perl
 Name: perl-%{real_name}
-Version: 0.28
+Version: 0.46
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -55,8 +55,12 @@ find %{buildroot} -type d -depth -exec rmdir {} 2>/dev/null ';'
 %doc Changes MANIFEST META.yml README
 %doc %{_mandir}/man3/boolean.3pm*
 %{perl_vendorlib}/boolean.pm
+%{perl_vendorlib}/boolean.pod
 
 %changelog
+* Thu Dec 28 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.46-1
+- Updated to release 0.46.
+
 * Sat Apr 28 2012 Denis Fateyev <denis@fateyev.com> - 0.28-1
 - Update to version 0.28
  
