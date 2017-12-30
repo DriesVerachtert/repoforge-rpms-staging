@@ -9,13 +9,13 @@
 
 Summary: Perl extension for automating PayPal transactions
 Name: perl-Business-PayPal
-Version: 0.03
+Version: 0.18
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Business-PayPal/
 
-Source: http://search.cpan.org/CPAN/authors/id/P/PH/PHRED/Business-PayPal-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/S/SZ/SZABGAB/Business-PayPal-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -61,6 +61,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Business/getppcert.pl
 
 %changelog
+* Sat Dec 30 2017 Dries Verachtert <dries.verachtert@dries.eu> - 0.18-1
+- Updated to release 0.18.
+
 * Tue Jan  5 2010 Christoph Maser <cmr@financial.com> - 0.03-1
 - Updated to version 0.03.
 
