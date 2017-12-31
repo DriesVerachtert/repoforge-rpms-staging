@@ -9,13 +9,13 @@
 
 Summary: Cache-Cache module for perl
 Name: perl-Cache-Cache
-Version: 1.06
+Version: 1.08
 Release: 1%{?dist}
 License: GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Cache-Cache/
 
-Source: http://search.cpan.org/CPAN/authors/id/J/JS/JSWARTZ/Cache-Cache-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Cache-Cache-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -66,6 +66,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Cache/
 
 %changelog
+* Sun Dec 31 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.08-1
+- Updated to release 1.08.
+
 * Tue Jan  5 2010 Christoph Maser <cmr@financial.com> - 1.06-1
 - Updated to version 1.06.
 
