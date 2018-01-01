@@ -12,7 +12,7 @@
 
 Summary: Perl module implements a client library for memcached
 Name: perl-Cache-Memcached
-Version: 1.29
+Version: 1.30
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -70,6 +70,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Cache/Memcached.pm
 
 %changelog
+* Mon Jan 01 2018 Dries Verachtert <dries.verachtert@dries.eu> - 1.30-1
+- Updated to release 1.30.
+
 * Mon Oct 11 2010 Christoph Maser <cmaser@gmx.de> - 1.29-1
 - Updated to version 1.29.
 
