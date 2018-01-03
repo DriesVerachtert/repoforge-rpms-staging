@@ -8,7 +8,7 @@
 
 Summary: Convenience wrappers around Carp::Assert 
 Name: perl-Carp-Assert-More
-Version: 1.14
+Version: 1.16
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -43,13 +43,16 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes README
+%doc Changes INSTALL MANIFEST META.* README*
 %doc %{_mandir}/man3/*.3*
 %dir %{perl_vendorlib}/Carp/
 %dir %{perl_vendorlib}/Carp/Assert/
 %{perl_vendorlib}/Carp/Assert/More.pm
 
 %changelog
+* Wed Jan 03 2018 Dries Verachtert <dries.verachtert@dries.eu> - 1.16-1
+- Updated to release 1.16.
+
 * Sat Jan 23 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.14-1
 - Updated to release 1.14.
 
