@@ -9,7 +9,7 @@
 
 Summary: Perl module to split big cookies into smaller ones
 Name: perl-CGI-Cookie-Splitter
-Version: 0.02
+Version: 0.05
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -49,7 +49,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc Changes MANIFEST META.yml SIGNATURE
+%doc Changes CONTRIBUTING INSTALL LICENSE MANIFEST META.* README
 %doc %{_mandir}/man3/CGI::Cookie::Splitter.3pm*
 %dir %{perl_vendorlib}/CGI/
 %dir %{perl_vendorlib}/CGI/Cookie/
@@ -57,5 +57,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/CGI/Cookie/Splitter.pm
 
 %changelog
+* Thu Jan 04 2018 Dries Verachtert <dries.verachtert@dries.eu> - 0.05-1
+- Updated to release 0.05.
+
 * Sun Nov 04 2007 Dag Wieers <dag@wieers.com> - 0.02-1
 - Initial package. (using DAR)
