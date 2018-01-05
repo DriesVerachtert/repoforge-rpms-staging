@@ -9,8 +9,8 @@
 
 Summary: Perl module for deriving other modules
 Name: perl-Class-Base
-Version: 0.08
-Release: 2%{?dist}
+Version: 0.09
+Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Class-Base/
@@ -50,7 +50,10 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Class/Base.pm
 
 %changelog
-* Thu Aug 04 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.08-2
+* Fri Jan 05 2018 Dries Verachtert <dries.verachtert@dries.eu> - 0.09-1
+- Updated to release 0.09.
+
+* Thu Aug 04 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.08-1
 - Updated to release 0.08.
 
 * Thu Aug 04 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.08-1
