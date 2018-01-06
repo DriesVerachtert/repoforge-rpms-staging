@@ -8,8 +8,8 @@
 
 Summary: Glues object frameworks together transparently
 Name: perl-Class-Container
-Version: 0.12
-Release: 1.2%{?dist}
+Version: 0.13
+Release: 1%{?dist}
 License: GPL or Artistic
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Class-Container/
@@ -55,5 +55,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Class/Container.pm
 
 %changelog
+* Sat Jan 06 2018 Dries Verachtert <dries.verachtert@dries.eu> - 0.13-1
+- Updated to release 0.13.
+
 * Tue Mar 29 2005 Dag Wieers <dag@wieers.com> - 0.12-1
 - Initial package contributed by Rudolf Kastle.
