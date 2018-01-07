@@ -9,7 +9,7 @@
 
 Summary: Perl module that implements another class and object builder
 Name: perl-Class-Gomor
-Version: 1.02
+Version: 1.03
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -55,6 +55,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/Class/Gomor.pm
 
 %changelog
+* Sun Jan 07 2018 Dries Verachtert <dries.verachtert@dries.eu> - 1.03-1
+- Updated to release 1.03.
+
 * Thu Jul 16 2009 Christoph Maser <cmr@financial.com> - 1.02-1
 - Updated to version 1.02.
 
