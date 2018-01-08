@@ -9,7 +9,7 @@
 
 Summary: Perl module that implements a safe, simple inside-out object construction kit
 Name: perl-Class-InsideOut
-Version: 1.13
+Version: 1.14
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -73,6 +73,9 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 #%{perl_vendorlib}/Class/InsideOut.pod
 
 %changelog
+* Mon Jan 08 2018 Dries Verachtert <dries.verachtert@dries.eu> - 1.14-1
+- Updated to release 1.14.
+
 * Thu Jan 07 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.13-1
 - Updated to release 1.13.
 
