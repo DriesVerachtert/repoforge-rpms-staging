@@ -9,13 +9,13 @@
 
 Summary: Load configuration from different file formats, transparently
 Name: perl-Config-Any
-Version: 0.23
+Version: 0.32
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/Config-Any/
 
-Source: http://search.cpan.org/CPAN/authors/id/B/BR/BRICAS/Config-Any-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/H/HA/HAARG/Config-Any-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -59,6 +59,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Config/Any.pm
 
 %changelog
+* Thu Jan 11 2018 Dries Verachtert <dries.verachtert@dries.eu> - 0.32-1
+- Updated to release 0.32.
+
 * Wed Apr 25 2012 David Hrbáč <david@hrbac.cz> - 0.23-1
 - new upstream release
 
