@@ -9,7 +9,7 @@
 
 Summary: Module for reading .ini-style configuration files
 Name: perl-Config-IniFiles
-Version: 2.93
+Version: 2.94
 Release: 1%{?dist}
 License: distributable
 Group: Applications/CPAN
@@ -63,6 +63,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Config/IniFiles.pm
 
 %changelog
+* Fri Jan 12 2018 Dries Verachtert <dries.verachtert@dries.eu> - 2.94-1
+- Updated to release 2.94.
+
 * Mon Sep 26 2016 Dries Verachtert <dries.verachtert@dries.eu> - 2.93-1
 - Updated to release 2.93.
 
