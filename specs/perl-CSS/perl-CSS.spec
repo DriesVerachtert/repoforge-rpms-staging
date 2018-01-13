@@ -9,7 +9,7 @@
 
 Summary: Object-oriented access to Cascading Style Sheets (CSS)
 Name: perl-%{real_name}
-Version: 1.08
+Version: 1.09
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -64,5 +64,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/CSS.pm
 
 %changelog
+* Sat Jan 13 2018 Dries Verachtert <dries.verachtert@dries.eu> - 1.09-1
+- Updated to release 1.09.
+
 * Tue Nov 03 2009 Steve Huff <shuff@vecna.org> - 1.08-1
 - Initial package.
