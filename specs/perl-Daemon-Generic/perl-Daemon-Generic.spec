@@ -9,7 +9,7 @@
 
 Summary: Framework to provide start/stop/reload for a daemon
 Name: perl-Daemon-Generic
-Version: 0.84
+Version: 0.85
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -53,6 +53,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Daemon/Generic.pod
 
 %changelog
+* Sun Jan 14 2018 Dries Verachtert <dries.verachtert@dries.eu> - 0.85-1
+- Updated to release 0.85.
+
 * Tue Sep 27 2016 Dries Verachtert <dries.verachtert@dries.eu> - 0.84-1
 - Updated to release 0.84.
 
