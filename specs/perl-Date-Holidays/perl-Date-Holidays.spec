@@ -9,7 +9,7 @@
 
 Summary: Object Oriented classes for holidays
 Name: perl-Date-Holidays
-Version: 1.06
+Version: 1.07
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -50,6 +50,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Date/Holidays/
 
 %changelog
+* Tue Jan 16 2018 Dries Verachtert <dries.verachtert@dries.eu> - 1.07-1
+- Updated to release 1.07.
+
 * Mon Sep 11 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.06-1
 - Updated to release 1.06.
 
