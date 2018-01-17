@@ -9,7 +9,7 @@
 
 Summary: Perl module to parse and format MySQL dates and times
 Name: perl-DateTime-Format-MySQL
-Version: 0.04
+Version: 0.06
 Release: 1%{?dist}
 License: Artistic
 Group: Applications/CPAN
@@ -54,5 +54,8 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/DateTime/Format/MySQL.pm
 
 %changelog
+* Wed Jan 17 2018 Dries Verachtert <dries.verachtert@dries.eu> - 0.06-1
+- Updated to release 0.06.
+
 * Mon Apr 30 2007 Dag Wieers <dag@wieers.com> - 0.04-1
 - Initial package. (using DAR)
