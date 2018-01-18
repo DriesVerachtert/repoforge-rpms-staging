@@ -9,7 +9,7 @@
 
 Summary: Parse and format strp and strf time patterns
 Name: perl-DateTime-Format-Strptime
-Version: 1.74
+Version: 1.75
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -60,6 +60,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/DateTime/Format/Strptime/Types.pm
 
 %changelog
+* Thu Jan 18 2018 Dries Verachtert <dries.verachtert@dries.eu> - 1.75-1
+- Updated to release 1.75.
+
 * Mon Sep 18 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.74-1
 - Updated to release 1.74.
 
