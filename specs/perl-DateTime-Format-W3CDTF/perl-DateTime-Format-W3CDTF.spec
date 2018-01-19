@@ -12,13 +12,13 @@
 
 Summary: Perl module to parse and format W3CDTF datetime strings
 Name: perl-DateTime-Format-W3CDTF
-Version: 0.05
+Version: 0.07
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/DateTime-Format-W3CDTF/
 
-Source: http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/DateTime-Format-W3CDTF-%{version}.tar.gz
+Source: http://search.cpan.org/CPAN/authors/id/G/GW/GWILLIAMS/DateTime-Format-W3CDTF-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -61,6 +61,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/DateTime/Format/W3CDTF.pm
 
 %changelog
+* Fri Jan 19 2018 Dries Verachtert <dries.verachtert@dries.eu> - 0.07-1
+- Updated to release 0.07.
+
 * Thu Dec 31 2009 Christoph Maser <cmr@financial.com> - 0.05-1
 - Updated to version 0.05.
 
