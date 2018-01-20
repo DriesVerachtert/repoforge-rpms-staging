@@ -9,7 +9,7 @@
 
 Summary: Tolkien dates
 Name: perl-Date-Tolkien-Shire
-Version: 1.21
+Version: 1.901
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -63,6 +63,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Date/Tolkien/Shire.pm
 
 %changelog
+* Sat Jan 20 2018 Dries Verachtert <dries.verachtert@dries.eu> - 1.901-1
+- Updated to release 1.901.
+
 * Thu Sep 21 2017 Dries Verachtert <dries.verachtert@dries.eu> - 1.21-1
 - Updated to release 1.21.
 
