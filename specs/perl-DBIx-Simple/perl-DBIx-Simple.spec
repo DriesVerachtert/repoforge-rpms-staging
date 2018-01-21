@@ -12,7 +12,7 @@
 
 Summary: Perl module named DBIx-Simple
 Name: perl-DBIx-Simple
-Version: 1.35
+Version: 1.37
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -59,6 +59,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/DBIx/Simple/Result/RowObject.pm
 
 %changelog
+* Sun Jan 21 2018 Dries Verachtert <dries.verachtert@dries.eu> - 1.37-1
+- Updated to release 1.37.
+
 * Sat Oct 31 2015 Dries Verachtert <dries.verachtert@dries.eu> - 1.35-1
 - Updated to release 1.35.
 
