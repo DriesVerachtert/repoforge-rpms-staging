@@ -9,7 +9,7 @@
 
 Summary: easy access to SQLite databases using objects
 Name: perl-DBIx-SQLite-Simple
-Version: 0.34
+Version: 0.35
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -56,5 +56,8 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/DBIx/SQLite/Simple.pm
 
 %changelog
+* Mon Jan 22 2018 Dries Verachtert <dries.verachtert@dries.eu> - 0.35-1
+- Updated to release 0.35.
+
 * Sat Aug 04 2007 Dag Wieers <dag@wieers.com> - 0.34-1
 - Initial package. (using DAR)
