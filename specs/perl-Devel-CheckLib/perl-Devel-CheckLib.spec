@@ -9,7 +9,7 @@
 
 Summary: Check that a library is available
 Name: perl-Devel-CheckLib
-Version: 1.07
+Version: 1.11
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -52,6 +52,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Devel/CheckLib.pm
 
 %changelog
+* Tue Jan 23 2018 Dries Verachtert <dries.verachtert@dries.eu> - 1.11-1
+- Updated to release 1.11.
+
 * Sat Nov 26 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.07-1
 - Updated to release 1.07.
 
