@@ -9,7 +9,7 @@
 
 Summary: Check what OS we are running on
 Name: perl-Devel-CheckOS
-Version: 1.76
+Version: 1.81
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -59,6 +59,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Devel/CheckOS/Families.pod
 
 %changelog
+* Wed Jan 24 2018 Dries Verachtert <dries.verachtert@dries.eu> - 1.81-1
+- Updated to release 1.81.
+
 * Mon Feb 01 2016 Dries Verachtert <dries.verachtert@dries.eu> - 1.76-1
 - Updated to release 1.76.
 
