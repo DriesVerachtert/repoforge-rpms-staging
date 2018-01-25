@@ -12,7 +12,7 @@
 
 Summary: Find memory cycles in objects
 Name: perl-Devel-Cycle
-Version: 1.11
+Version: 1.12
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -56,6 +56,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %{perl_vendorlib}/Devel/Cycle.pm
 
 %changelog
+* Thu Jan 25 2018 Dries Verachtert <dries.verachtert@dries.eu> - 1.12-1
+- Updated to release 1.12.
+
 * Mon Sep 14 2009 Christoph Maser <cmr@financial.com> - 1.11-1
 - Updated to version 1.11.
 
