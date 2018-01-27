@@ -9,7 +9,7 @@
 
 Summary: Perl module that implements Ron Rivests MD5 Algorithm
 Name: perl-Digest-Perl-MD5
-Version: 1.8
+Version: 1.9
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
@@ -44,12 +44,15 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %files
 %defattr(-, root, root, 0755)
-%doc CHANGES INSTALL MANIFEST META.yml README
+%doc CHANGES INSTALL MANIFEST META.*
 %doc %{_mandir}/man3/Digest::Perl::MD5.3pm*
 %dir %{perl_vendorlib}/Digest/
 %dir %{perl_vendorlib}/Digest/Perl/
 %{perl_vendorlib}/Digest/Perl/MD5.pm
 
 %changelog
+* Sat Jan 27 2018 Dries Verachtert <dries.verachtert@dries.eu> - 1.9-1
+- Updated to release 1.9.
+
 * Sun Oct 07 2007 Dag Wieers <dag@wieers.com> - 1.8-1
 - Initial package. (using DAR)
