@@ -9,13 +9,13 @@
 
 Summary: Perl module for parsing and generate DIME messages
 Name: perl-DIME-Tools
-Version: 0.03
+Version: 0.04
 Release: 1%{?dist}
 License: Artistic/GPL
 Group: Applications/CPAN
 URL: http://search.cpan.org/dist/DIME-Tools/
 
-Source: http://www.cpan.org/authors/id/D/DA/DALCAZAR/DIME/DIME-Tools-0.03.tgz
+Source: http://search.cpan.org/CPAN/authors/id/N/NE/NEILB/DIME-Tools-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
@@ -52,5 +52,8 @@ find examples/ -type f -exec %{__chmod} a-x {} \;
 %{perl_vendorlib}/DIME/
 
 %changelog
+* Sun Jan 28 2018 Dries Verachtert <dries.verachtert@dries.eu> - 0.04-1
+- Updated to release 0.04.
+
 * Sun Oct 07 2007 Dag Wieers <dag@wieers.com> - 0.03-1
 - Initial package. (using DAR)
